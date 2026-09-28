@@ -8,7 +8,9 @@
 
 The argument may change only through the Decision Log (`06_Pacte_Decision_Log.docx`), not by rewriting the story each week. New figures stay marked as fact, hypothesis, scenario, or objective, as that log already requires.
 
-The page at `/pacte` is a first French public draft taken from `01_Pacte_du_Bilan_Francais_Paper_v1.docx`. It is not the reference. Bringing it into line with V2 is packaging work, not a new idea.
+The page at `/pacte` is a short public reading. It is not the reference. The reference file is published at `/documents/pacte-v2`.
+
+Public canonical set, 28 September 2026: V2 paper (Word), macro model v0.1 (spreadsheet), and the open-questions page. The Decision Log, DFMA note, deployment strategy, thesis note and social-contract sketch stay internal.
 
 ## Order of work
 

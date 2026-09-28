@@ -1,6 +1,6 @@
 # France 2040
 
-Minimal public site for the France 2040 research project. The interface is in French. The public draft of the pact is at `/pacte`. The reference text is the French V2.
+Minimal public site for the France 2040 research project. The interface is in French. The short public reading is at `/pacte`. The reference paper, the exploratory model, and the open questions are linked from `/documents`.
 
 The working order is in `Docs/TODO.md`. The reference text is `Docs/Pacte_du_Bilan_Francais_V2_enrichie.docx`.
 

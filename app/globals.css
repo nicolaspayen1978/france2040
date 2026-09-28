@@ -131,6 +131,38 @@ h1 {
   line-height: 1.5;
 }
 
+.pact a {
+  color: inherit;
+}
+
+.version-box {
+  margin: 1.75rem 0 0;
+  padding: 1rem 0;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.version-box p {
+  margin: 0.55rem 0 0;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.version-box p:first-child {
+  margin: 0;
+  font-weight: 500;
+}
+
+.downloads {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.downloads a {
+  text-underline-offset: 0.18em;
+}
+
 .pact h2 {
   margin: 2.75rem 0 0;
   color: #1a1a1a;

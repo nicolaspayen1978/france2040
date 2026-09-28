@@ -1,10 +1,7 @@
 import Link from "next/link";
-import { DocumentList } from "@/components/DocumentList";
-import { getDocuments } from "@/lib/documents";
+import { PublicationList } from "@/components/PublicationList";
 
 export default function HomePage() {
-  const documents = getDocuments();
-
   return (
     <>
       <p className="kicker">Projet de recherche</p>
@@ -19,7 +16,7 @@ export default function HomePage() {
       </p>
       <section className="section" aria-labelledby="documents-heading">
         <h2 id="documents-heading">Documents de travail</h2>
-        <DocumentList documents={documents} />
+        <PublicationList />
       </section>
     </>
   );

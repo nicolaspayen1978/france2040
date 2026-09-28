@@ -46,7 +46,9 @@ export default function PactPage() {
       </p>
       <p className="status">
         Hypothèse à examiner, non un programme arrêté. Elle est publiée pour être mise à
-        l’épreuve. Ce site n’engage ni le Gouvernement, ni aucune administration.
+        l’épreuve. Le texte de référence est le{" "}
+        <a href="/documents/pacte-v2">document de travail V2</a>. Ce site n’engage ni le
+        Gouvernement, ni aucune administration.
       </p>
 
       <p>

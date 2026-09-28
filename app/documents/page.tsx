@@ -1,20 +1,28 @@
 import type { Metadata } from "next";
+import { PublicationList } from "@/components/PublicationList";
 import { DocumentList } from "@/components/DocumentList";
 import { getDocuments } from "@/lib/documents";
 
 export const metadata: Metadata = {
   title: "Documents",
-  description: "Documents de travail du projet France 2040.",
+  description:
+    "Documents de travail versionnés du Pacte du bilan français, soumis à critique.",
 };
 
 export default function DocumentsPage() {
+  const notes = getDocuments();
+
   return (
     <>
-      <h1>Documents</h1>
-      <p className="intro">
-        Documents de travail qui accompagnent le Pacte.
-      </p>
-      <DocumentList documents={getDocuments()} />
+      <h1>Documents de travail</h1>
+      <p className="intro">Versionnés — soumis à critique.</p>
+      <PublicationList />
+      {notes.length > 0 ? (
+        <section className="section" aria-labelledby="notes-heading">
+          <h2 id="notes-heading">Notes</h2>
+          <DocumentList documents={notes} />
+        </section>
+      ) : null}
     </>
   );
 }
