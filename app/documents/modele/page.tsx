@@ -28,6 +28,15 @@ export default function ModelPage() {
         Le ratio de dette publique de cette version est illustratif : la dette nominale y est tenue
         constante. Il devra être remplacé par un compte complet du solde primaire et des intérêts.
       </p>
+      <p>
+        La part de dépense intérieure de 65 % et l’impulsion de 0,35 par euro, dans cette version,
+        sont des saisies. Leur produit n’est pas une estimation du passage du crédit au PIB. La
+        feuille « Conversion probes » pose trois sondes, 25 %, 50 % et 75 %, sur la part du crédit
+        qui deviendrait une dépense supplémentaire. Aucune n’est un cas central. Sur 700 Md€, ces
+        sondes font 175, 350 et 525 Md€ de dépense. Elles ne mesurent pas le PIB français. La part
+        de cette dépense qui s’adresse à la production française, et le taux de transmission
+        minimum, n’y sont pas remplis. Le critère de succès n’est pas encore défini.
+      </p>
       <ul className="downloads">
         <li>
           <a href="/sources/modele-france-2040-v0.1.xlsx">Télécharger le tableur</a>
