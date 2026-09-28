@@ -4,7 +4,7 @@ import { getDocuments } from "@/lib/documents";
 
 export const metadata: Metadata = {
   title: "Documents",
-  description: "Documents de référence du projet France 2040, publiés en anglais.",
+  description: "Documents de travail du projet France 2040.",
 };
 
 export default function DocumentsPage() {
@@ -12,7 +12,7 @@ export default function DocumentsPage() {
     <>
       <h1>Documents</h1>
       <p className="intro">
-        Documents de travail, publiés en anglais. La version publique du Pacte est en français.
+        Documents de travail qui accompagnent le Pacte.
       </p>
       <DocumentList documents={getDocuments()} />
     </>

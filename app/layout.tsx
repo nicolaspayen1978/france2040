@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s — France 2040",
   },
   description:
-    "Think tank indépendant. Les documents de travail sont publiés en anglais.",
+    "Projet de recherche indépendant. Le Pacte du bilan français est une hypothèse à examiner, non un programme arrêté.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

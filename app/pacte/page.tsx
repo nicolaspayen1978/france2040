@@ -45,8 +45,8 @@ export default function PactPage() {
         et transformer la capacité productive du pays, de 2027 à 2040.
       </p>
       <p className="status">
-        Hypothèse à examiner, non un programme arrêté. Ce site n’engage ni le Gouvernement, ni
-        aucune administration. Les documents de travail restent en anglais.
+        Hypothèse à examiner, non un programme arrêté. Elle est publiée pour être mise à
+        l’épreuve. Ce site n’engage ni le Gouvernement, ni aucune administration.
       </p>
 
       <p>
@@ -62,12 +62,10 @@ export default function PactPage() {
         productive.
       </p>
       <p>
-        Le mécanisme n’est pas une relance permanente par la dette. Le scénario de travail
-        mobilise environ 700 Md€ de crédit net nouveau entre 2027 et 2040, avec une montée puis
-        une extinction programmée. Le produit envisagé est de longue durée, principalement à taux
-        fixe et à intérêts seuls, avec un ratio prêt sur valeur consolidé de l’ordre de 40 à
-        50 %. La réussite se mesure à ceci : en 2040, la France n’a plus besoin d’accélérer ce
-        crédit.
+        Le mécanisme n’est pas une relance permanente par la dette. Le crédit envisagé est de
+        longue durée, principalement à taux fixe et à intérêts seuls, avec un levier consolidé
+        prudent. Il monterait, puis s’éteindrait. La réussite se mesure à ceci : en 2040, la
+        France n’a plus besoin de l’accélérer.
       </p>
       <p>
         Le Pacte n’est défendable que comme un contrat à quatre engagements : une réforme
@@ -111,8 +109,9 @@ export default function PactPage() {
           calculé sur l’ensemble des dettes garanties par le logement.
         </li>
         <li>
-          Faire monter le flux de crédit, puis le ramener à zéro en 2040. Le scénario de travail
-          cumule 700 Md€ de crédit net.
+          Faire monter le flux de crédit, puis le ramener à zéro en 2040. Un premier scénario
+          exploratoire teste un cumul d’environ 700 Md€ de crédit net. Ce chiffre sert à éprouver
+          la thèse. Il n’en est pas la conclusion.
         </li>
         <li>
           Accompagner la demande ainsi créée par un programme d’offre : logement, énergie,
@@ -124,7 +123,9 @@ export default function PactPage() {
         </li>
       </ol>
       <table className="schedule">
-        <caption className="doc-meta">Scénario de travail, crédit net annuel</caption>
+        <caption className="doc-meta">
+          Premier scénario exploratoire, crédit net annuel
+        </caption>
         <thead>
           <tr>
             <th scope="col">Année</th>
@@ -175,10 +176,10 @@ export default function PactPage() {
 
       <h2 id="mecanisme">Le mécanisme</h2>
       <p>
-        Un euro emprunté n’est pas un euro de PIB. Une partie est épargnée, une partie rembourse
-        d’autres dettes, une partie achète des actifs existants, une partie part en importations.
-        Le crédit n’est utile que s’il finance une dépense domestique additionnelle, et si l’offre
-        y répond.
+        La création de crédit n’est pas la création de richesse. Un euro emprunté n’est pas un euro
+        de PIB. Une partie est épargnée, une partie rembourse d’autres dettes, une partie achète
+        des actifs existants, une partie part en importations. Le crédit n’est utile que s’il
+        finance une dépense domestique additionnelle, et si l’offre y répond.
       </p>
       <p>
         Le scénario de travail retient, comme hypothèses modifiables et non comme prévisions,

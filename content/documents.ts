@@ -6,14 +6,14 @@ export type PolicyDocument = {
   /** Calendar date, YYYY-MM-DD. Shown in French on the site. */
   date: string;
   kind: DocumentKind;
-  /** English. Shown under the title in the list and on the document page. */
+  /** Shown under the title. Kept in the language of the source document. */
   summary: string;
-  /** English body, one string per paragraph. */
+  /** Body, one string per paragraph, in the language of the source document. */
   paragraphs: string[];
 };
 
 /**
- * Key documents. Titles, summaries, and paragraphs stay in English.
+ * Key documents, in the language they were written. The flagship reference is the French V2.
  * The surrounding site (navigation, labels, dates) is French.
  *
  * Example:

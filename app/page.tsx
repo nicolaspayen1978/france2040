@@ -7,7 +7,7 @@ export default function HomePage() {
 
   return (
     <>
-      <p className="kicker">Think tank</p>
+      <p className="kicker">Projet de recherche</p>
       <h1>France 2040</h1>
       <p className="lede">
         France 2040 publie le Pacte du bilan français : une hypothèse sur la manière de mobiliser,

@@ -39,6 +39,6 @@ Three workstreams, not eighteen sequential gates.
 
 **B — Try to kill it.** International evidence, the hypothèque rechargeable, banking feasibility, housing consequences, and the red-team paper. Items 5, 6, 7, 9, 11 and 12.
 
-**C — Package it.** France2040.eu, a five-page brief, and the public model. Items 13, 14 and 15. The public model waits on A. The site stays small until there is something to publish that can fail in public.
+**C — Package it.** France2040.eu, a five-page brief, and the public model. Items 13, 14 and 15. The public model waits on A. The site stays small until there is something to publish that can fail in public. Later, one chart: the credit flow rises, peaks, and returns to zero in 2040, while productive capacity and nominal GDP take over.
 
 Items 1, 10, 16, 17 and 18 sit around those streams: the freeze is in force, the four contracts get specified as the model and the red team produce thresholds, the ten readers come before V3, and dissemination comes last.

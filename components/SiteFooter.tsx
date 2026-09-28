@@ -1,8 +1,7 @@
 export function SiteFooter() {
   return (
     <footer className="site-footer">
-      <p>France 2040 · Think tank indépendant</p>
-      <p>Les documents sont publiés en anglais.</p>
+      <p>France 2040 · Projet de recherche indépendant</p>
     </footer>
   );
 }
