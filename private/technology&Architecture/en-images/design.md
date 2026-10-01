@@ -50,6 +50,17 @@ No graph exists only because it looks convincing.
 - Model outputs are labelled **Simulation France2040** on the figure itself, not only in fine print.
 - A conceptual schéma may illustrate the €1 chain with uncertain links marked as uncertain; it must not look like measured GDP.
 
+### Circulation copy (figures travel alone)
+
+A figure may be screenshotted or shared without the page. Copy on the image must survive that.
+
+1. **Source labels.** Do not write a broad “Insee” (or similar) over a strip whose figures come from more than one release. Prefer “France, 2025 — ordres de grandeur observés”, or name each source/date on the figure; leave the technical reconciliation to the cited document.
+2. **Ambiguous %.** A lone “+11,2 %” can read as an interest rate. Lead with the level (“64,7 Md€”) and qualify the change (“+11,2 % sur un an”), or write “43,6 % du PIB” when that is the object.
+3. **Technical footnotes.** Notification vs compte annuel, dual vintages, etc. belong in the document. On the image: short pointer (“Sources précisées dans le document” / “Lecture : EC-0X”).
+4. **Anti-claim footer.** Keep an explicit line that blocks the wrong reading: e.g. « ne constitue pas une trajectoire 2027–2040 », « ne constitue pas une prévision », « ne prouve pas une souscription », « ne remplit aucune cellule ». Do not drop it to save space.
+5. **UTF-8.** Figure files are UTF-8. € and French punctuation must round-trip; a quiet encoding break fails honesty as much as a quiet number edit.
+
+
 ## Colour
 
 Graphics must match the sober, institutional register of the site (ink on paper, not a dashboard).

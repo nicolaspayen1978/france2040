@@ -30,15 +30,23 @@ export const mecanismeDuEuro: Visual = {
       label: "Épreuve contradictoire EC-06 — Boucle fiscale (2026-10-01-2)",
     },
   ],
-  currentVersionId: "2026-10-01",
+  currentVersionId: "2026-10-01-2",
   versions: [
     {
       id: "2026-10-01",
       published: "2026-10-01",
-      status: "working",
+      status: "superseded",
       figure: "content/visuals/mecanisme-du-euro/v2026-10-01.svg",
       sha256: "d1e7568883149438dc281ee57dc9c74235782d77dd08794236b3c4c690ae4373",
-      note: "Première version publique. Liens ouverts en gris pointillé. Bande « 43,6 % n’est pas cette réponse ».",
+      note: "Première version. Remplacée pour préciser 43,6 % du PIB et le pied anti-trajectoire ; UTF-8 corrigé.",
+    },
+    {
+      id: "2026-10-01-2",
+      published: "2026-10-01",
+      status: "working",
+      figure: "content/visuals/mecanisme-du-euro/v2026-10-01-2.svg",
+      sha256: "6dc13fdc558be8a1be461e977a3666dd06ec6c736a7e7c28c1fc64ce411f78ff",
+      note: "« 43,6 % du PIB » pour éviter la lecture en taux d’intérêt. Pied : ne constitue pas une trajectoire 2027–2040.",
     },
   ],
 };

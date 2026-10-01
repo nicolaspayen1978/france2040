@@ -11,7 +11,8 @@ export const patrimoineVsEnveloppe: Visual = {
   doesNotEstablish:
     "Ce n’est pas le crédit qui serait souscrit. Le résidu ignore distribution, test de taux d’effort, règle HCSF et adoption. EC-01 reste non tranché au-delà du collatéral agrégé. 700 Md€ restent une saisie de scénario.",
   nature: "donnee",
-  natureNote: "Les deux premiers barres sont des données / arithmétiques EC-01 ; 700 Md€ est la saisie de scénario.",
+  natureNote:
+    "Barres de natures distinctes : donnée fin 2024, arithmétique EC-01 (crédit juil. 2026), saisie de scénario.",
   units: "Md€",
   asOf: "Collatéral fin 2024 · crédit habitat juillet 2026 · lecture EC-01",
   provenance:
@@ -26,15 +27,23 @@ export const patrimoineVsEnveloppe: Visual = {
       label: "Le Pacte du bilan français — brouillon (2026-09-28)",
     },
   ],
-  currentVersionId: "2026-10-01",
+  currentVersionId: "2026-10-01-2",
   versions: [
     {
       id: "2026-10-01",
       published: "2026-10-01",
-      status: "working",
+      status: "superseded",
       figure: "content/visuals/patrimoine-vs-enveloppe/v2026-10-01.svg",
       sha256: "4cdd51f8fe7584a380a390cce7faf8a01e7ef27f6bf85676e97d96db0acdb618",
-      note: "Première version publique. Trois barres d’ordre de grandeur. Limites d’EC-01 explicites sur la figure.",
+      note: "Première version. Remplacée pour dater chaque barre et renforcer le pied anti-souscription ; UTF-8 corrigé.",
+    },
+    {
+      id: "2026-10-01-2",
+      published: "2026-10-01",
+      status: "working",
+      figure: "content/visuals/patrimoine-vs-enveloppe/v2026-10-01-2.svg",
+      sha256: "295b9ad3edd8720cad2cc5d275314c5a6e4dce326da76b2ae5184a91e8ec32a0",
+      note: "Chaque barre porte sa date/nature. Pied : 700 Md€ restent une saisie · ne prouve pas une souscription.",
     },
   ],
 };

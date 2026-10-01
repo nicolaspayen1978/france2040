@@ -23,15 +23,23 @@ export const parcoursMenageInteretsSeuls: Visual = {
       label: "Parcours ménages — spécification (2026-10-01)",
     },
   ],
-  currentVersionId: "2026-10-01",
+  currentVersionId: "2026-10-01-2",
   versions: [
     {
       id: "2026-10-01",
       published: "2026-10-01",
-      status: "working",
+      status: "superseded",
       figure: "content/visuals/parcours-menage-interets-seuls/v2026-10-01.svg",
       sha256: "f1090364d8c24ad9c2631df3a3e80abfa2031c3e9bc2cc532c8ae0eb9e750efc",
-      note: "Première version publique. Comparaison 20 ans à 3,30 %. Capital restant affiché des deux côtés.",
+      note: "Première version. Remplacée pour le pied anti-trajectoire et l’encodage UTF-8.",
+    },
+    {
+      id: "2026-10-01-2",
+      published: "2026-10-01",
+      status: "working",
+      figure: "content/visuals/parcours-menage-interets-seuls/v2026-10-01-2.svg",
+      sha256: "d240565172a5a74c46e844824b24c09d297ff29a4eb2c53157900fb38f2b4161",
+      note: "Sous-titre : exemple + source BdF. Pied : ne constitue pas une trajectoire 2027–2040.",
     },
   ],
 };

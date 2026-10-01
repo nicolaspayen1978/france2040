@@ -58,6 +58,17 @@ Owner asked for visuals 1–4. Shipped:
 
 Candidate 5 (carte des EC) not cut. Palette tokens only. Empty EC cells stay empty.
 
+## 2026-10-01 — Circulation copy pass (`2026-10-01-2`)
+
+Owner refinements on phase 0 ratio figure, applied across the library:
+
+- Broader “Insee” labels → ordres de grandeur / dated natures per bar
+- Ambiguous “+11,2 %” → level first, then “sur un an”; “43,6 % du PIB”
+- Technical Insee reconciliation off the image; anti-claim footer kept or added on every current visual
+- UTF-8 rewrite of the four phase-1 SVGs (v1 bytes remain superseded)
+
+All five currents are `2026-10-01-2`. Rule recorded in `design.md` § Circulation copy.
+
 ## Open, and not decided by writing this folder
 
 - Chart tooling for later visuals: hand SVG vs a generator tied to a frozen model version.

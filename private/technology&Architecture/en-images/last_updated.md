@@ -9,3 +9,5 @@ Cross-link: publication domain remains the source of document immutability and d
 2026-10-01. Phase 0 built. Routes `/en-images`, `/en-images/<slug>`, `/en-images/<slug>/v/<version>`. Nav entry. `app/tokens.css` wired. First visual published. Figure hash in §1 via `test:visual-snapshot`. Docs/14 site cycle amended to include En images.
 
 2026-10-01. Phase 1 candidates 1–4 published: trajectoire crédit, mécanisme €1, parcours ménage, patrimoine vs enveloppe. Carte EC not cut.
+
+2026-10-01. Circulation copy pass: all five visuals to `2026-10-01-2`. Ratio refinements + same class of fixes on 1–4. UTF-8 corrected on phase-1 figures. design.md § Circulation copy.

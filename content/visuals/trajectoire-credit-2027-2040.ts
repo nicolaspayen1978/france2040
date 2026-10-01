@@ -30,15 +30,23 @@ export const trajectoireCredit20272040: Visual = {
       label: "Le Pacte du bilan français — brouillon (2026-09-28)",
     },
   ],
-  currentVersionId: "2026-10-01",
+  currentVersionId: "2026-10-01-2",
   versions: [
     {
       id: "2026-10-01",
       published: "2026-10-01",
-      status: "working",
+      status: "superseded",
       figure: "content/visuals/trajectoire-credit-2027-2040/v2026-10-01.svg",
       sha256: "17c3516a03264cd215979c2dc464a75fd3a3c6e09f5cb6e5dd41a405cdc3b024",
-      note: "Première version publique. Barres du chemin gelé. Pic et zéro 2040 annotés. Verdict d’EC-04 laissé ouvert.",
+      note: "Première version. Remplacée pour renforcer le pied de page anti-prévision et corriger l’encodage UTF-8.",
+    },
+    {
+      id: "2026-10-01-2",
+      published: "2026-10-01",
+      status: "working",
+      figure: "content/visuals/trajectoire-credit-2027-2040/v2026-10-01-2.svg",
+      sha256: "9c47c81e0e11f83de6d9bc832e46f5f3cb75ca2fc9746d2e4fa64cca7bdb9136",
+      note: "Pied de page : ne constitue pas une prévision · ne tranche pas EC-04. UTF-8 corrigé.",
     },
   ],
 };

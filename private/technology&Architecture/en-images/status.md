@@ -2,7 +2,7 @@
 
 Last updated: 2026-10-01.
 
-Phase 0 built. Phase 1 candidates 1–4 built. First visual remains `le-ratio-n-est-pas-le-service`.
+Phase 0 built. Phase 1 candidates 1–4 built. Current versions are `2026-10-01-2` after the circulation copy pass.
 
 | Phase | State | What it is |
 | --- | --- | --- |
