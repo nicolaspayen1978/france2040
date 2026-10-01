@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AnnouncedTests } from "@/components/AnnouncedTests";
 import { PaperProse } from "@/components/PaperProse";
 import { PublicationList } from "@/components/PublicationList";
 import { getPaperVersion, getWorkingPaper, loadPaperBlocks, versionPath } from "@/lib/papers";
@@ -36,6 +37,7 @@ export default function HomePage() {
         <h2 id="documents-heading">Documents de travail</h2>
         <PublicationList omit={["resume-executif"]} />
       </section>
+      <AnnouncedTests />
     </>
   );
 }

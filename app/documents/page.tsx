@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AnnouncedTests } from "@/components/AnnouncedTests";
 import { PublicationList } from "@/components/PublicationList";
 import { DocumentList } from "@/components/DocumentList";
 import { getDocuments } from "@/lib/documents";
@@ -20,6 +21,7 @@ export default function DocumentsPage() {
         Épreuves contradictoires — nous cherchons ce qui pourrait faire échouer le Pacte.
       </p>
       <PublicationList />
+      <AnnouncedTests />
       {notes.length > 0 ? (
         <section className="section" aria-labelledby="notes-heading">
           <h2 id="notes-heading">Notes</h2>

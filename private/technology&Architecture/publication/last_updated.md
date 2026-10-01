@@ -12,4 +12,6 @@ Deploy gate is `scripts/vercelbuild.js`: §1 summary contract and paper snapshot
 
 2026-10-01. Document list order: draft Pacte, executive summary, V2, household paths, model, open questions, EC-01 to EC-05.
 
+2026-10-01. Announced tests are EC-06 fiscal loop, EC-07 debt inflation and rates, EC-08 housing and financial stability, EC-09 combined failure. No page and no snapshot until the note exists. Earlier EC-06 to EC-12 titles duplicated published tests and were replaced.
+
 2026-10-01. Household exhibit specification published as `/documents/parcours-menages`, version `2026-10-01`, status frozen. Snapshot of `Docs/Note_Parcours_Menages.md`. Not an assumption inside V2.

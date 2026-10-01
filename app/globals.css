@@ -379,8 +379,15 @@ h2 {
 }
 
 .doc-list li:last-child a,
+.doc-list li:last-child .announced,
 .empty {
   border-bottom: 1px solid #e6e6e6;
+}
+
+.doc-list .announced {
+  display: block;
+  padding: 1.35rem 0;
+  border-top: 1px solid #e6e6e6;
 }
 
 .doc-list a:hover .doc-title {
