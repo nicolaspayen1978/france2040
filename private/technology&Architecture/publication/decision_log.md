@@ -18,6 +18,10 @@ Built. No comment store. The public text is the note of 1 October 2026, verdict 
 
 This directory is the build plan. `.vercelignore` lists `private`. The plan is not linked from a page and is not placed in `public/`.
 
+## 2026-10-01 — Household exhibit specification is a public document
+
+Published as `/documents/parcours-menages`, version `2026-10-01`, status frozen. The text is the specification of that date. It is not an assumption inside V2 and it does not open Red Team 06.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

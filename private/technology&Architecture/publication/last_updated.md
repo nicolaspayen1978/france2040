@@ -7,3 +7,5 @@ Deploy gate is `scripts/vercelbuild.js`: §1 summary contract and paper snapshot
 2026-10-01. The public set is on the document layer: draft Pacte, V2, model, open questions, Red Teams 01–05. Word and Excel are attachments. Comments are not built.
 
 2026-10-01. Site pages are French. Working files in Docs/ may stay English. Red Team 01’s published snapshot is the French text of the English note.
+
+2026-10-01. Household exhibit specification published as `/documents/parcours-menages`, version `2026-10-01`, status frozen. Snapshot of `Docs/Note_Parcours_Menages.md`. Not an assumption inside V2.

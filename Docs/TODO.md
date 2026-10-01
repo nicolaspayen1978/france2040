@@ -64,7 +64,7 @@ Items 1, 10, 16, 17 and 18 sit around those streams: the freeze is in force, the
 
 ## Household exhibit
 
-Frozen 1 October 2026 in `Note_Parcours_Menages.md`. Specification for the eventual household exhibit. It is not an assumption inside V2. It does not open Red Team 06.
+Frozen 1 October 2026 in `Note_Parcours_Menages.md` and published the same day as `/documents/parcours-menages` (version `2026-10-01`). Specification for the household exhibit. It is not an assumption inside V2. It does not open Red Team 06.
 
 The exhibit sits after the household credit mechanism and before aggregate spending. It measures monthly cash retained for the same principal, interest-only against an amortising loan, and against doing nothing. That cash is not income and not wealth: principal stays outstanding. At the frozen 3.30% rate, before insurance, €100k keeps about €295 a month versus a 20-year annuity, about €248 versus the observed 22-year-8-month new loan, and about €215 versus 25 years. Those figures are arithmetic, not a representative draw.
 

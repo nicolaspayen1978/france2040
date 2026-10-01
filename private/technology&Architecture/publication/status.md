@@ -11,6 +11,6 @@ The public decision is `Docs/14_Architecture_Publication_Consultation.md`. This 
 | 2 | Built for the public set | Pacte draft, V2, model, open questions, Red Teams 01–05. Each is a frozen HTML version. Comments are still not built |
 | 3 | Not started | Discussion layer. Blocked until phase 1 accepts the page |
 
-Public set: draft Pacte, V2, model, open questions, Red Teams 01–05. Example: `/documents/red-team-05/v/2026-10-01`.
+Public set: draft Pacte, V2, model, open questions, Red Teams 01–05, and the household exhibit specification. Example: `/documents/parcours-menages/v/2026-10-01`.
 
 Do not start phase 3 because the document model exists. The exit of phase 1 is a human judgement: this page is how Pacte research should exist in public.
