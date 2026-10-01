@@ -1,56 +1,43 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { documents } from "@/content/documents";
-import { formatDate, getDocument, kindLabel } from "@/lib/documents";
+import { WorkingPaperView } from "@/components/WorkingPaperView";
+import { getPaperVersion, getWorkingPaper, getWorkingPapers, loadPaperBlocks, versionPath } from "@/lib/papers";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
 export function generateStaticParams() {
-  return documents.map((document) => ({ slug: document.slug }));
+  return getWorkingPapers().map((paper) => ({ slug: paper.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const document = getDocument(slug);
+  const paper = getWorkingPaper(slug);
 
-  if (!document) {
+  if (!paper) {
     return { title: "Document introuvable" };
   }
 
   return {
-    title: document.title,
-    description: document.summary,
+    title: paper.title,
+    description: paper.summary,
+    alternates: {
+      canonical: versionPath(paper, paper.currentVersionId),
+    },
   };
 }
 
 export default async function DocumentPage({ params }: PageProps) {
   const { slug } = await params;
-  const document = getDocument(slug);
+  const paper = getWorkingPaper(slug);
+  const version = paper ? getPaperVersion(paper, paper.currentVersionId) : undefined;
 
-  if (!document) {
+  if (!paper || !version) {
     notFound();
   }
 
   return (
-    <article>
-      <Link className="back" href="/documents">
-        Documents
-      </Link>
-      <p className="kicker">
-        {kindLabel(document.kind)} · {formatDate(document.date)}
-      </p>
-      <h1 lang="en">{document.title}</h1>
-      <p className="intro" lang="en">
-        {document.summary}
-      </p>
-      <div className="document-body" lang="en">
-        {document.paragraphs.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
-        ))}
-      </div>
-    </article>
+    <WorkingPaperView paper={paper} versionId={version.id} blocks={loadPaperBlocks(version)} />
   );
 }

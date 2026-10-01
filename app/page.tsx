@@ -12,7 +12,7 @@ export default function HomePage() {
         transformer la capacité productive du pays entre 2027 et 2040.
       </p>
       <p className="entry">
-        <Link href="/pacte">Lire le brouillon public</Link>
+        <Link href="/documents/pacte">Lire le brouillon public</Link>
       </p>
       <section className="section" aria-labelledby="documents-heading">
         <h2 id="documents-heading">Documents de travail</h2>

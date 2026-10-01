@@ -1,3 +1,6 @@
+import { formatDate } from "@/lib/documents";
+import { getWorkingPapers, statusLabel } from "@/lib/papers";
+
 export type Publication = {
   href: string;
   title: string;
@@ -6,26 +9,14 @@ export type Publication = {
   summary: string;
 };
 
-export const publications: Publication[] = [
-  {
-    href: "/documents/pacte-v2",
-    title: "Pacte du Bilan Français",
-    version: "Document de travail V2",
-    date: "28 septembre 2026",
-    summary: "Le texte complet de l’hypothèse.",
-  },
-  {
-    href: "/documents/modele",
-    title: "Modèle France 2040",
-    version: "v0.1",
-    date: "28 septembre 2026",
-    summary: "Tableur exploratoire. Les hypothèses sont modifiables. Ce n’est pas une prévision.",
-  },
-  {
-    href: "/documents/questions-ouvertes",
-    title: "Questions ouvertes",
-    version: "Recherche et éléments de preuve",
-    date: "28 septembre 2026",
-    summary: "Ce qui reste à établir avant de traiter une affirmation comme un fait.",
-  },
-];
+export const publications: Publication[] = getWorkingPapers().map((paper) => {
+  const current = paper.versions.find((version) => version.id === paper.currentVersionId);
+
+  return {
+    href: `/documents/${paper.slug}`,
+    title: paper.title,
+    version: current ? statusLabel(current.status) : "Document de travail",
+    date: formatDate(paper.currentVersionId),
+    summary: paper.summary,
+  };
+});

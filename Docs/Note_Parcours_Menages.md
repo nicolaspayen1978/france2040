@@ -1,0 +1,87 @@
+# Note — Parcours des ménages et trésorerie
+
+1er octobre 2026. Note interne de conception, gelée ce jour. Elle spécifie l’exposé ménage. Elle n’est pas une hypothèse de V2. Elle n’attaque pas un test, elle ne révise pas V2, et elle ne redessine pas la trajectoire gelée.
+
+Elle vient après le mécanisme de crédit au ménage, et avant les effets agrégés de dépense. Le pont est celui-ci : architecture du prêt, trésorerie mensuelle, pouvoir d’achat de trésorerie, usage possible des fonds, demande. Le pouvoir d’achat n’est pas le premier maillon.
+
+## Ce que l’exposé mesure
+
+Pour un même capital emprunté, combien de trésorerie mensuelle le ménage conserve sous la structure du Pacte, comparée à un prêt amortissable classique.
+
+Ce n’est pas un revenu. Ce n’est pas un patrimoine. Le ménage reporte le remboursement du capital et porte donc une dette plus lourde plus tard. La phrase tenue est : le mécanisme soutient le pouvoir d’achat en réduisant l’amortissement mensuel obligatoire pendant la période de transition, pas en augmentant les salaires.
+
+La comparaison à deux termes ne suffit pas. Les choix réels sont trois : ne rien mobiliser, emprunter en amortissant, emprunter selon le Pacte. Mesurer seulement l’écart avec l’annuité rend la structure à intérêts seuls artificiellement avantageuse.
+
+## Arithmétique, pas un ménage
+
+Taux gelé des nouveaux crédits à l’habitat de juillet 2026 : 3,30 %, fixe, avant assurance et frais. Banque de France, panorama cité dans le test 05. La durée de référence du produit reste 20 ans à intérêts seuls. L’annuité de 20 ans est la comparaison de même durée. Elle n’est pas le prêt que les ménages souscrivent. La durée initiale moyenne de juillet 2026 est de 22 ans et 8 mois. Le plafond HCSF de 25 ans est le plafond d’originabilité du test 1, pas une durée choisie pour l’exposé.
+
+Pour 100 000 €, mensualité d’intérêts seuls : 275 €. Écart de trésorerie mensuelle, capital inchangé à l’échéance du côté Pacte :
+
+| Référence amortissable | Mensualité | Trésorerie conservée par mois | Par an |
+| --- | ---: | ---: | ---: |
+| 20 ans | 570 € | 295 € | 3 540 € |
+| 22 ans et 8 mois | 523 € | 248 € | 2 970 € |
+| 25 ans | 490 € | 215 € | 2 580 € |
+
+Les montants suivent le capital. À 50 000 €, la moitié. À 200 000 €, le double. L’exemple à 3,5 % du fil de discussion (environ 580 € contre 292 €, soit 288 € par mois) est une illustration. Il n’est pas le taux du projet. L’assurance emprunteur, qui entre dans le taux d’effort HCSF, n’est pas dans le tableau. L’inclure réduirait l’écart.
+
+Après 20 ans, le capital amortissable est éteint. Le capital à intérêts seuls est encore de 100 000 €. C’est le point que le second temps de Sophie doit montrer, pas une note de bas de page.
+
+## Quatre parcours
+
+Même comptabilité pour chacun : avant, opération, après. Les revenus, les valeurs de logement et les montants tirés restent vides tant qu’ils ne viennent pas d’une source ou du chemin gelé 2027–2040. Les prénoms fixent des cas. Ils ne sont pas des ménages représentatifs calibrés.
+
+| Parcours | Situation de départ | Usage | Ce qui est montré |
+| --- | --- | --- | --- |
+| Sophie, 42 ans, salariée | Emploi, crédit en cours, enfants au foyer | Restructure et dégage une part d’équité | Trésorerie pendant la vie active. Le salaire ne change pas. |
+| Sophie, 62 ans, la même, retraitée | Même logement, revenu qui baisse | Conserve ou ajuste le financement | Dette, valeur, revenu et service de la dette vingt ans plus tard. |
+| Jean et Amina, 72 ans, propriétaires | Logement largement payé, pensions modestes, équité élevée | Empruntent sur une part de cette équité | Liquidité extraite d’un actif dormant, pas un allègement de mensualité existante. Ils restent propriétaires. |
+| Mehdi et Léa, 34 ans | Peu d’équité, crédit classique | Peu ou pas de capacité immédiate | Qui ne reçoit pas de gain direct. Le Pacte est asymétrique selon l’âge et le patrimoine. |
+
+Sophie à 42 ans : salaire inchangé, mensualité d’intérêts à la place de l’annuité, trésorerie mensuelle plus haute, et éventuellement un capital libéré. Sophie à 62 ans répond à l’objection : cet écart a été obtenu en n’amortissant pas. On montre la dette restante, le logement, les actifs financiers s’il y en a, le revenu de retraite et le service de la dette. On ne les invente pas pour que le récit se ferme.
+
+Sophie à 42 ans et Sophie à 62 ans sont les deux temps d’une seule ligne. L’exposé public, quand il existera, les montre en continu. Deux fiches séparées casseraient le point : le nombre mensuel à 42 ans et le capital encore dû à 62 ans sont le même contrat.
+
+Jean et Amina ne remplacent pas une annuité. Ils transforment une part de patrimoine illiquide en cash, dont l’usage — consommation, travaux, aide aux enfants, dépendance — n’est pas décidé par le seul fait du tirage.
+
+Mehdi et Léa empêchent de présenter le dispositif comme un gain identique pour tous. Leur bénéfice, s’il existe, est indirect : activité, emploi, transfert parental. Il n’est pas une extraction.
+
+## Deux formes de liquidité
+
+Le Pacte peut modifier un flux — moins d’amortissement obligatoire chaque mois — ou rendre liquide un stock — extraction d’une part de l’équité immobilière. Une donation déplace ensuite ce stock entre ménages ou générations. Ces trois opérations ne sont pas additionnées comme un même gain de pouvoir d’achat.
+
+Chez Sophie, l’effet central est surtout un flux : une trésorerie mensuelle conservée parce que l’amortissement obligatoire disparaît. Chez Jean et Amina, il est surtout un stock : une part d’équité devient un capital liquide, contre une charge d’intérêts nouvelle. Dans la chaîne de donation, ce stock change de ménage.
+
+Le chemin gelé pourra plus tard être décomposé en refinancement, extraction nette et transfert entre ménages. Cette coupe est celle que les données requises demandent déjà. Elle ne remplace pas la trajectoire nette et elle ne remplit pas les cellules vides du modèle.
+
+## Éligible n’est pas prioritaire
+
+L’accès peut rester large, sous les mêmes règles prudentielles. Le déploiement 2027–2040 peut néanmoins ordonner certains canaux parce que leur effet économique ou intergénérationnel colle mieux aux objectifs. Cette distinction n’est pas tranchée. La restreindre par usage crée de la complexité, du contournement et une allocation administrative du crédit. On modélise d’abord les canaux. On ne conclut pas qu’il faut les contingenter.
+
+Canaux à tenir séparés :
+
+- Équité vers une donation. Un propriétaire âgé dégage un capital et le transmet, pour un premier logement, une création, une formation ou un investissement. Le stock rendu liquide bouge vers une cohorte plus jeune.
+- Travailleur ou famille. Moins d’amortissement obligatoire pendant les années où le logement, les enfants et les charges fixes pèsent.
+- Primo-accédant. Cas à part, et cas hostile. Une capacité d’achat supplémentaire peut se capitaliser dans les prix. L’élasticité de l’offre urbaine française, environ 0,5, est déjà dans le test 3. Ce canal n’est pas un bénéfice tant que ce test n’est pas écrit. Il ne sert pas d’argument de pouvoir d’achat.
+- Propriétaire retraité. Extraction bornée, sans vente ni déménagement.
+- Travaux, énergie, adaptation du logement. La contrepartie productive domestique est plus lisible qu’une consommation libre.
+- Création ou investissement productif. Le logement porte alors du capital de risque. Autre question, pas le même risque que la trésorerie.
+
+Deux destinations du même tirage ne sont pas le même choc. Propriétaire de 72 ans, 100 000 € extraits, donnés à un enfant de 35 ans, dont 60 000 € d’apport et 40 000 € de travaux : transaction, demande de construction, besoin d’emprunt plus bas chez le plus jeune. Les mêmes 100 000 € laissés sur un compte : pas ce choc. Les deux chiffres sont une forme de chaîne, pas une calibration.
+
+Les canaux disent qui reçoit la liquidité, à quel âge, et où elle va. La coupe du chemin gelé en refinancement, extraction nette et transfert entre ménages est celle de la section précédente.
+
+## Ce qui ne bouge pas
+
+V2 reste la référence. Le journal de décision n’est pas modifié : aucun choix de produit, de priorité ou de restriction d’usage n’est pris ici. Le produit 0,65 × 0,35 reste en place. Les sondes 175 / 350 / 525 Md€ restent des sondes. Le test 06, contrainte de l’emprunteur malgré un levier faible, n’est pas ouvert par cette note. La dépense procyclique des ménages y est déjà renvoyée. Les gains qui restent chez les propriétaires âgés y sont déjà listés, ainsi que l’adoption et l’hypothèque rechargeable.
+
+Les parcours seront passés sur le chemin gelé. Ils ne servent pas à choisir des nombres commodes.
+
+## Classement
+
+1. **Établi.** À 3,30 %, l’écart de mensualité entre intérêts seuls sur 20 ans et une annuité de même capital est de l’ordre de 295 € par mois pour 100 000 € sur 20 ans, 248 € sur la durée initiale moyenne observée, 215 € sur 25 ans, avant assurance et frais. Le capital reste dû d’un côté.
+2. **Plausible, non démontré.** Cet écart est un pouvoir d’achat de trésorerie pour un ménage qui a déjà une annuité et qui peut se refinancer dans le produit.
+3. **Hypothèse faible.** Présenter l’écart comme un revenu, un patrimoine, ou un gain pour les ménages sans équité. Présenter le primo-accédant comme un canal bénéficiaire avant le test logement. Additionner le flux, le stock rendu liquide et le transfert comme un même gain de pouvoir d’achat.
+4. **Potentiellement fatal, non démontré.** Rien dans cette note. Le report du capital et la contrainte de revenu à la retraite sont déjà dans la file du test 06. La capitalisation dans les prix est déjà dans l’objection logement.
+5. **Données requises.** Revenus, encours, valeurs et équité des cas, pris à une source ou au chemin gelé. Assurance. Part du tirage qui est un refinancement (flux), part qui est une extraction nette (stock), part qui est un transfert entre ménages.

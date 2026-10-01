@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/", label: "Accueil" },
-  { href: "/pacte", label: "Le Pacte" },
+  { href: "/documents/pacte", label: "Le Pacte" },
   { href: "/documents", label: "Documents" },
   { href: "/projet", label: "Projet" },
 ];
@@ -17,8 +17,16 @@ export function SiteNav() {
     <nav className="site-nav" aria-label="Navigation principale">
       <ul>
         {links.map((link) => {
-          const current =
-            link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+          const matches =
+            link.href === "/"
+              ? pathname === "/"
+              : pathname === link.href || pathname.startsWith(`${link.href}/`);
+          const coveredByLongerLink = links.some(
+            (other) =>
+              other.href.length > link.href.length &&
+              (pathname === other.href || pathname.startsWith(`${other.href}/`)),
+          );
+          const current = matches && !coveredByLongerLink;
 
           return (
             <li key={link.href}>

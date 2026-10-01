@@ -382,6 +382,191 @@ h2 {
   margin-top: 1.15rem;
 }
 
+body:has(.paper) .shell {
+  width: min(72rem, calc(100% - 3rem));
+}
+
+.paper .lede,
+.paper .version-box,
+.paper-progress,
+.paper-toc,
+.paper-body h2,
+.paper-body h3,
+.paper-body p,
+.paper-body ol,
+.paper-body ul,
+.paper .sources,
+.paper-history {
+  max-width: 40rem;
+}
+
+.paper-progress {
+  margin-top: 2rem;
+}
+
+.paper-progress h2,
+.paper-history h2 {
+  margin: 0;
+}
+
+.paper-progress ul,
+.paper-history ol {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+
+.paper-progress li,
+.paper-history li {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 0.75rem 1.5rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid #e6e6e6;
+  font-size: 0.9375rem;
+}
+
+.paper-progress li:last-child,
+.paper-history li:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.paper-progress li span:last-child {
+  color: #3f3f3f;
+}
+
+.paper-history li {
+  display: block;
+}
+
+.paper-history li p {
+  margin: 0.35rem 0 0;
+  color: #3f3f3f;
+}
+
+.paper-history a,
+.paper .version-box a,
+.paper-toc a {
+  color: inherit;
+}
+
+.paper-toc {
+  margin-top: 2rem;
+}
+
+.paper-toc ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.paper-toc li + li {
+  margin-top: 0.35rem;
+}
+
+.paper-toc .toc-sub {
+  padding-left: 1rem;
+}
+
+.paper-toc a {
+  text-decoration: none;
+}
+
+.paper-toc a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.paper-body {
+  margin-top: 2.5rem;
+}
+
+.paper-body h2,
+.paper-body h3 {
+  margin: 2.75rem 0 0;
+  color: #1a1a1a;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  text-transform: none;
+}
+
+.paper-body h3 {
+  font-size: 1.0625rem;
+}
+
+.paper-body p,
+.paper-body ol,
+.paper-body ul {
+  margin: 1rem 0 0;
+}
+
+.paper-body ol,
+.paper-body ul {
+  padding-left: 1.2rem;
+}
+
+.paper .sources a,
+.paper-body p a,
+.paper-body li a:not(.permalink) {
+  color: inherit;
+}
+
+.paper-body li + li {
+  margin-top: 0.7rem;
+}
+
+.permalink {
+  margin-right: 0.4rem;
+  color: #c4c4c4;
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.permalink:hover,
+.permalink:focus-visible {
+  color: #1a1a1a;
+}
+
+.paper-table-wrap {
+  max-width: none;
+  width: min(72rem, 100%);
+  margin-top: 1.25rem;
+  overflow-x: auto;
+}
+
+.paper-body .paper-table-wrap {
+  max-width: none;
+}
+
+.paper-table-wrap table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+.paper-table-wrap th,
+.paper-table-wrap td {
+  padding: 0.45rem 0.7rem 0.45rem 0;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: left;
+  vertical-align: top;
+}
+
+.paper-table-wrap th {
+  color: #6a6a6a;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.paper-history {
+  margin-top: 2.5rem;
+}
+
 .site-footer {
   padding: 1.35rem 0 2.5rem;
   border-top: 1px solid #e6e6e6;
@@ -420,6 +605,11 @@ a:focus-visible {
 
   h1 {
     font-size: 2.05rem;
+  }
+
+  .paper-progress li {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
   }
 }
 

@@ -1,0 +1,9 @@
+2026-10-01
+
+Design note, decision log, and phases 0–3 written. Phase 0 is built. Phases 1–3 are not started.
+
+Deploy gate is `scripts/vercelbuild.js`: §1 summary contract and paper snapshot, §2 `next-build`, BUILD SUMMARY on success and failure.
+
+2026-10-01. The public set is on the document layer: draft Pacte, V2, model, open questions, Red Teams 01–05. Word and Excel are attachments. Comments are not built.
+
+2026-10-01. Site pages are French. Working files in Docs/ may stay English. Red Team 01’s published snapshot is the French text of the English note.
