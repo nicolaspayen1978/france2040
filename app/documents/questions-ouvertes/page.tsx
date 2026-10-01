@@ -243,16 +243,52 @@ export default function OpenQuestionsPage() {
           Le panorama de juillet 2026
         </a>{" "}
         donne une durée initiale moyenne de 22 ans et 8 mois. 99,4 % de la production de ce
-        mois est à taux fixe. Le pic de 90 Md€ est un flux. Les générations s’empilent. À intérêts seuls, que
-        la maturité explorée soit 30 ans ou 40 ans, rien n’arrive à terme avant la fin du
-        chemin : le stock à porter à la fin de 2040, et encore en 2050, est le cumul,
-        700 Md€ de principal contractuel. Ce n’est pas, à lui seul, 700 Md€ d’obligations
-        sécurisées à émettre. Le stock d’une annuité de même taux est plus bas. Le chemin
-        annuel ne dit pas si chaque génération est ouverte en début ou en fin d’année, et
-        cette incertitude ne change pas le constat. V2 ne choisit pas entre 30 et 40 ans.
-        Sans remboursement anticipé, les échéances recopient plus tard le chemin d’origine,
-        vers 2057 pour 30 ans, ou dix ans plus tard pour 40 ans. Savoir si le système
-        financier peut porter ce livre reste ouvert.
+        mois est à taux fixe. Le pic de 90 Md€ est un flux. Les générations s’empilent. V2 ne
+        fixe pas la maturité : il dit « très long terme ». Le cas examiné est 20 ans. Dix ans
+        et trente ans ne sont que des sensibilités. La série gelée est un crédit net, pas une
+        origination brute. À 20 ans, aucune échéance ne tombe avant 2040 : le principal de fin
+        2040 est le cumul, 700 Md€, et la première échéance est vers 2047 ou 2048. À 30 ans, le
+        même stock, avec une première échéance vers 2057 ou 2058. À 10 ans, la génération de
+        2027 arrive à échéance vers 2037 ou 2038, pendant le chemin. Tenir 30 Md€ de crédit net
+        en 2037 alors que 25 Md€ arrivent à échéance demanderait environ 55 Md€ d’origination
+        brute. Ce chiffre ne remplace pas le chemin. Ce n’est pas, à lui seul, un montant
+        d’obligations sécurisées à émettre. Après 19 ans, un euro à intérêts seuls sur 20 ans
+        est encore là. Une annuité de même durée en a déjà rendu la plus grande part. Une
+        maturité plus courte avance le mur d’échéances. Une maturité plus longue le recule et
+        laisse le principal plus longtemps au bilan. En 2040, le crédit net peut être nul et
+        l’origination brute encore de 65 à 80 Md€, si elle ne fait que refinancer des
+        échéances. Cela maintient le stock. Ce n’est pas une impulsion nouvelle de crédit.
+        L’origination brute cumulée sur le chemin est de 835 à 915 Md€ à 10 ans, et de 700 Md€
+        à 20 et à 30 ans. Le principal de fin 2050 n’est pas fixé à 10 ans ni à 20 ans. À 30 ans,
+        il est encore de 700 Md€. La maturité change le financement. Elle ne change pas le
+        chemin de crédit net. Le test du crédit net et le test de ce que le système doit
+        originer pour le produire ne lisent pas la même série. La taille des programmes
+        existants décrit comment ces gisements sont financés. Elle ne mesure pas une capacité
+        pour le scénario. Les gisements lus sont amortissables. Là où la vie contractuelle est
+        publiée, elle est d’environ 7 à 8 ans. La vie attendue, après l’hypothèse de
+        remboursement de l’émetteur, est d’environ 5,5 à 7 ans. Les obligations publiées ont une
+        vie d’environ 5 à 7 ans. Sans remboursement, le principal d’un prêt à intérêts seuls de
+        20 ans reste dû jusqu’à l’échéance : sa vie contractuelle est de 20 ans, contre 11,13 ans
+        pour une annuité de même durée. Le décalage entre la vie de ce prêt et celle des
+        obligations se retrouve, là où les pièces le disent, au bilan de la banque mère.
+        Comment ce décalage est financé et couvert n’est pas encore établi. L’analyse du flux
+        de 2040 ne change pas. Savoir si la structure de financement observée peut porter le
+        cas de 20 ans reste ouvert.
+      </p>
+      <p>
+        Le droit des sociétés de financement de l’habitat ne demande pas, à l’article L. 513-29,
+        que le prêt s’amortisse. Il demande un bien résidentiel, et une hypothèque de premier
+        rang, une sûreté équivalente ou un cautionnement éligible. L’article R. 513-1, auquel
+        renvoie l’article R. 513-19, limite le refinancement privilégié au plus petit du capital
+        restant dû et de 80 % de la valeur d’un bien résidentiel. Un levier de 30 à 50 % tient
+        dans cette enveloppe. Ces sociétés peuvent émettre des obligations de financement de
+        l’habitat, y compris à échéance prorogeable dans des cas de défaut ou de résolution. C’est
+        de la plomberie qui existe. Ce n’est pas une capacité de 700 Md€, ni le même traitement
+        prudentiel, ni le même prix, ni le même adossement. Eligible collateral ≠ available funding
+        capacity. Les programmes actuels portent autre chose. Au 31 décembre 2025, le gisement
+        de Société Générale SFH a une vie moyenne de 8,0 ans sans remboursement anticipé, et
+        de 6,9 ans avec le taux observé de 2,69 %. Ses obligations ont une vie moyenne de 5,5 ans.
+        Ce taux n’est pas celui du produit gelé.
       </p>
       <p>
         Les Pays-Bas ne servent pas ici de preuve en faveur des intérêts seuls. Ils sont une
