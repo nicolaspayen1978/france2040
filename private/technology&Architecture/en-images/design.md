@@ -100,15 +100,17 @@ Greys and mark colours are live. Muted `--blue-2/3` and `--red-2/3` are defined 
 | Le bilan | Household + banks + productive economy + public balance sheet — what moves |
 | Ce que les EC ont changé | Hypothesis → objection → evidence → current verdict (établi / non tranché / rejeté) |
 | Ordres de grandeur | Stock vs flow comparisons with definitions |
-| Le Pacte en une image | Canonical overview graphic, only when the rest of the library supports it |
+| Le Pacte en une image | Canonical overview — shipped as image 0 `/en-images/les-quatre-bilans` |
 
 First cut candidates (phase 1), each still a separate publish decision:
 
-1. Trajectoire du crédit 2027–2040 (simulation, cites model / V2)
-2. Mécanisme du €1 avec liens non tranchés (schéma, cites EC-02/03/06 as open where open)
-3. Parcours ménage intérêts-seuls vs amortissement (cites parcours-menages)
-4. Ordre de grandeur patrimoine résidentiel vs enveloppe mobilisable (cites EC-01 / Pacte)
+1. Trajectoire du crédit 2027–2040 (simulation, cites model / V2) — built
+2. Mécanisme du €1 avec liens non tranchés (schéma, cites EC-02/03/06) — built
+3. Parcours ménage intérêts-seuls vs amortissement (cites parcours-menages) — built
+4. Ordre de grandeur patrimoine résidentiel vs enveloppe mobilisable (cites EC-01 / Pacte) — built
 5. Carte des EC — établi / non tranché / rejeté (schéma de statut, cites each EC page)
+
+**Image 0** (owner, 2026-10-01): `les-quatre-bilans` — architecture overview ahead of the numbered library. Not a substitute for EC proofs.
 
 ## Immutability
 

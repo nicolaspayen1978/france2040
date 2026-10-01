@@ -69,6 +69,12 @@ Owner refinements on phase 0 ratio figure, applied across the library:
 
 All five currents are `2026-10-01-2`. Rule recorded in `design.md` § Circulation copy.
 
+## 2026-10-01 — Image 0: les quatre bilans
+
+Owner supplied architectural sketch. Published as `/en-images/les-quatre-bilans`, first in the registry.
+
+Not a byte upload of the colourful draft. Redrawn in tokens (blue/grey only). Source claims that closed consolidation or French output were rewritten as open (EC-02/03/05/06/07). Anti-claim footer: ne constitue pas une trajectoire · ne prouve pas la consolidation.
+
 ## Open, and not decided by writing this folder
 
 - Chart tooling for later visuals: hand SVG vs a generator tied to a frozen model version.

@@ -2,7 +2,7 @@
 
 Last updated: 2026-10-01.
 
-Phase 0 built. Phase 1 candidates 1–4 built. Current versions are `2026-10-01-2` after the circulation copy pass.
+Phase 0 built. Phase 1 candidates 1–4 built. Image 0 `les-quatre-bilans` first on the index. Current copy-pass versions are `2026-10-01-2` where revised.
 
 | Phase | State | What it is |
 | --- | --- | --- |

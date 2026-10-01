@@ -12,4 +12,6 @@ Cross-link: publication domain remains the source of document immutability and d
 
 2026-10-01. Circulation copy pass: all five visuals to `2026-10-01-2`. Ratio refinements + same class of fixes on 1–4. UTF-8 corrected on phase-1 figures. design.md § Circulation copy.
 
+2026-10-01. Image 0 published: `/en-images/les-quatre-bilans`. First on the index. Sobering redraw of owner sketch; open EC links kept open.
+
 2026-10-01. Two visuals from Parcours ménages v2026-10-01-2: `emprunt-moyen-mensualite` and `emprunt-moyen-capacite` (Case 1 credit ticket, not notarial 230/270).
