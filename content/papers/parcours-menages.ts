@@ -88,7 +88,7 @@ export const parcoursMenages: WorkingPaper = {
     {
       id: "v2-ltv",
       citation:
-        "Pacte V2 / résumé exécutif. Levier consolidé visé 40 à 50 % de la valeur. L’exposé ménage prend 40 % comme cas central de la tranche IO et 50 % comme sensibilité.",
+        "Pacte V2 / résumé exécutif. Levier consolidé visé 40 à 50 % de la valeur. L’exposé ménage prend 40 % comme cas central de la part à intérêts seuls et 50 % comme sensibilité.",
     },
     {
       id: "notaires-2025",
