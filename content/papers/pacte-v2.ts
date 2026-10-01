@@ -6,7 +6,7 @@ export const pacteV2: WorkingPaper = {
   lang: "fr",
   summary:
     "Texte long de l’hypothèse, septembre 2026. Le fichier Word est la pièce jointe. Cette page est le texte cité.",
-  currentVersionId: "2026-09-28",
+  currentVersionId: "2026-10-01",
   attachments: [
     {
       href: "/sources/pacte-du-bilan-francais-v2.docx",
@@ -17,11 +17,20 @@ export const pacteV2: WorkingPaper = {
     {
       id: "2026-09-28",
       published: "2026-09-28",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse à tester, non un programme arrêté.",
       file: "content/papers/pacte-v2/v2026-09-28.md",
       sha256: "4f0f075cd40c810ccc392a05ea84016e8ca56c92c888ff8a84da31c381ac97ba",
       note: "Première version HTML. Le texte est celui du fichier Word V2 enrichie. Les états antérieurs ne sont pas publiés.",
+    },
+    {
+      id: "2026-10-01",
+      published: "2026-10-01",
+      status: "working-paper",
+      verdict: "Hypothèse à tester, non un programme arrêté.",
+      file: "content/papers/pacte-v2/v2026-10-01.md",
+      sha256: "4a1050615a34ae5b6bc047e1bc0076e5817aaed4811291e3a3b15ac108db84d4",
+      note: "Produit en deux parts. 700 Md€ = encours de la part à intérêts seuls seulement.",
     },
   ],
   progress: [

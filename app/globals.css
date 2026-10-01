@@ -731,6 +731,25 @@ body:has(.paper) .shell {
   color: var(--ink);
 }
 
+.support-action {
+  margin-top: 2rem;
+}
+
+.support-action a {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.support-action a:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
 a:focus-visible {
   outline: 2px solid var(--ink);
   outline-offset: 3px;

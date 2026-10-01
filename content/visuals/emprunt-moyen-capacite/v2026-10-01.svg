@@ -1,0 +1,40 @@
+<!--
+  En images  emprunt-moyen-capacite v2026-10-01
+  Colours from app/tokens.css
+  Numbers from parcours-menages v2026-10-01-2: same monthly payment 1 139 ¬ ’ capacity IO vs amort.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" role="img" aria-labelledby="title desc">
+  <title id="title">Crédit moyen : capacité demprunt à mensualité fixée</title>
+  <desc id="desc">
+    À 1 139 ¬ par mois pendant 20 ans et 3,30 % hors assurance : capacité environ 200 000 ¬ en annuité
+    contre environ 414 000 ¬ en intérêts seuls. Ce nest pas un gain daccession démontré.
+  </desc>
+  <rect width="720" height="540" fill="#fff"/>
+
+  <text x="24" y="36" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Crédit moyen constaté · capacité</text>
+  <text x="24" y="56" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Même mensualité : 1 139 ¬ / mois · 3,30 % · 20 ans · hors assurance · lecture inverse du Cas 1</text>
+
+  <text x="24" y="92" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Capital empruntable à effort mensuel égal</text>
+
+  <rect x="40" y="112" width="300" height="140" rx="2" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <text x="190" y="142" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Structure Pacte · intérêts seuls</text>
+  <text x="190" y="186" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="28" font-weight="500" fill="#002395">H 414 000 ¬</text>
+  <text x="190" y="216" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">capital supportable</text>
+
+  <rect x="380" y="112" width="300" height="140" rx="2" fill="#fff" stroke="#3f3f3f" stroke-width="1.5"/>
+  <text x="530" y="142" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Référence · annuité 20 ans</text>
+  <text x="530" y="186" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="28" font-weight="500" fill="#1a1a1a">H 200 000 ¬</text>
+  <text x="530" y="216" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">capital supportable</text>
+
+  <rect x="40" y="272" width="640" height="48" rx="2" fill="#e8e8e4" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="360" y="302" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1a1a1a">Écart de capacité H 214 000 ¬ · même charge mensuelle</text>
+
+  <rect x="40" y="340" width="640" height="100" rx="2" fill="#fff" stroke="#ed2939" stroke-width="1.5"/>
+  <text x="60" y="372" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#ed2939">Ce que ce graphique nétablit pas</text>
+  <text x="60" y="398" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Pas un gain daccession. Une capacité plus haute peut se capitaliser dans les prix.</text>
+  <text x="60" y="420" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Le canal primo-accédant reste hostile tant que le test logement nest pas écrit.</text>
+
+  <text x="24" y="480" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Effort HCSF à 35 % sur 1 139 ¬ H 3 250 ¬ de revenu net / mois pour cette seule dette, avant autres charges.</text>
+  <text x="24" y="500" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">PTZ non inclus. Originabilité dun prêt à intérêts seuls sous HCSF : ouverte (EC-01).</text>
+  <text x="24" y="524" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Cas 1 · note Parcours ménages v2026-10-01-2 · ne constitue pas une trajectoire 20272040</text>
+</svg>

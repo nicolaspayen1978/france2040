@@ -6,16 +6,25 @@ export const questionsOuvertes: WorkingPaper = {
   lang: "fr",
   summary:
     "Ce qui reste à établir. Les faits sourcés sont séparés des affirmations qui ne doivent pas être présentées comme telles.",
-  currentVersionId: "2026-09-28",
+  currentVersionId: "2026-10-01",
   versions: [
     {
       id: "2026-09-28",
       published: "2026-09-28",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Liste ouverte. Ce n’est pas encore un dossier de preuves.",
       file: "content/papers/questions-ouvertes/v2026-09-28.md",
       sha256: "61594bab2722d4a86f36ab0888ad2216c46088a5214f46478c30ce1b9eb618fe",
       note: "Première version publique de la liste. Chaque point reste à trancher par une source, ou à abandonner.",
+    },
+    {
+      id: "2026-10-01",
+      published: "2026-10-01",
+      status: "working-paper",
+      verdict: "Liste ouverte. Ce n’est pas encore un dossier de preuves.",
+      file: "content/papers/questions-ouvertes/v2026-10-01.md",
+      sha256: "29e4809b4569f6ede2edf55923dd8a27ba4c6121db353f41342c54ca25774567",
+      note: "700 Md€ définis comme encours de la part à intérêts seuls. La part amortissable n’y entre pas.",
     },
   ],
   progress: [

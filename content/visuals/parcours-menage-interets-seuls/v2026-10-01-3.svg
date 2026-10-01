@@ -1,0 +1,45 @@
+<!--
+  En images — parcours-menage-interets-seuls v2026-10-01-2
+  Colours from app/tokens.css: --ink, --ink-2, --muted, --line, --paper, --paper-2, --mark-blue, --mark-red
+  Numbers from parcours-menages v2026-10-01: 100 000 €, 3,30 %, 20 ans.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" role="img" aria-labelledby="title desc">
+  <title id="title">Parcours ménage : intérêts seuls et amortissement</title>
+  <desc id="desc">
+    Pour 100 000 € à 3,30 % sur 20 ans : mensualité intérêts seuls 275 € contre annuité 570 €.
+    Après 20 ans, le capital amortissable est éteint ; le capital à intérêts seuls reste dû.
+  </desc>
+  <rect width="720" height="540" fill="#fff"/>
+
+  <text x="24" y="36" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Intérêts seuls et amortissement</text>
+  <text x="24" y="56" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Exemple : 100 000 € · taux BdF 3,30 % fixe (juil. 2026) · 20 ans · hors assurance</text>
+
+  <text x="24" y="92" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Mensualité pendant le contrat</text>
+
+  <rect x="40" y="112" width="300" height="120" rx="2" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <text x="190" y="142" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Brique unitaire · part à intérêts seuls</text>
+  <text x="190" y="178" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="28" font-weight="500" fill="#002395">275 €</text>
+  <text x="190" y="204" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">par mois</text>
+
+  <rect x="380" y="112" width="300" height="120" rx="2" fill="#fff" stroke="#3f3f3f" stroke-width="1.5"/>
+  <text x="530" y="142" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Référence · annuité 20 ans</text>
+  <text x="530" y="178" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="28" font-weight="500" fill="#1a1a1a">570 €</text>
+  <text x="530" y="204" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">par mois</text>
+
+  <rect x="40" y="248" width="640" height="48" rx="2" fill="#e8e8e4" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="360" y="278" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1a1a1a">Trésorerie conservée : 295 € / mois · 3 540 € / an</text>
+
+  <text x="24" y="340" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Capital restant après 20 ans</text>
+
+  <rect x="40" y="360" width="300" height="88" rx="2" fill="#fff" stroke="#ed2939" stroke-width="1.5"/>
+  <text x="190" y="392" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Intérêts seuls</text>
+  <text x="190" y="422" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="#ed2939">100 000 €</text>
+
+  <rect x="380" y="360" width="300" height="88" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1.5"/>
+  <text x="530" y="392" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Annuité amortie</text>
+  <text x="530" y="422" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="#1a1a1a">0 €</text>
+
+  <text x="24" y="480" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Brique pour lire une part à intérêts seuls · ce n’est pas le prêt en deux parts du Pacte. Le capital à intérêts seuls reste dû.</text>
+  <text x="24" y="500" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Comparaison à deux termes seulement. Le troisième choix — ne rien mobiliser — n’apparaît pas ici.</text>
+  <text x="24" y="524" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Exemple arithmétique · note Parcours ménages · ne constitue pas une trajectoire 2027–2040</text>
+</svg>

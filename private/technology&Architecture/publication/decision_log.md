@@ -64,6 +64,14 @@ See `private/technology&Architecture/en-images/`. Visuals are a citing layer: th
 
 Owner OK. First visual `/en-images/le-ratio-n-est-pas-le-service`. Docs/14 site cycle is now Pacte → Documents → En images → Discussion → Revision. Visual figure hash is a §1 contract check. Comments stay on documents.
 
+## 2026-10-01 — Parcours ménages reopened for credit access and typical cases
+
+Owner asked to revise the frozen household exhibit. Version `2026-10-01` is superseded. Version `2026-10-01-2` adds the observed credit-access frame (HCSF, BdF, ACPR, Notaires surfaces, PTZ) and two typical cases from loan statistics, not invented national purchase budgets of 230/270 k€. Case 1: ~200 k€ loan + ~35 k€ deposit. Case 2: first-time buyer 178 k€. Two En images published: mensualité and capacité. Capacity chart states it does not establish an accession gain.
+
+## 2026-10-01 — Scénario 700 Md€ = encours de la part à intérêts seuls seulement
+
+Owner OK. The frozen path (cumul ≈ 700 Md€, peak 90 Md€) is the **interest-only share book** (*part à intérêts seuls*), not consolidated housing credit. French public wording: never “IO”, never “tranche” for the product (use *part à intérêts seuls* / *part amortissable*). The amortising share of a market purchase LTV does **not** enter the 700. Macro impulse probes and EC-05 bank-funding tests apply to that interest-only share book. Product shape: two shares; interest-only share ≤ 40–50 % of property value (central 40 %, sensitivity 50 %). Prior snapshots that said undifferentiated “crédit” for 700 are superseded by new versions; arithmetic that treated 700 as non-amortising principal stays valid under this definition.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

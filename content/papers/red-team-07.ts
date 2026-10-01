@@ -6,7 +6,7 @@ export const redTeam07: WorkingPaper = {
   lang: "fr",
   summary:
     "Que deviennent le déficit, la dette rapportée au PIB et la charge d’intérêts lorsque croissance nominale, inflation, taux et refinancement sont tenus ensemble ? Verdict : non tranché. Le ratio n’est pas le service.",
-  currentVersionId: "2026-10-01-2",
+  currentVersionId: "2026-10-01-3",
   versions: [
     {
       id: "2026-10-01",
@@ -20,11 +20,20 @@ export const redTeam07: WorkingPaper = {
     {
       id: "2026-10-01-2",
       published: "2026-10-01",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Non tranché. Un ratio qui baisse n’est pas un service qui s’allège.",
       file: "content/papers/red-team-07/v2026-10-01-2.md",
       sha256: "4bb72809b8f693068d75d90b87bbcdba113ae6df76b4faa4a8237d354b7ea900",
       note: "La charge d’intérêts dépend du stock, de sa composition, de son coût effectif et du renouvellement. Le critère de succès est une trajectoire jointe, pas seulement un ratio plus bas. La cellule reste vide.",
+    },
+    {
+      id: "2026-10-01-3",
+      published: "2026-10-01",
+      status: "working-paper",
+      verdict: "Non tranché. Un ratio qui baisse n’est pas un service qui s’allège.",
+      file: "content/papers/red-team-07/v2026-10-01-3.md",
+      sha256: "b5b9da5c8fc156c4ee546383a22e07f4b9dd7ffdfab3abd773bdc1c70cf31068",
+      note: "Scénario nommé comme part à intérêts seuls (~700 Md€), pas crédit habitat consolidé.",
     },
   ],
   progress: [

@@ -1,0 +1,45 @@
+import type { Visual } from "@/content/visuals/types";
+
+export const empruntMoyenMensualite: Visual = {
+  slug: "emprunt-moyen-mensualite",
+  title: "Crédit moyen · deux tranches",
+  lang: "fr",
+  summary:
+    "Bien ~235 000 €, emprunt 200 000 €. IO = 40 % de la valeur : 862 € contre 1 139 €. Capital restant 94 000 €.",
+  shows:
+    "Sur le ticket de crédit moyen, le prêt Pacte a deux tranches. À 40 % de la valeur en intérêts seuls (94 000 €) et 106 000 € en annuité, à 3,30 % sur 20 ans hors assurance, la mensualité est de 862 € contre 1 139 € en 100 % annuité. L’écart est de 277 € par mois. Après 20 ans, 94 000 € restent dus.",
+  doesNotEstablish:
+    "Ce n’est pas un prêt 100 % intérêts seuls. Ce n’est pas un budget notarial moyen. L’originabilité HCSF d’une tranche IO reste ouverte. L’assurance n’est pas incluse.",
+  nature: "donnee",
+  natureNote:
+    "Arithmétique du Cas 1, produit à deux tranches, note Parcours ménages v2026-10-01-3.",
+  units: "€ par mois ; capital en €",
+  asOf: "Taux juillet 2026 · note 1 octobre 2026",
+  provenance:
+    "Parcours ménages, version 2026-10-01-3. Emprunt et apport : BdF / ACPR. Plafond IO : 40 % de la valeur (V2 / EC-01).",
+  citations: [
+    {
+      href: "/documents/parcours-menages/v/2026-10-01-3",
+      label: "Parcours ménages — Cas 1, deux tranches (2026-10-01-3)",
+    },
+  ],
+  currentVersionId: "2026-10-01-2",
+  versions: [
+    {
+      id: "2026-10-01",
+      published: "2026-10-01",
+      status: "superseded",
+      figure: "content/visuals/emprunt-moyen-mensualite/v2026-10-01.svg",
+      sha256: "36aae027f783f5ff14bc9f8029ce38a1b43e665d96cbbac47f9d6d5a6cb8b29b",
+      note: "Première version, 100 % intérêts seuls. Remplacée.",
+    },
+    {
+      id: "2026-10-01-2",
+      published: "2026-10-01",
+      status: "working",
+      figure: "content/visuals/emprunt-moyen-mensualite/v2026-10-01-2.svg",
+      sha256: "0ca07dda5de2e00783725b60a9374852f743f2c98d2254acfb9aff85d9b82213",
+      note: "Deux tranches. IO = 40 % de la valeur. UTF-8 recoupé.",
+    },
+  ],
+};

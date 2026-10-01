@@ -24,8 +24,14 @@ Deploy gate is `scripts/vercelbuild.js`: §1 summary contract and paper snapshot
 
 2026-10-01. Household exhibit specification published as `/documents/parcours-menages`, version `2026-10-01`, status frozen. Snapshot of `Docs/Note_Parcours_Menages.md`. Not an assumption inside V2.
 
+2026-10-01. Parcours ménages reopened as `2026-10-01-2` (working paper). Prior version superseded. Adds credit-access sources and Cases 1–2. En images: `emprunt-moyen-mensualite`, `emprunt-moyen-capacite`.
+
+2026-10-01. Parcours ménages `2026-10-01-3`: two-tranche product; IO share is % of property value (40% central, 50% sensitivity). Visuals updated to `2026-10-01-2`.
+
 2026-10-01. French machine-readable envelope on existing pages: absolute canonicals, sitemap, robots, Open Graph, breadcrumb, ScholarlyArticle. Version URL stays the citable object. No new narrative pages. No author in the schema. No snapshot edit.
 
 2026-10-01. En images phase 0 built. First visual `/en-images/le-ratio-n-est-pas-le-service`. Nav, tokens.css, visual hash gate. Docs/14 cycle includes En images.
 
 2026-10-01. Owner-supplied France 2040 JPEG is the site-wide Open Graph and Twitter/X large-card image. Route-level metadata repeats it so nested metadata does not drop the image. No document snapshot changed.
+
+2026-10-01. Scenario freeze: 700 Md€ (and the 90 Md€ peak path) = *encours / flux de la part à intérêts seuls* only. Amortising share of purchase LTV excluded. Public French vocabulary: *part à intérêts seuls*, *part amortissable* — not IO, not tranche. New versions: résumé `2026-10-01-10`, V2 `2026-10-01`, questions ouvertes `2026-10-01`, EC-01/04 `2026-10-01`, EC-05 `2026-10-01-2`, parcours `2026-10-01-4`, EC-06/07 `2026-10-01-3`, related En images `2026-10-01-3`.

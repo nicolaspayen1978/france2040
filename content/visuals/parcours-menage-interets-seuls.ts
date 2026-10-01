@@ -9,7 +9,7 @@ export const parcoursMenageInteretsSeuls: Visual = {
   shows:
     "À taux gelé de 3,30 %, avant assurance et frais, la mensualité à intérêts seuls sur 20 ans est de 275 € pour 100 000 €, contre 570 € pour une annuité de même durée. L’écart de trésorerie est de 295 € par mois. Après 20 ans, le capital amortissable est éteint ; le capital à intérêts seuls est encore de 100 000 €.",
   doesNotEstablish:
-    "Ce n’est pas un revenu, ni un patrimoine, ni un gain pour les ménages sans équité. Ce n’est pas le troisième choix (ne rien mobiliser). L’assurance emprunteur n’est pas incluse. Les parcours nominatifs ne sont pas calibrés ici.",
+    "Ce n’est pas le prêt en deux parts du Pacte. Ce n’est pas un revenu, ni un patrimoine, ni un gain pour les ménages sans équité. L’assurance emprunteur n’est pas incluse.",
   nature: "donnee",
   natureNote:
     "Arithmétique du produit à partir du taux BdF de juillet 2026, telle que fixée dans la note Parcours ménages.",
@@ -19,11 +19,11 @@ export const parcoursMenageInteretsSeuls: Visual = {
     "Note Parcours ménages, version 2026-10-01. Taux des nouveaux crédits à l’habitat, Banque de France, juillet 2026 (3,30 %).",
   citations: [
     {
-      href: "/documents/parcours-menages/v/2026-10-01",
-      label: "Parcours ménages — spécification (2026-10-01)",
+      href: "/documents/parcours-menages/v/2026-10-01-4",
+      label: "Parcours ménages — spécification (2026-10-01-4)",
     },
   ],
-  currentVersionId: "2026-10-01-2",
+  currentVersionId: "2026-10-01-3",
   versions: [
     {
       id: "2026-10-01",
@@ -36,10 +36,18 @@ export const parcoursMenageInteretsSeuls: Visual = {
     {
       id: "2026-10-01-2",
       published: "2026-10-01",
-      status: "working",
+      status: "superseded",
       figure: "content/visuals/parcours-menage-interets-seuls/v2026-10-01-2.svg",
       sha256: "d240565172a5a74c46e844824b24c09d297ff29a4eb2c53157900fb38f2b4161",
       note: "Sous-titre : exemple + source BdF. Pied : ne constitue pas une trajectoire 2027–2040.",
+    },
+    {
+      id: "2026-10-01-3",
+      published: "2026-10-01",
+      status: "working",
+      figure: "content/visuals/parcours-menage-interets-seuls/v2026-10-01-3.svg",
+      sha256: "df301797a34d9316401cf727930ea671091a2bdda8ba2e4752960d0b67a025a2",
+      note: "Label : brique unitaire · part à intérêts seuls. Ce n’est pas le prêt en deux parts.",
     },
   ],
 };

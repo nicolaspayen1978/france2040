@@ -6,7 +6,7 @@ export const resumeExecutif: WorkingPaper = {
   lang: "fr",
   summary:
     "Mobilisation du bilan des ménages pour soutenir l’investissement. Ressources mobilisables, rénovation du parc, gain d’impôts, et baisse du taux d’endettement par une inflation ciblée. Hypothèse, non un programme arrêté.",
-  currentVersionId: "2026-10-01-9",
+  currentVersionId: "2026-10-01-10",
   versions: [
     {
       id: "2026-10-01",
@@ -83,16 +83,25 @@ export const resumeExecutif: WorkingPaper = {
     {
       id: "2026-10-01-9",
       published: "2026-10-01",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse, non un programme arrêté.",
       file: "content/papers/resume-executif/v2026-10-01-9.md",
       sha256: "a12305e11e3dfcf3ca20fa30b16ae8a86d8366e10fcc669faf6aacea7bdaab6c",
       note: "France Relance est sourcé : 100 Md€, dépenses engagées sur deux ans, de 2020 à 2022.",
     },
+    {
+      id: "2026-10-01-10",
+      published: "2026-10-01",
+      status: "working-paper",
+      verdict: "Hypothèse, non un programme arrêté.",
+      file: "content/papers/resume-executif/v2026-10-01-10.md",
+      sha256: "676639fe34fa976f640d860f63a0deb25cc4d47902ed244b29f521ad2f31d964",
+      note: "700 Md€ = encours de la part à intérêts seuls seulement. Produit en deux parts. Vocabulaire français.",
+    },
   ],
   progress: [
     { id: "proposition", label: "Proposition", state: "Hypothèse" },
-    { id: "scenario", label: "700 Md€", state: "Scénario à éprouver" },
+    { id: "scenario", label: "700 Md€", state: "Part à intérêts seuls, scénario" },
     { id: "test", label: "Test de 2040", state: "Ouvert" },
   ],
   sources: [

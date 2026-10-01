@@ -19,17 +19,26 @@ export const redTeam05: WorkingPaper = {
   title: "Épreuve contradictoire EC-05 — Tenir l’actif",
   lang: "fr",
   summary:
-    "Le système financier français peut-il porter le produit gelé ? Verdict de cette version : non tranché.",
-  currentVersionId: "2026-10-01",
+    "Le système financier français peut-il porter la part à intérêts seuls du chemin gelé ? Verdict de cette version : non tranché.",
+  currentVersionId: "2026-10-01-2",
   versions: [
     {
       id: "2026-10-01",
       published: "2026-10-01",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Non tranché",
       file: "content/papers/red-team-05/v2026-10-01.md",
       sha256: "71730c29a094311788c04c6b362e2b163982eb781a93fa76ad5c4c15eac98df7",
       note: "Première version publique. Le texte est celui de la note au 1er octobre 2026. Les lectures des quatre groupes, leur comparaison, le repère des émetteurs et la mobilisation directe du prêt sont gelés dans ce texte. La finançabilité n’est pas répondue. Les états antérieurs de la note n’ont pas été publiés.",
+    },
+    {
+      id: "2026-10-01-2",
+      published: "2026-10-01",
+      status: "working-paper",
+      verdict: "Non tranché",
+      file: "content/papers/red-team-05/v2026-10-01-2.md",
+      sha256: "bfbed52090ecf99ff81b599e827089f8d055ef4c0df4af48e7912b793f61d3f1",
+      note: "Périmètre précisé : le chemin et les 700 Md€ sont l’encours à intérêts seuls. Lectures bancaires gelées inchangées.",
     },
   ],
   progress: [

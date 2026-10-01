@@ -15,7 +15,7 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
-- `[website]` Discreet footer invitation to support France 2040 through the project’s hosted Stripe payment page.
+- `[website]` Support page at `/soutenir`, reached from a discreet footer invitation, with a voluntary-contribution notice and an outbound link to the project’s hosted Stripe payment page.
 
 ### Changed
 

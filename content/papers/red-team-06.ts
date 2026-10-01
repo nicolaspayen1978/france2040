@@ -6,7 +6,7 @@ export const redTeam06: WorkingPaper = {
   lang: "fr",
   summary:
     "Pour 1 € de crédit effectivement dépensé, quelles assiettes fiscales sont créées, et combien revient aux administrations publiques ? Verdict : non tranché. 43,6 % n’est pas cette réponse.",
-  currentVersionId: "2026-10-01-2",
+  currentVersionId: "2026-10-01-3",
   versions: [
     {
       id: "2026-10-01",
@@ -20,11 +20,20 @@ export const redTeam06: WorkingPaper = {
     {
       id: "2026-10-01-2",
       published: "2026-10-01",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Non tranché. Le taux moyen de prélèvements n’est pas le retour par euro.",
       file: "content/papers/red-team-06/v2026-10-01-2.md",
       sha256: "0d72994b98076e04865c61fcf6146b45cbdfb6ae2bc8669ce798ed3419cff303",
       note: "La question porte sur les assiettes créées en France par la composition de la dépense, pas seulement sur la production française. Le sous-titre ne cherche pas un coefficient unique. La cellule reste vide.",
+    },
+    {
+      id: "2026-10-01-3",
+      published: "2026-10-01",
+      status: "working-paper",
+      verdict: "Non tranché. Le taux moyen de prélèvements n’est pas le retour par euro.",
+      file: "content/papers/red-team-06/v2026-10-01-3.md",
+      sha256: "2bdfd3e4445aae7724e9702d34383eb93460d5a5ac7145c407efe9997c066ac3",
+      note: "Scénario nommé comme part à intérêts seuls (~700 Md€), pas crédit habitat consolidé.",
     },
   ],
   progress: [
