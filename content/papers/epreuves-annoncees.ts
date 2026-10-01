@@ -6,12 +6,6 @@ export type AnnouncedTest = {
 
 export const announcedTests: AnnouncedTest[] = [
   {
-    id: "ec-06",
-    title: "EC-06 — Boucle fiscale",
-    summary:
-      "Pour 1 € de crédit, puis 1 € de dépense supplémentaire, combien revient effectivement aux administrations publiques en TVA, cotisations, impôt sur le revenu, impôt sur les sociétés et autres prélèvements ? Cette épreuve teste le mécanisme qui doit permettre au Pacte de soutenir la consolidation budgétaire.",
-  },
-  {
     id: "ec-07",
     title: "EC-07 — Dette publique, inflation et taux",
     summary:

@@ -20,3 +20,5 @@ npm run dev
 ## Deploy
 
 Connect this repository to [Vercel](https://vercel.com). Framework preset: Next.js. No environment variables. `npm run build` is `scripts/vercelbuild.js`: it checks the summary contract and the paper snapshots, then runs `next build`, and prints a BUILD SUMMARY. Do not set `outputDirectory`. `private/` is not uploaded.
+
+Canonical URLs are absolute. On Vercel they use the project production domain (`VERCEL_PROJECT_PRODUCTION_URL`). A local build uses `http://localhost:3000` and is not the deployed HTML.

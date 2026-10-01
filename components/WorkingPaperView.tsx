@@ -1,14 +1,17 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { JsonLd } from "@/components/JsonLd";
 import type { WorkingPaper } from "@/content/papers/types";
 import { formatDate } from "@/lib/documents";
 import type { PaperBlock } from "@/lib/parsePaper";
+import { paperCrumbs, paperJsonLd, type PaperPlacement } from "@/lib/paperMeta";
 import { statusLabel, versionPath } from "@/lib/papers";
 
 type WorkingPaperViewProps = {
   paper: WorkingPaper;
   versionId: string;
   blocks: PaperBlock[];
+  placement: PaperPlacement;
 };
 
 function inline(text: string): ReactNode[] {
@@ -39,7 +42,7 @@ function inline(text: string): ReactNode[] {
   return nodes;
 }
 
-export function WorkingPaperView({ paper, versionId, blocks }: WorkingPaperViewProps) {
+export function WorkingPaperView({ paper, versionId, blocks, placement }: WorkingPaperViewProps) {
   const version = paper.versions.find((item) => item.id === versionId);
 
   if (!version) {
@@ -49,12 +52,27 @@ export function WorkingPaperView({ paper, versionId, blocks }: WorkingPaperViewP
   const address = versionPath(paper, version.id);
   const current = version.id === paper.currentVersionId;
   const headings = blocks.filter((block) => block.kind === "heading");
+  const crumbs = paperCrumbs(paper, version, placement);
 
   return (
     <article className="paper" lang={paper.lang}>
-      <Link className="back" href="/documents">
-        Documents
-      </Link>
+      <JsonLd data={paperJsonLd(paper, version, placement)} />
+      <nav className="crumbs" aria-label="Fil d’Ariane">
+        <ol>
+          {crumbs.map((crumb, index) => {
+            const last = index === crumbs.length - 1;
+            return (
+              <li key={crumb.path}>
+                {last ? (
+                  <span aria-current="page">{crumb.name}</span>
+                ) : (
+                  <Link href={crumb.path}>{crumb.name}</Link>
+                )}
+              </li>
+            );
+          })}
+        </ol>
+      </nav>
       <p className="kicker">
         {statusLabel(version.status)} · {formatDate(version.published)}
       </p>

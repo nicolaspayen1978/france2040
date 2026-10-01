@@ -14,4 +14,10 @@ Deploy gate is `scripts/vercelbuild.js`: §1 summary contract and paper snapshot
 
 2026-10-01. Announced tests are EC-06 fiscal loop, EC-07 debt inflation and rates, EC-08 housing and financial stability, EC-09 combined failure. No page and no snapshot until the note exists. Earlier EC-06 to EC-12 titles duplicated published tests and were replaced.
 
+2026-10-01. EC-06 published as `/documents/red-team-06`, version `2026-10-01`, verdict open. No recovery coefficient. 43.6% is not applied to the spending probes. Announced list is now EC-07, EC-08, EC-09.
+
+2026-10-01. EC-06 revised as `2026-10-01-2`. The chain asks which French tax bases the composition of spending creates, not only what French output returns. The subtitle no longer reads as one credit-to-receipt coefficient. The per-euro cell stays empty. Prior snapshot bytes unchanged.
+
 2026-10-01. Household exhibit specification published as `/documents/parcours-menages`, version `2026-10-01`, status frozen. Snapshot of `Docs/Note_Parcours_Menages.md`. Not an assumption inside V2.
+
+2026-10-01. French machine-readable envelope on existing pages: absolute canonicals, sitemap, robots, Open Graph, breadcrumb, ScholarlyArticle. Version URL stays the citable object. No new narrative pages. No author in the schema. No snapshot edit.

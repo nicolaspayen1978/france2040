@@ -1,14 +1,15 @@
-import type { Metadata } from "next";
 import { AnnouncedTests } from "@/components/AnnouncedTests";
 import { PublicationList } from "@/components/PublicationList";
 import { DocumentList } from "@/components/DocumentList";
 import { getDocuments } from "@/lib/documents";
+import { sectionMetadata } from "@/lib/paperMeta";
 
-export const metadata: Metadata = {
+export const metadata = sectionMetadata({
   title: "Documents",
   description:
     "Documents de travail versionnés du Pacte du bilan français. Épreuves contradictoires : nous cherchons ce qui pourrait faire échouer le Pacte.",
-};
+  path: "/documents",
+});
 
 export default function DocumentsPage() {
   const notes = getDocuments();

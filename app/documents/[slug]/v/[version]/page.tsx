@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { WorkingPaperView } from "@/components/WorkingPaperView";
+import { documentMetadata } from "@/lib/paperMeta";
 import { getPaperVersion, getWorkingPaper, getWorkingPapers, loadPaperBlocks } from "@/lib/papers";
 
 type PageProps = {
@@ -22,10 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: "Version introuvable" };
   }
 
-  return {
-    title: `${paper.title} — ${version.id}`,
-    description: paper.summary,
-  };
+  return documentMetadata(paper, version);
 }
 
 export default async function DocumentVersionPage({ params }: PageProps) {
@@ -38,6 +36,11 @@ export default async function DocumentVersionPage({ params }: PageProps) {
   }
 
   return (
-    <WorkingPaperView paper={paper} versionId={version.id} blocks={loadPaperBlocks(version)} />
+    <WorkingPaperView
+      paper={paper}
+      versionId={version.id}
+      blocks={loadPaperBlocks(version)}
+      placement="version"
+    />
   );
 }

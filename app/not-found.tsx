@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Page introuvable",
+  description: "Cette adresse ne correspond à aucune page.",
+  robots: { index: false, follow: false },
 };
 
 export default function NotFound() {

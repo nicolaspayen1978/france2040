@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { sectionMetadata } from "@/lib/paperMeta";
 
-export const metadata: Metadata = {
+export const metadata = sectionMetadata({
   title: "Le projet",
   description:
     "France 2040 est un projet de recherche indépendant. Ce site n’est pas un site officiel de l’État.",
-};
+  path: "/projet",
+});
 
 export default function ProjectPage() {
   return (

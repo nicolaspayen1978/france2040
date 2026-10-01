@@ -1,0 +1,82 @@
+# Red team 06 — Boucle fiscale
+
+1er octobre 2026. Note. Elle n’estime pas de coefficient de retour, et elle ne dit pas que le Pacte améliore la trajectoire des finances publiques.
+
+Hypothèse sous test : pour 1 € de crédit, puis 1 € de dépense supplémentaire, il revient assez aux administrations publiques, en TVA, cotisations, impôt sur le revenu, impôt sur les sociétés et autres prélèvements, pour que le Pacte puisse soutenir la consolidation budgétaire.
+
+Verdict de cette passe : **non tranché.** Le taux moyen de prélèvements obligatoires n’est pas cette réponse. Un euro de crédit n’est pas un euro de dépense. Un euro de dépense n’est pas un euro de production française. Un euro d’activité n’a pas un contenu fiscal unique. Le taux de 43,6 % ne se multiplie à rien.
+
+Chaîne, à ce stade :
+
+1. Scénario de crédit d’environ 700 Md€. Ce n’est pas une dépense.
+2. EC-02 — quelle part du crédit est dépensée ? Non tranché. 175 / 350 / 525 Md€ sont des sondes.
+3. EC-03 — quelle part de cette dépense devient du volume français ? Non tranché. La part française reste vide.
+4. EC-06 — compte tenu de la composition de la dépense et de l’activité supplémentaire qu’elle déclenche, quelles assiettes fiscales supplémentaires apparaissent en France, et combien en revient aux administrations publiques ? Non tranché. Aucune cellule n’est remplie. L’affectation de la recette à la consolidation reste la question distincte, plus bas.
+
+## Deux questions, pas un taux
+
+Le retour et l’affectation ne sont pas le même problème.
+
+1. **L’assiette.** Sur quoi porte l’euro supplémentaire : une consommation taxable, une masse salariale, un bénéfice, une mutation immobilière, ou un usage qui ne crée presque pas d’assiette ?
+2. **La règle.** Si la recette arrive, est-elle affectée au déficit, ou devient-elle une dépense permanente ?
+
+La V2 pose déjà la seconde, sans la chiffrer. Une hausse du PIB nominal peut produire davantage de TVA, de cotisations, d’impôt sur le revenu, d’impôt sur les sociétés et d’autres recettes. Si ces recettes deviennent aussitôt des dépenses permanentes, les ménages se sont endettés sans que le bilan public soit réparé. Le Pacte demande qu’une part très importante des recettes supérieures à une trajectoire de référence aille à la réduction du déficit. Cette note ne vérifie pas que la règle serait tenue. Elle établit d’abord que l’on ne sait pas combien revient.
+
+EC-07 reprendra la trajectoire du déficit, de la dette et de la charge d’intérêts. Cette passe s’arrête à la recette, et au fait que la recette ne suffit pas.
+
+## Ce qui est établi
+
+Insee, Informations rapides n° 78, mars 2026, [insee.fr/fr/statistiques/8956575](https://www.insee.fr/fr/statistiques/8956575). C’est la notification citée par le résumé : en 2025, le déficit est de 5,1 % du PIB, la dette de 115,6 %, les dépenses de 57,2 %. La même page dit que le taux de prélèvements obligatoires s’établit à 43,6 % du PIB, après 42,8 % en 2024.
+
+Insee Première n° 2106, 29 mai 2026, [insee.fr/fr/statistiques/8997691](https://www.insee.fr/fr/statistiques/8997691). Le compte annuel révise légèrement ces ratios : dette 115,7 % du PIB, dépenses 57,3 %, prélèvements obligatoires 43,6 % après 42,7 % en 2024. Le déficit reste 5,1 %, soit 152,5 Md€. Les deux textes ne sont pas additionnés. Le second est utilisé parce qu’il dit de quoi la hausse est faite.
+
+Dans ce compte, les recettes publiques de 2025 augmentent de 3,9 %, et le PIB en valeur de 2,0 %. La croissance spontanée des prélèvements — la croissance corrigée des mesures nouvelles — n’est que de 2,2 %. L’écart vient surtout de mesures nouvelles, estimées à 23,0 Md€ par la DG Trésor, dont une contribution exceptionnelle sur les bénéfices des grandes entreprises et sur le fret maritime. La hausse du taux, de 0,9 point, n’est donc pas le rendement spontané d’un euro d’activité supplémentaire.
+
+La composition, dans le même texte, ne ressemble pas à un taux unique. La croissance spontanée est portée par des régularisations d’impôt sur le revenu, elles-mêmes liées aux revenus de 2024, par les droits de mutation à titre onéreux, du fait de davantage de transactions, et par l’impôt sur les sociétés. Elle est tempérée par la TVA, dont les recettes croissent moins que leur assiette taxable, cette assiette étant elle-même inférieure à l’activité. Les cotisations sociales des administrations de sécurité sociale augmentent de 3,3 %, plus que la masse salariale du secteur privé (+1,8 %), à cause de mesures sur les allègements et du taux de cotisation retraite des employeurs publics. Même la ligne des cotisations n’est pas une élasticité pure.
+
+L’année précédente avait montré le même mécanisme en sens inverse. Insee Première n° 2054, 28 mai 2025, [insee.fr/fr/statistiques/8574492](https://www.insee.fr/fr/statistiques/8574492). Les ratios de cette publication ont été révisés depuis. Le fait de composition reste : la croissance spontanée des prélèvements s’établissait alors en dessous de l’activité en valeur, parce que la croissance était davantage tirée par le commerce extérieur que par la demande intérieure, et parce que la TVA spontanée restait très en deçà de son assiette. Les droits de mutation, l’impôt sur le revenu et l’impôt sur les sociétés étaient moins dynamiques que l’activité. Un supplément de PIB nominal ne garantit pas un supplément proportionnel de recettes.
+
+Les niveaux de 2025, provisoires, donnent l’échelle des instruments, pas leur élasticité. Insee, impôts, comptes nationaux annuels, base 2020, août 2026, [insee.fr/fr/statistiques/2381408](https://www.insee.fr/fr/statistiques/2381408). TVA : 208,8 Md€. Impôt sur le revenu des personnes physiques, avant crédits d’impôt : 103,6 Md€. Impôt sur les sociétés, avant crédits d’impôt : 69,5 Md€. CSG : 156,6 Md€. CRDS : 9,3 Md€. Ces montants ne sont pas des parts du PIB calculées ici. Ils ne comprennent pas les cotisations sociales. Les rapporter à 43,6 % serait une autre erreur : le taux de prélèvements obligatoires est net des crédits d’impôt et hors cotisations imputées. Il n’est le quotient d’aucune de ces lignes.
+
+## Pourquoi le panier décide
+
+La TVA n’est pas un pourcentage du PIB. C’est un impôt sur une dépense taxable, à un taux qui dépend du bien.
+
+Le taux normal est 20 %. Sur un logement d’habitation achevé depuis plus de deux ans, les travaux d’amélioration, de transformation, d’aménagement et d’entretien peuvent être à 10 %, et les travaux d’amélioration de la performance énergétique à 5,5 %, sous les conditions légales. La construction neuve, l’agrandissement, et les matériaux achetés directement par le ménage restent au taux normal. Ministère de l’Économie, [TVA à taux réduit : pour quels travaux ?](https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/tva-taux-reduit-pour-quels-travaux), articles 278, 279-0 bis et 278-0 bis A du code général des impôts. Ces taux portent sur la facture. Ils ne sont pas le retour aux administrations par euro de valeur ajoutée, ni par euro de crédit. Une facture de travaux contient des salaires, des consommations intermédiaires, des importations et une marge. Seule une partie de chacun est une assiette.
+
+Les cotisations, la CSG et la CRDS suivent surtout les salaires et certains revenus de remplacement. Elles ne suivent pas l’euro de dépense si cet euro n’emploie personne en France.
+
+L’impôt sur le revenu suit le revenu imposable des ménages, avec seuil, quotient et délai. Les régularisations de 2025 portaient sur les revenus de 2024. Le rendement d’une année n’est pas le rendement de l’activité de la même année.
+
+L’impôt sur les sociétés suit un bénéfice taxable, après reports, et non le chiffre d’affaires. Une activité supplémentaire qui ne dégage pas de bénéfice taxable ne le nourrit pas.
+
+Les droits de mutation à titre onéreux suivent les transactions et les prix, pas la production. Dans le compte de 2025, les recettes de ces droits pour les départements rebondissent de 19,8 %, après −12,5 % en 2024, avec le marché immobilier. Acheter un logement déjà existant peut les faire rentrer sans créer le volume que EC-03 cherche. Une baisse des transactions les ferait reculer. Cette sensibilité est notée ici. Elle sera reprise avec l’immobilier.
+
+Une importation consommée en France peut payer la TVA française sans être de la production française. À l’inverse, une épargne du crédit, le remboursement d’une autre dette, ou l’achat d’un actif financier créent peu d’assiette courante. L’intérêt payé à la banque est un revenu de la banque. Son rendement fiscal n’est pas mesuré ici. EC-02 a laissé ces usages ouverts. Ils restent ouverts.
+
+| Destination | Recette la plus directe | Ce que ce n’est pas |
+| --- | --- | --- |
+| Travaux dans un logement achevé depuis plus de deux ans | TVA à 10 % ou à 5,5 % si les conditions sont remplies ; cotisations si le travail est français | Ni 20 % de la facture dans tous les cas, ni 43,6 % du montant |
+| Bien de consommation courante, y compris importé | TVA au taux du bien, souvent 20 % | Pas de la production française pour autant, et pas des cotisations françaises si le bien est produit ailleurs |
+| Logement déjà existant | Droits de mutation s’il est transmis à titre onéreux | Pas de TVA sur le bien lui-même, pas de volume nouveau |
+| Crédit conservé, ou utilisé pour rembourser une autre dette | Peu d’assiette courante | Pas un gain d’impôts |
+
+Aucun poids n’est posé sur ces lignes. Elles montrent que le même euro de crédit n’a pas le même retour selon l’usage, et que l’usage n’est pas observé.
+
+## Ce que 43,6 % ne mesure pas
+
+Appliquer 43,6 % à une sonde de dépense traiterait comme acquises les deux étapes que EC-02 et EC-03 ont laissées ouvertes. Ce serait appliquer un taux moyen, net de crédits d’impôt, à une dépense qui n’est pas l’assiette. Ce serait aussi prendre pour un rendement spontané une hausse de taux qui doit beaucoup à des mesures nouvelles. Et ce serait oublier la règle : une recette qui finance une dépense nouvelle ne consolide pas.
+
+Ce produit n’est pas calculé. Le modèle v0.1 ne contient pas cette boucle. Il ne faut pas l’y ajouter sous la forme 0,436.
+
+## Ce que cette passe ne fait pas
+
+Elle ne remplit pas de cellule. Elle ne choisit pas un taux entre 5,5 % et 43,6 %. Elle ne convertit pas les sondes en recettes. Elle ne dit pas que les mesures nouvelles de 2025 se répéteraient. Elle ne tranche pas la trajectoire de la dette : c’est EC-07. Elle ne tranche pas l’effet d’une baisse de l’immobilier sur les droits de mutation : c’est une question d’EC-08.
+
+## Classement
+
+1. **Établi.** En 2025, le taux de prélèvements obligatoires est de 43,6 % du PIB. Sa hausse de 0,9 point doit beaucoup aux mesures nouvelles. La TVA, les cotisations, l’impôt sur le revenu, l’impôt sur les sociétés et les droits de mutation ne réagissent pas au même objet, ni à la même date. Le taux de TVA sur les travaux dépend du travail et du logement. La V2 demande déjà que le surcroît de recettes ne devienne pas une dépense permanente.
+2. **Plausible, non démontré.** Une activité supplémentaire française ferait rentrer une partie de ces prélèvements. La part est inconnue, parce que le panier est inconnu et parce que les étapes précédentes ne sont pas tranchées.
+3. **Hypothèse faible.** Appliquer 43,6 %, 20 % ou 10 % à 1 € de crédit, ou à 1 € de dépense, et appeler le produit un gain d’impôts.
+4. **Potentiellement fatal, non démontré.** Si le crédit est peu dépensé, s’il achète surtout des actifs existants, ou si la dépense est peu taxable et peu riche en salaires français, le mécanisme qui doit soutenir la consolidation ne reçoit presque rien. Si la recette arrive et devient une dépense permanente, le bilan public n’est pas réparé. Aucun de ces cas n’est mesuré.
+5. **Données requises.** Pour un euro proche du produit du Pacte, la dépense effective, sa destination, le taux de TVA applicable, le contenu en salaires français, le bénéfice taxable, et les droits de mutation éventuellement déclenchés. Puis la part de la recette qui resterait affectée au déficit. Le coefficient vient après.
