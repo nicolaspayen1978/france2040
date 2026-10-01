@@ -22,6 +22,10 @@ This directory is the build plan. `.vercelignore` lists `private`. The plan is n
 
 Published as `/documents/parcours-menages`, version `2026-10-01`, status frozen. The text is the specification of that date. It is not an assumption inside V2 and it does not open Red Team 06.
 
+## 2026-10-01 — Public series name is Épreuve contradictoire
+
+The site says Épreuve contradictoire, numbered EC-01 to EC-05. The sentence on the documents page is: « Épreuves contradictoires — nous cherchons ce qui pourrait faire échouer le Pacte. » Slugs and snapshot bytes stay. Docs/ keeps Red Team as the working-file name. The branch label RT05-E inside the EC-05 text is unchanged.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

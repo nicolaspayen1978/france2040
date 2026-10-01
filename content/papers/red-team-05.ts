@@ -16,7 +16,7 @@ export type {
  */
 export const redTeam05: WorkingPaper = {
   slug: "red-team-05",
-  title: "Red Team 05 — Tenir l’actif",
+  title: "Épreuve contradictoire EC-05 — Tenir l’actif",
   lang: "fr",
   summary:
     "Le système financier français peut-il porter le produit gelé ? Verdict de cette version : non tranché.",

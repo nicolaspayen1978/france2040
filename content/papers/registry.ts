@@ -15,6 +15,7 @@ export const workingPapers: WorkingPaper[] = [
   pacte,
   resumeExecutif,
   pacteV2,
+  parcoursMenages,
   modele,
   questionsOuvertes,
   redTeam01,
@@ -22,5 +23,4 @@ export const workingPapers: WorkingPaper[] = [
   redTeam03,
   redTeam04,
   redTeam05,
-  parcoursMenages,
 ];

@@ -2,7 +2,7 @@ import type { WorkingPaper } from "@/content/papers/types";
 
 export const redTeam04: WorkingPaper = {
   slug: "red-team-04",
-  title: "Red Team 04 — La falaise de 2040",
+  title: "Épreuve contradictoire EC-04 — La falaise de 2040",
   lang: "fr",
   summary:
     "Quand le crédit additionnel redescend à zéro, qu’est-ce qui remplace sa contribution ? Verdict : non tranché. Le chemin n’est pas redessiné.",

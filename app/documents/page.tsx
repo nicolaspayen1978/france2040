@@ -6,7 +6,7 @@ import { getDocuments } from "@/lib/documents";
 export const metadata: Metadata = {
   title: "Documents",
   description:
-    "Documents de travail versionnés du Pacte du bilan français, soumis à critique.",
+    "Documents de travail versionnés du Pacte du bilan français. Épreuves contradictoires : nous cherchons ce qui pourrait faire échouer le Pacte.",
 };
 
 export default function DocumentsPage() {
@@ -16,6 +16,9 @@ export default function DocumentsPage() {
     <>
       <h1>Documents de travail</h1>
       <p className="intro">Versionnés — soumis à critique.</p>
+      <p className="intro">
+        Épreuves contradictoires — nous cherchons ce qui pourrait faire échouer le Pacte.
+      </p>
       <PublicationList />
       {notes.length > 0 ? (
         <section className="section" aria-labelledby="notes-heading">

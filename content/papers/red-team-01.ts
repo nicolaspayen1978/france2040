@@ -2,7 +2,7 @@ import type { WorkingPaper } from "@/content/papers/types";
 
 export const redTeam01: WorkingPaper = {
   slug: "red-team-01",
-  title: "Red Team 01 — Le stock d’équité immobilière mobilisable est-il suffisant ?",
+  title: "Épreuve contradictoire EC-01 — Le stock d’équité immobilière mobilisable est-il suffisant ?",
   lang: "fr",
   summary:
     "500 à 700 Md€ de crédit hypothécaire peuvent-ils être tirés de l’équité immobilière française à 40–50 % de ratio prêt sur valeur ? L’objection du collatéral agrégé a résisté. La capacité de l’emprunteur et la réglementation, non.",

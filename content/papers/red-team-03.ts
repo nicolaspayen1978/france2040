@@ -2,7 +2,7 @@ import type { WorkingPaper } from "@/content/papers/types";
 
 export const redTeam03: WorkingPaper = {
   slug: "red-team-03",
-  title: "Red Team 03 — De la dépense à la production française",
+  title: "Épreuve contradictoire EC-03 — De la dépense à la production française",
   lang: "fr",
   summary:
     "Une dépense supplémentaire devient-elle, pour l’essentiel, de la production française ? Verdict : non tranché.",

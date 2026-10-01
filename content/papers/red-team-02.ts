@@ -2,7 +2,7 @@ import type { WorkingPaper } from "@/content/papers/types";
 
 export const redTeam02: WorkingPaper = {
   slug: "red-team-02",
-  title: "Red Team 02 — Transformation du crédit en dépense",
+  title: "Épreuve contradictoire EC-02 — Transformation du crédit en dépense",
   lang: "fr",
   summary:
     "Un euro de crédit devient-il un euro de demande, puis de production française ? Passé au sens étroit. La transmission n’est pas démontrée.",
