@@ -32,6 +32,11 @@ assert.equal(
   "node scripts/checkPaperSnapshot.js",
   "package.json must expose the paper snapshot check",
 );
+assert.equal(
+  packageJson.scripts["test:visual-snapshot"],
+  "node scripts/checkVisualSnapshot.js",
+  "package.json must expose the visual snapshot check",
+);
 
 const vercelbuild = read("scripts/vercelbuild.js");
 assert.match(
@@ -58,6 +63,11 @@ assert.match(
   vercelbuild,
   /run\("npm run test:paper-snapshot"\)/,
   "vercelbuild.js must run the paper snapshot check in §1",
+);
+assert.match(
+  vercelbuild,
+  /run\("npm run test:visual-snapshot"\)/,
+  "vercelbuild.js must run the visual snapshot check in §1",
 );
 assert.match(
   vercelbuild,

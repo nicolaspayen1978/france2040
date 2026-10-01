@@ -18,6 +18,12 @@ Deploy gate is `scripts/vercelbuild.js`: §1 summary contract and paper snapshot
 
 2026-10-01. EC-06 revised as `2026-10-01-2`. The chain asks which French tax bases the composition of spending creates, not only what French output returns. The subtitle no longer reads as one credit-to-receipt coefficient. The per-euro cell stays empty. Prior snapshot bytes unchanged.
 
+2026-10-01. EC-07 published as `/documents/red-team-07`, version `2026-10-01`, verdict open. Separates deficit, debt stock, debt/GDP and interest. No path filled. v0.1 constant-debt illustration not published as a result. Announced list is now EC-08 and EC-09.
+
+2026-10-01. EC-07 revised as `2026-10-01-2`. Interest cost is stock, composition, effective cost and rollover — not stock × one rate. Success criterion stated as a joint primary-and-refinancing path. Empty cells stay empty.
+
 2026-10-01. Household exhibit specification published as `/documents/parcours-menages`, version `2026-10-01`, status frozen. Snapshot of `Docs/Note_Parcours_Menages.md`. Not an assumption inside V2.
 
 2026-10-01. French machine-readable envelope on existing pages: absolute canonicals, sitemap, robots, Open Graph, breadcrumb, ScholarlyArticle. Version URL stays the citable object. No new narrative pages. No author in the schema. No snapshot edit.
+
+2026-10-01. En images phase 0 built. First visual `/en-images/le-ratio-n-est-pas-le-service`. Nav, tokens.css, visual hash gate. Docs/14 cycle includes En images.

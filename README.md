@@ -4,7 +4,7 @@ Minimal public site for the France 2040 research project. The interface is in Fr
 
 The publication architecture is `Docs/14_Architecture_Publication_Consultation.md`. Red Team 05 is the first versioned HTML document, at `/documents/red-team-05`.
 
-The working order is in `Docs/TODO.md`. The reference text is `Docs/Pacte_du_Bilan_Francais_V2_enrichie.docx`.
+The working order is in `Docs/TODO.md`. The reference text is `Docs/Pacte_du_Bilan_Francais_V2_enrichie.docx`. Notable repo changes (pact, publication, site, infra) are in `CHANGELOG.md`.
 
 ## Add a document
 

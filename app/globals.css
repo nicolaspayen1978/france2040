@@ -1,3 +1,5 @@
+@import "./tokens.css";
+
 *,
 *::before,
 *::after {
@@ -11,8 +13,8 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: #fff;
-  color: #1a1a1a;
+  background: var(--paper);
+  color: var(--ink);
   font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.0625rem;
   line-height: 1.65;
@@ -20,7 +22,7 @@ body {
 }
 
 ::selection {
-  background: #e8e8e4;
+  background: var(--paper-2);
 }
 
 .shell {
@@ -37,7 +39,7 @@ body {
   justify-content: space-between;
   gap: 1.5rem;
   padding: 1.75rem 0 1.15rem;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--line);
 }
 
 .brand {
@@ -52,7 +54,7 @@ body {
   width: 1.35rem;
   height: 0.9rem;
   flex: none;
-  border: 1px solid #e4e4e4;
+  border: 1px solid var(--line);
 }
 
 .wordmark {
@@ -71,14 +73,14 @@ body {
 }
 
 .site-nav a {
-  color: #5c5c5c;
+  color: var(--ink-3);
   text-decoration: none;
   font-size: 0.9375rem;
 }
 
 .site-nav a[aria-current="page"],
 .site-nav a:hover {
-  color: #1a1a1a;
+  color: var(--ink);
 }
 
 main {
@@ -88,7 +90,7 @@ main {
 
 .kicker {
   margin: 0 0 0.85rem;
-  color: #6a6a6a;
+  color: var(--muted);
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.14em;
@@ -127,7 +129,7 @@ h1 {
 .summary-body h3,
 .summary-body h4 {
   margin: 2rem 0 0;
-  color: #1a1a1a;
+  color: var(--ink);
   font-weight: 500;
   letter-spacing: -0.02em;
   line-height: 1.3;
@@ -173,13 +175,13 @@ h1 {
 .summary-body th,
 .summary-body td {
   padding: 0.55rem 0;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--line);
   text-align: left;
   vertical-align: baseline;
 }
 
 .summary-body th {
-  color: #6a6a6a;
+  color: var(--muted);
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -193,7 +195,7 @@ h1 {
 
 .pact .status {
   margin: 1.35rem 0 0;
-  color: #6a6a6a;
+  color: var(--muted);
   font-size: 0.9375rem;
   line-height: 1.5;
 }
@@ -205,8 +207,8 @@ h1 {
 .version-box {
   margin: 1.75rem 0 0;
   padding: 1rem 0;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .version-box p {
@@ -232,7 +234,7 @@ h1 {
 
 .pact h2 {
   margin: 2.75rem 0 0;
-  color: #1a1a1a;
+  color: var(--ink);
   font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: -0.02em;
@@ -281,11 +283,11 @@ h1 {
 
 .commitments div {
   padding: 0.95rem 0;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid var(--line);
 }
 
 .commitments div:last-child {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--line);
 }
 
 .commitments dt {
@@ -312,8 +314,8 @@ h1 {
 
 .schedule th {
   padding: 0.45rem 0;
-  border-bottom: 1px solid #e6e6e6;
-  color: #6a6a6a;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -323,7 +325,7 @@ h1 {
 
 .schedule td {
   padding: 0.42rem 0;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--line);
 }
 
 .schedule th:last-child,
@@ -334,14 +336,14 @@ h1 {
 .sources {
   margin-top: 3rem;
   padding-top: 1.2rem;
-  border-top: 1px solid #e6e6e6;
-  color: #3f3f3f;
+  border-top: 1px solid var(--line);
+  color: var(--ink-2);
   font-size: 0.875rem;
 }
 
 .sources h2 {
   margin-top: 0;
-  color: #6a6a6a;
+  color: var(--muted);
   font-size: 0.75rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -361,7 +363,7 @@ h2 {
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #6a6a6a;
+  color: var(--muted);
 }
 
 .doc-list {
@@ -373,7 +375,7 @@ h2 {
 .doc-list a {
   display: block;
   padding: 1.35rem 0;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid var(--line);
   color: inherit;
   text-decoration: none;
 }
@@ -381,13 +383,13 @@ h2 {
 .doc-list li:last-child a,
 .doc-list li:last-child .announced,
 .empty {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--line);
 }
 
 .doc-list .announced {
   display: block;
   padding: 1.35rem 0;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid var(--line);
 }
 
 .doc-list a:hover .doc-title {
@@ -397,7 +399,7 @@ h2 {
 
 .doc-meta {
   margin: 0;
-  color: #6a6a6a;
+  color: var(--muted);
   font-size: 0.8125rem;
 }
 
@@ -411,7 +413,7 @@ h2 {
 
 .doc-summary {
   margin: 0.35rem 0 0;
-  color: #3f3f3f;
+  color: var(--ink-2);
   font-size: 0.9375rem;
   line-height: 1.5;
 }
@@ -419,14 +421,14 @@ h2 {
 .empty {
   margin: 1rem 0 0;
   padding: 1.35rem 0;
-  border-top: 1px solid #e6e6e6;
-  color: #5c5c5c;
+  border-top: 1px solid var(--line);
+  color: var(--ink-3);
 }
 
 .crumbs {
   display: block;
   margin-bottom: 2.25rem;
-  color: #5c5c5c;
+  color: var(--ink-3);
   font-size: 0.875rem;
 }
 
@@ -447,7 +449,7 @@ h2 {
 .crumbs li:not(:last-child)::after {
   content: "/";
   margin: 0 0.45rem;
-  color: #b0b0b0;
+  color: var(--muted-3);
 }
 
 .crumbs a {
@@ -456,7 +458,7 @@ h2 {
 }
 
 .crumbs a:hover {
-  color: #1a1a1a;
+  color: var(--ink);
 }
 
 .page-prose p {
@@ -520,17 +522,17 @@ body:has(.paper) .shell {
   grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
   gap: 0.75rem 1.5rem;
   padding: 0.7rem 0;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid var(--line);
   font-size: 0.9375rem;
 }
 
 .paper-progress li:last-child,
 .paper-history li:last-child {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--line);
 }
 
 .paper-progress li span:last-child {
-  color: #3f3f3f;
+  color: var(--ink-2);
 }
 
 .paper-history li {
@@ -539,7 +541,7 @@ body:has(.paper) .shell {
 
 .paper-history li p {
   margin: 0.35rem 0 0;
-  color: #3f3f3f;
+  color: var(--ink-2);
 }
 
 .paper-history a,
@@ -558,7 +560,7 @@ body:has(.paper) .shell {
 
 .paper-toc .toc-note {
   margin: 0.6rem 0 0;
-  color: #3f3f3f;
+  color: var(--ink-2);
   font-size: 0.9375rem;
 }
 
@@ -592,7 +594,7 @@ body:has(.paper) .shell {
 .paper-body h2,
 .paper-body h3 {
   margin: 2.75rem 0 0;
-  color: #1a1a1a;
+  color: var(--ink);
   font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: -0.02em;
@@ -638,7 +640,7 @@ body:has(.paper) .shell {
   left: -1.15rem;
   top: 0.15em;
   margin: 0;
-  color: #9a9a9a;
+  color: var(--muted-2);
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1;
@@ -683,13 +685,13 @@ body:has(.paper) .shell {
 .paper-table-wrap th,
 .paper-table-wrap td {
   padding: 0.45rem 0.7rem 0.45rem 0;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--line);
   text-align: left;
   vertical-align: top;
 }
 
 .paper-table-wrap th {
-  color: #6a6a6a;
+  color: var(--muted);
   font-size: 0.75rem;
   font-weight: 500;
 }
@@ -700,8 +702,8 @@ body:has(.paper) .shell {
 
 .site-footer {
   padding: 1.35rem 0 2.5rem;
-  border-top: 1px solid #e6e6e6;
-  color: #6a6a6a;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
   font-size: 0.8125rem;
   line-height: 1.55;
 }
@@ -715,8 +717,35 @@ body:has(.paper) .shell {
 }
 
 a:focus-visible {
-  outline: 2px solid #1a1a1a;
+  outline: 2px solid var(--ink);
   outline-offset: 3px;
+}
+
+.visual-figure {
+  margin: 2rem 0 1.25rem;
+}
+
+.visual-figure-frame {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  overflow: hidden;
+}
+
+.visual-figure-frame svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.visual-caption {
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.visual-label {
+  font-weight: 500;
+  color: var(--ink-2);
 }
 
 @media (max-width: 640px) {

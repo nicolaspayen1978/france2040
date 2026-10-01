@@ -44,6 +44,22 @@ Titles, descriptions, Open Graph, the breadcrumb, and ScholarlyArticle values ar
 
 The absolute origin is the Vercel production domain at build time. It is not hardcoded. Preview deployments are `noindex`. Narrative pages and claim-to-anchor links are not this slice.
 
+## 2026-10-01 — EC-07 separates ratio, stock and interest
+
+First public version at `/documents/red-team-07`. The question is the joint path of deficit, debt/GDP and interest when nominal growth, inflation, sovereign rates and refinancing are held together. The verdict stays open. 2025 already shows interest rising while inflation falls and the deficit improves. Average life of negotiable debt near eight and a half years is cited from AFT 2024. No end-period debt ratio is published. The constant-debt illustration in model v0.1 is named and not used as a result.
+
+## 2026-10-01 — EC-07 interest cost is not stock times one rate
+
+Version `2026-10-01-2`. The interest line depends on stock, composition (including inflation-linked paper), effective cost and gradual rollover. The required next model is recursive: primary → interest → overall balance → debt stock → refinancing → next interest, beside nominal GDP. Success is a plausible joint path, not only a lower debt/GDP by 2040. First En images candidate named: `/en-images/le-ratio-n-est-pas-le-service` (not built; see en-images domain).
+
+## 2026-10-01 — En images planned beside publication, not inside it
+
+See `private/technology&Architecture/en-images/`. Visuals are a citing layer: they explain, they do not establish claims. Comments remain on documents. No En images code until that domain’s design is owner-approved.
+
+## 2026-10-01 — En images phase 0 built
+
+Owner OK. First visual `/en-images/le-ratio-n-est-pas-le-service`. Docs/14 site cycle is now Pacte → Documents → En images → Discussion → Revision. Visual figure hash is a §1 contract check. Comments stay on documents.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

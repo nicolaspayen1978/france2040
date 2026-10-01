@@ -11,13 +11,13 @@ export function AnnouncedTests() {
       <p className="intro">
         Les premières épreuves ont testé le stock d’équité mobilisable, la transformation du crédit en
         dépense, la transformation de cette dépense en production française, la sortie du dispositif en
-        2040 et la capacité du système financier à porter l’actif. La boucle fiscale est ouverte : c’est
-        l’épreuve EC-06. Elle ne chiffre pas encore ce qui revient aux administrations publiques.
+        2040, la capacité du système financier à porter l’actif, la boucle fiscale et la trajectoire de
+        la dette. EC-06 et EC-07 sont ouvertes : elles ne chiffrent encore ni le retour par euro, ni le
+        chemin du déficit et des intérêts.
       </p>
       <p className="intro">
-        Restent la trajectoire financière de l’État, et les risques que le mécanisme fait porter à
-        l’immobilier et au système financier. Une dernière épreuve combinera ensuite plusieurs
-        hypothèses défavorables.
+        Restent les risques que le mécanisme fait porter à l’immobilier et au système financier. Une
+        dernière épreuve combinera ensuite plusieurs hypothèses défavorables.
       </p>
       <ul className="doc-list">
         {announcedTests.map((test) => (

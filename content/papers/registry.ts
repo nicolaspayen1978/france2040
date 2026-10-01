@@ -9,6 +9,7 @@ import { redTeam03 } from "@/content/papers/red-team-03";
 import { redTeam04 } from "@/content/papers/red-team-04";
 import { redTeam05 } from "@/content/papers/red-team-05";
 import { redTeam06 } from "@/content/papers/red-team-06";
+import { redTeam07 } from "@/content/papers/red-team-07";
 import { parcoursMenages } from "@/content/papers/parcours-menages";
 import type { WorkingPaper } from "@/content/papers/types";
 
@@ -25,4 +26,5 @@ export const workingPapers: WorkingPaper[] = [
   redTeam04,
   redTeam05,
   redTeam06,
+  redTeam07,
 ];

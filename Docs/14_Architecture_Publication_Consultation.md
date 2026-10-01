@@ -6,7 +6,7 @@
 
 Research runs **Research → Publication → Discussion → Revision**.
 
-The site runs **Pacte 2040 → Documents → Discussion → Revision**.
+The site runs **Pacte 2040 → Documents → En images → Discussion → Revision**.
 
 Publication comes before the work is necessarily settled. Narrative pages may explain the Pacte. They cite documents. They do not establish or withdraw a claim.
 

@@ -1,0 +1,75 @@
+<!--
+  En images — le-ratio-n-est-pas-le-service v2026-10-01
+  Colours are token values from app/tokens.css:
+  --ink, --ink-2, --ink-3, --muted, --line, --paper, --paper-2, --mark-blue, --mark-red, --blue-3, --red-3
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">Le ratio n’est pas le service</title>
+  <desc id="desc">
+    Schéma : le solde alimente le stock de dette, qui alimente la charge d’intérêts.
+    Le ratio dette sur PIB est le stock divisé par le PIB nominal. Bande 2025 observée.
+  </desc>
+  <rect width="720" height="560" fill="#fff"/>
+
+  <text x="24" y="36" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Le ratio n’est pas le service</text>
+  <text x="24" y="56" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Quatre grandeurs liées, non interchangeables</text>
+
+  <rect x="40" y="88" width="160" height="64" rx="2" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <text x="120" y="116" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#002395">Solde</text>
+  <text x="120" y="134" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">recettes − dépenses</text>
+
+  <path d="M208 120 H248" stroke="#002395" stroke-width="1.5" fill="none"/>
+  <polygon points="248,120 240,116 240,124" fill="#002395"/>
+
+  <rect x="256" y="88" width="160" height="64" rx="2" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <text x="336" y="116" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#002395">Stock de dette</text>
+  <text x="336" y="134" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">encours nominal</text>
+
+  <path d="M424 120 H464" stroke="#002395" stroke-width="1.5" fill="none"/>
+  <polygon points="464,120 456,116 456,124" fill="#002395"/>
+
+  <rect x="472" y="88" width="200" height="64" rx="2" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <text x="572" y="116" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#002395">Charge d’intérêts</text>
+  <text x="572" y="134" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">stock · composition · renouvellement</text>
+
+  <path d="M336 152 V190" stroke="#ed2939" stroke-width="1.5" fill="none"/>
+  <polygon points="336,190 332,182 340,182" fill="#ed2939"/>
+
+  <rect x="216" y="198" width="240" height="56" rx="2" fill="#fff" stroke="#ed2939" stroke-width="1.5"/>
+  <text x="336" y="222" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#ed2939">Ratio dette / PIB</text>
+  <text x="336" y="240" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">stock ÷ PIB nominal</text>
+
+  <text x="480" y="228" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">≠ charge d’intérêts</text>
+
+  <rect x="40" y="198" width="152" height="56" rx="2" fill="#e8e8e4" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="116" y="222" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#3f3f3f">PIB nominal</text>
+  <text x="116" y="240" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">dénominateur</text>
+  <path d="M192 226 H216" stroke="#ed2939" stroke-width="1.25" fill="none" stroke-dasharray="3 3"/>
+
+  <text x="24" y="310" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Année 2025 observée (Insee)</text>
+  <text x="24" y="328" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Exemple réel : les quatre grandeurs ne bougent pas ensemble</text>
+
+  <rect x="24" y="348" width="160" height="88" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="104" y="372" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Déficit</text>
+  <text x="104" y="396" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1a1a1a">5,8 % → 5,1 %</text>
+  <text x="104" y="416" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">du PIB · baisse</text>
+
+  <rect x="196" y="348" width="160" height="88" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="276" y="372" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Stock de dette</text>
+  <text x="276" y="396" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1a1a1a">+ 154,4 Md€</text>
+  <text x="276" y="416" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">hausse</text>
+
+  <rect x="368" y="348" width="160" height="88" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="448" y="372" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Dette / PIB</text>
+  <text x="448" y="396" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1a1a1a">112,6 → 115,7 %</text>
+  <text x="448" y="416" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">hausse</text>
+
+  <rect x="540" y="348" width="156" height="88" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="618" y="372" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Intérêts</text>
+  <text x="618" y="396" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1a1a1a">+ 11,2 %</text>
+  <text x="618" y="416" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">64,7 Md€</text>
+
+  <text x="24" y="472" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Notification mars 2026 : dette 115,6 % du PIB. Compte annuel mai 2026 : 115,7 %. Les deux ne sont pas additionnés.</text>
+  <text x="24" y="494" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Source de la lecture : épreuve contradictoire EC-07. Verdict de cette épreuve : non tranché.</text>
+  <text x="24" y="530" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Schéma France 2040 · 1 octobre 2026 · ne constitue pas une trajectoire 2027–2040</text>
+</svg>

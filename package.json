@@ -8,7 +8,8 @@
     "next-build": "next build",
     "start": "next start",
     "test:vercelbuild-summary": "node scripts/checkVercelbuildSummary.js",
-    "test:paper-snapshot": "node scripts/checkPaperSnapshot.js"
+    "test:paper-snapshot": "node scripts/checkPaperSnapshot.js",
+    "test:visual-snapshot": "node scripts/checkVisualSnapshot.js"
   },
   "dependencies": {
     "next": "^15.5.4",

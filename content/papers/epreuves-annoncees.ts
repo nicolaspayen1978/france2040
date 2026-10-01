@@ -6,12 +6,6 @@ export type AnnouncedTest = {
 
 export const announcedTests: AnnouncedTest[] = [
   {
-    id: "ec-07",
-    title: "EC-07 — Dette publique, inflation et taux",
-    summary:
-      "Que devient la trajectoire du déficit, de la dette rapportée au PIB et de la charge d’intérêts lorsque croissance nominale, inflation, taux souverains et refinancement sont considérés ensemble ? Une hausse du PIB nominal peut réduire le ratio dette/PIB tout en renchérissant progressivement le service de la dette.",
-  },
-  {
     id: "ec-08",
     title: "EC-08 — Immobilier et stabilité financière",
     summary:

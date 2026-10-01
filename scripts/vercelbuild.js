@@ -134,6 +134,7 @@ function main() {
   section(1, "Contract");
   run("npm run test:vercelbuild-summary");
   run("npm run test:paper-snapshot");
+  run("npm run test:visual-snapshot");
   sectionEnd();
 
   section(2, "Next.js production build");

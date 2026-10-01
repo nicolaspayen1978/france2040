@@ -1,0 +1,20 @@
+/* Shared site + En images palette. Figures must not invent hex outside this file. */
+:root {
+  --paper: #fff;
+  --paper-2: #e8e8e4;
+  --line: #e6e6e6;
+  --ink: #1a1a1a;
+  --ink-2: #3f3f3f;
+  --ink-3: #5c5c5c;
+  --muted: #6a6a6a;
+  --muted-2: #9a9a9a;
+  --muted-3: #b0b0b0;
+
+  --mark-blue: #002395;
+  --mark-red: #ed2939;
+
+  --blue-2: #334a9a;
+  --blue-3: #99a5cd;
+  --red-2: #f06b76;
+  --red-3: #f7b3b8;
+}

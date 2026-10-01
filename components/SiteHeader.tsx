@@ -6,9 +6,9 @@ export function SiteHeader() {
     <header className="site-header">
       <Link className="brand" href="/">
         <svg className="flag" viewBox="0 0 3 2" aria-hidden="true">
-          <rect width="1" height="2" fill="#002395" />
-          <rect width="1" height="2" x="1" fill="#fff" />
-          <rect width="1" height="2" x="2" fill="#ED2939" />
+          <rect width="1" height="2" fill="var(--mark-blue)" />
+          <rect width="1" height="2" x="1" fill="var(--paper)" />
+          <rect width="1" height="2" x="2" fill="var(--mark-red)" />
         </svg>
         <span className="wordmark">France 2040</span>
       </Link>
