@@ -99,7 +99,11 @@ export function WorkingPaperView({ paper, versionId, blocks }: WorkingPaperViewP
       </section>
       ) : null}
 
-      <nav className="paper-toc" aria-label="Sommaire">
+      <nav className="paper-toc" aria-labelledby="toc-heading">
+        <h2 id="toc-heading">Table des matières</h2>
+        <p className="toc-note">
+          Le signe # ouvre l’adresse d’un passage, dans cette version. Il ne fait pas partie du texte.
+        </p>
         <ol>
           {headings.map((heading) =>
             heading.kind === "heading" ? (
@@ -117,8 +121,8 @@ export function WorkingPaperView({ paper, versionId, blocks }: WorkingPaperViewP
             const Tag = block.level === 2 ? "h2" : "h3";
             return (
               <Tag key={block.id} id={block.id}>
-                <a className="permalink" href={`${address}#${block.id}`}>
-                  #
+                <a className="permalink" href={`${address}#${block.id}`} aria-label="Adresse de ce passage">
+                  <span aria-hidden="true">#</span>
                 </a>
                 {block.text}
               </Tag>
@@ -128,8 +132,8 @@ export function WorkingPaperView({ paper, versionId, blocks }: WorkingPaperViewP
           if (block.kind === "paragraph") {
             return (
               <p key={block.id} id={block.id}>
-                <a className="permalink" href={`${address}#${block.id}`}>
-                  #
+                <a className="permalink" href={`${address}#${block.id}`} aria-label="Adresse de ce passage">
+                  <span aria-hidden="true">#</span>
                 </a>
                 {inline(block.text)}
               </p>
@@ -142,8 +146,8 @@ export function WorkingPaperView({ paper, versionId, blocks }: WorkingPaperViewP
               <ListTag key={block.id} id={block.id}>
                 {block.items.map((item) => (
                   <li key={item.id} id={item.id}>
-                    <a className="permalink" href={`${address}#${item.id}`}>
-                      #
+                    <a className="permalink" href={`${address}#${item.id}`} aria-label="Adresse de ce passage">
+                      <span aria-hidden="true">#</span>
                     </a>
                     {inline(item.text)}
                   </li>
@@ -154,8 +158,8 @@ export function WorkingPaperView({ paper, versionId, blocks }: WorkingPaperViewP
 
           return (
             <div key={block.id} className="paper-table-wrap" id={block.id}>
-              <a className="permalink" href={`${address}#${block.id}`}>
-                #
+              <a className="permalink" href={`${address}#${block.id}`} aria-label="Adresse de ce tableau">
+                <span aria-hidden="true">#</span>
               </a>
               <table>
                 <thead>
