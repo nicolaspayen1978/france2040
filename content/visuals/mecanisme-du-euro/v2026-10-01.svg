@@ -1,0 +1,70 @@
+<!--
+  En images  mecanisme-du-euro v2026-10-01
+  Colours from app/tokens.css: --ink, --ink-2, --muted, --line, --paper, --paper-2, --mark-blue, --mark-red, --blue-3
+  Schéma conceptuel. Open links marked grey / dashed  not established.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Mécanisme du euro de crédit</title>
+  <desc id="desc">
+    Chaîne : crédit, dépense, production française, recettes publiques. Les trois liens intermédiaires restent non tranchés.
+  </desc>
+  <rect width="720" height="520" fill="#fff"/>
+
+  <text x="24" y="36" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Mécanisme du ¬1</text>
+  <text x="24" y="56" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Chaîne du crédit à la recette · les liens ouverts restent ouverts</text>
+
+  <!-- Box 1: Crédit  established as scenario input -->
+  <rect x="40" y="100" width="140" height="72" rx="2" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <text x="110" y="130" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#002395">1 ¬ de crédit</text>
+  <text x="110" y="150" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">scénario · pas une dépense</text>
+
+  <!-- Arrow 1  open EC-02 -->
+  <path d="M180 136 H220" stroke="#9a9a9a" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+  <polygon points="220,136 212,132 212,140" fill="#9a9a9a"/>
+  <text x="200" y="124" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">EC-02</text>
+  <text x="200" y="168" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#9a9a9a">non tranché</text>
+
+  <!-- Box 2: Dépense -->
+  <rect x="228" y="100" width="140" height="72" rx="2" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="298" y="130" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#3f3f3f">Dépense ?</text>
+  <text x="298" y="150" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">part du crédit dépensée</text>
+
+  <!-- Arrow 2  open EC-03 -->
+  <path d="M368 136 H408" stroke="#9a9a9a" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+  <polygon points="408,136 400,132 400,140" fill="#9a9a9a"/>
+  <text x="388" y="124" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">EC-03</text>
+  <text x="388" y="168" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#9a9a9a">non tranché</text>
+
+  <!-- Box 3: Production FR -->
+  <rect x="416" y="100" width="140" height="72" rx="2" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="486" y="130" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#3f3f3f">Volume FR ?</text>
+  <text x="486" y="150" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">part française vide</text>
+
+  <!-- Arrow 3  open EC-06 -->
+  <path d="M556 136 H596" stroke="#9a9a9a" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+  <polygon points="596,136 588,132 588,140" fill="#9a9a9a"/>
+  <text x="576" y="124" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">EC-06</text>
+  <text x="576" y="168" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#9a9a9a">non tranché</text>
+
+  <!-- Box 4: Recettes -->
+  <rect x="604" y="100" width="92" height="72" rx="2" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="650" y="130" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#3f3f3f">Recettes</text>
+  <text x="650" y="150" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">cellule vide</text>
+
+  <!-- Warning strip -->
+  <rect x="40" y="210" width="656" height="56" rx="2" fill="#fff" stroke="#ed2939" stroke-width="1.25"/>
+  <text x="368" y="236" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#ed2939">43,6 % nest pas cette réponse</text>
+  <text x="368" y="256" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">Le taux moyen de prélèvements obligatoires ne se multiplie ni au crédit ni à la dépense (EC-06).</text>
+
+  <!-- Legend -->
+  <text x="40" y="310" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Lecture</text>
+  <rect x="40" y="328" width="20" height="14" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <text x="72" y="340" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Saisie de scénario (établie comme hypothèse)</text>
+  <rect x="40" y="356" width="20" height="14" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <text x="72" y="368" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Lien ou cellule non tranché  pas un coefficient</text>
+
+  <text x="40" y="410" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Un euro emprunté nest pas un euro de PIB. Une partie peut partir en importations, en épargne ou en actifs existants.</text>
+  <text x="40" y="430" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Les assiettes fiscales dépendent ensuite de la composition de la dépense  pas dun seul taux.</text>
+  <text x="40" y="470" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Schéma France2040 · 1 octobre 2026 · ne remplit aucune cellule ouverte</text>
+  <text x="40" y="490" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Citations : EC-02, EC-03, EC-06</text>
+</svg>

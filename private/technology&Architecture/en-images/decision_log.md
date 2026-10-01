@@ -47,6 +47,18 @@ Owner OK. Shipped:
 
 Decided with the build: dynamic `[slug]` from day one; figure lives under `content/visuals/` only (inlined at render, not mirrored to `public/`); hand SVG with token hex values recorded in a file comment.
 
+## 2026-10-01 — Phase 1 candidates 1–4 built
+
+Owner asked for visuals 1–4. Shipped:
+
+- `/en-images/trajectoire-credit-2027-2040` — simulation, chemin EC-04
+- `/en-images/mecanisme-du-euro` — schéma, liens EC-02/03/06 ouverts
+- `/en-images/parcours-menage-interets-seuls` — donnée arithmétique parcours-menages
+- `/en-images/patrimoine-vs-enveloppe` — ordres de grandeur EC-01
+
+Candidate 5 (carte des EC) not cut. Palette tokens only. Empty EC cells stay empty.
+
 ## Open, and not decided by writing this folder
 
 - Chart tooling for later visuals: hand SVG vs a generator tied to a frozen model version.
+- Phase 1 candidate 5: carte des EC.

@@ -1,0 +1,43 @@
+<!--
+  En images  patrimoine-vs-enveloppe v2026-10-01
+  Colours from app/tokens.css: --ink, --ink-2, --muted, --line, --paper, --paper-2, --mark-blue, --mark-red, --blue-3
+  Numbers from EC-01: 8 850, 2 251, 700 Md¬.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" role="img" aria-labelledby="title desc">
+  <title id="title">Patrimoine immobilier et enveloppe du scénario</title>
+  <desc id="desc">
+    Stock de logements et terrains 8 850 Md¬ ; résidu théorique à 40 % LTV 2 251 Md¬ ; scénario 700 Md¬ soit environ 31 % de ce résidu.
+  </desc>
+  <rect width="720" height="500" fill="#fff"/>
+
+  <text x="24" y="36" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Patrimoine et enveloppe mobilisable</text>
+  <text x="24" y="56" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Ordres de grandeur · le stock national nest pas le crédit qui serait souscrit</text>
+
+  <!-- Nested bars proportional roughly: 8850 full width, 2251 ~25% of that, 700 ~8% of 8850 or 31% of 2251 -->
+  <!-- Full bar width 640 for 8850 ’ scale 640/8850 H 0.0723 -->
+  <!-- 8850 ’ 640 -->
+  <!-- 2251 ’ 163 -->
+  <!-- 700 ’ 50.6 -->
+
+  <text x="40" y="100" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Logements et terrains bâtis (fin 2024)</text>
+  <rect x="40" y="112" width="640" height="36" fill="#99a5cd"/>
+  <text x="52" y="136" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1a1a1a">8 850 Md¬</text>
+
+  <text x="40" y="180" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Résidu théorique à 40 % LTV après crédit habitat (2 251 Md¬)</text>
+  <rect x="40" y="192" width="163" height="36" fill="#334a9a"/>
+  <text x="52" y="216" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#fff">2 251 Md¬</text>
+
+  <text x="40" y="260" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Scénario de crédit net 20272040 (saisie, pas une estimation)</text>
+  <rect x="40" y="272" width="51" height="36" fill="#002395"/>
+  <text x="100" y="296" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#002395">700 Md¬ H 31 % du résidu à 40 %</text>
+
+  <rect x="40" y="340" width="640" height="72" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="56" y="370" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Ce que le graphique établit</text>
+  <text x="56" y="392" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Au seul niveau agrégé, 700 Md¬ ne sont pas rejetés par le stock national de collatéral.</text>
+
+  <rect x="40" y="428" width="640" height="48" rx="2" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="56" y="450" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Ce quil nétablit pas : capacité emprunteur, HCSF, adoption. Le résidu nest pas un réservoir.</text>
+  <text x="56" y="468" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">EC-01 : non tranché au-delà du collatéral agrégé.</text>
+
+  <text x="24" y="492" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Source : épreuve contradictoire EC-01 · 1 octobre 2026</text>
+</svg>

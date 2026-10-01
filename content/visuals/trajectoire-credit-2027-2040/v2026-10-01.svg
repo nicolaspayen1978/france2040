@@ -1,0 +1,80 @@
+<!--
+  En images  trajectoire-credit-2027-2040 v2026-10-01
+  Colours from app/tokens.css: --ink, --ink-2, --muted, --line, --paper, --mark-blue, --mark-red, --blue-3
+  Simulation France2040  chemin gelé (EC-04). Not a forecast.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">Trajectoire du crédit net 20272040</title>
+  <desc id="desc">
+    Simulation : crédit net annuel de 25 Md¬ en 2027 au pic de 90 Md¬ en 20312032, puis décrue jusquà zéro en 2040. Cumul 700 Md¬.
+  </desc>
+  <rect width="720" height="480" fill="#fff"/>
+
+  <text x="24" y="36" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Trajectoire du crédit net 20272040</text>
+  <text x="24" y="56" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Simulation France2040 · scénario exploratoire · pas une prévision</text>
+
+  <!-- y-axis labels -->
+  <text x="40" y="100" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">90</text>
+  <text x="40" y="200" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">60</text>
+  <text x="40" y="300" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">30</text>
+  <text x="40" y="400" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">0</text>
+  <text x="24" y="78" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Md¬ / an</text>
+
+  <line x1="48" y1="400" x2="680" y2="400" stroke="#e6e6e6" stroke-width="1"/>
+  <line x1="48" y1="100" x2="680" y2="100" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="48" y1="200" x2="680" y2="200" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="48" y1="300" x2="680" y2="300" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- bars: values 25,45,65,80,90,90,80,70,55,40,30,20,10,0 ; scale 300/90 ; base y=400 ; width 32 ; step 44 ; start x=56 -->
+  <!-- 2027: 25 ’ h=83.33 -->
+  <rect x="56" y="316.7" width="32" height="83.3" fill="#002395"/>
+  <!-- 2028: 45 ’ h=150 -->
+  <rect x="100" y="250" width="32" height="150" fill="#002395"/>
+  <!-- 2029: 65 ’ h=216.67 -->
+  <rect x="144" y="183.3" width="32" height="216.7" fill="#002395"/>
+  <!-- 2030: 80 ’ h=266.67 -->
+  <rect x="188" y="133.3" width="32" height="266.7" fill="#002395"/>
+  <!-- 2031: 90 peak -->
+  <rect x="232" y="100" width="32" height="300" fill="#002395"/>
+  <!-- 2032: 90 peak -->
+  <rect x="276" y="100" width="32" height="300" fill="#002395"/>
+  <!-- 2033: 80 decline  muted blue -->
+  <rect x="320" y="133.3" width="32" height="266.7" fill="#334a9a"/>
+  <!-- 2034: 70 -->
+  <rect x="364" y="166.7" width="32" height="233.3" fill="#334a9a"/>
+  <!-- 2035: 55 -->
+  <rect x="408" y="216.7" width="32" height="183.3" fill="#334a9a"/>
+  <!-- 2036: 40 -->
+  <rect x="452" y="266.7" width="32" height="133.3" fill="#334a9a"/>
+  <!-- 2037: 30 -->
+  <rect x="496" y="300" width="32" height="100" fill="#99a5cd"/>
+  <!-- 2038: 20 -->
+  <rect x="540" y="333.3" width="32" height="66.7" fill="#99a5cd"/>
+  <!-- 2039: 10 -->
+  <rect x="584" y="366.7" width="32" height="33.3" fill="#99a5cd"/>
+  <!-- 2040: 0  red tick mark -->
+  <line x1="628" y1="400" x2="660" y2="400" stroke="#ed2939" stroke-width="3"/>
+  <circle cx="644" cy="400" r="4" fill="#ed2939"/>
+
+  <!-- year labels -->
+  <text x="72" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">27</text>
+  <text x="116" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">28</text>
+  <text x="160" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">29</text>
+  <text x="204" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">30</text>
+  <text x="248" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#1a1a1a">31</text>
+  <text x="292" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#1a1a1a">32</text>
+  <text x="336" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">33</text>
+  <text x="380" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">34</text>
+  <text x="424" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">35</text>
+  <text x="468" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">36</text>
+  <text x="512" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">37</text>
+  <text x="556" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">38</text>
+  <text x="600" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">39</text>
+  <text x="644" y="418" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#ed2939">40</text>
+
+  <text x="270" y="88" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#002395">Pic 90 Md¬</text>
+  <text x="644" y="380" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#ed2939">0</text>
+
+  <text x="24" y="448" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Cumul du scénario : 700 Md¬ de crédit net. Zéro en 2040 nest pas un choc de 90 Md¬ cette année-là (voir EC-04).</text>
+  <text x="24" y="468" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Simulation France2040 · chemin publié · 1 octobre 2026</text>
+</svg>
