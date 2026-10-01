@@ -27,3 +27,5 @@ Deploy gate is `scripts/vercelbuild.js`: §1 summary contract and paper snapshot
 2026-10-01. French machine-readable envelope on existing pages: absolute canonicals, sitemap, robots, Open Graph, breadcrumb, ScholarlyArticle. Version URL stays the citable object. No new narrative pages. No author in the schema. No snapshot edit.
 
 2026-10-01. En images phase 0 built. First visual `/en-images/le-ratio-n-est-pas-le-service`. Nav, tokens.css, visual hash gate. Docs/14 cycle includes En images.
+
+2026-10-01. Owner-supplied France 2040 JPEG is the site-wide Open Graph and Twitter/X large-card image. Route-level metadata repeats it so nested metadata does not drop the image. No document snapshot changed.

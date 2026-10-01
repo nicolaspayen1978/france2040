@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { VisualView } from "@/components/VisualView";
 import { getVisual, getVisuals, getVisualVersion, visualPath } from "@/lib/visuals";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteUrl, socialImage, socialTwitter } from "@/lib/site";
 
 type Props = {
   params: Promise<{ slug: string; version: string }>;
@@ -21,18 +21,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const version = getVisualVersion(visual, versionId);
   if (!version) return {};
   const path = visualPath(visual, version.id);
+  const title = `${visual.title} — ${version.id}`;
 
   return {
-    title: `${visual.title} — ${version.id}`,
+    title,
     description: visual.summary,
     alternates: { canonical: absoluteUrl(path) },
     openGraph: {
-      title: `${visual.title} — ${version.id}`,
+      title,
       description: visual.summary,
       url: absoluteUrl(path),
       locale: "fr_FR",
       type: "article",
+      images: [socialImage],
     },
+    twitter: socialTwitter(title, visual.summary),
   };
 }
 

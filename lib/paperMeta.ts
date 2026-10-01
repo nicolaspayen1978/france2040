@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
 import type { PaperVersion, WorkingPaper } from "@/content/papers/types";
 import { versionPath } from "@/lib/papers";
-import { absoluteUrl, publisherDescription, publisherId, siteId, siteName } from "@/lib/site";
+import {
+  absoluteUrl,
+  publisherDescription,
+  publisherId,
+  siteId,
+  siteName,
+  socialImage,
+  socialTwitter,
+} from "@/lib/site";
 
 export type PaperPlacement = "alias" | "version";
 
@@ -50,7 +58,9 @@ export function documentMetadata(paper: WorkingPaper, version: PaperVersion): Me
       locale: "fr_FR",
       type: "article",
       publishedTime: version.published,
+      images: [socialImage],
     },
+    twitter: socialTwitter(`${title} — ${siteName}`, paper.summary),
   };
 }
 
@@ -75,7 +85,9 @@ export function sectionMetadata(page: {
       siteName,
       locale: "fr_FR",
       type: "website",
+      images: [socialImage],
     },
+    twitter: socialTwitter(openGraphTitle, page.description),
   };
 }
 

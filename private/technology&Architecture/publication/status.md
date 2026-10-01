@@ -13,6 +13,6 @@ The public decision is `Docs/14_Architecture_Publication_Consultation.md`. This 
 
 Public set: draft Pacte, executive summary, V2, household exhibit, model, open questions, EC-01 to EC-06. Example: `/documents/parcours-menages/v/2026-10-01`. EC-06 current version is `2026-10-01-2`.
 
-Machine-readable slice, built 2026-10-01: French titles, descriptions, canonicals, sitemap, robots, Open Graph, breadcrumbs, and ScholarlyArticle on each published version. The publisher is the project. There is no author byline. Narrative pages and claim links are not built.
+Machine-readable slice, built 2026-10-01: French titles, descriptions, canonicals, sitemap, robots, Open Graph, breadcrumbs, and ScholarlyArticle on each published version. The publisher is the project. There is no author byline. Narrative pages and claim links are not built. All public routes use the owner-supplied France 2040 JPEG as their Open Graph and Twitter/X large-card image.
 
 Do not start phase 3 because the document model exists. The exit of phase 1 is a human judgement: this page is how Pacte research should exist in public.

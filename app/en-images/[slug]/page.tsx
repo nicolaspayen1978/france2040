@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { VisualView } from "@/components/VisualView";
 import { getVisual, getVisuals, getVisualVersion, visualPath } from "@/lib/visuals";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteUrl, socialImage, socialTwitter } from "@/lib/site";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -30,7 +30,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: absoluteUrl(path),
       locale: "fr_FR",
       type: "article",
+      images: [socialImage],
     },
+    twitter: socialTwitter(visual.title, visual.summary),
   };
 }
 

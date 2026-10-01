@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 export const siteName = "France 2040";
 
 export const siteDescription =
@@ -8,6 +10,25 @@ export const publisherDescription =
 
 export const homeDescription =
   "France 2040 publie le Pacte du bilan français : une hypothèse sur la manière de mobiliser, une seule fois, une fraction du patrimoine privé pour restaurer les finances publiques et transformer la capacité productive du pays entre 2027 et 2040.";
+
+export const socialImage = {
+  url: "/og/france-2040.jpeg",
+  width: 1672,
+  height: 941,
+  alt: "France 2040 — Travailler au bilan de demain, panorama de Paris et de la tour Eiffel",
+};
+
+export function socialTwitter(
+  title: string,
+  description: string,
+): NonNullable<Metadata["twitter"]> {
+  return {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [{ url: socialImage.url, alt: socialImage.alt }],
+  };
+}
 
 /**
  * Absolute origin for canonicals. Vercel injects the production domain at build time.

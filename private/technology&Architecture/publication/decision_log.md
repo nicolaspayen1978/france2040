@@ -44,6 +44,10 @@ Titles, descriptions, Open Graph, the breadcrumb, and ScholarlyArticle values ar
 
 The absolute origin is the Vercel production domain at build time. It is not hardcoded. Preview deployments are `noindex`. Narrative pages and claim-to-anchor links are not this slice.
 
+## 2026-10-01 — One owner-supplied social preview across the site
+
+Use the supplied France 2040 JPEG unchanged at `/og/france-2040.jpeg` for Open Graph and Twitter/X large-card previews. Route-specific metadata must repeat the image because nested Open Graph objects replace the root object. No published document snapshot changes.
+
 ## 2026-10-01 — EC-07 separates ratio, stock and interest
 
 First public version at `/documents/red-team-07`. The question is the joint path of deficit, debt/GDP and interest when nominal growth, inflation, sovereign rates and refinancing are held together. The verdict stays open. 2025 already shows interest rising while inflation falls and the deficit improves. Average life of negotiable debt near eight and a half years is cited from AFT 2024. No end-period debt ratio is published. The constant-debt illustration in model v0.1 is named and not used as a result.
