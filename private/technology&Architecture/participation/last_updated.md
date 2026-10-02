@@ -13,4 +13,7 @@ tracking parameters.
 2026-10-02. Phase 3: comment intake on dedicated Upstash Redis, HEA-style REST KV client,
 required names + email + body, optional LinkedIn. Resend e-mail verification before moderation.
 Critiquer control on document passages and visuals prefills target refs. Turnstile deferred. Gated
+
+2026-10-02. Critiquer on touch: removed always-on opacity under `(hover: none)` — chips were
+visible on every passage on mobile. Reveal again via sticky hover / focus-within only.
 moderation route.

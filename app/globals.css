@@ -728,6 +728,11 @@ body:has(.paper) .shell {
 .paper-body p:hover > .critique-link,
 .paper-body li:hover > .critique-link,
 .paper-table-wrap:hover > .critique-link,
+.paper-body h2:focus-within > .critique-link,
+.paper-body h3:focus-within > .critique-link,
+.paper-body p:focus-within > .critique-link,
+.paper-body li:focus-within > .critique-link,
+.paper-table-wrap:focus-within > .critique-link,
 .paper-body h2:has(> .critique-link:hover) > .critique-link,
 .paper-body h3:has(> .critique-link:hover) > .critique-link,
 .paper-body p:has(> .critique-link:hover) > .critique-link,
@@ -736,8 +741,10 @@ body:has(.paper) .shell {
 .critique-link:hover,
 .critique-link:focus-visible,
 .visual-figure:hover > .critique-link,
+.visual-figure:focus-within > .critique-link,
 .visual-figure:has(> .critique-link:hover) > .critique-link,
 .visual-section h2:hover > .critique-link,
+.visual-section h2:focus-within > .critique-link,
 .visual-section h2:has(> .critique-link:hover) > .critique-link {
   opacity: 1;
   pointer-events: auto;
@@ -755,15 +762,13 @@ body:has(.paper) .shell {
     0 10px 22px rgba(26, 26, 26, 0.08);
 }
 
+/*
+ * Touch: do not leave every « Critiquer » chip painted. First tap sticks :hover on the
+ * passage (chip appears); second tap opens the form. focus-within covers keyboard.
+ */
 @media (hover: none) {
   .permalink {
     opacity: 0.45;
-  }
-
-  .critique-link {
-    opacity: 0.85;
-    pointer-events: auto;
-    transform: none;
   }
 
   .paper-body h2::after,
