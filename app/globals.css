@@ -473,8 +473,16 @@ h2 {
   margin-top: 3rem;
 }
 
+.project-method:first-of-type {
+  margin-top: 2rem;
+}
+
 .project-method p {
   margin-top: 1rem;
+}
+
+.project-method h2 {
+  margin: 0;
 }
 
 .document-body {

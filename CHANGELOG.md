@@ -22,7 +22,7 @@ This file is a ship/history narrative. It does not replace:
 
 ### Changed
 
-- `[website]` Project page now states the public-source method and the boundaries of AI assistance: AI accelerates work but is not a source and does not replace human verification, contradiction, or editorial responsibility.
+- `[website]` `/projet` expanded: why (initiator named), method (versioning, En images, EC, critique), restrained AI statement, financing/independence, publication principles (frozen versions, open verdicts, empty cells).
 
 ### Fixed
 

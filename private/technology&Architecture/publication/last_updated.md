@@ -47,3 +47,8 @@ Deploy gate is `scripts/vercelbuild.js`: §1 summary contract and paper snapshot
 2026-10-02. `/projet` now includes **Méthode et transparence**: public-source citations and an
 explicit AI-assistance boundary. AI accelerates parts of the workflow but is not a source and does
 not replace human verification, contradiction, or editorial responsibility. No snapshot changed.
+
+2026-10-02. `/projet` expanded to owner-supplied copy: Pourquoi (initiator named), Comment
+(versioning, En images, EC, critique), IA (restrained + « elle peut se tromper »), Financement
+(initiator + voluntary gifts; no influence), Principes de publication (frozen snapshot, open
+verdict, empty cells). Links to `/pacte`, `/en-images`, `/participer`. No snapshot changed.

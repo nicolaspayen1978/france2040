@@ -91,6 +91,18 @@ production of some supporting material. AI is not a source and does not replace 
 verification, contradiction, or the project’s editorial responsibility. No published research
 snapshot changes in this slice.
 
+## 2026-10-02 — `/projet` states method and publication principles
+
+Owner-supplied full copy. Page sections: Pourquoi France 2040 (initiator named; personal why;
+not a programme or institution), Comment le travail est conduit (public sources; frozen
+versions; En images as objects; EC as falsification; critique attached, never rewrites), Une
+recherche augmentée par l’IA (explicit uses + « elle peut se tromper »; not a source; does not
+close EC), Financement et indépendance (initiator-funded; voluntary gifts; no tax relief; no
+rights over conclusions/versions/moderation; link to Participer), Principes de publication
+(frozen snapshot; open verdict stays open; critique completes the dossier; empty cells stay
+empty; examination, not belief). No research snapshot changed. Schema author byline still not
+added.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.
