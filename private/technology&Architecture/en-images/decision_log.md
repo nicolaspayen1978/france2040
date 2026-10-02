@@ -84,6 +84,14 @@ Owner OK: preferred path (short public note) then order B → A → C.
 - A `demographie-2027-2040`: share 65+ 21 % → 29 %, window 2027–2040, ± millions 75+ / −60; no invented 2040 share %.
 - C `financement-retraites`: COR balances 2024 / 2030 / 2070 and expenses vs resources; not Maastricht, not Pacte effect.
 
+## 2026-10-02 — Owner: put 2040 on the figures
+
+Feedback on A and C: 2070 alone is not enough for a 2027–2040 window.
+
+- Insee Première 1881 already publishes **26 %** for share 65+ in 2040 — filled in note `2026-10-02-2` and visual A `2026-10-02-2`.
+- COR synthesis does **not** isolate a 2040 solde in % of GDP — cell stays empty on the figure.
+- Closest published mid-horizon money figure: Cour des comptes février 2025 **~30 Md€ in 2045** (COR says nearly identical at 2045). Added on C `2026-10-02-2`.
+
 ## Open, and not decided by writing this folder
 
 - Chart tooling for later visuals: hand SVG vs a generator tied to a frozen model version.

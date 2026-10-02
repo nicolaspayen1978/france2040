@@ -16,11 +16,11 @@ export const retraitesVsActifs: Visual = {
   units: "Personnes de 65 ans ou plus pour 100 personnes de 20 à 64 ans",
   asOf: "Projections Insee 2021–2070 · lecture 2 octobre 2026",
   provenance:
-    "Insee Première n° 1881, 29 novembre 2021. Lecture : note contexte-demographique, version 2026-10-02.",
+    "Insee Première n° 1881, 29 novembre 2021. Lecture : note contexte-demographique, version 2026-10-02-2.",
   citations: [
     {
-      href: "/documents/contexte-demographique/v/2026-10-02",
-      label: "Contexte démographique et financement des retraites (2026-10-02)",
+      href: "/documents/contexte-demographique/v/2026-10-02-2",
+      label: "Contexte démographique et financement des retraites (2026-10-02-2)",
     },
   ],
   currentVersionId: "2026-10-02",
@@ -31,7 +31,7 @@ export const retraitesVsActifs: Visual = {
       status: "working",
       figure: "content/visuals/retraites-vs-actifs/v2026-10-02.svg",
       sha256: "269fb3a7a2a4c4ea785a5a146676a56757c5d7b40623949dcba0414e1087ff0b",
-      note: "Première version. Dépendance démographique 37 → 51 ; anti-lecture emploi explicite.",
+      note: "Première version. Dépendance démographique 37 → 51 ; anti-lecture emploi explicite. Citation retargetée vers note 2026-10-02-2.",
     },
   ],
 };

@@ -41,3 +41,5 @@ Deploy gate is `scripts/vercelbuild.js`: §1 summary contract and paper snapshot
 2026-10-02. EC-05 `2026-10-02-2`: coexistence wording separates asset fabrication (lender, guarantor, security nature/rank, consolidated LTV) from downstream eligibility for refinancing channels. Prior snapshot bytes unchanged.
 
 2026-10-02. Context note `/documents/contexte-demographique` `2026-10-02`: Insee Première 1881 + COR juin 2025 tables for En images Le problème. Verdict: contexte établi à partir des sources ; lien Pacte = lecture.
+
+2026-10-02. Context note `2026-10-02-2`: fills Insee 26 % (65+) in 2040; adds Cour ~30 Md€ in 2045; COR 2040 % PIB stays empty. Prior snapshot bytes unchanged.

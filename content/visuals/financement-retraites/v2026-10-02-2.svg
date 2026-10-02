@@ -1,0 +1,67 @@
+<!--
+  En images — financement-retraites v2026-10-02-2
+  Colours from app/tokens.css.
+  Numbers from /documents/contexte-demographique/v/2026-10-02-2 (COR juin 2025 + Cour fév. 2025).
+  2040 % PIB : cellule vide (non publié dans la synthèse COR).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">Besoin de financement du système de retraite — COR et Cour des comptes</title>
+  <desc id="desc">
+    Solde COR : −0,1 % du PIB en 2024, −0,2 % en 2030, −1,4 % en 2070.
+    Cour des comptes : autour de 30 Md€ en 2045. Pas de solde COR isolé pour 2040.
+  </desc>
+  <rect width="720" height="560" fill="#fff"/>
+
+  <text x="24" y="36" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Financement des retraites</text>
+  <text x="24" y="56" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Solde / besoin · COR juin 2025 + Cour fév. 2025 · pas l’effet du Pacte</text>
+
+  <rect x="24" y="80" width="160" height="112" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="104" y="108" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">2024 · constat</text>
+  <text x="104" y="140" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#ed2939">−0,1 %</text>
+  <text x="104" y="162" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">du PIB · −1,7 Md€</text>
+  <text x="104" y="180" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#9a9a9a">COR</text>
+
+  <rect x="196" y="80" width="160" height="112" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="276" y="108" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">2030 · projection</text>
+  <text x="276" y="140" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#ed2939">−0,2 %</text>
+  <text x="276" y="162" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">du PIB · −6,6 Md€</text>
+  <text x="276" y="180" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#9a9a9a">COR</text>
+
+  <rect x="368" y="80" width="160" height="112" rx="2" fill="#fff" stroke="#ed2939" stroke-width="1.5"/>
+  <text x="448" y="108" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#ed2939">2045 · horizon Cour</text>
+  <text x="448" y="140" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#ed2939">~30 Md€</text>
+  <text x="448" y="162" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">hors inflation</text>
+  <text x="448" y="180" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#9a9a9a">Cour · ≈ COR à 2045</text>
+
+  <rect x="540" y="80" width="160" height="112" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="620" y="108" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">2070 · projection</text>
+  <text x="620" y="140" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#ed2939">−1,4 %</text>
+  <text x="620" y="162" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">du PIB</text>
+  <text x="620" y="180" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#9a9a9a">COR</text>
+
+  <rect x="24" y="208" width="676" height="28" rx="2" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="40" y="227" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">2040 · solde COR en % du PIB : non publié dans la synthèse · cellule vide</text>
+
+  <text x="24" y="268" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Dépenses et ressources · % du PIB · COR</text>
+
+  <text x="24" y="302" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Dépenses</text>
+  <rect x="110" y="286" width="200" height="28" fill="#99a5cd"/>
+  <text x="122" y="305" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">13,9 % · 2024</text>
+  <rect x="330" y="286" width="204" height="28" fill="#002395"/>
+  <text x="342" y="305" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#fff">14,2 % · 2070</text>
+
+  <text x="24" y="352" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Ressources</text>
+  <rect x="110" y="336" width="200" height="28" fill="#f7b3b8"/>
+  <text x="122" y="355" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">13,9 % · 2024</text>
+  <rect x="330" y="336" width="184" height="28" fill="#ed2939"/>
+  <text x="342" y="355" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#fff">12,8 % · 2070</text>
+
+  <rect x="24" y="392" width="676" height="56" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="40" y="418" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Ce que le graphique établit</text>
+  <text x="40" y="438" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Besoin de financement persistant : COR jusqu’en 2070 ; Cour autour de 30 Md€ en 2045.</text>
+
+  <rect x="24" y="460" width="676" height="36" rx="2" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="40" y="483" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Ce qu’il n’établit pas : que le Pacte comble ce besoin, ni le déficit public Maastricht.</text>
+
+  <text x="24" y="528" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Lecture contexte-demographique · COR juin 2025 · Cour fév. 2025 · 2 octobre 2026 · 2040 % vide</text>
+</svg>
