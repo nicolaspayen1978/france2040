@@ -6,12 +6,6 @@ export type AnnouncedTest = {
 
 export const announcedTests: AnnouncedTest[] = [
   {
-    id: "ec-08",
-    title: "EC-08 — Immobilier et stabilité financière",
-    summary:
-      "Que devient le mécanisme en cas de baisse des prix immobiliers, de défauts plus élevés ou de difficultés de refinancement ? L’épreuve porte notamment sur les ratios prêt sur valeur, les ventes, les successions, les concentrations bancaires et la transmission éventuelle d’un choc immobilier au système financier.",
-  },
-  {
     id: "ec-09",
     title: "EC-09 — Scénario d’échec combiné",
     summary:

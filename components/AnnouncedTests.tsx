@@ -11,13 +11,14 @@ export function AnnouncedTests() {
       <p className="intro">
         Les premières épreuves ont testé le stock d’équité mobilisable, la transformation du crédit en
         dépense, la transformation de cette dépense en production française, la sortie du dispositif en
-        2040, la capacité du système financier à porter l’actif, la boucle fiscale et la trajectoire de
-        la dette. EC-06 et EC-07 sont ouvertes : elles ne chiffrent encore ni le retour par euro, ni le
-        chemin du déficit et des intérêts.
+        2040, la capacité du système financier à porter l’actif, la boucle fiscale, la trajectoire de
+        la dette, puis l’immobilier et la stabilité financière. EC-06, EC-07 et EC-08 sont ouvertes :
+        elles ne chiffrent encore ni le retour par euro, ni le chemin du déficit et des intérêts, ni
+        la transmission d’un choc de prix.
       </p>
       <p className="intro">
-        Restent les risques que le mécanisme fait porter à l’immobilier et au système financier. Une
-        dernière épreuve combinera ensuite plusieurs hypothèses défavorables.
+        Reste une dernière épreuve, qui combinera plusieurs hypothèses défavorables pour situer les
+        limites de fonctionnement du mécanisme.
       </p>
       <ul className="doc-list">
         {announcedTests.map((test) => (

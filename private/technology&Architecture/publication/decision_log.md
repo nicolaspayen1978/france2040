@@ -103,6 +103,15 @@ rights over conclusions/versions/moderation; link to Participer), Principes de p
 empty; examination, not belief). No research snapshot changed. Schema author byline still not
 added.
 
+## 2026-10-02 — EC-08 opens housing / financial-stability channels
+
+Owner OK via refined design note. First public version at `/documents/red-team-08`,
+`2026-10-02`. Question: what becomes of the Pacte when prices fall — not whether prices can
+fall. Five channels. Falsifiable hypothesis includes V2 kill-switches as last barrier, without
+demonstrating them. LTV table −10/−20/−30 % is arithmetic only; defaults, forced sales, DMTO,
+bank losses and funding stay empty. Price decline itself is not category-4; certain
+transmissions may be. Announced list drops EC-08; EC-09 remains.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

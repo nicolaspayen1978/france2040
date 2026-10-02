@@ -52,3 +52,7 @@ not replace human verification, contradiction, or editorial responsibility. No s
 (versioning, En images, EC, critique), IA (restrained + « elle peut se tromper »), Financement
 (initiator + voluntary gifts; no influence), Principes de publication (frozen snapshot, open
 verdict, empty cells). Links to `/pacte`, `/en-images`, `/participer`. No snapshot changed.
+
+2026-10-02. EC-08 published as `/documents/red-team-08`, version `2026-10-02`, verdict open.
+Five channels (LTV, households, DMTO, origination, system). Arithmetic LTV table −10/−20/−30 %
+only. Price fall alone not classed as fatal; transmissions are. Announced list is now EC-09.
