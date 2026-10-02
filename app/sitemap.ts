@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages: MetadataRoute.Sitemap = [
     { url: absoluteUrl("/"), lastModified: latestDate },
     { url: absoluteUrl("/projet"), lastModified: latestDate },
-    { url: absoluteUrl("/soutenir"), lastModified: latestDate },
+    { url: absoluteUrl("/participer"), lastModified: latestDate },
     { url: absoluteUrl("/documents"), lastModified: latestDate },
     { url: absoluteUrl("/en-images"), lastModified: latestDate },
   ];

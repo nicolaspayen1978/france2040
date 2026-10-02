@@ -9,6 +9,7 @@ const links = [
   { href: "/documents", label: "Documents" },
   { href: "/en-images", label: "En images" },
   { href: "/projet", label: "Projet" },
+  { href: "/participer", label: "Participer" },
 ];
 
 export function SiteNav() {

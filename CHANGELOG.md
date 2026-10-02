@@ -15,7 +15,7 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
-- `[website]` Support page at `/soutenir`, reached from a discreet footer invitation, with a voluntary-contribution notice and an outbound link to the project’s hosted Stripe payment page.
+- `[website]` Participation page at `/participer`, linked from the main navigation and footer: critique first, research contributions, circulation of the work, then financial support through the hosted Stripe payment page. `/soutenir` redirects to its financial-support section.
 
 ### Changed
 
