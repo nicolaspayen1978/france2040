@@ -777,6 +777,17 @@ a:focus-visible {
   font-size: 0.9375rem;
 }
 
+.home-architecture {
+  margin: 1.75rem 0 2rem;
+}
+
+.home-architecture .visual-figure-frame {
+  /* Let the wide schéma breathe slightly past the prose column. */
+  margin-inline: calc(-0.5 * min(12rem, 8vw));
+  width: calc(100% + min(12rem, 8vw));
+  max-width: none;
+}
+
 .visual-label {
   font-weight: 500;
   color: var(--ink-2);

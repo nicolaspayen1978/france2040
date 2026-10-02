@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AnnouncedTests } from "@/components/AnnouncedTests";
+import { HomeQuatreBilansFigure } from "@/components/HomeQuatreBilansFigure";
 import { PaperProse } from "@/components/PaperProse";
 import { PublicationList } from "@/components/PublicationList";
 import { sectionMetadata } from "@/lib/paperMeta";
@@ -31,7 +32,11 @@ export default function HomePage() {
       </p>
       <section className="section summary" aria-labelledby="summary-heading">
         <h2 id="summary-heading">Résumé exécutif</h2>
-        <PaperProse blocks={loadPaperBlocks(version)} />
+        <PaperProse
+          blocks={loadPaperBlocks(version)}
+          insertBeforeHeadingId="la-proposition-de-valeur"
+          insert={<HomeQuatreBilansFigure />}
+        />
         <p className="entry">
           <Link href={address}>Version citée</Link>
         </p>

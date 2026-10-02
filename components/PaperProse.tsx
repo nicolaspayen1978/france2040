@@ -29,16 +29,32 @@ function inline(text: string): ReactNode[] {
   return nodes;
 }
 
-export function PaperProse({ blocks }: { blocks: PaperBlock[] }) {
+type Props = {
+  blocks: PaperBlock[];
+  /** Optional insert rendered immediately before the heading with this id. */
+  insertBeforeHeadingId?: string;
+  insert?: ReactNode;
+};
+
+export function PaperProse({ blocks, insertBeforeHeadingId, insert }: Props) {
   return (
     <div className="summary-body">
       {blocks.map((block) => {
+        const ahead =
+          insert &&
+          insertBeforeHeadingId &&
+          block.kind === "heading" &&
+          block.id === insertBeforeHeadingId
+            ? insert
+            : null;
+
         if (block.kind === "heading") {
           const Tag = block.level === 2 ? "h3" : "h4";
           return (
-            <Tag key={block.id} id={block.id}>
-              {block.text}
-            </Tag>
+            <div key={block.id}>
+              {ahead}
+              <Tag id={block.id}>{block.text}</Tag>
+            </div>
           );
         }
 

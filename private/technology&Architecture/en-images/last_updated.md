@@ -14,4 +14,6 @@ Cross-link: publication domain remains the source of document immutability and d
 
 2026-10-01. Image 0 published: `/en-images/les-quatre-bilans`. First on the index. Sobering redraw of owner sketch; open EC links kept open.
 
+2026-10-02. Image 0 embedded on the home page inside the résumé exécutif, immediately before « La proposition de valeur ». Snapshot unchanged; insert is page chrome only. Link to the En images fiche.
+
 2026-10-01. Two visuals from Parcours ménages v2026-10-01-2: `emprunt-moyen-mensualite` and `emprunt-moyen-capacite` (Case 1 credit ticket, not notarial 230/270).
