@@ -11,6 +11,6 @@ immutable version addresses; the participation page shares the site root. No pla
 tracking parameters.
 
 2026-10-02. Phase 3: comment intake on dedicated Upstash Redis, HEA-style REST KV client,
-required names + email + body, optional LinkedIn and document refs. Resend e-mail verification
-before moderation (`unverified` → `pending` → accepted/rejected). Turnstile deferred. Gated
+required names + email + body, optional LinkedIn. Resend e-mail verification before moderation.
+Critiquer control on document passages and visuals prefills target refs. Turnstile deferred. Gated
 moderation route.

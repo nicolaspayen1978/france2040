@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { targetPassageHref } from "@/lib/critique";
 
 type ModerationComment = {
   id: string;
@@ -11,9 +12,11 @@ type ModerationComment = {
   body: string;
   status: string;
   submittedAt: string;
+  kind: string | null;
   slug: string | null;
   versionId: string | null;
   anchorId: string | null;
+  section: string | null;
 };
 
 export function CommentModerationPanel() {
@@ -123,9 +126,25 @@ export function CommentModerationPanel() {
                   {new Date(comment.submittedAt).toLocaleString("fr-FR")}
                 </time>
               </p>
-              {(comment.slug || comment.versionId || comment.anchorId) && (
+              {(comment.slug || comment.versionId || comment.anchorId || comment.section) && (
                 <p className="comment-ref">
-                  {[comment.slug, comment.versionId, comment.anchorId].filter(Boolean).join(" / ")}
+                  {(() => {
+                    const href = targetPassageHref({
+                      kind: comment.kind,
+                      slug: comment.slug,
+                      versionId: comment.versionId,
+                      anchorId: comment.anchorId,
+                    });
+                    const label = [
+                      comment.slug,
+                      comment.versionId,
+                      comment.anchorId ? `#${comment.anchorId}` : null,
+                    ]
+                      .filter(Boolean)
+                      .join(" · ");
+                    return href ? <a href={href}>{label}</a> : label;
+                  })()}
+                  {comment.section ? ` — ${comment.section}` : null}
                 </p>
               )}
               <p className="comment-body">{comment.body}</p>

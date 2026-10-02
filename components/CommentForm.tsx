@@ -1,20 +1,26 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import type { CritiqueTargetKind } from "@/lib/critique";
 
 type Status = "idle" | "submitting" | "ok" | "error";
 
 export function CommentForm({
+  defaultKind = "paper",
   defaultSlug = "",
   defaultVersionId = "",
   defaultAnchorId = "",
+  defaultSection = "",
 }: {
+  defaultKind?: CritiqueTargetKind;
   defaultSlug?: string;
   defaultVersionId?: string;
   defaultAnchorId?: string;
+  defaultSection?: string;
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
+  const hasTarget = Boolean(defaultSlug && defaultVersionId);
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -34,9 +40,11 @@ export function CommentForm({
           email: data.get("email"),
           linkedin: data.get("linkedin"),
           body: data.get("body"),
+          kind: data.get("kind"),
           slug: data.get("slug"),
           versionId: data.get("versionId"),
           anchorId: data.get("anchorId"),
+          section: data.get("section"),
           website: data.get("website"),
         }),
       });
@@ -52,7 +60,11 @@ export function CommentForm({
         return;
       }
 
-      form.reset();
+      for (const name of ["firstName", "lastName", "email", "linkedin", "body", "website"] as const) {
+        const field = form.elements.namedItem(name);
+        if (field && "value" in field) field.value = "";
+      }
+
       setStatus("ok");
       setMessage(
         payload.message ||
@@ -66,6 +78,24 @@ export function CommentForm({
 
   return (
     <form className="comment-form" onSubmit={onSubmit} noValidate>
+      {hasTarget ? (
+        <p className="comment-target-banner" role="status">
+          Passage ciblé :{" "}
+          <strong>
+            {defaultSlug} · {defaultVersionId}
+            {defaultAnchorId ? ` · #${defaultAnchorId}` : ""}
+          </strong>
+          {defaultSection ? (
+            <>
+              <br />
+              Section : {defaultSection}
+            </>
+          ) : null}
+        </p>
+      ) : null}
+
+      <input type="hidden" name="kind" value={defaultKind} />
+
       <div className="comment-form-row">
         <label>
           Prénom
@@ -99,21 +129,43 @@ export function CommentForm({
         <textarea name="body" required maxLength={4000} rows={8} />
       </label>
 
-      <details className="comment-form-refs">
-        <summary>Référence à un document (optionnel)</summary>
+      <details className="comment-form-refs" open={hasTarget}>
+        <summary>Référence à un document {hasTarget ? "" : "(optionnel)"}</summary>
         <div className="comment-form-row">
           <label>
             Document (slug)
-            <input name="slug" type="text" maxLength={120} defaultValue={defaultSlug} />
+            <input name="slug" type="text" maxLength={120} defaultValue={defaultSlug} readOnly={hasTarget} />
           </label>
           <label>
             Version
-            <input name="versionId" type="text" maxLength={120} defaultValue={defaultVersionId} />
+            <input
+              name="versionId"
+              type="text"
+              maxLength={120}
+              defaultValue={defaultVersionId}
+              readOnly={hasTarget}
+            />
           </label>
         </div>
         <label>
           Ancre
-          <input name="anchorId" type="text" maxLength={120} defaultValue={defaultAnchorId} />
+          <input
+            name="anchorId"
+            type="text"
+            maxLength={120}
+            defaultValue={defaultAnchorId}
+            readOnly={hasTarget}
+          />
+        </label>
+        <label>
+          Section
+          <input
+            name="section"
+            type="text"
+            maxLength={200}
+            defaultValue={defaultSection}
+            readOnly={hasTarget}
+          />
         </label>
       </details>
 

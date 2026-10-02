@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { CritiqueLink } from "@/components/CritiqueLink";
 import { ShareAction } from "@/components/ShareAction";
+import type { ReactNode } from "react";
 import {
   getVisualVersion,
   loadVisualFigure,
@@ -15,6 +17,38 @@ type Props = {
   versionId: string;
 };
 
+function VisualSection({
+  visual,
+  versionId,
+  headingId,
+  title,
+  children,
+}: {
+  visual: Visual;
+  versionId: string;
+  headingId: string;
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <section className="section visual-section" aria-labelledby={headingId}>
+      <h2 id={headingId}>
+        <CritiqueLink
+          target={{
+            kind: "visual",
+            slug: visual.slug,
+            versionId,
+            anchorId: headingId,
+            section: title,
+          }}
+        />
+        {title}
+      </h2>
+      {children}
+    </section>
+  );
+}
+
 export function VisualView({ visual, versionId }: Props) {
   const version = getVisualVersion(visual, versionId);
   if (!version) {
@@ -27,6 +61,14 @@ export function VisualView({ visual, versionId }: Props) {
   const natureLine = visual.natureNote
     ? `${visualNatureLabel(visual.nature)}. ${visual.natureNote}`
     : visualNatureLabel(visual.nature);
+
+  const figureTarget = {
+    kind: "visual" as const,
+    slug: visual.slug,
+    versionId: version.id,
+    anchorId: "figure",
+    section: visual.title,
+  };
 
   return (
     <article className="visual">
@@ -58,7 +100,8 @@ export function VisualView({ visual, versionId }: Props) {
         />
       </p>
 
-      <figure className="visual-figure">
+      <figure className="visual-figure" id="figure">
+        <CritiqueLink target={figureTarget} />
         <div
           className="visual-figure-frame"
           dangerouslySetInnerHTML={{ __html: figure }}
@@ -66,18 +109,25 @@ export function VisualView({ visual, versionId }: Props) {
         <figcaption className="visual-caption">{visual.summary}</figcaption>
       </figure>
 
-      <section className="section" aria-labelledby="shows-heading">
-        <h2 id="shows-heading">Ce que montre ce graphique</h2>
+      <VisualSection visual={visual} versionId={version.id} headingId="shows-heading" title="Ce que montre ce graphique">
         <p>{visual.shows}</p>
-      </section>
+      </VisualSection>
 
-      <section className="section" aria-labelledby="limits-heading">
-        <h2 id="limits-heading">Ce que cela n’établit pas</h2>
+      <VisualSection
+        visual={visual}
+        versionId={version.id}
+        headingId="limits-heading"
+        title="Ce que cela n’établit pas"
+      >
         <p>{visual.doesNotEstablish}</p>
-      </section>
+      </VisualSection>
 
-      <section className="section" aria-labelledby="meta-heading">
-        <h2 id="meta-heading">Nature, unités, provenance</h2>
+      <VisualSection
+        visual={visual}
+        versionId={version.id}
+        headingId="meta-heading"
+        title="Nature, unités, provenance"
+      >
         <p>
           <span className="visual-label">Nature.</span> {natureLine}
         </p>
@@ -87,7 +137,7 @@ export function VisualView({ visual, versionId }: Props) {
         <p>
           <span className="visual-label">Provenance.</span> {visual.provenance}
         </p>
-      </section>
+      </VisualSection>
 
       <section className="sources" aria-labelledby="citations-heading">
         <h2 id="citations-heading">Documents cités</h2>
@@ -99,7 +149,8 @@ export function VisualView({ visual, versionId }: Props) {
           ))}
         </ul>
         <p className="intro">
-          Contester cette lecture → commenter le document cité, lorsque la discussion sera ouverte.
+          Contester cette lecture → utiliser « Critiquer » sur le graphique ou une section, ou commenter
+          le document cité.
         </p>
       </section>
 

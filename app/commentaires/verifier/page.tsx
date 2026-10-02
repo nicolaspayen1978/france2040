@@ -31,7 +31,7 @@ export default async function VerifyCommentPage({ searchParams }: PageProps) {
       message = "Ce commentaire a déjà été traité.";
     } else {
       message =
-        "Adresse confirmée. Votre commentaire est maintenant en file de modération.";
+        "Adresse confirmée. Votre commentaire est en file de modération. Vous n’avez rien d’autre à faire : s’il est accepté, il apparaîtra sur la page des commentaires.";
     }
   } catch (error) {
     message = error instanceof Error ? error.message : message;

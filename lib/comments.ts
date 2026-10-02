@@ -15,6 +15,8 @@ import { isMailConfigured, sendCommentVerificationEmail } from "@/lib/mail";
 
 export type CommentStatus = "unverified" | "pending" | "accepted" | "rejected";
 
+export type CommentTargetKind = "paper" | "visual";
+
 export type CommentRecord = {
   id: string;
   firstName: string;
@@ -25,9 +27,11 @@ export type CommentRecord = {
   status: CommentStatus;
   submittedAt: string;
   verifiedAt: string | null;
+  kind: CommentTargetKind | null;
   slug: string | null;
   versionId: string | null;
   anchorId: string | null;
+  section: string | null;
   moderatedAt: string | null;
 };
 
@@ -144,12 +148,19 @@ export type SubmitCommentInput = {
   email: unknown;
   linkedin: unknown;
   body: unknown;
+  kind?: unknown;
   slug?: unknown;
   versionId?: unknown;
   anchorId?: unknown;
+  section?: unknown;
   /** Honeypot — must be empty. */
   website?: unknown;
 };
+
+function normalizeKind(value: unknown): CommentTargetKind | null {
+  if (value === "visual" || value === "paper") return value;
+  return null;
+}
 
 export async function submitComment(
   input: SubmitCommentInput,
@@ -173,6 +184,10 @@ export async function submitComment(
     throw new Error("Trop de soumissions. Réessayez plus tard.");
   }
 
+  const slug = trimOrNull(input.slug, MAX_REF);
+  const versionId = trimOrNull(input.versionId, MAX_REF);
+  const kind = normalizeKind(input.kind) ?? (slug ? "paper" : null);
+
   const record: CommentRecord = {
     id: newId(),
     firstName: requireText(input.firstName, "Le prénom", MAX_NAME),
@@ -183,9 +198,11 @@ export async function submitComment(
     status: "unverified",
     submittedAt: new Date().toISOString(),
     verifiedAt: null,
-    slug: trimOrNull(input.slug, MAX_REF),
-    versionId: trimOrNull(input.versionId, MAX_REF),
+    kind,
+    slug,
+    versionId,
     anchorId: trimOrNull(input.anchorId, MAX_REF),
+    section: trimOrNull(input.section, 200),
     moderatedAt: null,
   };
 
@@ -230,7 +247,19 @@ async function loadByIds(ids: string[]): Promise<CommentRecord[]> {
   const records: CommentRecord[] = [];
   for (const id of ids) {
     const record = await kvGetJson<CommentRecord>(commentKey(id));
-    if (record && record.id) records.push(record);
+    if (record && record.id) {
+      records.push({
+        ...record,
+        kind: record.kind ?? null,
+        section: record.section ?? null,
+        verifiedAt: record.verifiedAt ?? null,
+        linkedin: record.linkedin ?? null,
+        slug: record.slug ?? null,
+        versionId: record.versionId ?? null,
+        anchorId: record.anchorId ?? null,
+        moderatedAt: record.moderatedAt ?? null,
+      });
+    }
   }
   return records.sort((a, b) => (a.submittedAt < b.submittedAt ? 1 : -1));
 }

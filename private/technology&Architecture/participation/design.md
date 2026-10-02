@@ -44,22 +44,19 @@ yet the full publication phase 3 model (inline anchors beside paper HTML).
 | email | yes | no |
 | linkedin | no | yes when set (as profile link) |
 | body | yes | yes |
-| slug / versionId / anchorId | no | yes when set |
-| status | system | accepted only on the public list |
-| submittedAt | system | yes |
-| verifiedAt | system | no |
+| slug / versionId / anchorId / section / kind | no (prefilled from Critiquer) | yes when set |
 
 Statuses: `unverified` → `pending` → `accepted` | `rejected`.
 
-1. Submit stores `unverified` and sends a Resend confirmation mail (48h single-use token).
-2. Opening `/commentaires/verifier?token=…` moves the comment to `pending` (moderation queue).
-3. Owner accepts or rejects. Public page lists **accepted** only.
+1. From a document or visual, « Critiquer » opens `/commentaires` with `kind`, `slug`, `version`,
+   `anchor`, and `section` (nearest heading title) prefilled.
+2. Submit stores `unverified` and sends a Resend confirmation mail (48h single-use token).
+3. Opening `/commentaires/verifier?token=…` moves the comment to `pending` (moderation queue).
+4. Owner accepts or rejects. Public page lists **accepted** only, with a link back to the passage.
 
 Email is never written into the public HTML. Unverified comments never appear in moderation or
-public lists.
-
-Optional `slug`, `versionId`, and `anchorId` prepare later binding to a published version without
-requiring document-page UI in this slice.
+public lists. Accepted comments are listed on `/commentaires` in this slice; they are not yet
+rendered inline under each paper paragraph.
 
 ### Storage
 
@@ -86,5 +83,5 @@ are relevance, abuse, spam, or legality — not disagreement with the Pacte.
 
 ### Out of this slice
 
-Turnstile / CAPTCHA, inline comment UI on document pages, replies / issue state, accounts,
-threads, votes. Those remain later work.
+Turnstile / CAPTCHA, inline accepted comments under each paragraph, replies / issue state, accounts,
+threads, votes.

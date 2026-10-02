@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { CritiqueLink } from "@/components/CritiqueLink";
 import { JsonLd } from "@/components/JsonLd";
 import { ShareAction } from "@/components/ShareAction";
 import type { WorkingPaper } from "@/content/papers/types";
@@ -129,7 +130,8 @@ export function WorkingPaperView({ paper, versionId, blocks, placement }: Workin
       <nav className="paper-toc" aria-labelledby="toc-heading">
         <h2 id="toc-heading">Table des matières</h2>
         <p className="toc-note">
-          Le signe # ouvre l’adresse d’un passage, dans cette version. Il ne fait pas partie du texte.
+          Le signe # ouvre l’adresse d’un passage, dans cette version. « Critiquer » ouvre le formulaire
+          de commentaire déjà ciblé sur ce passage. Ni l’un ni l’autre ne fait partie du texte.
         </p>
         <ol>
           {headings.map((heading) =>
@@ -143,74 +145,114 @@ export function WorkingPaperView({ paper, versionId, blocks, placement }: Workin
       </nav>
 
       <div className="paper-body">
-        {blocks.map((block) => {
-          if (block.kind === "heading") {
-            const Tag = block.level === 2 ? "h2" : "h3";
+        {(() => {
+          let sectionLabel = paper.title;
+          return blocks.map((block) => {
+            if (block.kind === "heading") {
+              sectionLabel = block.text;
+              const Tag = block.level === 2 ? "h2" : "h3";
+              return (
+                <Tag key={block.id} id={block.id}>
+                  <a className="permalink" href={`${address}#${block.id}`} aria-label="Adresse de ce passage">
+                    <span aria-hidden="true">#</span>
+                  </a>
+                  <CritiqueLink
+                    target={{
+                      kind: "paper",
+                      slug: paper.slug,
+                      versionId: version.id,
+                      anchorId: block.id,
+                      section: block.text,
+                    }}
+                  />
+                  {block.text}
+                </Tag>
+              );
+            }
+
+            if (block.kind === "paragraph") {
+              return (
+                <p key={block.id} id={block.id}>
+                  <a className="permalink" href={`${address}#${block.id}`} aria-label="Adresse de ce passage">
+                    <span aria-hidden="true">#</span>
+                  </a>
+                  <CritiqueLink
+                    target={{
+                      kind: "paper",
+                      slug: paper.slug,
+                      versionId: version.id,
+                      anchorId: block.id,
+                      section: sectionLabel,
+                    }}
+                  />
+                  {inline(block.text)}
+                </p>
+              );
+            }
+
+            if (block.kind === "list") {
+              const ListTag = block.ordered ? "ol" : "ul";
+              return (
+                <ListTag key={block.id} id={block.id}>
+                  {block.items.map((item) => (
+                    <li key={item.id} id={item.id}>
+                      <a className="permalink" href={`${address}#${item.id}`} aria-label="Adresse de ce passage">
+                        <span aria-hidden="true">#</span>
+                      </a>
+                      <CritiqueLink
+                        target={{
+                          kind: "paper",
+                          slug: paper.slug,
+                          versionId: version.id,
+                          anchorId: item.id,
+                          section: sectionLabel,
+                        }}
+                      />
+                      {inline(item.text)}
+                    </li>
+                  ))}
+                </ListTag>
+              );
+            }
+
             return (
-              <Tag key={block.id} id={block.id}>
-                <a className="permalink" href={`${address}#${block.id}`} aria-label="Adresse de ce passage">
+              <div key={block.id} className="paper-table-wrap" id={block.id}>
+                <a className="permalink" href={`${address}#${block.id}`} aria-label="Adresse de ce tableau">
                   <span aria-hidden="true">#</span>
                 </a>
-                {block.text}
-              </Tag>
-            );
-          }
-
-          if (block.kind === "paragraph") {
-            return (
-              <p key={block.id} id={block.id}>
-                <a className="permalink" href={`${address}#${block.id}`} aria-label="Adresse de ce passage">
-                  <span aria-hidden="true">#</span>
-                </a>
-                {inline(block.text)}
-              </p>
-            );
-          }
-
-          if (block.kind === "list") {
-            const ListTag = block.ordered ? "ol" : "ul";
-            return (
-              <ListTag key={block.id} id={block.id}>
-                {block.items.map((item) => (
-                  <li key={item.id} id={item.id}>
-                    <a className="permalink" href={`${address}#${item.id}`} aria-label="Adresse de ce passage">
-                      <span aria-hidden="true">#</span>
-                    </a>
-                    {inline(item.text)}
-                  </li>
-                ))}
-              </ListTag>
-            );
-          }
-
-          return (
-            <div key={block.id} className="paper-table-wrap" id={block.id}>
-              <a className="permalink" href={`${address}#${block.id}`} aria-label="Adresse de ce tableau">
-                <span aria-hidden="true">#</span>
-              </a>
-              <table>
-                <thead>
-                  <tr>
-                    {block.headers.map((header, headerIndex) => (
-                      <th key={`${block.id}-h-${headerIndex}`} scope="col">
-                        {inline(header)}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {block.rows.map((row, rowIndex) => (
-                    <tr key={`${block.id}-r-${rowIndex}`}>
-                      {row.map((cell, cellIndex) => (
-                        <td key={`${block.id}-r-${rowIndex}-c-${cellIndex}`}>{inline(cell)}</td>
+                <CritiqueLink
+                  target={{
+                    kind: "paper",
+                    slug: paper.slug,
+                    versionId: version.id,
+                    anchorId: block.id,
+                    section: sectionLabel,
+                  }}
+                />
+                <table>
+                  <thead>
+                    <tr>
+                      {block.headers.map((header, headerIndex) => (
+                        <th key={`${block.id}-h-${headerIndex}`} scope="col">
+                          {inline(header)}
+                        </th>
                       ))}
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          );
-        })}
+                  </thead>
+                  <tbody>
+                    {block.rows.map((row, rowIndex) => (
+                      <tr key={`${block.id}-r-${rowIndex}`}>
+                        {row.map((cell, cellIndex) => (
+                          <td key={`${block.id}-r-${rowIndex}-c-${cellIndex}`}>{inline(cell)}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            );
+          });
+        })()}
       </div>
 
       <section className="sources" aria-labelledby="sources-heading">

@@ -58,3 +58,9 @@ Owner preference: confirm the mailbox with Resend before adding CAPTCHA. Submit 
 `unverified`; the moderation queue only receives `pending` after `/commentaires/verifier`.
 Turnstile stays deferred. Env: `RESEND_API_KEY` and either `RESEND_FROM` or
 `RESEND_EMAIL_DOMAIN` (DNS verification may still be propagating at ship time).
+
+## 2026-10-02 — Critiquer on passage (Phase 3.2)
+
+Owner OK: hover/focus « Critiquer » on document blocks and visual figure/sections opens
+`/commentaires` with kind, slug, version, anchor, and section prefilled. Moderation and the public
+list link back to that passage. Inline rendering of accepted comments under paragraphs stays later.
