@@ -656,21 +656,37 @@ body:has(.paper) .shell {
   opacity: 0;
 }
 
+/* Float beside the passage (outside the prose), not in the line of text. */
 .critique-link {
   position: absolute;
-  right: 0;
-  top: 0.1em;
-  z-index: 1;
-  margin: 0;
-  padding: 0.15rem 0.35rem;
+  left: 100%;
+  right: auto;
+  top: 0.05em;
+  z-index: 2;
+  margin: 0 0 0 0.7rem;
+  padding: 0.28rem 0.55rem 0.28rem 0.5rem;
   border: 1px solid var(--line);
+  border-left: 3px solid var(--mark-red);
+  border-radius: 2px;
   background: var(--paper);
-  color: var(--ink-3);
+  color: var(--ink-2);
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 1.2;
+  letter-spacing: 0.01em;
   text-decoration: none;
+  white-space: nowrap;
+  box-shadow:
+    0 1px 0 rgba(26, 26, 26, 0.04),
+    0 3px 8px rgba(26, 26, 26, 0.1),
+    0 8px 18px rgba(26, 26, 26, 0.06);
   opacity: 0;
+  pointer-events: none;
+  transform: translateY(2px);
+  transition:
+    opacity 0.12s ease,
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
 }
 
 .paper-body h2:hover > .permalink,
@@ -688,17 +704,42 @@ body:has(.paper) .shell {
 .visual-figure:hover > .critique-link,
 .visual-section h2:hover > .critique-link {
   opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
-.critique-link:hover {
+.critique-link:hover,
+.critique-link:focus-visible {
   color: var(--ink);
-  border-color: var(--ink);
+  border-color: var(--line);
+  border-left-color: var(--mark-red);
+  box-shadow:
+    0 1px 0 rgba(26, 26, 26, 0.05),
+    0 4px 10px rgba(26, 26, 26, 0.12),
+    0 10px 22px rgba(26, 26, 26, 0.08);
 }
 
 @media (hover: none) {
-  .permalink,
-  .critique-link {
+  .permalink {
     opacity: 0.45;
+  }
+
+  .critique-link {
+    opacity: 0.85;
+    pointer-events: auto;
+    transform: none;
+  }
+}
+
+/* Narrow viewports: keep the chip above the block so it does not clip. */
+@media (max-width: 56rem) {
+  .paper-body .critique-link,
+  .visual-figure .critique-link,
+  .visual-section h2 .critique-link {
+    left: 0;
+    top: auto;
+    bottom: calc(100% + 0.35rem);
+    margin-left: 0;
   }
 }
 
