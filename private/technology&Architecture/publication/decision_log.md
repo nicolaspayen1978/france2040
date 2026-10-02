@@ -112,6 +112,30 @@ demonstrating them. LTV table −10/−20/−30 % is arithmetic only; defaults, 
 bank losses and funding stay empty. Price decline itself is not category-4; certain
 transmissions may be. Announced list drops EC-08; EC-09 remains.
 
+## 2026-10-02 — EC-08 separates IO share from consolidated LTV
+
+Owner correction. Version `2026-10-02` is superseded: its table treated 40–50 % as consolidated
+LTV. Version `2026-10-02-2` states the ceiling is the interest-only share only. Mechanical IO
+cushion (−50 % / −60 % to equal principal) is not bank-loss or default proof. Real failure mode:
+existing mortgage + IO share can leave consolidated LTV high (100 / 40 / 50 → 90 %; after −20 %,
+80 vs 90). Channel 4 asks which origination/coexistence rules make the IO cap produce the
+announced cushion. CRR art. 125 (55 % layer; senior-lien adjustment) cited as prudential
+distinction of interest, not as proof that 40–50 % is right. Choice among 40 / 45 / 50 % stays
+open for the red team. Verdict remains non tranché.
+
+## 2026-10-02 — EC-08: IO is a credit claim; test the ratio over time
+
+Owner clarification. Version `2026-10-02-2` superseded by `2026-10-02-3`. Amortising and
+interest-only mortgages are both bank credit claims secured by property; IO principal stays
+≈ constant, so exposure/collateral remains relevant over the life of the loan. Do not explain
+the 40–50 % cap as ensuring the asset can never fall below collateral. DNB *Monitor on mortgage
+lending standards and financial stability 2026*: by Q3 2025 nearly 40 % of Dutch FI mortgages
+were IO (no regular repayment, no linked savings product); only 7 % of those have LTV > 75 %
+vs nearly 20 % for the whole book — reduces collateral-insufficiency risk at maturity; other
+risks remain. EC-08 must investigate whether 40–50 % is an appropriate maximum IO-to-property
+ratio because principal remains outstanding (reference maturity from EC-05 ≈ 20 years). Verdict
+stays non tranché.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

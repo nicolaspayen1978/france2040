@@ -56,3 +56,15 @@ verdict, empty cells). Links to `/pacte`, `/en-images`, `/participer`. No snapsh
 2026-10-02. EC-08 published as `/documents/red-team-08`, version `2026-10-02`, verdict open.
 Five channels (LTV, households, DMTO, origination, system). Arithmetic LTV table −10/−20/−30 %
 only. Price fall alone not classed as fatal; transmissions are. Announced list is now EC-09.
+
+2026-10-02. EC-08 revised as `2026-10-02-2`. Owner correction: 40–50 % is the interest-only
+share ceiling, not consolidated LTV. Failure mode: IO cushion already occupied by existing debt
+(example 100 / 40 / 50 → 90 % consolidé; −20 % → 80 vs 90). Channel 4 tied to channel 1. CRR
+art. 125 cited without validating the ceiling. 40/45/50 % left open. Prior snapshot bytes
+unchanged.
+
+2026-10-02. EC-08 revised as `2026-10-02-3`. Owner clarification: IO share is a mortgage credit
+claim, not property on the bank balance sheet; LTV remains relevant because principal stays
+outstanding. DNB Monitor 2026 (Q3 2025): nearly 40 % Dutch IO; only 7 % of IO loans LTV > 75 %.
+Do not explain 40–50 % as guaranteeing asset ≤ collateral. Test whether 40–50 % is an appropriate
+maximum IO-to-property ratio over the life of the principal. Prior snapshot bytes unchanged.
