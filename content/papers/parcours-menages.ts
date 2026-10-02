@@ -9,8 +9,8 @@ export const parcoursMenages: WorkingPaper = {
   title: "Parcours des ménages et trésorerie",
   lang: "fr",
   summary:
-    "Prêt en deux parts : intérêts seuls = % de la valeur (cas 40 %). Sur 200 000 € empruntés, 862 € contre 1 139 €. Les 700 Md€ sont l’encours à intérêts seuls.",
-  currentVersionId: "2026-10-01-4",
+    "Prêt en deux parts. Le prêt existant ne disparaît pas : conserver un taux bas peut valoir plus que refinancer. Les 700 Md€ sont l’encours à intérêts seuls.",
+  currentVersionId: "2026-10-02",
   versions: [
     {
       id: "2026-10-01",
@@ -45,11 +45,21 @@ export const parcoursMenages: WorkingPaper = {
     {
       id: "2026-10-01-4",
       published: "2026-10-01",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Produit en deux parts. 700 Md€ = encours à intérêts seuls. Pas une hypothèse de V2. Test 06 non ouvert",
       file: "content/papers/parcours-menages/v2026-10-01-4.md",
       sha256: "f130e830e460c4f747c20b8a1aaf04bfda4f82321976c05482f7b87b4fbfb861",
       note: "Lie le produit au scénario : les 700 Md€ ne comptent que la part à intérêts seuls.",
+    },
+    {
+      id: "2026-10-02",
+      published: "2026-10-02",
+      status: "working-paper",
+      verdict:
+        "Le prêt existant compte. Conserver un taux bas peut valoir plus que refinancer. Pas une hypothèse de V2. Test 06 non ouvert",
+      file: "content/papers/parcours-menages/v2026-10-02.md",
+      sha256: "66d2bd608ff773a3c4068dbac6c313e30a315ce98115b41ca85ffde3ce6e3e2b",
+      note: "Trois situations : sans dette ; tranche Pacte sans refinancer ; refinancement avec perte éventuelle du taux historique.",
     },
   ],
   progress: [
@@ -58,10 +68,15 @@ export const parcoursMenages: WorkingPaper = {
     { id: "case1", label: "Cas 1 — crédit moyen 200 k€", state: "862 € vs 1 139 € à 40 %" },
     { id: "case2", label: "Cas 2 — primo 178 k€", state: "Deux parts, pas un gain Pacte" },
     { id: "arithmetic", label: "Brique unitaire 100 k€", state: "Pour lire une part, pas le produit" },
-    { id: "sophie", label: "Sophie à 42 ans et à 62 ans", state: "Une seule ligne, montants encore vides" },
-    { id: "jean-amina", label: "Jean et Amina", state: "Extraction d’équité, montants vides" },
+    { id: "sophie", label: "Sophie à 42 ans et à 62 ans", state: "Encours existant : tranche ou refinancement" },
+    { id: "jean-amina", label: "Jean et Amina", state: "Sans dette ; extraction, montants vides" },
     { id: "mehdi-lea", label: "Mehdi et Léa", state: "Pas de gain direct" },
     { id: "liquidity", label: "Flux, stock, transfert", state: "Tenus séparés" },
+    {
+      id: "existing-loan",
+      label: "Prêt existant",
+      state: "Trois situations ; refinancer n’est pas neutre",
+    },
     { id: "priority", label: "Éligible et prioritaire", state: "Non tranché" },
     { id: "first-buyer", label: "Primo-accédant", state: "Cas hostile, pas un pouvoir d’achat" },
     { id: "v2", label: "V2 et chemin gelé", state: "700 Md€ = part à intérêts seuls" },

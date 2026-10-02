@@ -72,6 +72,10 @@ Owner asked to revise the frozen household exhibit. Version `2026-10-01` is supe
 
 Owner OK. The frozen path (cumul ≈ 700 Md€, peak 90 Md€) is the **interest-only share book** (*part à intérêts seuls*), not consolidated housing credit. French public wording: never “IO”, never “tranche” for the product (use *part à intérêts seuls* / *part amortissable*). The amortising share of a market purchase LTV does **not** enter the 700. Macro impulse probes and EC-05 bank-funding tests apply to that interest-only share book. Product shape: two shares; interest-only share ≤ 40–50 % of property value (central 40 %, sensitivity 50 %). Prior snapshots that said undifferentiated “crédit” for 700 are superseded by new versions; arithmetic that treated 700 as non-amortising principal stays valid under this definition.
 
+## 2026-10-02 — Existing loan: household interest vs technical coexistence
+
+Owner OK. Parcours `2026-10-02`: after « Deux formes de liquidité », section « Le prêt existant ne disparaît pas » — no debt / additional Pacte tranche without refinancing / refinance with possible loss of historical rate. Données requises extended (rate distribution, remaining capital, share forced to refinance). EC-05 `2026-10-02`: sub-test « Coexister avec l’encours existant » before financing the stock; 65.3% caution prevents assuming a mechanical second mortgage. Parcours = “Est-ce intéressant pour moi ?”; EC-05 = can the system originate beside an existing loan. Verdicts stay open. Prior snapshot bytes unchanged.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

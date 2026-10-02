@@ -19,8 +19,8 @@ export const redTeam05: WorkingPaper = {
   title: "Épreuve contradictoire EC-05 — Tenir l’actif",
   lang: "fr",
   summary:
-    "Le système financier français peut-il porter la part à intérêts seuls du chemin gelé ? Verdict de cette version : non tranché.",
-  currentVersionId: "2026-10-01-2",
+    "Le système financier français peut-il originier, financer et porter la part à intérêts seuls — y compris à côté d’un encours existant ? Verdict : non tranché.",
+  currentVersionId: "2026-10-02",
   versions: [
     {
       id: "2026-10-01",
@@ -34,11 +34,20 @@ export const redTeam05: WorkingPaper = {
     {
       id: "2026-10-01-2",
       published: "2026-10-01",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Non tranché",
       file: "content/papers/red-team-05/v2026-10-01-2.md",
       sha256: "bfbed52090ecf99ff81b599e827089f8d055ef4c0df4af48e7912b793f61d3f1",
       note: "Périmètre précisé : le chemin et les 700 Md€ sont l’encours à intérêts seuls. Lectures bancaires gelées inchangées.",
+    },
+    {
+      id: "2026-10-02",
+      published: "2026-10-02",
+      status: "working-paper",
+      verdict: "Non tranché",
+      file: "content/papers/red-team-05/v2026-10-02.md",
+      sha256: "b75dc7c3d52d6f25c3545d34c84b65f201aaff49d640ae4404d4eee8d66583d1",
+      note: "Sous-épreuve : coexister avec l’encours (tranche additionnelle vs refinancement) avant de financer le stock. 65,3 % caution.",
     },
   ],
   progress: [
@@ -52,6 +61,11 @@ export const redTeam05: WorkingPaper = {
       id: "eurosystem-loan",
       label: "Mobilisation directe du prêt",
       state: "Gelée — aucune voie identifiée",
+    },
+    {
+      id: "coexistence",
+      label: "Coexister avec l’encours",
+      state: "Non tranché — tranche vs refinancement",
     },
     { id: "marketable", label: "Titre négociable", state: "Non décidé" },
     { id: "financeability", label: "Finançabilité", state: "Non répondue" },
