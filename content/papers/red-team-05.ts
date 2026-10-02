@@ -20,7 +20,7 @@ export const redTeam05: WorkingPaper = {
   lang: "fr",
   summary:
     "Le système financier français peut-il originier, financer et porter la part à intérêts seuls — y compris à côté d’un encours existant ? Verdict : non tranché.",
-  currentVersionId: "2026-10-02",
+  currentVersionId: "2026-10-02-2",
   versions: [
     {
       id: "2026-10-01",
@@ -43,11 +43,20 @@ export const redTeam05: WorkingPaper = {
     {
       id: "2026-10-02",
       published: "2026-10-02",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Non tranché",
       file: "content/papers/red-team-05/v2026-10-02.md",
       sha256: "b75dc7c3d52d6f25c3545d34c84b65f201aaff49d640ae4404d4eee8d66583d1",
       note: "Sous-épreuve : coexister avec l’encours (tranche additionnelle vs refinancement) avant de financer le stock. 65,3 % caution.",
+    },
+    {
+      id: "2026-10-02-2",
+      published: "2026-10-02",
+      status: "working-paper",
+      verdict: "Non tranché",
+      file: "content/papers/red-team-05/v2026-10-02-2.md",
+      sha256: "c09947ed21fad10bb1619383fb07f67c4690e997bc0575c3f46a114c4248c92b",
+      note: "Sépare fabrication de l’actif (prêteur, cautionnaire, sûretés, LTV) et éligibilité aux canaux de refinancement, traitée en aval.",
     },
   ],
   progress: [

@@ -37,3 +37,5 @@ Deploy gate is `scripts/vercelbuild.js`: §1 summary contract and paper snapshot
 2026-10-01. Scenario freeze: 700 Md€ (and the 90 Md€ peak path) = *encours / flux de la part à intérêts seuls* only. Amortising share of purchase LTV excluded. Public French vocabulary: *part à intérêts seuls*, *part amortissable* — not IO, not tranche. New versions: résumé `2026-10-01-10`, V2 `2026-10-01`, questions ouvertes `2026-10-01`, EC-01/04 `2026-10-01`, EC-05 `2026-10-01-2`, parcours `2026-10-01-4`, EC-06/07 `2026-10-01-3`, related En images `2026-10-01-3`.
 
 2026-10-02. Parcours ménages `2026-10-02`: existing loan does not disappear — keep low historical rate vs refinance cost; three situations. EC-05 `2026-10-02`: coexistence sub-test (additional tranche without refinancing) before financing the stock; 65.3% caution market. Prior snapshot bytes unchanged.
+
+2026-10-02. EC-05 `2026-10-02-2`: coexistence wording separates asset fabrication (lender, guarantor, security nature/rank, consolidated LTV) from downstream eligibility for refinancing channels. Prior snapshot bytes unchanged.

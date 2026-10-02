@@ -76,6 +76,10 @@ Owner OK. The frozen path (cumul ≈ 700 Md€, peak 90 Md€) is the **interest
 
 Owner OK. Parcours `2026-10-02`: after « Deux formes de liquidité », section « Le prêt existant ne disparaît pas » — no debt / additional Pacte tranche without refinancing / refinance with possible loss of historical rate. Données requises extended (rate distribution, remaining capital, share forced to refinance). EC-05 `2026-10-02`: sub-test « Coexister avec l’encours existant » before financing the stock; 65.3% caution prevents assuming a mechanical second mortgage. Parcours = “Est-ce intéressant pour moi ?”; EC-05 = can the system originate beside an existing loan. Verdicts stay open. Prior snapshot bytes unchanged.
 
+## 2026-10-02 — EC-05 coexistence: fabricate the asset before funding it
+
+Owner OK. Version `2026-10-02-2`. The coexistence subsection must not mix origination/security conditions with privileged-refinancing eligibility. Lender, guarantor, security nature/rank and consolidated LTV belong to asset fabrication. Consequences for refinancing channels are treated downstream (financer le stock → porter → échelle). Prior snapshot bytes unchanged.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.
