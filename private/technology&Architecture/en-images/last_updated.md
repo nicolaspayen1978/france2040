@@ -16,4 +16,6 @@ Cross-link: publication domain remains the source of document immutability and d
 
 2026-10-02. Image 0 embedded on the home page inside the résumé exécutif, immediately before « La proposition de valeur ». Snapshot unchanged; insert is page chrome only. Link to the En images fiche.
 
+2026-10-02. `les-quatre-bilans` → `2026-10-02`: wider connector lanes, flow labels off the arrow strokes.
+
 2026-10-01. Two visuals from Parcours ménages v2026-10-01-2: `emprunt-moyen-mensualite` and `emprunt-moyen-capacite` (Case 1 credit ticket, not notarial 230/270).

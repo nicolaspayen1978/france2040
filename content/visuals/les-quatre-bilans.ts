@@ -18,7 +18,7 @@ export const lesQuatreBilans: Visual = {
   natureNote:
     "Les boîtes en trait plein sont l’architecture posée par le brouillon du Pacte. Les boîtes et flèches en pointillés marquent des effets non tranchés.",
   units: "Sans unité — schéma conceptuel",
-  asOf: "1 octobre 2026 · lecture du brouillon du Pacte",
+  asOf: "2 octobre 2026 · lecture du brouillon du Pacte",
   provenance:
     "Schéma France2040, d’après le brouillon du Pacte du bilan français. Les ouvertures renvoient aux épreuves contradictoires EC-02, EC-03, EC-05, EC-06 et EC-07.",
   citations: [
@@ -47,15 +47,23 @@ export const lesQuatreBilans: Visual = {
       label: "Épreuve contradictoire EC-07 (2026-10-01-2)",
     },
   ],
-  currentVersionId: "2026-10-01",
+  currentVersionId: "2026-10-02",
   versions: [
     {
       id: "2026-10-01",
       published: "2026-10-01",
-      status: "working",
+      status: "superseded",
       figure: "content/visuals/les-quatre-bilans/v2026-10-01.svg",
       sha256: "92c95aba9c9a0f6bf80d46ac7dda9ae91f6527036a3e08f12db8ec772d518448",
-      note: "Image 0. Reprise sobre du schéma « quatre bilans » (tokens bleu/gris uniquement). Consolidation et volume français laissés non tranchés sur la figure. Pied anti-trajectoire et anti-preuve.",
+      note: "Image 0 initiale. Flèches trop serrées entre les quatre blocs.",
+    },
+    {
+      id: "2026-10-02",
+      published: "2026-10-02",
+      status: "working",
+      figure: "content/visuals/les-quatre-bilans/v2026-10-02.svg",
+      sha256: "3ef15476a39627758f6a016ff2620dabc2c368ab215bb84ca6acb4f66f5103dc",
+      note: "Couloirs entre blocs élargis. Libellés des flux hors du trait (crédit, intérêts, dépense ?, recettes ?, dépenses publiques). Garantie logement en pastille sous 1–2.",
     },
   ],
 };

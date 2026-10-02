@@ -1,0 +1,164 @@
+<!--
+  En images — les-quatre-bilans v2026-10-02
+  Image 0 — schéma d’architecture. Colours from app/tokens.css only.
+  v2: wider connector lanes + labeled flow chips so arrows stay readable.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 820" role="img" aria-labelledby="title desc">
+  <title id="title">Les quatre bilans</title>
+  <desc id="desc">
+    Schéma : banques, ménages, économie productive et État. Le crédit adossé au logement
+    circule vers la dépense et l’investissement. Les liens vers la production française
+    et les recettes publiques restent non tranchés. Les flèches entre blocs portent des libellés lisibles.
+  </desc>
+  <rect width="960" height="820" fill="#fff"/>
+
+  <text x="28" y="36" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a">Les quatre bilans</text>
+  <text x="28" y="58" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Faire travailler ensemble banques, ménages, économie productive et État — schéma d’architecture, pas une preuve</text>
+
+  <!-- Box positions: w=186, gap=58 → 1:28, 2:272, 3:516, 4:760 -->
+
+  <!-- 1 Banques -->
+  <rect x="28" y="88" width="186" height="150" rx="2" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <circle cx="48" cy="108" r="11" fill="#002395"/>
+  <text x="48" y="112" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#fff">1</text>
+  <text x="66" y="112" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Crédit encadré</text>
+  <text x="121" y="142" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#002395">Banques</text>
+  <text x="121" y="168" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">Prêts longs, surtout à</text>
+  <text x="121" y="184" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">taux fixe et intérêts seuls,</text>
+  <text x="121" y="200" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">adossés au logement</text>
+  <text x="121" y="222" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">EC-05 : finançabilité ouverte</text>
+
+  <!-- Connector 1→2 -->
+  <rect x="220" y="118" width="46" height="18" rx="2" fill="#fff"/>
+  <text x="243" y="131" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#002395">crédit →</text>
+  <path d="M214 148 H266" stroke="#002395" stroke-width="2" fill="none"/>
+  <polygon points="266,148 256,143 256,153" fill="#002395"/>
+
+  <path d="M266 178 H214" stroke="#334a9a" stroke-width="1.75" fill="none"/>
+  <polygon points="214,178 224,173 224,183" fill="#334a9a"/>
+  <rect x="214" y="188" width="58" height="18" rx="2" fill="#fff"/>
+  <text x="243" y="201" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#334a9a">← intérêts</text>
+
+  <!-- 2 Ménages -->
+  <rect x="272" y="88" width="186" height="150" rx="2" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <circle cx="292" cy="108" r="11" fill="#002395"/>
+  <text x="292" y="112" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#fff">2</text>
+  <text x="310" y="112" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Liquidité ménages</text>
+  <text x="365" y="142" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#002395">Ménages</text>
+  <text x="365" y="168" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">Liquidité contre patrimoine</text>
+  <text x="365" y="184" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">immobilier · mensualités</text>
+  <text x="365" y="200" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">réduites (intérêts seuls)</text>
+  <text x="365" y="222" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">Volontaire · pas une saisie</text>
+
+  <!-- Garantie under 1–2 -->
+  <path d="M121 238 V252 H365 V238" stroke="#9a9a9a" stroke-width="1.25" fill="none" stroke-dasharray="4 3"/>
+  <rect x="198" y="244" width="90" height="18" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="243" y="257" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">Garantie : logement</text>
+
+  <!-- Connector 2→3 -->
+  <rect x="464" y="132" width="46" height="18" rx="2" fill="#fff"/>
+  <text x="487" y="145" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#6a6a6a">dépense ?</text>
+  <path d="M458 160 H510" stroke="#9a9a9a" stroke-width="2" fill="none" stroke-dasharray="5 4"/>
+  <polygon points="510,160 500,155 500,165" fill="#9a9a9a"/>
+  <text x="487" y="186" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#9a9a9a">non tranché</text>
+
+  <!-- 3 Économie -->
+  <rect x="516" y="88" width="186" height="150" rx="2" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="536" cy="108" r="11" fill="#9a9a9a"/>
+  <text x="536" y="112" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#fff">3</text>
+  <text x="554" y="112" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Dépense → FR ?</text>
+  <text x="609" y="142" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#3f3f3f">Économie</text>
+  <text x="609" y="168" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">Dépense et investissement</text>
+  <text x="609" y="184" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">→ production française ?</text>
+  <text x="609" y="200" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">emplois · capacités</text>
+  <text x="609" y="222" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">EC-02 / EC-03 non tranchés</text>
+
+  <!-- Connector 3↔4 -->
+  <rect x="708" y="118" width="46" height="18" rx="2" fill="#fff"/>
+  <text x="731" y="131" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#6a6a6a">recettes ?</text>
+  <path d="M702 148 H754" stroke="#9a9a9a" stroke-width="2" fill="none" stroke-dasharray="5 4"/>
+  <polygon points="754,148 744,143 744,153" fill="#9a9a9a"/>
+
+  <path d="M754 178 H702" stroke="#9a9a9a" stroke-width="1.75" fill="none" stroke-dasharray="5 4"/>
+  <polygon points="702,178 712,173 712,183" fill="#9a9a9a"/>
+  <rect x="696" y="188" width="70" height="30" rx="2" fill="#fff"/>
+  <text x="731" y="201" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#6a6a6a">← dépenses</text>
+  <text x="731" y="214" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">publiques</text>
+
+  <!-- 4 État -->
+  <rect x="760" y="88" width="172" height="150" rx="2" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="780" cy="108" r="11" fill="#9a9a9a"/>
+  <text x="780" y="112" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#fff">4</text>
+  <text x="798" y="112" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Cadre public</text>
+  <text x="846" y="142" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#3f3f3f">État</text>
+  <text x="846" y="168" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">Cadre · discipline</text>
+  <text x="846" y="184" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">budgétaire</text>
+  <text x="846" y="200" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">Consolidation non établie</text>
+  <text x="846" y="222" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">EC-06 / EC-07 ouverts</text>
+
+  <!-- Market bar -->
+  <rect x="28" y="290" width="904" height="40" rx="2" fill="#e8e8e4" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="480" y="308" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1a1a1a">Marché / économie française</text>
+  <text x="480" y="324" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">Biens, services, emploi, revenus — le lieu où les bilans se rencontrent</text>
+
+  <!-- Four bilan cards -->
+  <text x="28" y="364" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Ce qui bouge sur chaque bilan</text>
+
+  <rect x="28" y="380" width="220" height="200" rx="2" fill="#fff" stroke="#002395" stroke-width="1.25"/>
+  <text x="40" y="404" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#002395">Bilan des banques</text>
+  <text x="40" y="428" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Actifs</text>
+  <text x="40" y="444" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">nouveaux prêts hypothécaires</text>
+  <text x="40" y="460" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">(long terme, intérêts seuls)</text>
+  <text x="40" y="484" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Passifs</text>
+  <text x="40" y="500" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">financement long terme</text>
+  <text x="40" y="516" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">(dépôts, marchés, refinancement)</text>
+  <text x="40" y="544" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Rôle</text>
+  <text x="40" y="560" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">intermédiation · risques</text>
+
+  <rect x="260" y="380" width="220" height="200" rx="2" fill="#fff" stroke="#002395" stroke-width="1.25"/>
+  <text x="272" y="404" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#002395">Bilan des ménages</text>
+  <text x="272" y="428" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Actifs</text>
+  <text x="272" y="444" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">logement comme garantie</text>
+  <text x="272" y="460" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">(pas une cession forcée)</text>
+  <text x="272" y="484" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Passifs</text>
+  <text x="272" y="500" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">nouveau crédit long</text>
+  <text x="272" y="516" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">intérêts seuls · capital reporté</text>
+  <text x="272" y="544" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Effet recherché</text>
+  <text x="272" y="560" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">trésorerie · pas un revenu</text>
+
+  <rect x="492" y="380" width="220" height="200" rx="2" fill="#fff" stroke="#9a9a9a" stroke-width="1.25" stroke-dasharray="4 3"/>
+  <text x="504" y="404" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#3f3f3f">Bilan de l’économie</text>
+  <text x="504" y="428" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Si la dépense arrive</text>
+  <text x="504" y="444" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">production · emploi</text>
+  <text x="504" y="460" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">investissement · revenus</text>
+  <text x="504" y="492" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Non établi ici</text>
+  <text x="504" y="508" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">part française (EC-03)</text>
+  <text x="504" y="524" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">part effectivement dépensée</text>
+  <text x="504" y="540" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">(EC-02)</text>
+  <text x="504" y="564" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">Pointillés = non tranché</text>
+
+  <rect x="724" y="380" width="208" height="200" rx="2" fill="#fff" stroke="#9a9a9a" stroke-width="1.25" stroke-dasharray="4 3"/>
+  <text x="736" y="404" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#3f3f3f">Bilan de l’État</text>
+  <text x="736" y="428" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Cadre du Pacte</text>
+  <text x="736" y="444" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">discipline de dépense</text>
+  <text x="736" y="460" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">affectation des recettes</text>
+  <text x="736" y="492" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Non établi ici</text>
+  <text x="736" y="508" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">retour fiscal (EC-06)</text>
+  <text x="736" y="524" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">solde · intérêts · ratio</text>
+  <text x="736" y="540" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">(EC-07)</text>
+  <text x="736" y="564" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#ed2939">≠ preuve de consolidation</text>
+
+  <!-- Legend -->
+  <rect x="28" y="604" width="16" height="12" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <text x="52" y="615" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Architecture posée par le Pacte</text>
+  <rect x="290" y="604" width="16" height="12" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <text x="314" y="615" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Lien ou effet non tranché</text>
+  <text x="560" y="615" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Flèches : flux entre bilans (libellé hors du trait)</text>
+
+  <text x="28" y="652" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Une mobilisation volontaire et temporaire du bilan des ménages — l’État fixe le cadre, il ne saisit pas le patrimoine.</text>
+  <text x="28" y="672" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Le schéma montre ce qui est déplacé entre bilans. Il ne mesure pas le PIB, les recettes, ni la trajectoire 2027–2040.</text>
+
+  <text x="28" y="712" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Schéma France2040 · 2 octobre 2026 · ne constitue pas une trajectoire 2027–2040 · ne prouve pas la consolidation</text>
+  <text x="28" y="732" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Lecture : brouillon du Pacte · ouvertures EC-02, EC-03, EC-05, EC-06, EC-07</text>
+  <text x="28" y="762" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Image 0 — entrée visuelle dans l’architecture · les autres En images descendent dans les preuves</text>
+</svg>
