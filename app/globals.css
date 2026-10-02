@@ -689,6 +689,26 @@ body:has(.paper) .shell {
     box-shadow 0.12s ease;
 }
 
+/*
+ * Invisible bridge so the pointer can travel from the passage to the chip
+ * without leaving :hover (the chip is outside the text box).
+ */
+.paper-body h2::after,
+.paper-body h3::after,
+.paper-body p::after,
+.paper-body li::after,
+.paper-table-wrap::after,
+.visual-figure::after,
+.visual-section h2::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: -0.15rem;
+  width: 8.5rem;
+  height: 2.4rem;
+  z-index: 1;
+}
+
 .paper-body h2:hover > .permalink,
 .paper-body h3:hover > .permalink,
 .paper-body p:hover > .permalink,
@@ -700,9 +720,17 @@ body:has(.paper) .shell {
 .paper-body p:hover > .critique-link,
 .paper-body li:hover > .critique-link,
 .paper-table-wrap:hover > .critique-link,
+.paper-body h2:has(> .critique-link:hover) > .critique-link,
+.paper-body h3:has(> .critique-link:hover) > .critique-link,
+.paper-body p:has(> .critique-link:hover) > .critique-link,
+.paper-body li:has(> .critique-link:hover) > .critique-link,
+.paper-table-wrap:has(> .critique-link:hover) > .critique-link,
+.critique-link:hover,
 .critique-link:focus-visible,
 .visual-figure:hover > .critique-link,
-.visual-section h2:hover > .critique-link {
+.visual-figure:has(> .critique-link:hover) > .critique-link,
+.visual-section h2:hover > .critique-link,
+.visual-section h2:has(> .critique-link:hover) > .critique-link {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
@@ -729,6 +757,16 @@ body:has(.paper) .shell {
     pointer-events: auto;
     transform: none;
   }
+
+  .paper-body h2::after,
+  .paper-body h3::after,
+  .paper-body p::after,
+  .paper-body li::after,
+  .paper-table-wrap::after,
+  .visual-figure::after,
+  .visual-section h2::after {
+    content: none;
+  }
 }
 
 /* Narrow viewports: keep the chip above the block so it does not clip. */
@@ -740,6 +778,20 @@ body:has(.paper) .shell {
     top: auto;
     bottom: calc(100% + 0.35rem);
     margin-left: 0;
+  }
+
+  .paper-body h2::after,
+  .paper-body h3::after,
+  .paper-body p::after,
+  .paper-body li::after,
+  .paper-table-wrap::after,
+  .visual-figure::after,
+  .visual-section h2::after {
+    left: 0;
+    top: auto;
+    bottom: 100%;
+    width: 7.5rem;
+    height: 2.6rem;
   }
 }
 
