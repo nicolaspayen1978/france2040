@@ -23,3 +23,7 @@ Cross-link: publication domain remains the source of document immutability and d
 2026-10-02. Note `/documents/contexte-demographique` v2026-10-02 (Insee Première 1881, COR juin 2025). En images Le problème B→A→C: `retraites-vs-actifs`, `demographie-2027-2040`, `financement-retraites` — all cite that version. Dependency framed as âge, not emploi.
 
 2026-10-02. Owner: show 2040, not only 2070. Note → `2026-10-02-2`: part 65+ 26 % en 2040 ; Cour ~30 Md€ en 2045 ; solde COR 2040 % PIB reste vide. Visuals A et C → `2026-10-02-2`. B citation retargeted.
+
+2026-10-02. EC-08 schéma published: `/en-images/part-io-n-est-pas-le-ltv-consolide`
+`2026-10-02`. Two panels (plafond IO vs mode d’échec 100/40/50 after −20 %). Cites frozen
+EC-08 `2026-10-02-5`. Does not predict default or bank loss.

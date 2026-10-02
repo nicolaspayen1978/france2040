@@ -1,0 +1,94 @@
+<!--
+  En images  part-io-n-est-pas-le-ltv-consolide v2026-10-02
+  Colours from app/tokens.css: --ink, --ink-2, --ink-3, --muted, --muted-2, --line, --paper, --paper-2, --mark-blue, --mark-red, --blue-3, --red-2
+  Schéma conceptuel. Example 100 / 40 / 50 from EC-08. Does not predict default or bank loss.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">La part à intérêts seuls nest pas le LTV consolidé</title>
+  <desc id="desc">
+    Le Pacte plafonne la part à intérêts seuls à 50 % de la valeur (exemple). Avec une dette existante de 40, le LTV consolidé est déjà 90 %. Après une baisse de 20 % de la valeur, le consolidé passe à 112,5 %. Ce schéma ne prédit ni défaut ni perte bancaire.
+  </desc>
+  <rect width="720" height="560" fill="#fff"/>
+
+  <text x="24" y="34" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">La part à intérêts seuls nest pas le LTV consolidé</text>
+  <text x="24" y="54" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Exemple EC-08 · bien 100 · dette existante 40 · part IO 50 · la part IO est une créance, le logement est le collatéral</text>
+
+  <!-- Panel 1 -->
+  <text x="24" y="96" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">1 · Ce que le Pacte plafonne</text>
+  <text x="24" y="114" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">À loctroi  plafond IO respecté</text>
+
+  <!-- Property outline left: 100 units = 200 px -->
+  <rect x="48" y="140" width="72" height="200" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1"/>
+  <text x="84" y="130" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">Valeur 100</text>
+
+  <!-- Existing debt 40 = 80 px from bottom -->
+  <rect x="48" y="260" width="72" height="80" fill="#99a5cd" stroke="#002395" stroke-width="0.75"/>
+  <text x="84" y="300" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#fff">40</text>
+  <text x="84" y="314" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="9" fill="#fff">existante</text>
+
+  <!-- IO share 50 = 100 px -->
+  <rect x="48" y="160" width="72" height="100" fill="#002395" stroke="#002395" stroke-width="0.75"/>
+  <text x="84" y="205" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#fff">50</text>
+  <text x="84" y="219" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="9" fill="#99a5cd">part IO</text>
+
+  <!-- Equity 10 = 20 px at top already in paper-2 background of outline -->
+  <text x="84" y="152" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="9" fill="#6a6a6a">10</text>
+
+  <!-- Callouts panel 1 -->
+  <rect x="148" y="160" width="180" height="56" rx="2" fill="#fff" stroke="#002395" stroke-width="1.25"/>
+  <text x="238" y="182" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#002395">Part IO / valeur = 50 %</text>
+  <text x="238" y="200" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">plafond Pacte  OK</text>
+
+  <rect x="148" y="232" width="180" height="56" rx="2" fill="#fff" stroke="#9a9a9a" stroke-width="1.25"/>
+  <text x="238" y="254" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#3f3f3f">LTV consolidé = 90 %</text>
+  <text x="238" y="272" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">octroi bancaire  pas le Pacte</text>
+
+  <text x="48" y="362" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Dette consolidée 90 sur collatéral 100. Le Pacte na plafonné que la part IO.</text>
+
+  <!-- Panel 2 -->
+  <text x="380" y="96" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">2 · Mode déchec</text>
+  <text x="380" y="114" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Après 20 % de valeur  même dette</text>
+
+  <!-- Property outline right: 80 units = 160 px, bottom aligned with left bar bottom (y=340) -->
+  <!-- Left bar: y=140 to y=340. Right: height 160, so y=180 to y=340 -->
+  <rect x="404" y="180" width="72" height="160" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1"/>
+  <text x="440" y="170" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">Valeur 80</text>
+
+  <!-- Debt overhang: total debt 90 = 180 px; starts 20 px above property top -->
+  <!-- Property top at 180; debt top at 160; debt from 160 to 340 -->
+  <rect x="404" y="260" width="72" height="80" fill="#99a5cd" stroke="#002395" stroke-width="0.75"/>
+  <text x="440" y="300" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#fff">40</text>
+  <text x="440" y="314" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="9" fill="#fff">existante</text>
+
+  <rect x="404" y="160" width="72" height="100" fill="#002395" stroke="#002395" stroke-width="0.75"/>
+  <text x="440" y="205" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#fff">50</text>
+  <text x="440" y="219" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="9" fill="#99a5cd">part IO</text>
+
+  <!-- Overhang hatch above property (from 160 to 180 = 20 px of the 50 IO bar that sticks out) -->
+  <rect x="404" y="160" width="72" height="20" fill="none" stroke="#ed2939" stroke-width="1.5"/>
+  <line x1="404" y1="160" x2="476" y2="180" stroke="#ed2939" stroke-width="0.75" opacity="0.7"/>
+  <line x1="404" y1="180" x2="476" y2="160" stroke="#ed2939" stroke-width="0.75" opacity="0.7"/>
+
+  <!-- Callouts panel 2 -->
+  <rect x="504" y="160" width="192" height="56" rx="2" fill="#fff" stroke="#ed2939" stroke-width="1.25"/>
+  <text x="600" y="182" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#ed2939">LTV consolidé = 112,5 %</text>
+  <text x="600" y="200" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">90 de dette / 80 de valeur</text>
+
+  <rect x="504" y="232" width="192" height="56" rx="2" fill="#fff" stroke="#9a9a9a" stroke-width="1.25"/>
+  <text x="600" y="254" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#3f3f3f">Part IO / valeur = 62,5 %</text>
+  <text x="600" y="272" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">créance IO / collatéral</text>
+
+  <text x="404" y="362" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Le plafond IO était vrai à loctroi. Le consolidé dépasse déjà la valeur.</text>
+
+  <!-- Legend -->
+  <text x="24" y="400" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Lecture</text>
+  <rect x="24" y="416" width="20" height="14" fill="#002395"/>
+  <text x="54" y="428" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Part à intérêts seuls  créance plafonnée par le Pacte (ici 50 % de la valeur initiale)</text>
+  <rect x="24" y="440" width="20" height="14" fill="#99a5cd"/>
+  <text x="54" y="452" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Dette existante  décidée à loctroi bancaire, hors plafond Pacte</text>
+  <rect x="24" y="464" width="20" height="14" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1"/>
+  <text x="54" y="476" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Valeur du bien  collatéral, non un actif de logement au bilan de la banque</text>
+
+  <text x="24" y="510" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Une baisse de prix érode le coussin autour de la créance. Elle ne crée pas, à elle seule, un défaut ni une perte.</text>
+  <text x="24" y="536" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Schéma EC-08 · 2 octobre 2026 · ne prédit ni défaut ni perte · verdict non tranché · ne choisit pas 40 / 45 / 50 %</text>
+</svg>

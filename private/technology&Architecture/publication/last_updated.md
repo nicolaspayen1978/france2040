@@ -74,3 +74,8 @@ IO/property (40–50 %), not consolidated LTV (bank underwriting). Object table;
 table separate from 100/40/50 consolidé failure mode; price fall erodes cushion without automatic
 loss/default. Soft “ratio collatéral annoncé” wording removed. Verdict non tranché. Prior
 snapshot bytes unchanged.
+
+2026-10-02. EC-08 frozen as `2026-10-02-5`. Same body as `-4`; hypothesis only tightened:
+collateral erosion *given* consolidated LTV actually accepted at origination — not the weaker
+“price fall alone ≠ transmission.” Status gelé. No modelling added. Prior snapshot bytes
+unchanged.

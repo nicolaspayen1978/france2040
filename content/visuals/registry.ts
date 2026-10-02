@@ -6,12 +6,13 @@ import { leRatioNEstPasLeService } from "@/content/visuals/le-ratio-n-est-pas-le
 import { lesQuatreBilans } from "@/content/visuals/les-quatre-bilans";
 import { mecanismeDuEuro } from "@/content/visuals/mecanisme-du-euro";
 import { parcoursMenageInteretsSeuls } from "@/content/visuals/parcours-menage-interets-seuls";
+import { partIoNEstPasLeLtvConsolide } from "@/content/visuals/part-io-n-est-pas-le-ltv-consolide";
 import { patrimoineVsEnveloppe } from "@/content/visuals/patrimoine-vs-enveloppe";
 import { retraitesVsActifs } from "@/content/visuals/retraites-vs-actifs";
 import { trajectoireCredit20272040 } from "@/content/visuals/trajectoire-credit-2027-2040";
 import type { Visual } from "@/content/visuals/types";
 
-/** Image 0 first; Le problème demography trio; then household arithmetic; mechanism, path, stock. */
+/** Image 0 first; Le problème demography trio; then household arithmetic; mechanism, path, stock; EC-08 schéma. */
 export const visuals: Visual[] = [
   lesQuatreBilans,
   retraitesVsActifs,
@@ -20,6 +21,7 @@ export const visuals: Visual[] = [
   parcoursMenageInteretsSeuls,
   empruntMoyenMensualite,
   empruntMoyenCapacite,
+  partIoNEstPasLeLtvConsolide,
   leRatioNEstPasLeService,
   trajectoireCredit20272040,
   mecanismeDuEuro,

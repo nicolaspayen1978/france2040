@@ -15,7 +15,8 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
-- `[publication]` EC-08 housing and financial stability (`/documents/red-team-08`), open verdict; `2026-10-02-4` centres the distinction: Pacte caps IO/property only, not consolidated LTV; IO is a credit claim, house is collateral; price fall erodes cushion ≠ automatic loss.
+- `[publication]` EC-08 housing and financial stability (`/documents/red-team-08`), open verdict; frozen as `2026-10-02-5` (same body as `-4`, harder hypothesis: collateral erosion given consolidated LTV at origination); distinction: Pacte caps IO/property only, not consolidated LTV; IO is a credit claim, house is collateral.
+- `[website]` En images schéma `/en-images/part-io-n-est-pas-le-ltv-consolide` (`2026-10-02`): Pacte caps IO/value, not consolidé LTV; failure mode 100/40/50 after −20 %; cites frozen EC-08; does not predict default or loss.
 - `[website]` Participation page at `/participer`, linked from the main navigation and footer: critique first, research contributions, circulation of the work, then financial support through the hosted Stripe payment page. `/soutenir` redirects to its financial-support section.
 - `[website]` Native share actions with a copy-link fallback for frozen document versions, visual versions, and the France 2040 website; no platform SDKs or tracking.
 - `[website]` Public comment intake at `/commentaires`: form (prénom, nom, e-mail, texte ; LinkedIn et référence document optionnels), Resend e-mail verification, pending queue in dedicated Upstash Redis, moderated public list; gated `/commentaires/moderation`.

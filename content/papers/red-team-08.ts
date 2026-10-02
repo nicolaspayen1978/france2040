@@ -5,8 +5,8 @@ export const redTeam08: WorkingPaper = {
   title: "Épreuve contradictoire EC-08 — Immobilier et stabilité financière",
   lang: "fr",
   summary:
-    "Que devient le Pacte lorsque les prix baissent ? Verdict : non tranché. Le Pacte plafonne la part à intérêts seuls à 40–50 % de la valeur, non le LTV consolidé ; cette part est une créance, le logement est le collatéral.",
-  currentVersionId: "2026-10-02-4",
+    "Que devient le Pacte lorsque les prix baissent ? Verdict : non tranché. Le Pacte plafonne la part à intérêts seuls à 40–50 % de la valeur, non le LTV consolidé ; l’hypothèse sous test joint l’érosion du collatéral au LTV consolidé accepté à l’octroi.",
+  currentVersionId: "2026-10-02-5",
   versions: [
     {
       id: "2026-10-02",
@@ -41,12 +41,22 @@ export const redTeam08: WorkingPaper = {
     {
       id: "2026-10-02-4",
       published: "2026-10-02",
-      status: "working-paper",
+      status: "superseded",
       verdict:
         "Non tranché. Le Pacte plafonne la part IO / valeur, non le LTV consolidé ; baisse de prix ≠ perte automatique.",
       file: "content/papers/red-team-08/v2026-10-02-4.md",
       sha256: "11ac3fff62f3d71f7863ce26a6d7eeec98695689792644f77ff3da1f8ae50465",
-      note: "Distinction centrale en tête. Tableau des objets. Coussin IO vs octroi consolidé. Mode d’échec 100/40/50. Verdict non tranché.",
+      note: "Distinction centrale. Mode d’échec 100/40/50. Hypothèse encore trop faible (baisse de prix seule). Remplacée.",
+    },
+    {
+      id: "2026-10-02-5",
+      published: "2026-10-02",
+      status: "frozen",
+      verdict:
+        "Non tranché. Hypothèse : érosion du collatéral jointe au LTV consolidé à l’octroi.",
+      file: "content/papers/red-team-08/v2026-10-02-5.md",
+      sha256: "898ba3a3cf6ac21fc3c9abb2ffa5a0a1808283fb14f8d7b42ae4944c98ec913e",
+      note: "Gelée. Même corps que 2026-10-02-4 ; hypothèse resserrée sur le LTV consolidé effectivement accepté. Pas de modèle ajouté.",
     },
   ],
   progress: [

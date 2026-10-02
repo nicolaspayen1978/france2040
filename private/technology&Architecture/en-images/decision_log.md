@@ -92,6 +92,18 @@ Feedback on A and C: 2070 alone is not enough for a 2027–2040 window.
 - COR synthesis does **not** isolate a 2040 solde in % of GDP — cell stays empty on the figure.
 - Closest published mid-horizon money figure: Cour des comptes février 2025 **~30 Md€ in 2045** (COR says nearly identical at 2045). Added on C `2026-10-02-2`.
 
+## 2026-10-02 — EC-08: part IO ≠ LTV consolidé
+
+Owner OK after EC-08 freeze (`2026-10-02-5`). Best visual from the note is the distinction +
+failure mode, not Dutch data.
+
+Published `/en-images/part-io-n-est-pas-le-ltv-consolide` `2026-10-02` (schéma):
+1. Ce que le Pacte plafonne — part IO / valeur 50 % OK; consolidé 90 % is bank underwriting.
+2. Mode d’échec — after −20 %, consolidé 112,5 %; part IO / valeur 62,5 %.
+
+Anti-claim on figure: ne prédit ni défaut ni perte · verdict non tranché. Cites frozen EC-08.
+Dutch Monitor figures stay in the document only.
+
 ## Open, and not decided by writing this folder
 
 - Chart tooling for later visuals: hand SVG vs a generator tied to a frozen model version.

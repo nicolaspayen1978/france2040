@@ -147,6 +147,14 @@ Channels and classement rewritten so 40–50 % is never read as a consolidé cei
 (“ratio collatéral annoncé par le plafond”) removed. Verdict remains non tranché. Prior versions
 superseded, bytes unchanged.
 
+## 2026-10-02 — EC-08 frozen; harder hypothesis only
+
+Owner accepted `2026-10-02-4` as conceptually sound, with one reservation: the under-test
+hypothesis must not be the near-tautology that collateral deterioration alone does not trigger
+default. Version `2026-10-02-5` freezes the note after replacing that sentence so the test is
+transmission *given* consolidated LTV actually accepted at origination. No further modelling.
+Status: gelé. Verdict remains non tranché. `-4` superseded, bytes unchanged.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.
