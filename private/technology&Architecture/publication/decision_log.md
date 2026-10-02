@@ -136,6 +136,17 @@ risks remain. EC-08 must investigate whether 40–50 % is an appropriate maximum
 ratio because principal remains outstanding (reference maturity from EC-05 ≈ 20 years). Verdict
 stays non tranché.
 
+## 2026-10-02 — EC-08 rewritten around the central distinction
+
+Owner asked for the best possible EC-08, not a minimal patch. Version `2026-10-02-4` leads with:
+Pacte does not cap consolidated LTV at 40–50 %; it caps only the IO tranche / property value;
+consolidated LTV is separate bank underwriting. Object table (IO ratio / consolidé / bank asset /
+collateral). Price fall erodes the cushion around the IO claim; it does not by itself create a
+loss or default. IO arithmetic table kept separate from the 100/40/50 consolidé failure mode.
+Channels and classement rewritten so 40–50 % is never read as a consolidé ceiling. Soft phrases
+(“ratio collatéral annoncé par le plafond”) removed. Verdict remains non tranché. Prior versions
+superseded, bytes unchanged.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

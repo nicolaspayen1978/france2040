@@ -5,8 +5,8 @@ export const redTeam08: WorkingPaper = {
   title: "Épreuve contradictoire EC-08 — Immobilier et stabilité financière",
   lang: "fr",
   summary:
-    "Que devient le Pacte lorsque les prix baissent ? Verdict : non tranché. La part à intérêts seuls est une créance, pas un logement ; 40–50 % est un ratio créance/valeur à tester sur la durée du principal.",
-  currentVersionId: "2026-10-02-3",
+    "Que devient le Pacte lorsque les prix baissent ? Verdict : non tranché. Le Pacte plafonne la part à intérêts seuls à 40–50 % de la valeur, non le LTV consolidé ; cette part est une créance, le logement est le collatéral.",
+  currentVersionId: "2026-10-02-4",
   versions: [
     {
       id: "2026-10-02",
@@ -26,31 +26,41 @@ export const redTeam08: WorkingPaper = {
         "Non tranché. Le plafond 40–50 % est la part à intérêts seuls, pas le LTV consolidé.",
       file: "content/papers/red-team-08/v2026-10-02-2.md",
       sha256: "ac5fee6f18dd438b83045940c8a6518b5d1b881d36605733023d901baf57115a",
-      note: "Sépare part IO et consolidé. Mode d’échec : coussin déjà occupé. Remplacée : cadrage créance vs collatéral.",
+      note: "Sépare part IO et consolidé. Remplacée.",
     },
     {
       id: "2026-10-02-3",
       published: "2026-10-02",
-      status: "working-paper",
+      status: "superseded",
       verdict:
         "Non tranché. La part à intérêts seuls est une créance ; 40–50 % est un ratio à tester sur la durée du principal.",
       file: "content/papers/red-team-08/v2026-10-02-3.md",
       sha256: "228f8fbbbc919851f1dfe50a808679db8f744c88814b51e13037680d44527597",
-      note: "Créance vs logement au bilan. DNB T3 2025 : ~40 % IO, 7 % LTV>75 %. Plafond à tester parce que le principal reste dû, pas comme garantie comptable.",
+      note: "Créance vs logement ; DNB. Remplacée par la version structurée autour de la distinction centrale.",
+    },
+    {
+      id: "2026-10-02-4",
+      published: "2026-10-02",
+      status: "working-paper",
+      verdict:
+        "Non tranché. Le Pacte plafonne la part IO / valeur, non le LTV consolidé ; baisse de prix ≠ perte automatique.",
+      file: "content/papers/red-team-08/v2026-10-02-4.md",
+      sha256: "11ac3fff62f3d71f7863ce26a6d7eeec98695689792644f77ff3da1f8ae50465",
+      note: "Distinction centrale en tête. Tableau des objets. Coussin IO vs octroi consolidé. Mode d’échec 100/40/50. Verdict non tranché.",
     },
   ],
   progress: [
     {
       id: "ltv",
-      label: "Créance IO / collatéral",
-      state: "Cadrage posé ; plafond non choisi",
+      label: "Plafond IO vs LTV consolidé",
+      state: "Distinction posée ; chiffre IO non choisi",
     },
     { id: "households", label: "Comportement des ménages", state: "Vide" },
     { id: "dmto", label: "Mutations / DMTO", state: "Sensibilité notée" },
     {
       id: "origination",
       label: "Origination / coexistence",
-      state: "Liée au ratio IO ; case vide",
+      state: "Liée au coussin IO ; case vide",
     },
     { id: "system", label: "Transmission systémique", state: "Vide" },
   ],

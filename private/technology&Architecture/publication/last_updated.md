@@ -68,3 +68,9 @@ claim, not property on the bank balance sheet; LTV remains relevant because prin
 outstanding. DNB Monitor 2026 (Q3 2025): nearly 40 % Dutch IO; only 7 % of IO loans LTV > 75 %.
 Do not explain 40–50 % as guaranteeing asset ≤ collateral. Test whether 40–50 % is an appropriate
 maximum IO-to-property ratio over the life of the principal. Prior snapshot bytes unchanged.
+
+2026-10-02. EC-08 rewritten as `2026-10-02-4`. Central distinction leads the note: Pacte caps
+IO/property (40–50 %), not consolidated LTV (bank underwriting). Object table; IO arithmetic
+table separate from 100/40/50 consolidé failure mode; price fall erodes cushion without automatic
+loss/default. Soft “ratio collatéral annoncé” wording removed. Verdict non tranché. Prior
+snapshot bytes unchanged.
