@@ -43,3 +43,7 @@ Deploy gate is `scripts/vercelbuild.js`: §1 summary contract and paper snapshot
 2026-10-02. Context note `/documents/contexte-demographique` `2026-10-02`: Insee Première 1881 + COR juin 2025 tables for En images Le problème. Verdict: contexte établi à partir des sources ; lien Pacte = lecture.
 
 2026-10-02. Context note `2026-10-02-2`: fills Insee 26 % (65+) in 2040; adds Cour ~30 Md€ in 2045; COR 2040 % PIB stays empty. Prior snapshot bytes unchanged.
+
+2026-10-02. `/projet` now includes **Méthode et transparence**: public-source citations and an
+explicit AI-assistance boundary. AI accelerates parts of the workflow but is not a source and does
+not replace human verification, contradiction, or editorial responsibility. No snapshot changed.

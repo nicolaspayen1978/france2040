@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { JsonLd } from "@/components/JsonLd";
+import { ShareAction } from "@/components/ShareAction";
 import type { WorkingPaper } from "@/content/papers/types";
 import { formatDate } from "@/lib/documents";
 import type { PaperBlock } from "@/lib/parsePaper";
@@ -91,6 +92,14 @@ export function WorkingPaperView({ paper, versionId, blocks, placement }: Workin
         </p>
         <p>
           Adresse : <a href={address}>{address}</a>
+        </p>
+        <p>
+          <ShareAction
+            title={paper.title}
+            text={paper.summary}
+            url={address}
+            label="Partager cette version"
+          />
         </p>
         {paper.attachments && paper.attachments.length > 0 ? (
           <ul className="downloads">

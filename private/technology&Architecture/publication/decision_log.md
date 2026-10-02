@@ -80,6 +80,17 @@ Owner OK. Parcours `2026-10-02`: after « Deux formes de liquidité », section 
 
 Owner OK. Version `2026-10-02-2`. The coexistence subsection must not mix origination/security conditions with privileged-refinancing eligibility. Lender, guarantor, security nature/rank and consolidated LTV belong to asset fabrication. Consequences for refinancing channels are treated downstream (financer le stock → porter → échelle). Prior snapshot bytes unchanged.
 
+## 2026-10-02 — Public-source and AI-assistance disclosure
+
+Owner approved a short **Méthode et transparence** section on `/projet`. It says that France 2040
+uses data, publications, and sources accessible to the public and cites the sources used so the
+analysis can be verified, contested, and reproduced. It does not claim to use “all” public data.
+
+AI tools may accelerate documentary research, hypothesis exploration, coherence checks, and the
+production of some supporting material. AI is not a source and does not replace human
+verification, contradiction, or the project’s editorial responsibility. No published research
+snapshot changes in this slice.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

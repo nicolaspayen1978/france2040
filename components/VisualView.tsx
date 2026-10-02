@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ShareAction } from "@/components/ShareAction";
 import {
   getVisualVersion,
   loadVisualFigure,
@@ -21,6 +22,7 @@ export function VisualView({ visual, versionId }: Props) {
   }
 
   const figure = loadVisualFigure(version);
+  const address = visualPath(visual, version.id);
   const isCurrent = versionId === visual.currentVersionId;
   const natureLine = visual.natureNote
     ? `${visualNatureLabel(visual.nature)}. ${visual.natureNote}`
@@ -45,7 +47,15 @@ export function VisualView({ visual, versionId }: Props) {
         {isCurrent ? " — version actuelle" : ""}
       </p>
       <p>
-        Adresse : <Link href={visualPath(visual, version.id)}>{visualPath(visual, version.id)}</Link>
+        Adresse : <Link href={address}>{address}</Link>
+      </p>
+      <p>
+        <ShareAction
+          title={visual.title}
+          text={visual.summary}
+          url={address}
+          label="Partager ce visuel"
+        />
       </p>
 
       <figure className="visual-figure">

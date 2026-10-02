@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ShareAction } from "@/components/ShareAction";
 import { sectionMetadata } from "@/lib/paperMeta";
 
 export const metadata = sectionMetadata({
@@ -33,11 +34,12 @@ export default function ParticipatePage() {
             puisse viser un texte et un passage précis.
           </p>
           <p className="participation-note">
-            La discussion publique n’est pas encore ouverte sur le site. Lorsqu’elle le sera, les
-            contributions resteront attachées à la version commentée, sans modifier le texte
-            publié.
+            Vous pouvez déjà déposer un commentaire. Il est examiné avant publication et n’altère
+            pas le texte versionné. L’affichage à côté d’un passage précis viendra plus tard ; en
+            attendant, une référence document / version / ancre peut accompagner la soumission.
           </p>
           <p className="participation-links">
+            <Link href="/commentaires">Déposer ou lire un commentaire</Link>
             <Link href="/documents">Examiner les documents</Link>
           </p>
         </section>
@@ -69,6 +71,14 @@ export default function ParticipatePage() {
             Partager un document, une version citée, un visuel ou France 2040 lui-même permet
             d’élargir la contradiction et de faire circuler les travaux au-delà de leur premier
             public.
+          </p>
+          <p>
+            <ShareAction
+              title="France 2040"
+              text="Projet de recherche indépendant et ouvert à la contradiction."
+              url="/"
+              label="Partager France 2040"
+            />
           </p>
           <p className="participation-links">
             <Link href="/documents">Parcourir les documents</Link>
