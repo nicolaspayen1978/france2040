@@ -11,6 +11,7 @@ import { redTeam05 } from "@/content/papers/red-team-05";
 import { redTeam06 } from "@/content/papers/red-team-06";
 import { redTeam07 } from "@/content/papers/red-team-07";
 import { parcoursMenages } from "@/content/papers/parcours-menages";
+import { contexteDemographique } from "@/content/papers/contexte-demographique";
 import type { WorkingPaper } from "@/content/papers/types";
 
 export const workingPapers: WorkingPaper[] = [
@@ -20,6 +21,7 @@ export const workingPapers: WorkingPaper[] = [
   parcoursMenages,
   modele,
   questionsOuvertes,
+  contexteDemographique,
   redTeam01,
   redTeam02,
   redTeam03,

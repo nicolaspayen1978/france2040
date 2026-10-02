@@ -93,7 +93,7 @@ Greys and mark colours are live. Muted `--blue-2/3` and `--red-2/3` are defined 
 
 | Family | Intent |
 | --- | --- |
-| Le problème | Ageing, public debt, housing wealth, investment gap — from cited sources |
+| Le problème | Ageing, public debt, housing wealth, investment gap — from cited sources. Demography trio (B→A→C): `retraites-vs-actifs`, `demographie-2027-2040`, `financement-retraites`, citing `/documents/contexte-demographique` |
 | Le mécanisme | €1 flow: equity → credit → spending → production → receipts; uncertain links marked |
 | La trajectoire 2027–2040 | Credit path, peak, return to zero; “falaise 2040” |
 | Le ménage | Interest-only vs amortising; cash-flow difference; residual debt |

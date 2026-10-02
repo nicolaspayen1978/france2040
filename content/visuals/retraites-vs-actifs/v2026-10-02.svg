@@ -1,0 +1,43 @@
+<!--
+  En images — retraites-vs-actifs v2026-10-02
+  Colours from app/tokens.css: --ink, --ink-2, --ink-3, --muted, --muted-2, --line, --paper, --paper-2, --mark-blue, --blue-3
+  Numbers from /documents/contexte-demographique/v/2026-10-02 (Insee Première 1881).
+  Honest framing: âge 65+ / 20–64, pas retraités / employés.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Dépendance démographique : 65 ans ou plus pour 100 personnes de 20 à 64 ans</title>
+  <desc id="desc">
+    Rapport de dépendance démographique Insee : 37 en 2021, 51 en 2040 (scénario central).
+    Ce n’est pas un compte de retraités et d’employés.
+  </desc>
+  <rect width="720" height="520" fill="#fff"/>
+
+  <text x="24" y="36" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Dépendance démographique</text>
+  <text x="24" y="56" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">65 ans ou plus pour 100 personnes de 20 à 64 ans · pas un compte d’emploi</text>
+
+  <line x1="80" y1="380" x2="640" y2="380" stroke="#e6e6e6" stroke-width="1"/>
+  <line x1="80" y1="100" x2="80" y2="380" stroke="#e6e6e6" stroke-width="1"/>
+
+  <text x="70" y="384" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">0</text>
+  <line x1="80" y1="253" x2="640" y2="253" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="70" y="257" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">25</text>
+  <line x1="80" y1="126" x2="640" y2="126" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="70" y="130" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">50</text>
+
+  <!-- scale 0–55 over 280px: 37 → 188px; 51 → 260px -->
+  <rect x="180" y="192" width="100" height="188" fill="#99a5cd"/>
+  <text x="230" y="182" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#002395">37</text>
+  <text x="230" y="404" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">2021</text>
+
+  <rect x="400" y="120" width="100" height="260" fill="#002395"/>
+  <text x="450" y="110" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#002395">51</text>
+  <text x="450" y="404" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">2040</text>
+
+  <text x="80" y="92" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">pour 100 personnes de 20–64 ans · scénario central Insee</text>
+
+  <rect x="40" y="430" width="640" height="44" rx="2" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="56" y="450" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Ce n’est pas « retraités vs employés ». 20–64 ans ≠ en emploi. 65 ans ou plus ≠ retraité.</text>
+  <text x="56" y="466" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Fourchette 2040 selon scénarios Insee : environ 48 à 53.</text>
+
+  <text x="24" y="504" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Lecture contexte-demographique · Insee Première 1881 · 2 octobre 2026 · ne prouve pas que le Pacte comble un écart fiscal</text>
+</svg>

@@ -39,3 +39,5 @@ Deploy gate is `scripts/vercelbuild.js`: §1 summary contract and paper snapshot
 2026-10-02. Parcours ménages `2026-10-02`: existing loan does not disappear — keep low historical rate vs refinance cost; three situations. EC-05 `2026-10-02`: coexistence sub-test (additional tranche without refinancing) before financing the stock; 65.3% caution market. Prior snapshot bytes unchanged.
 
 2026-10-02. EC-05 `2026-10-02-2`: coexistence wording separates asset fabrication (lender, guarantor, security nature/rank, consolidated LTV) from downstream eligibility for refinancing channels. Prior snapshot bytes unchanged.
+
+2026-10-02. Context note `/documents/contexte-demographique` `2026-10-02`: Insee Première 1881 + COR juin 2025 tables for En images Le problème. Verdict: contexte établi à partir des sources ; lien Pacte = lecture.

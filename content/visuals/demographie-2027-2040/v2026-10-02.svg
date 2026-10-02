@@ -1,0 +1,57 @@
+<!--
+  En images — demographie-2027-2040 v2026-10-02
+  Colours from app/tokens.css.
+  Numbers from /documents/contexte-demographique/v/2026-10-02 (Insee Première 1881).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Vieillissement : part des 65 ans ou plus et fenêtre 2027–2040</title>
+  <desc id="desc">
+    Part des 65 ans ou plus : 21 % en 2021, 29 % en 2070. Fenêtre 2027–2040 marquée ;
+    l’Insee juge le vieillissement jusqu’en 2040 quasi certain.
+  </desc>
+  <rect width="720" height="520" fill="#fff"/>
+
+  <text x="24" y="36" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Démographie 2027–2040</text>
+  <text x="24" y="56" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Part des 65 ans ou plus · projection officielle Insee · pas une prévision France2040</text>
+
+  <!-- timeline strip -->
+  <line x1="60" y1="160" x2="660" y2="160" stroke="#e6e6e6" stroke-width="2"/>
+
+  <!-- 2021 marker -->
+  <circle cx="120" cy="160" r="7" fill="#99a5cd"/>
+  <text x="120" y="140" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#002395">21 %</text>
+  <text x="120" y="188" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">2021</text>
+
+  <!-- window 2027-2040 band: map years 2021→2070 on x 120→600 -->
+  <!-- 2027: (6/49)*480 + 120 ≈ 179; 2040: (19/49)*480 + 120 ≈ 306 -->
+  <rect x="179" y="130" width="127" height="60" fill="#f7b3b8" opacity="0.45"/>
+  <text x="242" y="120" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#ed2939">fenêtre 2027–2040</text>
+  <text x="242" y="210" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">vieillissement quasi certain</text>
+
+  <!-- 2070 -->
+  <circle cx="600" cy="160" r="7" fill="#002395"/>
+  <text x="600" y="140" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#002395">29 %</text>
+  <text x="600" y="188" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">2070</text>
+
+  <path d="M127 160 H593" stroke="#002395" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+
+  <!-- secondary facts -->
+  <rect x="40" y="250" width="300" height="100" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="56" y="280" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">D’ici 2070 (scénario central)</text>
+  <text x="56" y="308" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#002395">+ 5,7 M</text>
+  <text x="56" y="328" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">personnes de 75 ans ou plus</text>
+
+  <rect x="380" y="250" width="300" height="100" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="396" y="280" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">D’ici 2070 (scénario central)</text>
+  <text x="396" y="308" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#ed2939">− 5,0 M</text>
+  <text x="396" y="328" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">personnes de moins de 60 ans</text>
+
+  <rect x="40" y="372" width="640" height="72" rx="2" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <text x="56" y="400" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Ce que le graphique établit</text>
+  <text x="56" y="422" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">La part des 65 ans ou plus monte ; jusqu’en 2040 le vieillissement est quasi certain selon l’Insee.</text>
+
+  <rect x="40" y="456" width="640" height="28" rx="2" fill="#e8e8e4" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="56" y="475" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Ce qu’il n’établit pas : une prévision France2040, ni que le Pacte « corrige » le vieillissement.</text>
+
+  <text x="24" y="508" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Lecture contexte-demographique · Insee Première 1881 · 2 octobre 2026 · part 65+ en 2040 non publiée ici</text>
+</svg>

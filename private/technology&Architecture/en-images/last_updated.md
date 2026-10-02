@@ -19,3 +19,5 @@ Cross-link: publication domain remains the source of document immutability and d
 2026-10-02. `les-quatre-bilans` → `2026-10-02`: wider connector lanes, flow labels off the arrow strokes.
 
 2026-10-01. Two visuals from Parcours ménages v2026-10-01-2: `emprunt-moyen-mensualite` and `emprunt-moyen-capacite` (Case 1 credit ticket, not notarial 230/270).
+
+2026-10-02. Note `/documents/contexte-demographique` v2026-10-02 (Insee Première 1881, COR juin 2025). En images Le problème B→A→C: `retraites-vs-actifs`, `demographie-2027-2040`, `financement-retraites` — all cite that version. Dependency framed as âge, not emploi.

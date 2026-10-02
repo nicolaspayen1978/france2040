@@ -75,6 +75,15 @@ Owner supplied architectural sketch. Published as `/en-images/les-quatre-bilans`
 
 Not a byte upload of the colourful draft. Redrawn in tokens (blue/grey only). Source claims that closed consolidation or French output were rewritten as open (EC-02/03/05/06/07). Anti-claim footer: ne constitue pas une trajectoire · ne prouve pas la consolidation.
 
+## 2026-10-02 — Le problème: demography note then B→A→C
+
+Owner OK: preferred path (short public note) then order B → A → C.
+
+- Paper: `/documents/contexte-demographique` `2026-10-02` — Insee Première 1881 + COR juin 2025 tables; cells absent from sources stay empty.
+- B `retraites-vs-actifs`: demographic dependency 37 → 51; title and anti-claim block reject « retraités vs employés ».
+- A `demographie-2027-2040`: share 65+ 21 % → 29 %, window 2027–2040, ± millions 75+ / −60; no invented 2040 share %.
+- C `financement-retraites`: COR balances 2024 / 2030 / 2070 and expenses vs resources; not Maastricht, not Pacte effect.
+
 ## Open, and not decided by writing this folder
 
 - Chart tooling for later visuals: hand SVG vs a generator tied to a frozen model version.
