@@ -1,5 +1,7 @@
+import { createHash, randomBytes } from "node:crypto";
 import {
   isKVConfigured,
+  kvDel,
   kvExpire,
   kvGetJson,
   kvIncr,
@@ -7,9 +9,11 @@ import {
   kvSMembers,
   kvSRem,
   kvSet,
+  kvSetWithOptions,
 } from "@/lib/kv/client";
+import { isMailConfigured, sendCommentVerificationEmail } from "@/lib/mail";
 
-export type CommentStatus = "pending" | "accepted" | "rejected";
+export type CommentStatus = "unverified" | "pending" | "accepted" | "rejected";
 
 export type CommentRecord = {
   id: string;
@@ -20,16 +24,24 @@ export type CommentRecord = {
   body: string;
   status: CommentStatus;
   submittedAt: string;
+  verifiedAt: string | null;
   slug: string | null;
   versionId: string | null;
   anchorId: string | null;
   moderatedAt: string | null;
 };
 
+type VerifyTokenRecord = {
+  commentId: string;
+  email: string;
+  createdAt: string;
+};
+
 /** Public shape: email never leaves the server for HTML. */
 export type PublicComment = Omit<CommentRecord, "email">;
 
 const INDEX: Record<CommentStatus, string> = {
+  unverified: "comments:unverified",
   pending: "comments:pending",
   accepted: "comments:accepted",
   rejected: "comments:rejected",
@@ -41,9 +53,10 @@ const MAX_LINKEDIN = 300;
 const MAX_REF = 120;
 const RATE_LIMIT_MAX = 5;
 const RATE_LIMIT_WINDOW_SEC = 3600;
+const VERIFY_TTL_SEC = 48 * 60 * 60;
 
 export function commentsAvailable(): boolean {
-  return isKVConfigured();
+  return isKVConfigured() && isMailConfigured();
 }
 
 function commentKey(id: string): string {
@@ -52,6 +65,10 @@ function commentKey(id: string): string {
 
 function indexKey(status: CommentStatus): string {
   return INDEX[status];
+}
+
+function verifyTokenKey(token: string): string {
+  return `comments:verify:${token}`;
 }
 
 function trimOrNull(value: unknown, max: number): string | null {
@@ -112,6 +129,10 @@ function newId(): string {
   return `c_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 10)}`;
 }
 
+function newVerifyToken(): string {
+  return randomBytes(32).toString("hex");
+}
+
 export function toPublicComment(record: CommentRecord): PublicComment {
   const { email: _email, ...rest } = record;
   return rest;
@@ -134,8 +155,11 @@ export async function submitComment(
   input: SubmitCommentInput,
   ipHash: string,
 ): Promise<{ id: string }> {
-  if (!commentsAvailable()) {
+  if (!isKVConfigured()) {
     throw new Error("Le dépôt de commentaires n’est pas configuré.");
+  }
+  if (!isMailConfigured()) {
+    throw new Error("La confirmation par e-mail n’est pas configurée.");
   }
 
   if (typeof input.website === "string" && input.website.trim()) {
@@ -156,16 +180,49 @@ export async function submitComment(
     email: normalizeEmail(input.email),
     linkedin: normalizeLinkedIn(input.linkedin),
     body: requireText(input.body, "Le commentaire", MAX_BODY),
-    status: "pending",
+    status: "unverified",
     submittedAt: new Date().toISOString(),
+    verifiedAt: null,
     slug: trimOrNull(input.slug, MAX_REF),
     versionId: trimOrNull(input.versionId, MAX_REF),
     anchorId: trimOrNull(input.anchorId, MAX_REF),
     moderatedAt: null,
   };
 
+  const token = newVerifyToken();
+  const tokenRecord: VerifyTokenRecord = {
+    commentId: record.id,
+    email: record.email,
+    createdAt: record.submittedAt,
+  };
+
   await kvSet(commentKey(record.id), record);
-  await kvSAdd(indexKey("pending"), record.id);
+  await kvSAdd(indexKey("unverified"), record.id);
+  const tokenStored = await kvSetWithOptions(verifyTokenKey(token), tokenRecord, {
+    nx: true,
+    ex: VERIFY_TTL_SEC,
+  });
+  if (tokenStored !== true) {
+    await kvSRem(indexKey("unverified"), record.id);
+    await kvDel(commentKey(record.id));
+    throw new Error("Impossible de créer le lien de confirmation. Réessayez.");
+  }
+
+  try {
+    await sendCommentVerificationEmail({
+      to: record.email,
+      firstName: record.firstName,
+      token,
+    });
+  } catch (error) {
+    await kvDel(verifyTokenKey(token));
+    await kvSRem(indexKey("unverified"), record.id);
+    await kvDel(commentKey(record.id));
+    throw error instanceof Error
+      ? error
+      : new Error("Échec d’envoi du message de confirmation.");
+  }
+
   return { id: record.id };
 }
 
@@ -181,7 +238,7 @@ async function loadByIds(ids: string[]): Promise<CommentRecord[]> {
 export async function listCommentsByStatus(
   status: CommentStatus,
 ): Promise<CommentRecord[]> {
-  if (!commentsAvailable()) return [];
+  if (!isKVConfigured()) return [];
   const ids = await kvSMembers(indexKey(status));
   return loadByIds(ids);
 }
@@ -191,11 +248,57 @@ export async function listPublicComments(): Promise<PublicComment[]> {
   return accepted.map(toPublicComment);
 }
 
+export async function verifyCommentToken(token: unknown): Promise<CommentRecord> {
+  if (!isKVConfigured()) {
+    throw new Error("Le dépôt de commentaires n’est pas configuré.");
+  }
+
+  const safeToken = typeof token === "string" ? token.trim() : "";
+  if (!safeToken || safeToken.length > 128 || !/^[a-f0-9]+$/i.test(safeToken)) {
+    throw new Error("Lien de confirmation invalide.");
+  }
+
+  const tokenKey = verifyTokenKey(safeToken);
+  const tokenRecord = await kvGetJson<VerifyTokenRecord>(tokenKey);
+  if (!tokenRecord?.commentId) {
+    throw new Error("Ce lien de confirmation est invalide ou a expiré.");
+  }
+
+  const record = await kvGetJson<CommentRecord>(commentKey(tokenRecord.commentId));
+  if (!record) {
+    await kvDel(tokenKey);
+    throw new Error("Commentaire introuvable.");
+  }
+
+  if (record.status === "pending" || record.status === "accepted" || record.status === "rejected") {
+    await kvDel(tokenKey);
+    return record;
+  }
+
+  if (record.status !== "unverified") {
+    throw new Error("Ce commentaire ne peut plus être confirmé.");
+  }
+
+  if (record.email !== tokenRecord.email) {
+    throw new Error("Lien de confirmation invalide.");
+  }
+
+  record.status = "pending";
+  record.verifiedAt = new Date().toISOString();
+
+  await kvSet(commentKey(record.id), record);
+  await kvSRem(indexKey("unverified"), record.id);
+  await kvSAdd(indexKey("pending"), record.id);
+  await kvDel(tokenKey);
+
+  return record;
+}
+
 export async function moderateComment(
   id: string,
   next: "accepted" | "rejected",
 ): Promise<CommentRecord> {
-  if (!commentsAvailable()) {
+  if (!isKVConfigured()) {
     throw new Error("Le dépôt de commentaires n’est pas configuré.");
   }
 
@@ -204,6 +307,10 @@ export async function moderateComment(
 
   const record = await kvGetJson<CommentRecord>(commentKey(safeId));
   if (!record) throw new Error("Commentaire introuvable.");
+
+  if (record.status === "unverified") {
+    throw new Error("Ce commentaire n’a pas encore confirmé son adresse e-mail.");
+  }
 
   const previous = record.status;
   if (previous === next) return record;
@@ -215,4 +322,9 @@ export async function moderateComment(
   await kvSRem(indexKey(previous), safeId);
   await kvSAdd(indexKey(next), safeId);
   return record;
+}
+
+/** Stable short hash for rate-limit keys (also used by the API route). */
+export function hashClientIp(ip: string): string {
+  return createHash("sha256").update(ip || "unknown").digest("hex").slice(0, 32);
 }

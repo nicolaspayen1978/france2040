@@ -56,7 +56,7 @@ export function CommentForm({
       setStatus("ok");
       setMessage(
         payload.message ||
-          "Merci. Votre commentaire est enregistré et sera publié après modération.",
+          "Merci. Un e-mail de confirmation vous a été envoyé. Ouvrez le lien pour faire entrer votre commentaire en file de modération.",
       );
     } catch {
       setStatus("error");

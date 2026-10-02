@@ -33,7 +33,7 @@ permalinks remain separate and unchanged.
 ## Comment intake (Phase 3)
 
 Visitors can submit a comment through a form on `/commentaires`. This is a site-level intake, not
-yet the full publication phase 3 model (inline anchors beside paper HTML, email verification mail).
+yet the full publication phase 3 model (inline anchors beside paper HTML).
 
 ### Record
 
@@ -47,10 +47,16 @@ yet the full publication phase 3 model (inline anchors beside paper HTML, email 
 | slug / versionId / anchorId | no | yes when set |
 | status | system | accepted only on the public list |
 | submittedAt | system | yes |
+| verifiedAt | system | no |
 
-Statuses: `pending` → `accepted` | `rejected`. The public page lists **accepted** comments only.
-Pending items are never rendered publicly. Email is stored for contact / future verification and is
-never written into the public HTML.
+Statuses: `unverified` → `pending` → `accepted` | `rejected`.
+
+1. Submit stores `unverified` and sends a Resend confirmation mail (48h single-use token).
+2. Opening `/commentaires/verifier?token=…` moves the comment to `pending` (moderation queue).
+3. Owner accepts or rejects. Public page lists **accepted** only.
+
+Email is never written into the public HTML. Unverified comments never appear in moderation or
+public lists.
 
 Optional `slug`, `versionId`, and `anchorId` prepare later binding to a published version without
 requiring document-page UI in this slice.
@@ -64,16 +70,21 @@ paper snapshots. The client is a slim REST façade adapted from the HEA-World KV
 Keys:
 
 - `comment:{id}` — JSON record
-- Redis sets `comments:pending` / `comments:accepted` / `comments:rejected` — id indexes
+- Redis sets `comments:unverified` / `comments:pending` / `comments:accepted` / `comments:rejected`
+- `comments:verify:{token}` — TTL 48h
 - `comments:ratelimit:{ipHash}` — short TTL counter
+
+Mail: Resend (`RESEND_API_KEY`, plus `RESEND_FROM` or `RESEND_EMAIL_DOMAIN` →
+`France 2040 <noreply@domain>`). Domain DNS must be verified before production delivery is
+reliable.
 
 ### Moderation
 
 A gated route `/commentaires/moderation` (not in the main nav, not in the sitemap, `noindex`)
-accepts or rejects pending comments when given `COMMENTS_MODERATION_SECRET`. Refusal reasons are
-relevance, abuse, spam, or legality — not disagreement with the Pacte.
+accepts or rejects **pending** comments when given `COMMENTS_MODERATION_SECRET`. Refusal reasons
+are relevance, abuse, spam, or legality — not disagreement with the Pacte.
 
 ### Out of this slice
 
-Email link verification, inline comment UI on document pages, replies / issue state, accounts,
-threads, votes. Those remain publication phase 3 work.
+Turnstile / CAPTCHA, inline comment UI on document pages, replies / issue state, accounts,
+threads, votes. Those remain later work.

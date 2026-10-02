@@ -1,5 +1,7 @@
 import { CommentForm } from "@/components/CommentForm";
 import { commentsAvailable, listPublicComments } from "@/lib/comments";
+import { isKVConfigured } from "@/lib/kv/client";
+import { isMailConfigured } from "@/lib/mail";
 import { sectionMetadata } from "@/lib/paperMeta";
 
 export const dynamic = "force-dynamic";
@@ -7,7 +9,7 @@ export const dynamic = "force-dynamic";
 export const metadata = sectionMetadata({
   title: "Commentaires",
   description:
-    "Déposer une critique ou une contribution sur France 2040. Les commentaires acceptés sont publiés ici après modération.",
+    "Déposer une critique ou une contribution sur France 2040. Les commentaires acceptés sont publiés ici après confirmation e-mail et modération.",
   path: "/commentaires",
 });
 
@@ -27,12 +29,19 @@ export default async function CommentairesPage() {
   let comments: Awaited<ReturnType<typeof listPublicComments>> = [];
   let listError = false;
 
-  if (available) {
+  if (isKVConfigured()) {
     try {
       comments = await listPublicComments();
     } catch {
       listError = true;
     }
+  }
+
+  let unavailableReason =
+    "Le dépôt n’est pas disponible pour le moment (stockage non configuré).";
+  if (isKVConfigured() && !isMailConfigured()) {
+    unavailableReason =
+      "Le dépôt n’est pas disponible pour le moment (envoi d’e-mail non configuré).";
   }
 
   return (
@@ -44,8 +53,9 @@ export default async function CommentairesPage() {
         Les contributions publiées ici restent distinctes des textes versionnés.
       </p>
       <p>
-        Chaque soumission est examinée avant publication. Le désaccord n’est pas un motif de refus.
-        L’adresse e-mail n’est pas affichée.
+        Après l’envoi, un message de confirmation est adressé à votre e-mail. Ce n’est qu’après
+        ouverture du lien que le commentaire entre en file de modération. Le désaccord n’est pas un
+        motif de refus. L’adresse e-mail n’est pas affichée.
       </p>
 
       <section className="comments-submit" aria-labelledby="deposer-un-commentaire">
@@ -53,9 +63,7 @@ export default async function CommentairesPage() {
         {available ? (
           <CommentForm />
         ) : (
-          <p className="comment-form-error">
-            Le dépôt n’est pas disponible pour le moment (stockage non configuré).
-          </p>
+          <p className="comment-form-error">{unavailableReason}</p>
         )}
       </section>
 

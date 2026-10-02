@@ -10,6 +10,7 @@ main-navigation item, and keeps `/soutenir` as a permanent redirect to the finan
 immutable version addresses; the participation page shares the site root. No platform SDKs or
 tracking parameters.
 
-2026-10-02. Phase 3 started: comment intake on dedicated Upstash Redis, HEA-style REST KV client,
-required identity fields (names, email), optional LinkedIn and document binding fields, public list
-of accepted comments only, gated moderation route.
+2026-10-02. Phase 3: comment intake on dedicated Upstash Redis, HEA-style REST KV client,
+required names + email + body, optional LinkedIn and document refs. Resend e-mail verification
+before moderation (`unverified` → `pending` → accepted/rejected). Turnstile deferred. Gated
+moderation route.

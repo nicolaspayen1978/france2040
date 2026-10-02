@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
       : {
           userAgent: "*",
           allow: "/",
-          disallow: ["/commentaires/moderation", "/api/"],
+          disallow: ["/commentaires/moderation", "/commentaires/verifier", "/api/"],
         },
     sitemap: absoluteUrl("/sitemap.xml"),
   };

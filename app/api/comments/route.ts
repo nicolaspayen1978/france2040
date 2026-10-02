@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
         ok: true,
         id: result.id,
         message:
-          "Merci. Votre commentaire est enregistré et sera publié après modération.",
+          "Merci. Un e-mail de confirmation vous a été envoyé. Ouvrez le lien pour faire entrer votre commentaire en file de modération.",
       },
       { status: 201 },
     );

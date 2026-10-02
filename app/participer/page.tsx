@@ -34,9 +34,10 @@ export default function ParticipatePage() {
             puisse viser un texte et un passage précis.
           </p>
           <p className="participation-note">
-            Vous pouvez déjà déposer un commentaire. Il est examiné avant publication et n’altère
-            pas le texte versionné. L’affichage à côté d’un passage précis viendra plus tard ; en
-            attendant, une référence document / version / ancre peut accompagner la soumission.
+            Vous pouvez déjà déposer un commentaire. Après confirmation de votre e-mail, il est
+            examiné avant publication et n’altère pas le texte versionné. L’affichage à côté d’un
+            passage précis viendra plus tard ; en attendant, une référence document / version /
+            ancre peut accompagner la soumission.
           </p>
           <p className="participation-links">
             <Link href="/commentaires">Déposer ou lire un commentaire</Link>

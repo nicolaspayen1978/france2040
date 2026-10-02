@@ -51,3 +51,10 @@ rendering beside paper anchors stay out of this slice.
 
 Owner correction: LinkedIn is optional on the public form. When absent, the public list shows
 name only; when present, it remains a profile link.
+
+## 2026-10-02 — E-mail verification before Turnstile
+
+Owner preference: confirm the mailbox with Resend before adding CAPTCHA. Submit creates
+`unverified`; the moderation queue only receives `pending` after `/commentaires/verifier`.
+Turnstile stays deferred. Env: `RESEND_API_KEY` and either `RESEND_FROM` or
+`RESEND_EMAIL_DOMAIN` (DNS verification may still be propagating at ship time).
