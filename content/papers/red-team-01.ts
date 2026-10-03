@@ -6,7 +6,7 @@ export const redTeam01: WorkingPaper = {
   lang: "fr",
   summary:
     "500 à 700 Md€ de part à intérêts seuls peuvent-ils être tirés de l’équité immobilière française à 40–50 % de ratio prêt sur valeur ? L’objection du collatéral agrégé a résisté. La capacité de l’emprunteur et la réglementation, non.",
-  currentVersionId: "2026-10-01",
+  currentVersionId: "2026-10-03",
   versions: [
     {
       id: "2026-09-28",
@@ -21,11 +21,20 @@ export const redTeam01: WorkingPaper = {
     {
       id: "2026-10-01",
       published: "2026-10-01",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Objection du collatéral agrégé : elle a résisté. Capacité de l’emprunteur et compatibilité réglementaire : non tranchées.",
       file: "content/papers/red-team-01/v2026-10-01.md",
       sha256: "53118377a7d07dff52ad90586ba5dbc17bf3d65e38c9703aecccc141703f082c",
       note: "Définition gelée : 700 Md€ = encours de la part à intérêts seuls. Arithmétique du résidu inchangée.",
+    },
+    {
+      id: "2026-10-03",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict: "Objection du collatéral agrégé : elle a résisté. Capacité de l’emprunteur et compatibilité réglementaire : non tranchées.",
+      file: "content/papers/red-team-01/v2026-10-03.md",
+      sha256: "e840d319fa04a79d621472a9af0f8df76817e83f99d2701122bf07499efc95cf",
+      note: "Vocabulaire public français. Fond inchangé.",
     },
   ],
   progress: [

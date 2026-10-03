@@ -155,6 +155,19 @@ default. Version `2026-10-02-5` freezes the note after replacing that sentence s
 transmission *given* consolidated LTV actually accepted at origination. No further modelling.
 Status: gelé. Verdict remains non tranché. `-4` superseded, bytes unchanged.
 
+## 2026-10-03 — Public French vocabulary (no IO / LTV / equity)
+
+Owner: English banking shorthand does not belong on the French public site.
+
+Glossary for public pages:
+- IO / interest-only → *part à intérêts seuls* (or *créance à intérêts seuls*)
+- LTV → *ratio dette / valeur* (achat: *ratio prêt / valeur d’achat*; consolidé: *ratio dette consolidée / valeur*)
+- equity → *capital immobilier net*
+- DSTI → *taux d’effort*
+
+New versions `2026-10-03` for current papers (EC-08 re-frozen after vocab-only cut) and related
+En images. Slugs with historical `io`/`ltv` kept for URL stability. Superseded snapshots untouched.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

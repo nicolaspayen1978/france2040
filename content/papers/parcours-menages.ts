@@ -10,7 +10,7 @@ export const parcoursMenages: WorkingPaper = {
   lang: "fr",
   summary:
     "Prêt en deux parts. Le prêt existant ne disparaît pas : conserver un taux bas peut valoir plus que refinancer. Les 700 Md€ sont l’encours à intérêts seuls.",
-  currentVersionId: "2026-10-02",
+  currentVersionId: "2026-10-03",
   versions: [
     {
       id: "2026-10-01",
@@ -54,12 +54,22 @@ export const parcoursMenages: WorkingPaper = {
     {
       id: "2026-10-02",
       published: "2026-10-02",
-      status: "working-paper",
+      status: "superseded",
       verdict:
         "Le prêt existant compte. Conserver un taux bas peut valoir plus que refinancer. Pas une hypothèse de V2. Test 06 non ouvert",
       file: "content/papers/parcours-menages/v2026-10-02.md",
       sha256: "66d2bd608ff773a3c4068dbac6c313e30a315ce98115b41ca85ffde3ce6e3e2b",
       note: "Trois situations : sans dette ; tranche Pacte sans refinancer ; refinancement avec perte éventuelle du taux historique.",
+    },
+    {
+      id: "2026-10-03",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict:
+        "Le prêt existant compte. Conserver un taux bas peut valoir plus que refinancer. Pas une hypothèse de V2. Test 06 non ouvert",
+      file: "content/papers/parcours-menages/v2026-10-03.md",
+      sha256: "9992a4f9c8d2554ee83a867c09514194747c81addb3466409b17134c54ae370c",
+      note: "Vocabulaire public français (ratio prêt / valeur d’achat). Fond inchangé.",
     },
   ],
   progress: [

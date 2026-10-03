@@ -5,7 +5,7 @@ export const patrimoineVsEnveloppe: Visual = {
   title: "Patrimoine et enveloppe mobilisable",
   lang: "fr",
   summary:
-    "8 850 Md€ de logements et terrains ; résidu théorique 2 251 Md€ à 40 % LTV ; scénario 700 Md€ ≈ 31 % de ce résidu.",
+    "8 850 Md€ de logements et terrains ; résidu théorique 2 251 Md€ à 40 % de ratio dette / valeur ; scénario 700 Md€ ≈ 31 % de ce résidu.",
   shows:
     "Le stock de logements et terrains bâtis fin 2024 est de 8 850 Md€. Le résidu comptable jusqu’à un ratio prêt sur valeur consolidé de 40 %, après le crédit habitat des particuliers, est de 2 251 Md€. Les 700 Md€ de part à intérêts seuls du scénario en représentent environ 31 %. Au seul niveau agrégé, le stock national n’est pas la contrainte qui lie.",
   doesNotEstablish:
@@ -16,18 +16,18 @@ export const patrimoineVsEnveloppe: Visual = {
   units: "Md€",
   asOf: "Collatéral fin 2024 · crédit habitat juillet 2026 · lecture EC-01",
   provenance:
-    "Épreuve contradictoire EC-01, version 2026-10-01. Stock logements/terrains et résidu à 40 % LTV tels que dans la note. Les 700 Md€ sont l’encours de la part à intérêts seuls.",
+    "Épreuve contradictoire EC-01, version 2026-10-03. Stock logements/terrains et résidu à 40 % de ratio dette / valeur tels que dans la note. Les 700 Md€ sont l’encours de la part à intérêts seuls.",
   citations: [
     {
-      href: "/documents/red-team-01/v/2026-10-01",
-      label: "Épreuve contradictoire EC-01 — Stock d’équité mobilisable (2026-10-01)",
+      href: "/documents/red-team-01/v/2026-10-03",
+      label: "Épreuve contradictoire EC-01 — Stock d’équité mobilisable (2026-10-03)",
     },
     {
       href: "/documents/pacte/v/2026-09-28",
       label: "Le Pacte du bilan français — brouillon (2026-09-28)",
     },
   ],
-  currentVersionId: "2026-10-01-3",
+  currentVersionId: "2026-10-03",
   versions: [
     {
       id: "2026-10-01",
@@ -48,10 +48,18 @@ export const patrimoineVsEnveloppe: Visual = {
     {
       id: "2026-10-01-3",
       published: "2026-10-01",
-      status: "working",
+      status: "superseded",
       figure: "content/visuals/patrimoine-vs-enveloppe/v2026-10-01-3.svg",
       sha256: "d3e3eec303dcf8154d5eee6eb979305a9c73c0c2d056219c809c61d3350ab7ef",
       note: "700 Md€ labellisés comme part à intérêts seuls (saisie).",
+    },
+    {
+      id: "2026-10-03",
+      published: "2026-10-03",
+      status: "working",
+      figure: "content/visuals/patrimoine-vs-enveloppe/v2026-10-03.svg",
+      sha256: "4bf6b3c79e84c980e3a2195ed684bcecd4d024d2634f60d1ca7699ad1f0b5168",
+      note: "Libellé français : 40 % de ratio dette / valeur. Cite EC-01 2026-10-03.",
     },
   ],
 };

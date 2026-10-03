@@ -6,7 +6,7 @@ export const resumeExecutif: WorkingPaper = {
   lang: "fr",
   summary:
     "Mobilisation du bilan des ménages pour soutenir l’investissement. Ressources mobilisables, rénovation du parc, gain d’impôts, et baisse du taux d’endettement par une inflation ciblée. Hypothèse, non un programme arrêté.",
-  currentVersionId: "2026-10-01-10",
+  currentVersionId: "2026-10-03",
   versions: [
     {
       id: "2026-10-01",
@@ -92,11 +92,20 @@ export const resumeExecutif: WorkingPaper = {
     {
       id: "2026-10-01-10",
       published: "2026-10-01",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse, non un programme arrêté.",
       file: "content/papers/resume-executif/v2026-10-01-10.md",
       sha256: "676639fe34fa976f640d860f63a0deb25cc4d47902ed244b29f521ad2f31d964",
       note: "700 Md€ = encours de la part à intérêts seuls seulement. Produit en deux parts. Vocabulaire français.",
+    },
+    {
+      id: "2026-10-03",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict: "Hypothèse, non un programme arrêté.",
+      file: "content/papers/resume-executif/v2026-10-03.md",
+      sha256: "6f0c2d38c5aa1e113cdaa6a73a81e34df532d1356ea3659d0f88cb62145a362e",
+      note: "Vocabulaire public français (ratio dette / valeur). Fond inchangé.",
     },
   ],
   progress: [

@@ -39,7 +39,7 @@ export const empruntMoyenCapacite: Visual = {
       status: "superseded",
       figure: "content/visuals/emprunt-moyen-capacite/v2026-10-01-2.svg",
       sha256: "52c1fa268416d0baaec081d108ff73005e78c4b9c570df3e588dbd97d7a2a1dc",
-      note: "Capacité à deux tranches, IO = 40 % de la valeur. UTF-8 recoupé.",
+      note: "Capacité à deux parts, intérêts seuls = 40 % de la valeur. UTF-8 recoupé.",
     },
     {
       id: "2026-10-01-3",
@@ -47,7 +47,7 @@ export const empruntMoyenCapacite: Visual = {
       status: "superseded",
       figure: "content/visuals/emprunt-moyen-capacite/v2026-10-01-3.svg",
       sha256: "3ad36872142eec7ae59b836a87e9ee90f4ce01493691011626d0980e550a9009",
-      note: "Vocabulaire français : part à intérêts seuls / deux parts. Plus de IO ni tranche.",
+      note: "Vocabulaire français : part à intérêts seuls / deux parts.",
     },
     {
       id: "2026-10-01-4",

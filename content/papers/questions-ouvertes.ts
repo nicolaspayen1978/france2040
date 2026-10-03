@@ -6,7 +6,7 @@ export const questionsOuvertes: WorkingPaper = {
   lang: "fr",
   summary:
     "Ce qui reste à établir. Les faits sourcés sont séparés des affirmations qui ne doivent pas être présentées comme telles.",
-  currentVersionId: "2026-10-01",
+  currentVersionId: "2026-10-03",
   versions: [
     {
       id: "2026-09-28",
@@ -20,11 +20,20 @@ export const questionsOuvertes: WorkingPaper = {
     {
       id: "2026-10-01",
       published: "2026-10-01",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Liste ouverte. Ce n’est pas encore un dossier de preuves.",
       file: "content/papers/questions-ouvertes/v2026-10-01.md",
       sha256: "29e4809b4569f6ede2edf55923dd8a27ba4c6121db353f41342c54ca25774567",
       note: "700 Md€ définis comme encours de la part à intérêts seuls. La part amortissable n’y entre pas.",
+    },
+    {
+      id: "2026-10-03",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict: "Liste ouverte. Ce n’est pas encore un dossier de preuves.",
+      file: "content/papers/questions-ouvertes/v2026-10-03.md",
+      sha256: "fe13c0856bf0ec2e1ad40fa037cc2f1211cb1c42671467b27212f79808d323a0",
+      note: "Vocabulaire public français. Fond inchangé.",
     },
   ],
   progress: [

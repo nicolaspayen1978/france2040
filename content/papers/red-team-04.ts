@@ -6,7 +6,7 @@ export const redTeam04: WorkingPaper = {
   lang: "fr",
   summary:
     "Quand le crédit additionnel redescend à zéro, qu’est-ce qui remplace sa contribution ? Verdict : non tranché. Le chemin n’est pas redessiné.",
-  currentVersionId: "2026-10-01",
+  currentVersionId: "2026-10-03",
   versions: [
     {
       id: "2026-09-29",
@@ -20,11 +20,20 @@ export const redTeam04: WorkingPaper = {
     {
       id: "2026-10-01",
       published: "2026-10-01",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Non tranché. Le calcul porte sur les flux annuels, pas sur le remboursement du stock.",
       file: "content/papers/red-team-04/v2026-10-01.md",
       sha256: "8a26e994ae6728a1fe12d41b77681e6c986e4a660ee9a3b6b1e8941e9ad755e8",
       note: "La colonne du chemin est le flux net de part à intérêts seuls. Montants inchangés.",
+    },
+    {
+      id: "2026-10-03",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict: "Non tranché. Le calcul porte sur les flux annuels, pas sur le remboursement du stock.",
+      file: "content/papers/red-team-04/v2026-10-03.md",
+      sha256: "2368613f9ba3376fc8d6f3f50556eca5c40d5a6f756fa2ae0044093faed88540",
+      note: "Vocabulaire public français. Fond inchangé.",
     },
   ],
   progress: [

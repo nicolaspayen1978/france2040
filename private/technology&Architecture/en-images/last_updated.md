@@ -27,3 +27,7 @@ Cross-link: publication domain remains the source of document immutability and d
 2026-10-02. EC-08 schéma published: `/en-images/part-io-n-est-pas-le-ltv-consolide`
 `2026-10-02`. Two panels (plafond IO vs mode d’échec 100/40/50 after −20 %). Cites frozen
 EC-08 `2026-10-02-5`. Does not predict default or bank loss.
+
+2026-10-03. French vocabulary on figures: `part-io-n-est-pas-le-ltv-consolide` `2026-10-03`
+(UTF-8 + French labels); `patrimoine-vs-enveloppe` and `emprunt-moyen-mensualite` → `2026-10-03`.
+Slug kept; visible French only. Cites EC-08 / EC-01 / parcours `2026-10-03`.

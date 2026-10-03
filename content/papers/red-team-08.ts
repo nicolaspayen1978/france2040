@@ -5,8 +5,8 @@ export const redTeam08: WorkingPaper = {
   title: "Épreuve contradictoire EC-08 — Immobilier et stabilité financière",
   lang: "fr",
   summary:
-    "Que devient le Pacte lorsque les prix baissent ? Verdict : non tranché. Le Pacte plafonne la part à intérêts seuls à 40–50 % de la valeur, non le LTV consolidé ; l’hypothèse sous test joint l’érosion du collatéral au LTV consolidé accepté à l’octroi.",
-  currentVersionId: "2026-10-02-5",
+    "Que devient le Pacte lorsque les prix baissent ? Verdict : non tranché. Le Pacte plafonne la part à intérêts seuls à 40–50 % de la valeur, non le ratio dette consolidée / valeur ; l’hypothèse sous test joint l’érosion du collatéral à ce ratio accepté à l’octroi.",
+  currentVersionId: "2026-10-03",
   versions: [
     {
       id: "2026-10-02",
@@ -51,26 +51,36 @@ export const redTeam08: WorkingPaper = {
     {
       id: "2026-10-02-5",
       published: "2026-10-02",
-      status: "frozen",
+      status: "superseded",
       verdict:
         "Non tranché. Hypothèse : érosion du collatéral jointe au LTV consolidé à l’octroi.",
       file: "content/papers/red-team-08/v2026-10-02-5.md",
       sha256: "898ba3a3cf6ac21fc3c9abb2ffa5a0a1808283fb14f8d7b42ae4944c98ec913e",
-      note: "Gelée. Même corps que 2026-10-02-4 ; hypothèse resserrée sur le LTV consolidé effectivement accepté. Pas de modèle ajouté.",
+      note: "Gelée puis remplacée pour vocabulaire français. Bytes inchangés.",
+    },
+    {
+      id: "2026-10-03",
+      published: "2026-10-03",
+      status: "frozen",
+      verdict:
+        "Non tranché. Hypothèse : érosion du collatéral jointe au ratio dette consolidée / valeur à l’octroi.",
+      file: "content/papers/red-team-08/v2026-10-03.md",
+      sha256: "8df8e9f532102b57772a360f241f3e61d8612fb2e61874b211b28b969e4e68c7",
+      note: "Gelée. Même fond que 2026-10-02-5 ; vocabulaire public entièrement français.",
     },
   ],
   progress: [
     {
       id: "ltv",
-      label: "Plafond IO vs LTV consolidé",
-      state: "Distinction posée ; chiffre IO non choisi",
+      label: "Plafond part vs ratio consolidé",
+      state: "Distinction posée ; chiffre de la part non choisi",
     },
     { id: "households", label: "Comportement des ménages", state: "Vide" },
     { id: "dmto", label: "Mutations / DMTO", state: "Sensibilité notée" },
     {
       id: "origination",
       label: "Origination / coexistence",
-      state: "Liée au coussin IO ; case vide",
+      state: "Liée au coussin de la part ; case vide",
     },
     { id: "system", label: "Transmission systémique", state: "Vide" },
   ],
@@ -96,7 +106,7 @@ export const redTeam08: WorkingPaper = {
     {
       id: "dnb-fs-monitor-2026",
       citation:
-        "De Nederlandsche Bank, Monitor on mortgage lending standards and financial stability 2026. T3 2025 : près de 40 % des hypothèques des institutions financières néerlandaises sans remboursement régulier du principal (ni produit d’épargne lié) ; 7 % de ces prêts à LTV > 75 %, contre près de 20 % pour l’ensemble du portefeuille. Réduit le risque de collatéral insuffisant à l’échéance ; d’autres risques demeurent.",
+        "De Nederlandsche Bank, Monitor on mortgage lending standards and financial stability 2026. T3 2025 : près de 40 % des hypothèques des institutions financières néerlandaises sans remboursement régulier du principal (ni produit d’épargne lié) ; 7 % de ces prêts à ratio dette / valeur > 75 %, contre près de 20 % pour l’ensemble du portefeuille. Réduit le risque de collatéral insuffisant à l’échéance ; d’autres risques demeurent.",
       href: "https://www.dnb.nl/media/cvfhqws0/86281_2600115_dnb_brochure-fs-monitor_engels_web.pdf",
     },
     {

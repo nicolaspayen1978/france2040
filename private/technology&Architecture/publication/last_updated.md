@@ -79,3 +79,7 @@ snapshot bytes unchanged.
 collateral erosion *given* consolidated LTV actually accepted at origination — not the weaker
 “price fall alone ≠ transmission.” Status gelé. No modelling added. Prior snapshot bytes
 unchanged.
+
+2026-10-03. Public French vocabulary pass. Current papers → `2026-10-03` (EC-08 re-frozen).
+No IO / LTV / equity on public French text. Related En images updated. Prior snapshot bytes
+unchanged.
