@@ -110,3 +110,7 @@ unchanged.
 balance, stock, ratio, Pacte Spread. Spread is a reading rule, not the deficit. v0.1 constant
 debt and the 1.5–3.2 pt spending gap are not the path. Credit peak ≠ interest peak. Year cells
 empty. Prior snapshot bytes unchanged.
+
+2026-10-03. EC-09 revised as `2026-10-03-3` (working paper; prior `2026-10-03-2` bytes unchanged).
+Joint scenario families = V2 adverse minimum × EC-02 composition. Stop rules mapped to
+observables (flow, not stock). Thresholds empty. No EC-10.

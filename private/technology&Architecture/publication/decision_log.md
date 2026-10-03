@@ -226,6 +226,15 @@ the deficit. Household interest-only peak (90 Md€, 2031–2032) is not the pub
 (refinancing clock ~8.5 years). Next: return to EC-09 (joint scenarios + stop rules) without
 filling cells here.
 
+## 2026-10-03 — EC-09 return: joint families and stop rules
+
+Owner: return to EC-09 after EC-02→03→06→07. Version `2026-10-03-3` does not fill cells and
+does not open EC-10. Three joint families: V2 adverse minimum (recession, unemployment,
+housing −30 %, high rates) crossed with EC-02 compositions (leaks, works, consumption).
+Stop rules mapped onto stack observables; they act on origination, not the written book.
+V2 housing light is price *acceleration*; the adverse strand is a *fall* — two thresholds,
+both empty. Next is filling already-open cells, or a new object (only then EC-10).
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.
