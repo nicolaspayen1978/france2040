@@ -114,3 +114,9 @@ empty. Prior snapshot bytes unchanged.
 2026-10-03. EC-09 revised as `2026-10-03-3` (working paper; prior `2026-10-03-2` bytes unchanged).
 Joint scenario families = V2 adverse minimum × EC-02 composition. Stop rules mapped to
 observables (flow, not stock). Thresholds empty. No EC-10.
+
+2026-10-03. After EC-09: model interrogates Red Teams. Provenance tags; four trajectories;
+no EC-10 by default. v0.1 unpatched. Phase 0 inventory written. Phase 1 waits for owner go.
+
+2026-10-03. Model Phase 1 locked in `Docs/19`. Tags O/S/Σ/ƒ. Four credit series. R tagged.
+A = V2 + Fuites-2 + 4q. Household cash service on outputs. Phase 2 is the workbook.

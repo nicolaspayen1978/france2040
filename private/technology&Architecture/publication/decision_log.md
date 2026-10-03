@@ -235,6 +235,28 @@ Stop rules mapped onto stack observables; they act on origination, not the writt
 V2 housing light is price *acceleration*; the adverse strand is a *fall* — two thresholds,
 both empty. Next is filling already-open cells, or a new object (only then EC-10).
 
+## 2026-10-03 — Model interrogates the Red Teams
+
+Owner: further ECs are diminishing returns unless the model produces a new object. Next model
+tags every number (observed / sourced assumption / scenario assumption / calculated). Four
+trajectories: reference without Pacte, central Pacte, weak-transmission, combined adverse.
+Purpose: which variables dominate and where the mechanism breaks — not proof of the central
+case. Open EC verdicts stay open. v0.1 not patched. Spec in
+`Docs/19_Model_Interrogates_Red_Teams.md` and `private/technology&Architecture/model/`.
+Phase 1 (scenario numbers + new workbook) waits for explicit go.
+
+## 2026-10-03 — Phase 1 locked (tags, four series, R, A sentence)
+
+Owner adjustments accepted. Tags: O observé, S sourcé, Σ scénario, ƒ calculé — C is Central
+only. Credit path: gross / cumulative / repayments / outstanding, so 700 net-new sum is not
+silently the 2040 stock. R is a tagged counterfactual (résumé 1,0 / 2,5 / 2,0 stay Σ).
+A = V2 adverse + Fuites-2 + 4-quarter delay. Household cash released and IO service+stock
+are dominance outputs. Diversifié-1 / Fuites-1 / Fuites-2 are Σ with written justifications,
+not estimates. Public line to keep: the model does not resolve uncertainty; it makes
+uncertainty compete. Next: Phase 2 workbook.
+
+## Open, and not decided by starting to code
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.
