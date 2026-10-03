@@ -165,18 +165,17 @@ h1 {
 }
 
 .home-dialogue {
-  width: min(62rem, 100%);
+  width: min(42rem, 100%);
   margin-inline: auto;
 }
 
-.home-dialogue > h2,
-.home-dialogue > .entry {
-  max-width: 42rem;
-  margin-inline: auto;
+.home-dialogue > h2 {
+  padding-left: 1.35rem;
 }
 
 .summary-body--dialogue {
   position: relative;
+  padding-left: 1.35rem;
   font-family: "Iowan Old Style", Baskerville, Georgia, serif;
 }
 
@@ -185,7 +184,7 @@ h1 {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: max(0px, calc(50% - 22rem));
+  left: 0;
   width: 6px;
   background: linear-gradient(
     to right,
@@ -198,59 +197,71 @@ h1 {
 }
 
 .summary-body--dialogue .dialogue-prompt {
-  max-width: 42rem;
-  margin: 2.5rem auto 0;
+  margin: 1.5rem 0 0;
   color: var(--ink);
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: italic;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.55;
+  line-height: 1.5;
 }
 
 .summary-body--dialogue .dialogue-opening {
-  max-width: none;
-  margin: 1.75rem 0 2.5rem;
+  margin: 1.35rem 0 1.25rem;
   color: var(--ink);
-  font-size: 1.0625rem;
+  font-size: 0.975rem;
   font-style: italic;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.55;
-  text-align: center;
-  white-space: nowrap;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .summary-body--dialogue .dialogue-reply {
-  max-width: 42rem;
-  margin: 1.05rem auto 0;
-  font-size: 1rem;
+  margin: 0.7rem 0 0;
+  font-size: 0.9375rem;
   font-style: normal;
-  line-height: 1.7;
+  line-height: 1.53;
+  break-inside: avoid-column;
+}
+
+.summary-body--dialogue .dialogue-turn-start {
+  margin-top: 0.2rem;
+}
+
+.summary-body--dialogue .dialogue-speaker {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.82em;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 .summary-body--dialogue h3.dialogue-prompt {
-  margin-top: 3rem;
-  padding-top: 1.35rem;
+  margin-top: 1.8rem;
+  padding-top: 0.9rem;
   border-top: 1px solid var(--line);
 }
 
-@media (max-width: 68rem) {
-  .summary-body--dialogue .dialogue-opening {
-    max-width: 42rem;
-    margin-inline: auto;
-    text-align: left;
-    white-space: normal;
+@media (min-width: 68rem) {
+  .home-dialogue {
+    width: min(62rem, 100%);
+  }
+
+  .home-dialogue .summary-body--dialogue {
+    column-count: 2;
+    column-gap: 4.5rem;
+  }
+
+  .summary-body--dialogue .dialogue-opening,
+  .summary-body--dialogue .dialogue-chapter {
+    column-span: all;
   }
 }
 
 @media (max-width: 640px) {
-  .home-dialogue .summary-body--dialogue {
-    padding-left: 1.25rem;
-  }
-
-  .home-dialogue .summary-body--dialogue::before {
-    left: 0;
+  .summary-body--dialogue .dialogue-speaker {
+    letter-spacing: 0.04em;
   }
 }
 

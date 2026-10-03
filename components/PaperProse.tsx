@@ -58,6 +58,8 @@ export function PaperProse({
   let sectionLabel = critique?.title ?? "Résumé exécutif";
   let openingParagraphCount = 0;
   const dialogue = presentation === "dialogue";
+  const landingDialogue = dialogue && Boolean(openingRequest);
+  let needsReplyCue = false;
 
   return (
     <div className={`summary-body${dialogue ? " summary-body--dialogue" : ""}`}>
@@ -91,11 +93,13 @@ export function PaperProse({
         if (block.kind === "heading") {
           sectionLabel = block.text;
           const Tag = block.level === 2 ? "h3" : "h4";
+          if (landingDialogue) needsReplyCue = true;
           return (
-            <div key={block.id}>
+            <div key={block.id} className={landingDialogue && block.level === 2 ? "dialogue-chapter" : undefined}>
               {ahead}
               <Tag id={block.id} className={dialogue && block.level === 2 ? "dialogue-prompt" : undefined}>
                 {passage(block.id, block.text)}
+                {landingDialogue && <span className="dialogue-speaker">ENFANT&nbsp;: </span>}
                 {block.text}
               </Tag>
             </div>
@@ -107,13 +111,19 @@ export function PaperProse({
           const prompt = dialogue && openingParagraphCount < 2;
           openingParagraphCount += 1;
           if (dialogue && openingRequest && openingParagraphCount === 2) return null;
+          const replyCue = landingDialogue && !prompt && needsReplyCue;
+          if (openingLine) needsReplyCue = true;
+          if (replyCue) needsReplyCue = false;
           return (
             <p
               key={block.id}
               id={block.id}
-              className={dialogue ? `dialogue-${prompt ? "prompt" : "reply"}${openingLine ? " dialogue-opening" : ""}` : undefined}
+              className={dialogue ? `dialogue-${prompt ? "prompt" : "reply"}${openingLine ? " dialogue-opening" : ""}${replyCue ? " dialogue-turn-start" : ""}` : undefined}
             >
               {passage(block.id, sectionLabel)}
+              {landingDialogue && (openingLine || replyCue) && (
+                <span className="dialogue-speaker">{openingLine ? "ENFANT" : "FRANCE 2040"}&nbsp;: </span>
+              )}
               {inline(openingLine && openingRequest ? `${block.text} ${openingRequest}` : block.text)}
             </p>
           );

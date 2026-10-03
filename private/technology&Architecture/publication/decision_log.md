@@ -14,6 +14,10 @@ prompts, and one opening paragraph that joins the age statement to the owner's r
 The new request wording is displayed only on the landing page; the cited snapshot is unchanged.
 The landing reading now has a narrow blue-white-red edge on its left to set it apart from the
 surrounding page. The decoration is CSS-only and does not alter the cited text or document view.
+The owner then asked for a shorter visual reading and supplied a printed-play reference. The
+landing layout now uses denser type, two columns on wide screens, a left-aligned opening, and
+ENFANT / FRANCE 2040 cues at turn starts. Narrow screens keep one column. The document view
+and cited source remain unchanged.
 
 ## 2026-10-01 — Publication is the consultation
 

@@ -73,7 +73,10 @@ Pacte s'il te plaît. », as one displayed paragraph. This wording is a home-pag
 the frozen document retains its own two paragraphs. The landing treatment uses smaller serif
 prose and italic prompts, with a wider opening line on desktop that wraps on narrow screens.
 A narrow blue, white and red rule marks the left edge of the landing reading; the white segment
-has a faint outline so it stays visible on the page background. It is decoration only.
+has a faint outline so it stays visible on the page background. It is decoration only. The
+landing reading uses compact book typography in two columns on wide screens and one column on
+narrow screens. Its opening is left-aligned. Small ENFANT and FRANCE 2040 speaker cues mark
+turns without changing the document snapshot or repeating labels on every paragraph.
 
 ## How a version is cut
 

@@ -7,6 +7,8 @@ The landing page's embedded reading now receives this same layout; the document 
 The landing reading now uses serif prose, italic prompts, and the owner's combined opening line.
 The document snapshot remains unchanged.
 The landing reading has a narrow tricolour left edge for separation from adjacent sections.
+It now uses compact two-column book typography on wide screens, with a left-aligned opening
+and ENFANT / FRANCE 2040 turn cues; small screens remain one column. The document view is unchanged.
 
 Design note, decision log, and phases 0–3 written. Phase 0 is built. Phases 1–3 are not started.
 
