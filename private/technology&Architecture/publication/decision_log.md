@@ -1,5 +1,13 @@
 # Decision log
 
+## 2026-10-03 — Explique-moi le Pacte receives a dialogue display treatment
+
+Owner approved a layout-only pass. The immutable Markdown, SHA-256, version id, summary and
+verdict are unchanged. An opt-in `dialogue` presentation places the two opening lines and the
+section question on the reader’s side, with the existing explanatory paragraphs opposite. It is
+not a comment thread or a new document type, and it does not affect other papers. Each original
+paragraph and heading keeps its address and Critiquer target.
+
 ## 2026-10-01 — Publication is the consultation
 
 Adopted in `Docs/14_Architecture_Publication_Consultation.md`.

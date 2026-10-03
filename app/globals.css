@@ -644,6 +644,45 @@ body:has(.section.summary) .shell {
   margin-top: 0.7rem;
 }
 
+/* The dialogue treatment is opt-in per paper; the snapshot text stays untouched. */
+.paper--dialogue .paper-body--dialogue {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.paper--dialogue .paper-body--dialogue .dialogue-message {
+  width: fit-content;
+  max-width: min(34rem, calc(100% - 1.75rem));
+  margin: 0;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--line);
+  line-height: 1.55;
+}
+
+.paper--dialogue .paper-body--dialogue p.dialogue-message {
+  font-size: 1rem;
+}
+
+.paper--dialogue .paper-body--dialogue .dialogue-message--question {
+  justify-self: start;
+  border-radius: 0.2rem 1rem 1rem;
+  background: color-mix(in srgb, var(--paper) 92%, var(--ink) 8%);
+}
+
+.paper--dialogue .paper-body--dialogue .dialogue-message--answer {
+  justify-self: end;
+  border-radius: 1rem 0.2rem 1rem 1rem;
+  background: color-mix(in srgb, var(--paper) 93%, var(--mark-red) 7%);
+}
+
+.paper--dialogue .paper-body--dialogue h2.dialogue-message {
+  max-width: min(28rem, calc(100% - 1.75rem));
+  color: var(--ink);
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
 .paper-body h2,
 .paper-body h3,
 .paper-body p,
@@ -824,6 +863,10 @@ body:has(.section.summary) .shell {
 
 /* Narrow viewports: keep the chip above the block so it does not clip. */
 @media (max-width: 56rem) {
+  .paper--dialogue .paper-body--dialogue .dialogue-message {
+    max-width: calc(100% - 1.1rem);
+  }
+
   .paper-body .critique-link,
   .summary-body .critique-link,
   .section.summary h2 .critique-link,

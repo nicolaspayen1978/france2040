@@ -55,9 +55,10 @@ export function WorkingPaperView({ paper, versionId, blocks, placement }: Workin
   const current = version.id === paper.currentVersionId;
   const headings = blocks.filter((block) => block.kind === "heading");
   const crumbs = paperCrumbs(paper, version, placement);
+  const dialogue = paper.presentation === "dialogue";
 
   return (
-    <article className="paper" lang={paper.lang}>
+    <article className={`paper${dialogue ? " paper--dialogue" : ""}`} lang={paper.lang}>
       <JsonLd data={paperJsonLd(paper, version, placement)} />
       <nav className="crumbs" aria-label="Fil d’Ariane">
         <ol>
@@ -144,15 +145,21 @@ export function WorkingPaperView({ paper, versionId, blocks, placement }: Workin
         </ol>
       </nav>
 
-      <div className="paper-body">
+      <div className={`paper-body${dialogue ? " paper-body--dialogue" : ""}`}>
         {(() => {
           let sectionLabel = paper.title;
+          let openingParagraphCount = 0;
           return blocks.map((block) => {
             if (block.kind === "heading") {
               sectionLabel = block.text;
               const Tag = block.level === 2 ? "h2" : "h3";
+              const dialogueQuestion = dialogue && block.level === 2;
               return (
-                <Tag key={block.id} id={block.id}>
+                <Tag
+                  key={block.id}
+                  id={block.id}
+                  className={dialogueQuestion ? "dialogue-message dialogue-message--question" : undefined}
+                >
                   <a className="permalink" href={`${address}#${block.id}`} aria-label="Adresse de ce passage">
                     <span aria-hidden="true">#</span>
                   </a>
@@ -171,8 +178,14 @@ export function WorkingPaperView({ paper, versionId, blocks, placement }: Workin
             }
 
             if (block.kind === "paragraph") {
+              const dialogueQuestion = dialogue && openingParagraphCount < 2;
+              openingParagraphCount += 1;
               return (
-                <p key={block.id} id={block.id}>
+                <p
+                  key={block.id}
+                  id={block.id}
+                  className={dialogue ? `dialogue-message dialogue-message--${dialogueQuestion ? "question" : "answer"}` : undefined}
+                >
                   <a className="permalink" href={`${address}#${block.id}`} aria-label="Adresse de ce passage">
                     <span aria-hidden="true">#</span>
                   </a>

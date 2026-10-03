@@ -1,5 +1,8 @@
 2026-10-01
 
+2026-10-03. **Explique-moi le Pacte** can opt into a dialogue display treatment. It changes
+layout only: snapshot text, versioning, hashes, anchors, and Critiquer targets remain unchanged.
+
 Design note, decision log, and phases 0–3 written. Phase 0 is built. Phases 1–3 are not started.
 
 Deploy gate is `scripts/vercelbuild.js`: §1 summary contract and paper snapshot, §2 `next-build`, BUILD SUMMARY on success and failure.

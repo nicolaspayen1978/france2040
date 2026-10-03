@@ -2,6 +2,9 @@ export type PaperKind = "proposition" | "working-paper" | "red-team" | "model" |
 
 export type DocumentStatus = "working-paper" | "under-review" | "frozen" | "superseded";
 
+/** A display treatment; it never changes the immutable snapshot text. */
+export type PaperPresentation = "prose" | "dialogue";
+
 export type PaperVersion = {
   id: string;
   published: string;
@@ -39,6 +42,8 @@ export type WorkingPaper = {
   listKicker?: string;
   title: string;
   lang: "fr" | "en";
+  /** Defaults to the standard document treatment. */
+  presentation?: PaperPresentation;
   summary: string;
   currentVersionId: string;
   versions: PaperVersion[];

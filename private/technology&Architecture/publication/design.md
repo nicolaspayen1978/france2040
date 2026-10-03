@@ -52,6 +52,15 @@ Hand-built pages that must keep working while this grows: `/documents`, `/docume
 
 Inline `**bold**` and `*italic*` are rendered in the component. They are not part of the id.
 
+## Display-only reading modes
+
+`WorkingPaper.presentation` can opt into a display treatment without changing the source
+snapshot, its bytes, hash, anchors, metadata, or the linear reading order. `dialogue` is used
+only by **Explique-moi le Pacte**: its two opening paragraphs and level-two question are placed
+on the reader’s side; the unchanged explanatory paragraphs reply on the opposite side. The
+normal paper renderer remains the default. Permalinks and critique links remain attached to each
+original block and work on narrow screens.
+
 These ids are stable only because the file is immutable. Inserting a paragraph in a section renumbers the later paragraphs of that section. That is acceptable in a new version and forbidden in a published one. Do not add a stable-id map across versions until a revision needs “Addressed in vX” to name a passage. When that happens, the editor writes the pair. The parser does not guess it.
 
 The Red Team 05 issuer table is `repere-des-emetteurs-gele-t-1`. That is the kind of address a disagreement uses.

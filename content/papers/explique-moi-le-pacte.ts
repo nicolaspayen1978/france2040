@@ -6,6 +6,7 @@ export const expliqueMoiLePacte: WorkingPaper = {
   listKicker: "Lecture",
   title: "Explique-moi le Pacte",
   lang: "fr",
+  presentation: "dialogue",
   summary:
     "J’ai 6 ans aujourd’hui. J’aurai 20 ans en 2040. Une lecture du Pacte : patrimoine enfermé dans les murs, liquidité contre une dette différée, enveloppe de 700 Md€, rythme conditionnel, test de 2040.",
   currentVersionId: "2026-10-03",
