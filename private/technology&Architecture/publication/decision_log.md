@@ -216,6 +216,16 @@ receipts (reduced-rate works, no extra employment). Assignment of receipts to co
 stays a separate untested rule. Cells empty until EC-02 shares exist. Next: EC-07 2027–2040
 path (solde, debt ratio, interest), not a filled coefficient.
 
+## 2026-10-03 — EC-07 2027–2040 path
+
+Owner: EC-07 as a joint year-by-year path (solde, stock, ratio, interest), not an end-2040
+ratio at constant debt. Version `2026-10-03` writes the recursion, keeps 2025 as observed
+start, leaves 2027–2040 empty. Pacte Spread (nominal GDP growth minus nominal spending growth)
+is a V2 reading rule, not the primary and not interest. The published 1.5–3.2 point gap is not
+the deficit. Household interest-only peak (90 Md€, 2031–2032) is not the public-interest peak
+(refinancing clock ~8.5 years). Next: return to EC-09 (joint scenarios + stop rules) without
+filling cells here.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

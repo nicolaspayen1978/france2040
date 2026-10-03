@@ -105,3 +105,8 @@ is stress if the spent sum were works, not a retained basket. Prior snapshot byt
 contributions, PIT, CIT, transfer duties). 43.6 % and 25/50/75 % are not a fiscal basket.
 VAT on imports and DMTO can exist without EC-03 volume. Cells empty. Prior snapshot bytes
 unchanged.
+
+2026-10-03. EC-07 revised as `2026-10-03`. Joint annual path 2027–2040: primary, interest,
+balance, stock, ratio, Pacte Spread. Spread is a reading rule, not the deficit. v0.1 constant
+debt and the 1.5–3.2 pt spending gap are not the path. Credit peak ≠ interest peak. Year cells
+empty. Prior snapshot bytes unchanged.
