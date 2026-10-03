@@ -283,6 +283,18 @@ Pacte public draft surgical (`2026-10-03`): IO cap not consolidated LTV; 700 = o
 qualities not sector list. Do not load 125/65 into the constitution. Homepage: « ouvrir une
 fenêtre », not « restaurer ». Long V2 `2026-10-03-2` catches up on those four points only.
 
+## 2026-10-03 — Résumé compressed, not rewritten
+
+Owner: hierarchy/readability, not outdated content. Keep core sentence and qualities.
+Household 223/700 first. Origination not « crédit mobilisé » on the chain. Cut proposition
+de valeur and France Relance. Add empty-cell box and one adverse sentence. Social pact kept.
+
+## 2026-10-03 — Three extensions, communicate the core
+
+Owner: mature enough to communicate. Next research is (1) Eurosystem role, not a guarantee;
+(2) societal channels by household archetype, unsigned; (3) Dutch IO/housing-value balance
+sheet. First NL arithmetic stays in Docs until DNB/CBS dates align. No EC-10.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

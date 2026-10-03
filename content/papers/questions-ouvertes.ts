@@ -6,7 +6,7 @@ export const questionsOuvertes: WorkingPaper = {
   lang: "fr",
   summary:
     "Ce qui reste à établir. Les faits sourcés sont séparés des affirmations qui ne doivent pas être présentées comme telles.",
-  currentVersionId: "2026-10-03",
+  currentVersionId: "2026-10-03-3",
   versions: [
     {
       id: "2026-09-28",
@@ -29,11 +29,29 @@ export const questionsOuvertes: WorkingPaper = {
     {
       id: "2026-10-03",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Liste ouverte. Ce n’est pas encore un dossier de preuves.",
       file: "content/papers/questions-ouvertes/v2026-10-03.md",
       sha256: "fe13c0856bf0ec2e1ad40fa037cc2f1211cb1c42671467b27212f79808d323a0",
       note: "Vocabulaire public français. Fond inchangé.",
+    },
+    {
+      id: "2026-10-03-2",
+      published: "2026-10-03",
+      status: "superseded",
+      verdict: "Liste ouverte. Ce n’est pas encore un dossier de preuves.",
+      file: "content/papers/questions-ouvertes/v2026-10-03-2.md",
+      sha256: "d083e142216a7e2c611a35074041192ac6878692990887e15c17cd1b8d36ed1e",
+      note: "Trois extensions nommées, sans premier constat.",
+    },
+    {
+      id: "2026-10-03-3",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict: "Liste ouverte. Ce n’est pas encore un dossier de preuves.",
+      file: "content/papers/questions-ouvertes/v2026-10-03-3.md",
+      sha256: "00dad7eaee9e9aa6cac8e8651003d2bd3dbac4f7824c4ce996db2be47e1c798b",
+      note: "Premiers constats sourcés : ménage hors cadre général BCE ; archétypes Insee ; 40 % de la dette NL, LTV moyen ~50 %, illustration ~15 % IO/valeur CBS 2024. Rien n’est clos.",
     },
   ],
   progress: [
@@ -43,6 +61,9 @@ export const questionsOuvertes: WorkingPaper = {
     { id: "spend", label: "Crédit vers dépense, puis PIB", state: "Non établi" },
     { id: "cliff", label: "Falaise de 2040", state: "Non tranchée" },
     { id: "funding", label: "Financement de l’actif", state: "Ouvert" },
+    { id: "eurosystem", label: "Rôle de l’Eurosystème", state: "Premier constat : ménage hors cadre général" },
+    { id: "societal", label: "Impact sociétal", state: "Positions de départ sourcées, signes vides" },
+    { id: "dutch", label: "Bilan néerlandais part IO / logements", state: "40 % de la dette ; illustration ~15 %" },
   ],
   sources: [
     {
@@ -61,9 +82,9 @@ export const questionsOuvertes: WorkingPaper = {
       href: "https://www.insee.fr/fr/statistiques/8661938",
     },
     {
-      id: "insee-housing",
-      citation: "Insee, conditions de logement début 2024.",
-      href: "https://www.insee.fr/fr/statistiques/8727513",
+      id: "insee-heritage-2024",
+      citation: "Insee, 2024. 41 % des ménages ont déjà hérité ; 20 % ont reçu une donation.",
+      href: "https://www.insee.fr/fr/statistiques/8960217",
     },
     {
       id: "hcsf",
@@ -74,6 +95,21 @@ export const questionsOuvertes: WorkingPaper = {
       id: "bdf",
       citation: "Banque de France, crédits aux particuliers, juillet 2026.",
       href: "https://www.banque-france.fr/fr/statistiques/credit/credits-aux-particuliers-2026-07",
+    },
+    {
+      id: "dnb-press-2026",
+      citation: "DNB, 3 mars 2026. Les intérêts seuls forment encore près de 40 % de la dette hypothécaire. LTV moyen juste au-dessus de 50 %.",
+      href: "https://www.dnb.nl/algemeen-nieuws/persbericht-2026/verruiming-leennormen-voor-huizenkopers-onwenselijk/",
+    },
+    {
+      id: "cbs-wealth-2024",
+      citation: "CBS, patrimoine des ménages, 1er janvier 2024 (provisoire). Résidence principale 2 180,7 Md€ ; dette hypothécaire sur ce logement 807,5 Md€.",
+      href: "https://opendata.cbs.nl/CBS/nl/dataset/83834NED/table",
+    },
+    {
+      id: "ecb-haircut-2026",
+      citation: "BCE, 29 septembre 2026. Décotes des créances individuelles : type d’amortissement. Pas une éligibilité du Pacte.",
+      href: "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260929~050089e922.en.html",
     },
   ],
 };

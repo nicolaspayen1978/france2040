@@ -1,3 +1,4 @@
+import { intensiteBilanResidentiel } from "@/content/papers/intensite-bilan-residentiel";
 import { modele } from "@/content/papers/modele";
 import { modelePhase2 } from "@/content/papers/modele-phase-2";
 import { pacte } from "@/content/papers/pacte";
@@ -24,6 +25,7 @@ export const workingPapers: WorkingPaper[] = [
   parcoursMenages,
   modele,
   modelePhase2,
+  intensiteBilanResidentiel,
   questionsOuvertes,
   contexteDemographique,
   redTeam01,

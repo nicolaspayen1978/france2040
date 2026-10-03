@@ -6,7 +6,7 @@ export const resumeExecutif: WorkingPaper = {
   lang: "fr",
   summary:
     "Le crédit ouvre une fenêtre ; l’usage décide du volume français. Même 700 Md€ : 125 Md€ d’activité en France dans le cas central, 42 Md€ si la transmission est faible. Scénario, pas une prévision.",
-  currentVersionId: "2026-10-03-2",
+  currentVersionId: "2026-10-03-5",
   versions: [
     {
       id: "2026-10-01",
@@ -110,11 +110,38 @@ export const resumeExecutif: WorkingPaper = {
     {
       id: "2026-10-03-2",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse, non un programme arrêté. Scénarios Phase 2, pas une prévision.",
       file: "content/papers/resume-executif/v2026-10-03-2.md",
       sha256: "500310fc7375b3a65a78547e4fd1bc5c7e1aacd8dae86373024dccac3f4d4b5e",
-      note: "Centre : chaîne conditionnelle et transmission faible. 700 Md€ = origination de la part à intérêts seuls. Qualités d’usage, pas une liste de secteurs.",
+      note: "Centre : chaîne et transmission faible. Remplacée : trop longue ; 223 Md€ trop bas ; « crédit mobilisé ».",
+    },
+    {
+      id: "2026-10-03-3",
+      published: "2026-10-03",
+      status: "superseded",
+      verdict: "Hypothèse, non un programme arrêté. Scénarios Phase 2, pas une prévision.",
+      file: "content/papers/resume-executif/v2026-10-03-3.md",
+      sha256: "e8853d84552f60bc8db8309998ab55a788092b06c6b38683a9575a4dc74a25d1",
+      note: "Compression : 223/700 d’abord ; origination ; cellules vides ; une phrase adverse.",
+    },
+    {
+      id: "2026-10-03-4",
+      published: "2026-10-03",
+      status: "superseded",
+      verdict: "Hypothèse, non un programme arrêté. Scénarios Phase 2, pas une prévision.",
+      file: "content/papers/resume-executif/v2026-10-03-4.md",
+      sha256: "efcf7c2506e1ceb661d299a0ce6d7ca6a5018755e1903f14cddb7f5c09d486f6",
+      note: "Pointe les trois extensions : Eurosystème, pacte social, bilan néerlandais. Cœur inchangé.",
+    },
+    {
+      id: "2026-10-03-5",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict: "Hypothèse, non un programme arrêté. Scénarios Phase 2, pas une prévision.",
+      file: "content/papers/resume-executif/v2026-10-03-5.md",
+      sha256: "3aab97b0d743bb7cbcbf45bc1cb5365534dad2a043e9659d5773b0de5b36fb42",
+      note: "Pourquoi 700 Md€ : 8 % vs ≈ 16 % NL. 1 400 Md€ = benchmark, pas une cible.",
     },
   ],
   progress: [
@@ -143,11 +170,6 @@ export const resumeExecutif: WorkingPaper = {
       id: "bdf-credit",
       citation: "Banque de France, crédits aux particuliers, juillet 2026. 99,4 % à taux fixe.",
       href: "https://www.banque-france.fr/fr/statistiques/credit/credits-aux-particuliers-2026-07",
-    },
-    {
-      id: "france-relance",
-      citation: "Gouvernement, France Relance. 100 Md€ d’investissements, dépenses engagées sur deux ans, de 2020 à 2022.",
-      href: "https://www.info.gouv.fr/grand-dossier/france-relance",
     },
     {
       id: "phase2",

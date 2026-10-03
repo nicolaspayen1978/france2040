@@ -4,6 +4,7 @@ import { demographie20272040 } from "@/content/visuals/demographie-2027-2040";
 import { empruntMoyenCapacite } from "@/content/visuals/emprunt-moyen-capacite";
 import { empruntMoyenMensualite } from "@/content/visuals/emprunt-moyen-mensualite";
 import { financementRetraites } from "@/content/visuals/financement-retraites";
+import { intensiteBilanResidentiel } from "@/content/visuals/intensite-bilan-residentiel";
 import { leRatioNEstPasLeService } from "@/content/visuals/le-ratio-n-est-pas-le-service";
 import { lesQuatreBilans } from "@/content/visuals/les-quatre-bilans";
 import { mecanismeDuEuro } from "@/content/visuals/mecanisme-du-euro";
@@ -31,5 +32,6 @@ export const visuals: Visual[] = [
   casCentralPhase2,
   memeCreditTransmissionFaible,
   chocAdverseEtArret,
+  intensiteBilanResidentiel,
   patrimoineVsEnveloppe,
 ];

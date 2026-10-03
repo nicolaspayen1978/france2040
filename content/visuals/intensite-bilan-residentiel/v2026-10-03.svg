@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  En images — intensite-bilan-residentiel v2026-10-03
+  Colours from app/tokens.css: --ink, --ink-2, --ink-3, --muted, --muted-2, --line, --paper, --paper-2, --mark-blue, --blue-2, --blue-3, --mark-red
+  Benchmark de bilan, pas de politique. ~16 % NL = ordre de grandeur, millésimes à aligner.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Intensité du bilan résidentiel — scénario 700 Md€ et ordre de grandeur néerlandais</title>
+  <desc id="desc">
+    700 Md€ / 8 850 Md€ ≈ 8 %. Encours néerlandais à intérêts seuls de l’ordre de 350 Md€ / 2 180 Md€ ≈ 16 %.
+    À ce ratio, l’ordre de grandeur français serait près de 1 400 Md€. Ce n’est pas un scénario du Pacte.
+  </desc>
+  <rect width="720" height="520" fill="#fff"/>
+
+  <text x="24" y="32" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">Intensité du bilan résidentiel</text>
+  <text x="24" y="52" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Encours à intérêts seuls / valeur des logements · scénario, pas une cible</text>
+
+  <text x="24" y="92" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#002395">France — scénario Pacte · ≈ 8 %</text>
+  <text x="24" y="110" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">700 Md€ / 8 850 Md€ (logements et terrains bâtis, fin 2024)</text>
+  <rect x="24" y="120" width="640" height="28" fill="#e8e8e4"/>
+  <rect x="24" y="120" width="320" height="28" fill="#002395"/>
+  <text x="352" y="139" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1a1a1a">8 %</text>
+
+  <text x="24" y="188" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#334a9a">Pays-Bas — situation observée · ≈ 16 %</text>
+  <text x="24" y="206" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">≈ 350 Md€ d’intérêts seuls / ≈ 2 180 Md€ de résidences principales · ordre de grandeur</text>
+  <rect x="24" y="216" width="640" height="28" fill="#99a5cd"/>
+  <text x="656" y="235" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1a1a1a">16 %</text>
+
+  <text x="24" y="284" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#3f3f3f">France — équivalent au ratio néerlandais · ≈ 1 400 Md€</text>
+  <text x="24" y="302" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Pas un scénario. Pas une cible. 16 % × 8 850 Md€.</text>
+  <rect x="24" y="312" width="640" height="28" fill="#fff" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="656" y="331" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">benchmark</text>
+
+  <rect x="24" y="368" width="672" height="72" rx="2" fill="#fff" stroke="#ed2939" stroke-width="1.25"/>
+  <text x="40" y="396" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#ed2939">Benchmark de bilan, pas benchmark de politique publique.</text>
+  <text x="40" y="418" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Les structures de marché, fiscalités, sûretés, comportements des ménages et risques bancaires diffèrent.</text>
+
+  <text x="24" y="468" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Un plafond individuel de 40 % n’est pas un ratio agrégé de 40 %. Beaucoup de logements n’ont pas de part à intérêts seuls.</text>
+  <text x="24" y="488" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">≈ 16 % : 40 % de la dette hypothécaire NL × collatéral CBS 2024, millésimes à aligner. 700 Md€ = scénario, pas une cible.</text>
+  <text x="24" y="508" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">France 2040 · 3 octobre 2026 · ne copie pas le système néerlandais</text>
+</svg>

@@ -15,7 +15,11 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
+- `[publication]` Benchmark d’intensité de bilan : note `/documents/intensite-bilan-residentiel`, En images, résumé `2026-10-03-5`, EC-01 `2026-10-03-2`. 700 Md€ ≈ 8 % ; NL ≈ 16 % ; 1 400 Md€ n’est pas un scénario.
+- `[publication]` Questions ouvertes `2026-10-03-3` : premiers constats sourcés sur Eurosystème, impact sociétal (Insee), bilan néerlandais (40 % de la dette, illustration ~15 %). Verdicts ouverts.
+- `[publication]` Trois extensions de recherche (`questions-ouvertes` `2026-10-03-2`) : Eurosystème sans garantie ; impact sociétal par archétypes ; bilan néerlandais (trois ratios). Premier calcul NL non publié. Résumé `2026-10-03-4` les pointe.
 - `[publication]` Pacte V2 `2026-10-03-2` : même correction constitutionnelle que le brouillon (plafond de la part, origination, qualités, fenêtre). Pas les 125 / 65 Md€.
+- `[publication]` Résumé exécutif `2026-10-03-3` : compression (223/700 d’abord, origination, cellules vides, phrase adverse). Proposition de valeur et France Relance retirées.
 - `[publication]` Résumé exécutif `2026-10-03-2` : la Phase 2 au centre (chaîne conditionnelle, transmission faible, qualités d’usage). « Impacts encore préliminaires » retiré.
 - `[publication]` Brouillon du Pacte `2026-10-03` : plafond de la part à intérêts seuls (pas le LTV consolidé) ; 700 Md€ = origination ; usages par qualités. Pas les 125 / 65 Md€ du modèle.
 - `[website]` Accroche d’accueil : « ouvrir une fenêtre » plutôt que « restaurer les finances publiques ».

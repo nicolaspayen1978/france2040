@@ -132,4 +132,5 @@ as current, bytes unchanged. Simulation result `2026-10-03-2` cites that model a
 
 2026-10-03. En images for that run: cas central, même crédit / transmission faible, choc adverse et arrêt.
 
-2026-10-03. Résumé exécutif `2026-10-03-2`. Pacte public draft `2026-10-03`. Homepage window wording. Long V2 `2026-10-03-2`.
+2026-10-03. Scale benchmark published: 700/8850 ≈ 8% vs NL IO ≈ 16%. €1.4tn is external
+scale, not a Pacte scenario. Visual `/en-images/intensite-bilan-residentiel`.
