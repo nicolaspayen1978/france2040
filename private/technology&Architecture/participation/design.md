@@ -43,10 +43,11 @@ yet the full publication phase 3 model (inline anchors beside paper HTML).
 | lastName | yes | yes |
 | email | yes | no |
 | linkedin | no | yes when set (as profile link) |
-| body | yes | yes | 16 000 caractères |
+| body | yes | yes |
 | slug / versionId / anchorId / section / kind | no (prefilled from Critiquer) | yes when set |
 
-Statuses: `unverified` → `pending` → `accepted` | `rejected`.
+Statuses: `unverified` → `pending` → `accepted` | `rejected`. Body max 16 000 characters
+(form and server), so a pasted model review fits.
 
 1. From a document or visual, « Critiquer » opens `/commentaires` with `kind`, `slug`, `version`,
    `anchor`, and `section` (nearest heading title) prefilled.

@@ -12,6 +12,7 @@ import {
   kvSetWithOptions,
 } from "@/lib/kv/client";
 import { isMailConfigured, sendCommentVerificationEmail } from "@/lib/mail";
+import { COMMENT_BODY_MAX } from "@/lib/commentLimits";
 
 export type CommentStatus = "unverified" | "pending" | "accepted" | "rejected";
 
