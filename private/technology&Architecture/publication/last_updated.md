@@ -91,3 +91,8 @@ and stop rules as method constraints. No path filled. Announced list is now empt
 2026-10-03. EC-09 frozen as `2026-10-03-2`. Sixth strand: unemployment / disposable income
 (bridge to credit losses). Wording: freiner la montée en charge, not « production ». Spec for
 quantitative stack below; no EC-10; no cells filled. Prior snapshot bytes unchanged.
+
+2026-10-03. Quantification stack locked: EC-02 → EC-03 → EC-06 → EC-07 → return to EC-09.
+EC-05/08 parallel. EC-02 revised as `2026-10-03`: use vector replaces 25/50/75 % scalar;
+additional spend = renovation + consumption + new productive investment; other uses are leaks.
+Parts empty. UK MEW is a counter-test. Prior snapshot bytes unchanged.

@@ -184,6 +184,19 @@ household/bank credit losses; V2 already requires unemployment. Also fix « frei
 EC-09 cells; do not open EC-10; next work is back down the stack (joint scenarios need the open
 EC-02…08 cells). Envelope question retained: where operating limits end, not “survives a crisis.”
 
+## 2026-10-03 — After the map: quantify; start at EC-02
+
+Owner sequence: EC-01→09 mapped objections; next is the mechanism in numbers.
+Order: EC-02 (credit uses) → EC-03 (by-category French activity) → EC-06 (marginal receipts)
+→ EC-07 (2027–2040 public-finance path / Pacte Spread) → return to EC-09 (joint scenarios +
+stop rules). EC-05/08 may run in parallel. No EC-10 until the numbers produce a new objection.
+
+EC-02 `2026-10-03` replaces the hanging 25/50/75 % scalar with an allocation identity.
+Additional spending is renovation + consumption + new productive investment. Saving, debt
+substitution, transfers and existing-asset purchases are not additional demand. Parts stay
+empty (no invented shares). UK mortgage-equity-withdrawal evidence is a counter-test, not a
+French prior. Verdict non tranché. Next: EC-03 on each spent category, not one multiplier.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.
