@@ -13,6 +13,9 @@ tracking parameters.
 2026-10-02. Phase 3: comment intake on dedicated Upstash Redis, HEA-style REST KV client,
 required names + email + body, optional LinkedIn. Resend e-mail verification before moderation.
 Critiquer control on document passages and visuals prefills target refs. Turnstile deferred. Gated
+moderation route.
+
+2026-10-03. `/llms.txt` and `/llms-full.txt` generated from current versions. Participer
+gains a “revue avec un modèle de langage” paragraph.
 
 2026-10-03. Comment body cap 16 000 characters (form + server) so a pasted model review fits.
-moderation route.
