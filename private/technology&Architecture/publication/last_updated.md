@@ -96,3 +96,7 @@ quantitative stack below; no EC-10; no cells filled. Prior snapshot bytes unchan
 EC-05/08 parallel. EC-02 revised as `2026-10-03`: use vector replaces 25/50/75 % scalar;
 additional spend = renovation + consumption + new productive investment; other uses are leaks.
 Parts empty. UK MEW is a counter-test. Prior snapshot bytes unchanged.
+
+2026-10-03. EC-03 revised as `2026-10-03`. Reads only additional spend from EC-02, category by
+category (content, volume elasticity, labour). 78/38/96 % stay 2019 averages. BTP scale table
+is stress if the spent sum were works, not a retained basket. Prior snapshot bytes unchanged.

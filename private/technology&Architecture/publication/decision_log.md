@@ -197,6 +197,16 @@ substitution, transfers and existing-asset purchases are not additional demand. 
 empty (no invented shares). UK mortgage-equity-withdrawal evidence is a counter-test, not a
 French prior. Verdict non tranché. Next: EC-03 on each spent category, not one multiplier.
 
+## 2026-10-03 — EC-03 by category
+
+Owner: EC-03 on each spent category, not one multiplier. Version `2026-10-03` receives only
+EC-02 additional spend (renovation, consumption, new productive investment). Per line: 2019
+average French VA content (Insee Analyses 89) is cited and not used as a Pacte parameter;
+volume elasticity and labour are separate. Existing assets / leaks stay out of real GDP
+(DMTO → EC-06). Peak BTP arithmetic kept as stress if the spent sum were works. Verdict
+non tranché. Cell €1 spent → €X French volume stays empty until EC-02 shares exist.
+Next in the stack: EC-06 marginal receipts by basket.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.
