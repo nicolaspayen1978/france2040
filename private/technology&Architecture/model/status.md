@@ -2,13 +2,11 @@
 
 Last updated: 2026-10-03.
 
-Owner: model interrogates Red Teams. Tags O / S / Σ / ƒ. C is Central only. Four trajectories. No EC-10 unless a new object.
+| Phase | State |
+| --- | --- |
+| 0 | Done |
+| 1 | Done (three corrections: bullets vintage+20; A index 70 by 2030; first light 2028) |
+| 2 | First run done — workbook + dominance note. Not public. |
+| 3 | Not started |
 
-| Phase | State | What it is |
-| --- | --- | --- |
-| 0 | Done | Inventory |
-| 1 | Done | Semantic families; four credit series; R fully tagged; Diversifié-1 / Fuites-1 / Fuites-2; A one-liner; household cash service on the dominance list |
-| 2 | Not started | Workbook that shows tags; run; dominance |
-| 3 | Not started | Public model snapshot; v0.1 bytes unchanged |
-
-Working file: `Docs/19_Model_Interrogates_Red_Teams.md`. v0.1 remains `/documents/modele` `2026-09-28`.
+Working files: `Docs/19_Model_Interrogates_Red_Teams.md`, `Docs/20_Model_Phase2.xlsx`, `Docs/20_Model_Phase2_Dominance.md`, `scripts/modelPhase2.py`.

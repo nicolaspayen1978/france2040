@@ -29,3 +29,11 @@ avoided and interest+principal outstanding are explicit outputs.
 Semantic families first, then Σ numbers with a justification cell. Diversifié-1 (C),
 Fuites-1 (W), Fuites-2 (A). Philosophy for the public model page: the model does not
 resolve uncertainty; it makes uncertainty compete. Phase 2 is the tagged workbook.
+
+## 2026-10-03 — Phase 2 first run
+
+Owner GO after three corrections (bullets vintage+20; house-price index 70 by 2030; 2028
+first-light clock). Workbook `Docs/20_Model_Phase2.xlsx`. Dominance: A’s ratio vs R is the
+V2 macro, not Fuites-2; the stop clock dominates A’s IO stock (70 vs 700); C vs W is
+allocation on volume/receipts with the same cash released; housing/Exist barely move because
+originations stop early and EC-08 losses are unwired. No EC-10. v0.1 untouched.

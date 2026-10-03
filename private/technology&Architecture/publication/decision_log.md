@@ -255,7 +255,12 @@ are dominance outputs. Diversifié-1 / Fuites-1 / Fuites-2 are Σ with written j
 not estimates. Public line to keep: the model does not resolve uncertainty; it makes
 uncertainty compete. Next: Phase 2 workbook.
 
-## Open, and not decided by starting to code
+## 2026-10-03 — Phase 2 first tagged run (not public)
+
+Owner GO. Three corrections in the run: 2027 vintage matures 2047; A house-price index
+2027=100 → 70 in 2030 then held; first light = 2028 (recession year), stop from 2029.
+Workbook and dominance note in `Docs/`. Open ECs stay open. v0.1 unchanged. No EC-10.
+Next public model page is Phase 3, only if the owner wants the tagged run on the site.
 
 ## Open, and not decided by starting to code
 

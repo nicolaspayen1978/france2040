@@ -120,3 +120,6 @@ no EC-10 by default. v0.1 unpatched. Phase 0 inventory written. Phase 1 waits fo
 
 2026-10-03. Model Phase 1 locked in `Docs/19`. Tags O/S/Σ/ƒ. Four credit series. R tagged.
 A = V2 + Fuites-2 + 4q. Household cash service on outputs. Phase 2 is the workbook.
+
+2026-10-03. Model Phase 2 first run in Docs (xlsx + dominance note). Not a public snapshot.
+v0.1 unpatched. No EC-10.
