@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { CritiqueLink } from "@/components/CritiqueLink";
 import type { PaperBlock } from "@/lib/parsePaper";
 
 function inline(text: string): ReactNode[] {
@@ -34,9 +35,21 @@ type Props = {
   /** Optional insert rendered immediately before the heading with this id. */
   insertBeforeHeadingId?: string;
   insert?: ReactNode;
+  critique?: {
+    slug: string;
+    versionId: string;
+    address: string;
+  };
 };
 
-export function PaperProse({ blocks, insertBeforeHeadingId, insert }: Props) {
+export function PaperProse({
+  blocks,
+  insertBeforeHeadingId,
+  insert,
+  critique,
+}: Props) {
+  let sectionLabel = "Résumé exécutif";
+
   return (
     <div className="summary-body">
       {blocks.map((block) => {
@@ -48,26 +61,56 @@ export function PaperProse({ blocks, insertBeforeHeadingId, insert }: Props) {
             ? insert
             : null;
 
+        const passage = (anchorId: string, section: string) =>
+          critique ? (
+            <>
+              <a className="permalink" href={`${critique.address}#${anchorId}`} aria-label="Adresse de ce passage">
+                <span aria-hidden="true">#</span>
+              </a>
+              <CritiqueLink
+                target={{
+                  kind: "paper",
+                  slug: critique.slug,
+                  versionId: critique.versionId,
+                  anchorId,
+                  section,
+                }}
+              />
+            </>
+          ) : null;
+
         if (block.kind === "heading") {
+          sectionLabel = block.text;
           const Tag = block.level === 2 ? "h3" : "h4";
           return (
             <div key={block.id}>
               {ahead}
-              <Tag id={block.id}>{block.text}</Tag>
+              <Tag id={block.id}>
+                {passage(block.id, block.text)}
+                {block.text}
+              </Tag>
             </div>
           );
         }
 
         if (block.kind === "paragraph") {
-          return <p key={block.id}>{inline(block.text)}</p>;
+          return (
+            <p key={block.id} id={block.id}>
+              {passage(block.id, sectionLabel)}
+              {inline(block.text)}
+            </p>
+          );
         }
 
         if (block.kind === "list") {
           const ListTag = block.ordered ? "ol" : "ul";
           return (
-            <ListTag key={block.id}>
+            <ListTag key={block.id} id={block.id}>
               {block.items.map((item) => (
-                <li key={item.id}>{inline(item.text)}</li>
+                <li key={item.id} id={item.id}>
+                  {passage(item.id, sectionLabel)}
+                  {inline(item.text)}
+                </li>
               ))}
             </ListTag>
           );
@@ -75,7 +118,8 @@ export function PaperProse({ blocks, insertBeforeHeadingId, insert }: Props) {
 
         if (block.kind === "vis") {
           return (
-            <div key={block.id} className={`sim-vis sim-${block.variant}`}>
+            <div key={block.id} className={`sim-vis sim-${block.variant}`} id={block.id}>
+              {passage(block.id, sectionLabel)}
               <ol>
                 {block.items.map((item, itemIndex) => (
                   <li key={`${block.id}-${itemIndex}`}>
@@ -89,26 +133,29 @@ export function PaperProse({ blocks, insertBeforeHeadingId, insert }: Props) {
         }
 
         return (
-          <table key={block.id}>
-            <thead>
-              <tr>
-                {block.headers.map((header) => (
-                  <th key={header} scope="col">
-                    {inline(header)}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {block.rows.map((row) => (
-                <tr key={row.join("|")}>
-                  {row.map((cell, index) => (
-                    <td key={`${cell}-${index}`}>{inline(cell)}</td>
+          <div key={block.id} className="paper-table-wrap" id={block.id}>
+            {passage(block.id, sectionLabel)}
+            <table>
+              <thead>
+                <tr>
+                  {block.headers.map((header) => (
+                    <th key={header} scope="col">
+                      {inline(header)}
+                    </th>
                   ))}
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {block.rows.map((row) => (
+                  <tr key={row.join("|")}>
+                    {row.map((cell, index) => (
+                      <td key={`${cell}-${index}`}>{inline(cell)}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         );
       })}
     </div>

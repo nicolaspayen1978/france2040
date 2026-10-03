@@ -6,7 +6,7 @@ export const pacteV2: WorkingPaper = {
   lang: "fr",
   summary:
     "Texte long de l’hypothèse. Fenêtre 2027–2040 : part à intérêts seuls, origination, qualités d’usage. Le fichier Word est la pièce jointe antérieure. Cette page est le texte cité.",
-  currentVersionId: "2026-10-03-2",
+  currentVersionId: "2026-10-03-3",
   attachments: [
     {
       href: "/sources/pacte-du-bilan-francais-v2.docx",
@@ -44,11 +44,20 @@ export const pacteV2: WorkingPaper = {
     {
       id: "2026-10-03-2",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse à tester, non un programme arrêté.",
       file: "content/papers/pacte-v2/v2026-10-03-2.md",
       sha256: "a73f0aec0d73d859c018e86231d1a5cea096430cf21da539e57c861b5f7688f4",
-      note: "Alignement constitutionnel avec le brouillon du 3 octobre : plafond de la part, origination, qualités d’usage, fenêtre. Pas les chiffres du modèle.",
+      note: "Alignement constitutionnel : plafond de la part, origination, qualités d’usage, fenêtre.",
+    },
+    {
+      id: "2026-10-03-3",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict: "Hypothèse à tester, non un programme arrêté.",
+      file: "content/papers/pacte-v2/v2026-10-03-3.md",
+      sha256: "ffde0c07acea4821bfa76bd2ca200c027d12382096778be5acf3ba25a80a66f1",
+      note: "Enveloppe 700 Md€. Trajectoire indicative, règle de suivi liante. Stock vs vitesse.",
     },
   ],
   progress: [

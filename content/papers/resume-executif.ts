@@ -6,7 +6,7 @@ export const resumeExecutif: WorkingPaper = {
   lang: "fr",
   summary:
     "Le crédit ouvre une fenêtre ; l’usage décide du volume français. Même 700 Md€ : 125 Md€ d’activité en France dans le cas central, 42 Md€ si la transmission est faible. Scénario, pas une prévision.",
-  currentVersionId: "2026-10-03-5",
+  currentVersionId: "2026-10-03-7",
   versions: [
     {
       id: "2026-10-01",
@@ -137,16 +137,34 @@ export const resumeExecutif: WorkingPaper = {
     {
       id: "2026-10-03-5",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse, non un programme arrêté. Scénarios Phase 2, pas une prévision.",
       file: "content/papers/resume-executif/v2026-10-03-5.md",
       sha256: "3aab97b0d743bb7cbcbf45bc1cb5365534dad2a043e9659d5773b0de5b36fb42",
       note: "Pourquoi 700 Md€ : 8 % vs ≈ 16 % NL. 1 400 Md€ = benchmark, pas une cible.",
     },
+    {
+      id: "2026-10-03-6",
+      published: "2026-10-03",
+      status: "superseded",
+      verdict: "Hypothèse, non un programme arrêté. Scénarios Phase 2, pas une prévision.",
+      file: "content/papers/resume-executif/v2026-10-03-6.md",
+      sha256: "2bdab2aca95ecb87507a73de33d9d806bb06a2699a0c210b1c7eeb5f3f928bb2",
+      note: "700 Md€ = enveloppe. Trajectoire indicative, règle de suivi liante. NL ne relève pas l’enveloppe.",
+    },
+    {
+      id: "2026-10-03-7",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict: "Hypothèse, non un programme arrêté. Scénarios Phase 2, pas une prévision.",
+      file: "content/papers/resume-executif/v2026-10-03-7.md",
+      sha256: "3d7327ff07db7781b829ae5976579a5cfea8380a23e3b38f77aecea3a7a9e1aa",
+      note: "Note de trésorerie sans barre oblique. Accueil : Critiquer le résumé.",
+    },
   ],
   progress: [
     { id: "proposition", label: "Proposition", state: "Hypothèse" },
-    { id: "scenario", label: "700 Md€", state: "Origination de la part à intérêts seuls" },
+    { id: "scenario", label: "700 Md€", state: "Enveloppe de scénario, pas un objectif" },
     { id: "transmission", label: "Transmission", state: "Conditionnelle — scénario, non établie" },
     { id: "test", label: "Test de 2040", state: "Nouvelle origination à zéro" },
   ],

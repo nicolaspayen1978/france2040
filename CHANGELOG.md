@@ -15,6 +15,9 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
+- `[website]` Flèches de la chaîne de simulation en bleu (`--mark-blue`) pour les rendre lisibles.
+- `[website]` Accueil : Critiquer le résumé exécutif, comme les documents. Résumé `2026-10-03-7` : note de trésorerie sans `\*`.
+- `[publication]` Enveloppe et rythme : résumé `2026-10-03-6`, Pacte `2026-10-03-2`, V2 `2026-10-03-3`, intensité `2026-10-03-2`. 700 Md€ = enveloppe ; trajectoire indicative, suivi liant. NL ne relève pas l’enveloppe.
 - `[website]` Crawlers / HEA : sitemap lists only the current freeze; superseded `/v/…` are `noindex, follow`. Frozen URLs stay addressable. Canonicals unchanged.
 - `[website]` En images `France et Pays-Bas — intensité à intérêts seuls` (`/en-images/intensite-bilan-residentiel` `2026-10-03-2`) : 8 % vs ≈ 16 % ; 1 400 Md€ n’est pas un scénario.
 - `[publication]` Benchmark d’intensité de bilan : note `/documents/intensite-bilan-residentiel`, En images, résumé `2026-10-03-5`, EC-01 `2026-10-03-2`. 700 Md€ ≈ 8 % ; NL ≈ 16 % ; 1 400 Md€ n’est pas un scénario.

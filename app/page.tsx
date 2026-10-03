@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AnnouncedTests } from "@/components/AnnouncedTests";
+import { CritiqueLink } from "@/components/CritiqueLink";
 import { HomeQuatreBilansFigure } from "@/components/HomeQuatreBilansFigure";
 import { PaperProse } from "@/components/PaperProse";
 import { PublicationList } from "@/components/PublicationList";
@@ -31,11 +32,27 @@ export default function HomePage() {
         <Link href="/documents/pacte">Lire le brouillon public</Link>
       </p>
       <section className="section summary" aria-labelledby="summary-heading">
-        <h2 id="summary-heading">Résumé exécutif</h2>
+        <h2 id="summary-heading">
+          <CritiqueLink
+            target={{
+              kind: "paper",
+              slug: summary.slug,
+              versionId: version.id,
+              anchorId: "summary-heading",
+              section: "Résumé exécutif",
+            }}
+          />
+          Résumé exécutif
+        </h2>
         <PaperProse
           blocks={loadPaperBlocks(version)}
           insertBeforeHeadingId="ce-que-montre-maintenant-le-modele"
           insert={<HomeQuatreBilansFigure />}
+          critique={{
+            slug: summary.slug,
+            versionId: version.id,
+            address,
+          }}
         />
         <p className="entry">
           <Link href={address}>Version citée</Link>

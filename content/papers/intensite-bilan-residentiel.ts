@@ -8,17 +8,27 @@ export const intensiteBilanResidentiel: WorkingPaper = {
   lang: "fr",
   summary:
     "700 Md€ ≈ 8 % de 8 850 Md€. Aux Pays-Bas, l’encours à intérêts seuls est de l’ordre de 16 % des résidences principales. 1 400 Md€ est un benchmark, pas un scénario. Les 700 Md€ restent une saisie.",
-  currentVersionId: "2026-10-03",
+  currentVersionId: "2026-10-03-2",
   versions: [
     {
       id: "2026-10-03",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict:
         "Benchmark de bilan, pas de politique. 700 Md€ restent un scénario. Les Pays-Bas ne sont pas à copier. Le 16 % néerlandais est un ordre de grandeur, millésimes à aligner.",
       file: "content/papers/intensite-bilan-residentiel/v2026-10-03.md",
       sha256: "970c73e883583fd556fa49f7762c0a5707d995fc5c7bc5c8c9fd442a258f37d9",
       note: "8 % vs ≈ 16 %. 1 400 Md€ = échelle externe. Figure En images.",
+    },
+    {
+      id: "2026-10-03-2",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict:
+        "Le benchmark NL ne relève pas l’enveloppe. Il justifie de piloter le rythme par l’économie réelle. 700 Md€ restent un scénario.",
+      file: "content/papers/intensite-bilan-residentiel/v2026-10-03-2.md",
+      sha256: "1404fe1e2ce77680e69ef38b5f5c0c6529ce09e56f97f5b532f2d9e6fc366e18",
+      note: "Capacité externe vs vitesse. NL ≠ licence d’accélérer.",
     },
   ],
   progress: [
