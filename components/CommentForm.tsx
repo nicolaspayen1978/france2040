@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import type { CritiqueTargetKind } from "@/lib/critique";
+import { COMMENT_BODY_MAX } from "@/lib/commentLimits";
 
 type Status = "idle" | "submitting" | "ok" | "error";
 
@@ -126,7 +127,11 @@ export function CommentForm({
 
       <label>
         Commentaire
-        <textarea name="body" required maxLength={4000} rows={8} />
+        <textarea name="body" required maxLength={COMMENT_BODY_MAX} rows={14} />
+        <span className="comment-form-hint">
+          {COMMENT_BODY_MAX.toLocaleString("fr-FR")} caractères au plus. Un avis de modèle y tient ;
+          un livre, non.
+        </span>
       </label>
 
       <details className="comment-form-refs" open={hasTarget}>

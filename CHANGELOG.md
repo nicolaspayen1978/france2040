@@ -15,6 +15,7 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
+- `[website]` Commentaires : plafond du texte porté à 16 000 caractères (formulaire et serveur), pour un avis collé depuis un modèle.
 - `[website]` `/llms.txt` (versions actuelles) et `/llms-full.txt` (pack Markdown courant). Participer : revue avec un modèle de langage.
 - `[website]` Flèches de la chaîne de simulation en bleu (`--mark-blue`) pour les rendre lisibles.
 - `[website]` Accueil : Critiquer le résumé exécutif, comme les documents. Résumé `2026-10-03-7` : note de trésorerie sans `\*`.

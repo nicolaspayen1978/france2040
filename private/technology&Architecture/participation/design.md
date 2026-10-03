@@ -43,7 +43,7 @@ yet the full publication phase 3 model (inline anchors beside paper HTML).
 | lastName | yes | yes |
 | email | yes | no |
 | linkedin | no | yes when set (as profile link) |
-| body | yes | yes |
+| body | yes | yes | 16 000 caractères |
 | slug / versionId / anchorId / section / kind | no (prefilled from Critiquer) | yes when set |
 
 Statuses: `unverified` → `pending` → `accepted` | `rejected`.

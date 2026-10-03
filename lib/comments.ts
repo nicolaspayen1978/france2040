@@ -51,7 +51,7 @@ const INDEX: Record<CommentStatus, string> = {
   rejected: "comments:rejected",
 };
 
-const MAX_BODY = 4000;
+const MAX_BODY = COMMENT_BODY_MAX;
 const MAX_NAME = 80;
 const MAX_LINKEDIN = 300;
 const MAX_REF = 120;
