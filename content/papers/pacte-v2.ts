@@ -5,8 +5,8 @@ export const pacteV2: WorkingPaper = {
   title: "Pacte du Bilan Français — V2",
   lang: "fr",
   summary:
-    "Texte long de l’hypothèse, septembre 2026. Le fichier Word est la pièce jointe. Cette page est le texte cité.",
-  currentVersionId: "2026-10-03",
+    "Texte long de l’hypothèse. Fenêtre 2027–2040 : part à intérêts seuls, origination, qualités d’usage. Le fichier Word est la pièce jointe antérieure. Cette page est le texte cité.",
+  currentVersionId: "2026-10-03-2",
   attachments: [
     {
       href: "/sources/pacte-du-bilan-francais-v2.docx",
@@ -35,15 +35,26 @@ export const pacteV2: WorkingPaper = {
     {
       id: "2026-10-03",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse à tester, non un programme arrêté.",
       file: "content/papers/pacte-v2/v2026-10-03.md",
       sha256: "53edeff989095b7c700125efda3aec4a68bdae56bf4ffb7a06cec998d84023a2",
-      note: "Vocabulaire public français : part à intérêts seuls, ratio dette / valeur, capital immobilier net. Fond inchangé.",
+      note: "Vocabulaire public français. Remplacée : plafond consolidé 40–50 % et liste de secteurs.",
+    },
+    {
+      id: "2026-10-03-2",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict: "Hypothèse à tester, non un programme arrêté.",
+      file: "content/papers/pacte-v2/v2026-10-03-2.md",
+      sha256: "a73f0aec0d73d859c018e86231d1a5cea096430cf21da539e57c861b5f7688f4",
+      note: "Alignement constitutionnel avec le brouillon du 3 octobre : plafond de la part, origination, qualités d’usage, fenêtre. Pas les chiffres du modèle.",
     },
   ],
   progress: [
     { id: "text", label: "Texte", state: "Document de travail" },
+    { id: "tranche", label: "Part à intérêts seuls", state: "Plafond 40 % / 50 %, distinct du consolidé" },
+    { id: "usages", label: "Usages", state: "Qualités, pas une liste de secteurs" },
     { id: "proof", label: "Programme de preuve", state: "Ouvert" },
   ],
   sources: [
@@ -54,6 +65,11 @@ export const pacteV2: WorkingPaper = {
     {
       id: "housing",
       citation: "Fin 2024, logements des ménages 4 807 Md€ et terrains bâtis 4 043 Md€. Crédits à l’habitat, juillet 2026 : 1 289 Md€.",
+    },
+    {
+      id: "ec08",
+      citation: "Épreuve contradictoire EC-08. Le plafond de la part n’est pas le ratio consolidé.",
+      href: "/documents/red-team-08/v/2026-10-03",
     },
   ],
 };

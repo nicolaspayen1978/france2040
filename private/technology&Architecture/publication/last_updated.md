@@ -131,3 +131,5 @@ Does not replace v0.1. Does not close any EC.
 as current, bytes unchanged. Simulation result `2026-10-03-2` cites that model as producer.
 
 2026-10-03. En images for that run: cas central, même crédit / transmission faible, choc adverse et arrêt.
+
+2026-10-03. Résumé exécutif `2026-10-03-2`. Pacte public draft `2026-10-03`. Homepage window wording. Long V2 `2026-10-03-2`.

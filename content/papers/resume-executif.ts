@@ -5,8 +5,8 @@ export const resumeExecutif: WorkingPaper = {
   title: "Résumé exécutif",
   lang: "fr",
   summary:
-    "Mobilisation du bilan des ménages pour soutenir l’investissement. Ressources mobilisables, rénovation du parc, gain d’impôts, et baisse du taux d’endettement par une inflation ciblée. Hypothèse, non un programme arrêté.",
-  currentVersionId: "2026-10-03",
+    "Le crédit ouvre une fenêtre ; l’usage décide du volume français. Même 700 Md€ : 125 Md€ d’activité en France dans le cas central, 42 Md€ si la transmission est faible. Scénario, pas une prévision.",
+  currentVersionId: "2026-10-03-2",
   versions: [
     {
       id: "2026-10-01",
@@ -101,17 +101,27 @@ export const resumeExecutif: WorkingPaper = {
     {
       id: "2026-10-03",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse, non un programme arrêté.",
       file: "content/papers/resume-executif/v2026-10-03.md",
       sha256: "6f0c2d38c5aa1e113cdaa6a73a81e34df532d1356ea3659d0f88cb62145a362e",
-      note: "Vocabulaire public français (ratio dette / valeur). Fond inchangé.",
+      note: "Vocabulaire public français (ratio dette / valeur). Fond inchangé. Remplacé : « impacts encore préliminaires » est obsolète après la Phase 2.",
+    },
+    {
+      id: "2026-10-03-2",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict: "Hypothèse, non un programme arrêté. Scénarios Phase 2, pas une prévision.",
+      file: "content/papers/resume-executif/v2026-10-03-2.md",
+      sha256: "500310fc7375b3a65a78547e4fd1bc5c7e1aacd8dae86373024dccac3f4d4b5e",
+      note: "Centre : chaîne conditionnelle et transmission faible. 700 Md€ = origination de la part à intérêts seuls. Qualités d’usage, pas une liste de secteurs.",
     },
   ],
   progress: [
     { id: "proposition", label: "Proposition", state: "Hypothèse" },
-    { id: "scenario", label: "700 Md€", state: "Part à intérêts seuls, scénario" },
-    { id: "test", label: "Test de 2040", state: "Ouvert" },
+    { id: "scenario", label: "700 Md€", state: "Origination de la part à intérêts seuls" },
+    { id: "transmission", label: "Transmission", state: "Conditionnelle — scénario, non établie" },
+    { id: "test", label: "Test de 2040", state: "Nouvelle origination à zéro" },
   ],
   sources: [
     {
@@ -138,6 +148,16 @@ export const resumeExecutif: WorkingPaper = {
       id: "france-relance",
       citation: "Gouvernement, France Relance. 100 Md€ d’investissements, dépenses engagées sur deux ans, de 2020 à 2022.",
       href: "https://www.info.gouv.fr/grand-dossier/france-relance",
+    },
+    {
+      id: "phase2",
+      citation: "Résultat de simulation Phase 2 — Que change le Pacte ? (2026-10-03-2).",
+      href: "/documents/modele/phase-2/v/2026-10-03-2",
+    },
+    {
+      id: "modele-p2",
+      citation: "Modèle France 2040 — Phase 2 (2026-10-03). Producteur des chiffres de scénario.",
+      href: "/documents/modele/v/2026-10-03",
     },
   ],
 };

@@ -275,6 +275,14 @@ The simulation numbers are not v0.1 (0,65 × 0,35, constant debt). Owner: publis
 model as current `/documents/modele` `2026-10-03`. v0.1 stays addressable, superseded as
 current, bytes frozen. Not Pacte V2. Results page `2026-10-03-2` cites that model.
 
+## 2026-10-03 — Résumé et brouillon après Phase 2
+
+Owner: Executive Summary first, substantial. Replace « impacts encore préliminaires ».
+Centre = chaîne conditionnelle + weak transmission + qualités d’usage.
+Pacte public draft surgical (`2026-10-03`): IO cap not consolidated LTV; 700 = origination;
+qualities not sector list. Do not load 125/65 into the constitution. Homepage: « ouvrir une
+fenêtre », not « restaurer ». Long V2 `2026-10-03-2` catches up on those four points only.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

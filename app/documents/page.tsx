@@ -7,7 +7,7 @@ import { sectionMetadata } from "@/lib/paperMeta";
 export const metadata = sectionMetadata({
   title: "Documents",
   description:
-    "Documents de travail versionnés du Pacte. Épreuves contradictoires : nous cherchons ce qui pourrait faire échouer le Pacte. Résultats de simulation : ce qui arrive quand les hypothèses ouvertes sont mises à concourir. Le modèle v0.1 n’est pas remplacé.",
+    "Documents de travail versionnés du Pacte. Épreuves contradictoires : nous cherchons ce qui pourrait faire échouer le Pacte. Résultats de simulation : ce qui arrive quand les hypothèses ouvertes sont mises à concourir. Le tableur v0.1 reste publié ; le modèle actuel est la Phase 2.",
   path: "/documents",
 });
 
@@ -20,7 +20,7 @@ export default function DocumentsPage() {
       <p className="intro">Versionnés — soumis à critique.</p>
       <p className="intro">
         Épreuves contradictoires — nous cherchons ce qui pourrait faire échouer le Pacte.
-        Résultats de simulation — ce qui arrive lorsque les hypothèses encore ouvertes sont mises à concourir. Ce n’est pas une prévision, et cela ne remplace pas le modèle v0.1.
+        Résultats de simulation — ce qui arrive lorsque les hypothèses encore ouvertes sont mises à concourir. Ce n’est pas une prévision. Le tableur v0.1 reste publié ; le modèle actuel est la Phase 2.
       </p>
       <PublicationList />
       <AnnouncedTests />

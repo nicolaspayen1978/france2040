@@ -15,7 +15,10 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
-- `[publication]` EC-08 housing and financial stability (`/documents/red-team-08`), open verdict; frozen as `2026-10-02-5` (same body as `-4`, harder hypothesis: collateral erosion given consolidated LTV at origination); distinction: Pacte caps IO/property only, not consolidated LTV; IO is a credit claim, house is collateral.
+- `[publication]` Pacte V2 `2026-10-03-2` : même correction constitutionnelle que le brouillon (plafond de la part, origination, qualités, fenêtre). Pas les 125 / 65 Md€.
+- `[publication]` Résumé exécutif `2026-10-03-2` : la Phase 2 au centre (chaîne conditionnelle, transmission faible, qualités d’usage). « Impacts encore préliminaires » retiré.
+- `[publication]` Brouillon du Pacte `2026-10-03` : plafond de la part à intérêts seuls (pas le LTV consolidé) ; 700 Md€ = origination ; usages par qualités. Pas les 125 / 65 Md€ du modèle.
+- `[website]` Accroche d’accueil : « ouvrir une fenêtre » plutôt que « restaurer les finances publiques ».
 - `[website]` En images schéma `/en-images/part-io-n-est-pas-le-ltv-consolide` (`2026-10-03`): part à intérêts seuls ≠ ratio dette consolidée / valeur; failure mode 100/40/50 after −20 %; cites frozen EC-08; does not predict default or loss.
 - `[publication]` Public French vocabulary pass (`2026-10-03`): replace IO / LTV / equity on current papers and related En images with *part à intérêts seuls*, *ratio dette / valeur*, *capital immobilier net*; EC-08 re-frozen.
 - `[publication]` EC-09 combined failure (`/documents/red-team-09`), frozen as `2026-10-03-2`; six adverse strands (incl. chômage / revenu); combination ≠ isolated ECs; envelope question; announced list empty.

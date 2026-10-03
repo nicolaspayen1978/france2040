@@ -34,7 +34,7 @@ export default function HomePage() {
         <h2 id="summary-heading">Résumé exécutif</h2>
         <PaperProse
           blocks={loadPaperBlocks(version)}
-          insertBeforeHeadingId="la-proposition-de-valeur"
+          insertBeforeHeadingId="ce-que-montre-maintenant-le-modele"
           insert={<HomeQuatreBilansFigure />}
         />
         <p className="entry">

@@ -5,21 +5,32 @@ export const pacte: WorkingPaper = {
   title: "Le Pacte du bilan français",
   lang: "fr",
   summary:
-    "Brouillon public. Mobiliser une seule fois une fraction du patrimoine privé, de 2027 à 2040. Hypothèse, non un programme arrêté.",
-  currentVersionId: "2026-09-28",
+    "Brouillon public. Une fenêtre 2027–2040 : part à intérêts seuls plafonnée, 700 Md€ d’origination, usages selon leurs qualités économiques. Hypothèse, non un programme arrêté.",
+  currentVersionId: "2026-10-03",
   versions: [
     {
       id: "2026-09-28",
       published: "2026-09-28",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse, non un programme arrêté.",
       file: "content/papers/pacte/v2026-09-28.md",
       sha256: "41a752b2dcf2afec4cb0a5606ba3a96c7173005891d8948cc87189cbb0fdb9b6",
-      note: "Première version publique du brouillon. Le texte long de référence est la V2, à une autre adresse.",
+      note: "Première version publique. Levier consolidé 40–50 % et programme d’offre sectoriel. Remplacée le 3 octobre 2026.",
+    },
+    {
+      id: "2026-10-03",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict: "Hypothèse, non un programme arrêté.",
+      file: "content/papers/pacte/v2026-10-03.md",
+      sha256: "0246d4b0f1e32b79ef51233ac45ab260b1d6d2a9984513e80276cf5603b630ca",
+      note: "Plafond de la part à intérêts seuls, pas le LTV consolidé. 700 Md€ = origination. Usages par qualités. Pas les chiffres du modèle.",
     },
   ],
   progress: [
     { id: "draft", label: "Brouillon", state: "Publié pour être éprouvé" },
+    { id: "tranche", label: "Part à intérêts seuls", state: "Plafond 40 % / 50 %" },
+    { id: "usages", label: "Usages", state: "Qualités, pas une liste de secteurs" },
     { id: "reference", label: "Texte long", state: "V2, document séparé" },
     { id: "programme", label: "Programme arrêté", state: "Non" },
   ],
@@ -43,6 +54,11 @@ export const pacte: WorkingPaper = {
       id: "bdf-credit",
       citation: "Banque de France, crédits aux particuliers, juillet 2026. 99,4 % à taux fixe.",
       href: "https://www.banque-france.fr/fr/statistiques/credit/credits-aux-particuliers-2026-07",
+    },
+    {
+      id: "ec08",
+      citation: "Épreuve contradictoire EC-08. Le plafond de la part n’est pas le ratio consolidé.",
+      href: "/documents/red-team-08/v/2026-10-03",
     },
   ],
 };

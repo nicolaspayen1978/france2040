@@ -9,7 +9,7 @@ export const publisherDescription =
   "Projet de recherche indépendant. Ce site n’est pas un site officiel de l’État.";
 
 export const homeDescription =
-  "France 2040 publie le Pacte du bilan français : une hypothèse sur la manière de mobiliser, une seule fois, une fraction du patrimoine privé pour restaurer les finances publiques et transformer la capacité productive du pays entre 2027 et 2040.";
+  "France 2040 publie le Pacte du bilan français : une hypothèse sur la manière de mobiliser, une seule fois, une fraction du patrimoine privé pour ouvrir une fenêtre de transformation productive et de consolidation des finances publiques entre 2027 et 2040.";
 
 export const socialImage = {
   url: "/og/france-2040.jpeg",
