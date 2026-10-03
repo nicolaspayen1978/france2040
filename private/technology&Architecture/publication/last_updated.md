@@ -87,3 +87,7 @@ unchanged.
 2026-10-03. EC-09 published as `/documents/red-team-09`, version `2026-10-03`, verdict open.
 Combined failure: five adverse strands; combination ≠ sum of isolated ECs; V2 adverse minimum
 and stop rules as method constraints. No path filled. Announced list is now empty.
+
+2026-10-03. EC-09 frozen as `2026-10-03-2`. Sixth strand: unemployment / disposable income
+(bridge to credit losses). Wording: freiner la montée en charge, not « production ». Spec for
+quantitative stack below; no EC-10; no cells filled. Prior snapshot bytes unchanged.

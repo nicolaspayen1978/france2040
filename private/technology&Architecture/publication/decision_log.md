@@ -176,6 +176,14 @@ Five strands (weaker growth, higher rates, weak credit→spend, higher imports, 
 Combination is its own object, not the sum of EC-02…08. V2 adverse minimum and kill switches
 are method constraints; no trajectory filled. Announced list cleared; `AnnouncedTests` hides when empty.
 
+## 2026-10-03 — EC-09 frozen with sixth strand (chômage / revenu)
+
+Owner: unemployment / disposable-income shock must be a formal strand — bridge from macro to
+household/bank credit losses; V2 already requires unemployment. Also fix « freiner la production »
+→ freiner la montée en charge / nouvelles originations. Freeze as `2026-10-03-2`. Do not fill
+EC-09 cells; do not open EC-10; next work is back down the stack (joint scenarios need the open
+EC-02…08 cells). Envelope question retained: where operating limits end, not “survives a crisis.”
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

@@ -5,24 +5,34 @@ export const redTeam09: WorkingPaper = {
   title: "Épreuve contradictoire EC-09 — Scénario d’échec combiné",
   lang: "fr",
   summary:
-    "Où sont les limites du Pacte lorsque plusieurs hypothèses défavorables agissent ensemble ? Verdict : non tranché. La combinaison n’est pas la somme des épreuves isolées.",
-  currentVersionId: "2026-10-03",
+    "Où sont les limites du Pacte lorsque plusieurs hypothèses défavorables agissent ensemble ? Verdict : non tranché. Six brins ; la combinaison n’est pas la somme des épreuves isolées.",
+  currentVersionId: "2026-10-03-2",
   versions: [
     {
       id: "2026-10-03",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict:
         "Non tranché. Nomme les brins et les interactions ; ne remplit aucune trajectoire.",
       file: "content/papers/red-team-09/v2026-10-03.md",
       sha256: "0d9f9a745220383764616a50a30c70c597279985e4e86a20fa681fdcfd045714",
-      note: "Première version. Cinq brins adverses ; combinaison ≠ somme des EC isolées ; cahier des charges V2 ; verdict non tranché.",
+      note: "Première version (cinq brins). Remplacée : chômage / revenu en brin formel ; wording montée en charge.",
+    },
+    {
+      id: "2026-10-03-2",
+      published: "2026-10-03",
+      status: "frozen",
+      verdict:
+        "Non tranché. Six brins ; enveloppe de fonctionnement ; pas de trajectoire remplie.",
+      file: "content/papers/red-team-09/v2026-10-03-2.md",
+      sha256: "021f59efbaf5d22a57fe233f79b2598d31b3e56f8ecc22600152e29c99d82c88",
+      note: "Gelée. Sixième brin : chômage / revenu disponible. Freiner la montée en charge, non « la production ». Spécifie le travail quantitatif sous-jacent ; n’ouvre pas EC-10.",
     },
   ],
   progress: [
     {
       id: "strands",
-      label: "Cinq brins adverses",
+      label: "Six brins adverses",
       state: "Nommés ; non chiffrés",
     },
     {
