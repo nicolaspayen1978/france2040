@@ -168,6 +168,14 @@ Glossary for public pages:
 New versions `2026-10-03` for current papers (EC-08 re-frozen after vocab-only cut) and related
 En images. Slugs with historical `io`/`ltv` kept for URL stability. Superseded snapshots untouched.
 
+## 2026-10-03 — EC-09 opens the combined-failure test
+
+Owner: start EC-09. Version `2026-10-03`, verdict open. Question: where are the Pacte’s operating
+limits when several adverse assumptions act together — not whether it resists everything.
+Five strands (weaker growth, higher rates, weak credit→spend, higher imports, housing fall).
+Combination is its own object, not the sum of EC-02…08. V2 adverse minimum and kill switches
+are method constraints; no trajectory filled. Announced list cleared; `AnnouncedTests` hides when empty.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

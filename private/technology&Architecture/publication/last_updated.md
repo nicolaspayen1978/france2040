@@ -83,3 +83,7 @@ unchanged.
 2026-10-03. Public French vocabulary pass. Current papers → `2026-10-03` (EC-08 re-frozen).
 No IO / LTV / equity on public French text. Related En images updated. Prior snapshot bytes
 unchanged.
+
+2026-10-03. EC-09 published as `/documents/red-team-09`, version `2026-10-03`, verdict open.
+Combined failure: five adverse strands; combination ≠ sum of isolated ECs; V2 adverse minimum
+and stop rules as method constraints. No path filled. Announced list is now empty.
