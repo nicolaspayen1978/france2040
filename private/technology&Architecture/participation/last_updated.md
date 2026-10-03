@@ -14,6 +14,5 @@ tracking parameters.
 required names + email + body, optional LinkedIn. Resend e-mail verification before moderation.
 Critiquer control on document passages and visuals prefills target refs. Turnstile deferred. Gated
 
-2026-10-03. `/llms.txt` and `/llms-full.txt` generated from current versions. Participer
-gains a “revue avec un modèle de langage” paragraph.
+2026-10-03. Comment body cap 16 000 characters (form + server) so a pasted model review fits.
 moderation route.
