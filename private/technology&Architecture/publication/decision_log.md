@@ -3,10 +3,17 @@
 ## 2026-10-03 — Explique-moi le Pacte receives a dialogue display treatment
 
 Owner approved a layout-only pass. The immutable Markdown, SHA-256, version id, summary and
-verdict are unchanged. An opt-in `dialogue` presentation places the two opening lines and the
-section question on the reader’s side, with the existing explanatory paragraphs opposite. It is
-not a comment thread or a new document type, and it does not affect other papers. Each original
-paragraph and heading keeps its address and Critiquer target.
+verdict are unchanged. An opt-in `dialogue` presentation sets the opening lines and section
+question as prompts, followed by slightly indented explanatory prose. It affects only this
+paper. Each original paragraph and heading keeps its address and Critiquer target. The first
+card-style preview was too close to a messaging app; the revised treatment has no bubbles.
+The owner clarified that the landing page is the main target. Its embedded reading now uses
+the same restrained dialogue style; the document treatment remains as reviewed.
+The landing page was then refined toward a book-like reading: smaller serif prose, italic
+prompts, and one opening paragraph that joins the age statement to the owner's request.
+The new request wording is displayed only on the landing page; the cited snapshot is unchanged.
+The landing reading now has a narrow blue-white-red edge on its left to set it apart from the
+surrounding page. The decoration is CSS-only and does not alter the cited text or document view.
 
 ## 2026-10-01 — Publication is the consultation
 

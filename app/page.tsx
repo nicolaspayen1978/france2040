@@ -36,7 +36,7 @@ export default function HomePage() {
       <p className="kicker">Projet de recherche</p>
       <h1>France 2040</h1>
       <p className="lede">{homeDescription}</p>
-      <section className="section summary" aria-labelledby="explain-heading">
+      <section className="section summary home-dialogue" aria-labelledby="explain-heading">
         <h2 id="explain-heading">
           <CritiqueLink
             target={{
@@ -51,6 +51,8 @@ export default function HomePage() {
         </h2>
         <PaperProse
           blocks={loadPaperBlocks(letterVersion)}
+          presentation={letter.presentation}
+          openingRequest="Expliques-moi le Pacte s'il te plaît."
           critique={{
             slug: letter.slug,
             versionId: letterVersion.id,

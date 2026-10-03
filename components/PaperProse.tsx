@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { CritiqueLink } from "@/components/CritiqueLink";
+import type { PaperPresentation } from "@/content/papers/types";
 import type { PaperBlock } from "@/lib/parsePaper";
 
 function inline(text: string): ReactNode[] {
@@ -35,6 +36,9 @@ type Props = {
   /** Optional insert rendered immediately before the heading with this id. */
   insertBeforeHeadingId?: string;
   insert?: ReactNode;
+  presentation?: PaperPresentation;
+  /** Home-only request appended to the first opening paragraph. */
+  openingRequest?: string;
   critique?: {
     slug: string;
     versionId: string;
@@ -47,12 +51,16 @@ export function PaperProse({
   blocks,
   insertBeforeHeadingId,
   insert,
+  presentation,
+  openingRequest,
   critique,
 }: Props) {
   let sectionLabel = critique?.title ?? "Résumé exécutif";
+  let openingParagraphCount = 0;
+  const dialogue = presentation === "dialogue";
 
   return (
-    <div className="summary-body">
+    <div className={`summary-body${dialogue ? " summary-body--dialogue" : ""}`}>
       {blocks.map((block) => {
         const ahead =
           insert &&
@@ -86,7 +94,7 @@ export function PaperProse({
           return (
             <div key={block.id}>
               {ahead}
-              <Tag id={block.id}>
+              <Tag id={block.id} className={dialogue && block.level === 2 ? "dialogue-prompt" : undefined}>
                 {passage(block.id, block.text)}
                 {block.text}
               </Tag>
@@ -95,10 +103,18 @@ export function PaperProse({
         }
 
         if (block.kind === "paragraph") {
+          const openingLine = dialogue && openingParagraphCount === 0;
+          const prompt = dialogue && openingParagraphCount < 2;
+          openingParagraphCount += 1;
+          if (dialogue && openingRequest && openingParagraphCount === 2) return null;
           return (
-            <p key={block.id} id={block.id}>
+            <p
+              key={block.id}
+              id={block.id}
+              className={dialogue ? `dialogue-${prompt ? "prompt" : "reply"}${openingLine ? " dialogue-opening" : ""}` : undefined}
+            >
               {passage(block.id, sectionLabel)}
-              {inline(block.text)}
+              {inline(openingLine && openingRequest ? `${block.text} ${openingRequest}` : block.text)}
             </p>
           );
         }

@@ -1,7 +1,12 @@
 2026-10-01
 
-2026-10-03. **Explique-moi le Pacte** can opt into a dialogue display treatment. It changes
-layout only: snapshot text, versioning, hashes, anchors, and Critiquer targets remain unchanged.
+2026-10-03. **Explique-moi le Pacte** uses a typographic dialogue treatment with prompts and
+continuous indented replies. The first card-style preview was rejected. Snapshot text,
+versioning, hashes, anchors, and Critiquer targets remain unchanged.
+The landing page's embedded reading now receives this same layout; the document is retained.
+The landing reading now uses serif prose, italic prompts, and the owner's combined opening line.
+The document snapshot remains unchanged.
+The landing reading has a narrow tricolour left edge for separation from adjacent sections.
 
 Design note, decision log, and phases 0–3 written. Phase 0 is built. Phases 1–3 are not started.
 

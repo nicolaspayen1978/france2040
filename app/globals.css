@@ -164,6 +164,96 @@ h1 {
   color: inherit;
 }
 
+.home-dialogue {
+  width: min(62rem, 100%);
+  margin-inline: auto;
+}
+
+.home-dialogue > h2,
+.home-dialogue > .entry {
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+.summary-body--dialogue {
+  position: relative;
+  font-family: "Iowan Old Style", Baskerville, Georgia, serif;
+}
+
+.home-dialogue .summary-body--dialogue::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: max(0px, calc(50% - 22rem));
+  width: 6px;
+  background: linear-gradient(
+    to right,
+    var(--mark-blue) 0 33.333%,
+    var(--paper) 33.333% 66.667%,
+    var(--mark-red) 66.667% 100%
+  );
+  box-shadow: 0 0 0 1px var(--line);
+  pointer-events: none;
+}
+
+.summary-body--dialogue .dialogue-prompt {
+  max-width: 42rem;
+  margin: 2.5rem auto 0;
+  color: var(--ink);
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.55;
+}
+
+.summary-body--dialogue .dialogue-opening {
+  max-width: none;
+  margin: 1.75rem 0 2.5rem;
+  color: var(--ink);
+  font-size: 1.0625rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.55;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.summary-body--dialogue .dialogue-reply {
+  max-width: 42rem;
+  margin: 1.05rem auto 0;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.summary-body--dialogue h3.dialogue-prompt {
+  margin-top: 3rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 68rem) {
+  .summary-body--dialogue .dialogue-opening {
+    max-width: 42rem;
+    margin-inline: auto;
+    text-align: left;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-dialogue .summary-body--dialogue {
+    padding-left: 1.25rem;
+  }
+
+  .home-dialogue .summary-body--dialogue::before {
+    left: 0;
+  }
+}
+
 .summary-body table {
   width: 100%;
   margin-top: 1.15rem;
@@ -644,43 +734,46 @@ body:has(.section.summary) .shell {
   margin-top: 0.7rem;
 }
 
-/* The dialogue treatment is opt-in per paper; the snapshot text stays untouched. */
+/* A quiet interview layout for the introductory reading. */
 .paper--dialogue .paper-body--dialogue {
-  display: grid;
-  gap: 0.75rem;
+  width: min(46rem, 100%);
+  margin-inline: auto;
 }
 
 .paper--dialogue .paper-body--dialogue .dialogue-message {
-  width: fit-content;
-  max-width: min(34rem, calc(100% - 1.75rem));
-  margin: 0;
-  padding: 0.8rem 1rem;
-  border: 1px solid var(--line);
-  line-height: 1.55;
-}
-
-.paper--dialogue .paper-body--dialogue p.dialogue-message {
-  font-size: 1rem;
+  max-width: none;
+  border: 0;
+  background: none;
+  line-height: 1.65;
 }
 
 .paper--dialogue .paper-body--dialogue .dialogue-message--question {
-  justify-self: start;
-  border-radius: 0.2rem 1rem 1rem;
-  background: color-mix(in srgb, var(--paper) 92%, var(--ink) 8%);
+  margin: 2.5rem 0 0;
+  color: var(--ink);
+  font-size: 1.375rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.35;
+}
+
+.paper--dialogue .paper-body--dialogue .dialogue-message--question:first-child {
+  margin-top: 0;
+  color: var(--ink-2);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.55;
 }
 
 .paper--dialogue .paper-body--dialogue .dialogue-message--answer {
-  justify-self: end;
-  border-radius: 1rem 0.2rem 1rem 1rem;
-  background: color-mix(in srgb, var(--paper) 93%, var(--mark-red) 7%);
+  margin: 1rem 0 0 2.5rem;
+  font-size: 1.0625rem;
 }
 
 .paper--dialogue .paper-body--dialogue h2.dialogue-message {
-  max-width: min(28rem, calc(100% - 1.75rem));
-  color: var(--ink);
-  font-size: 1.125rem;
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  margin-top: 3rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid var(--line);
 }
 
 .paper-body h2,
@@ -863,8 +956,8 @@ body:has(.section.summary) .shell {
 
 /* Narrow viewports: keep the chip above the block so it does not clip. */
 @media (max-width: 56rem) {
-  .paper--dialogue .paper-body--dialogue .dialogue-message {
-    max-width: calc(100% - 1.1rem);
+  .paper--dialogue .paper-body--dialogue .dialogue-message--answer {
+    margin-left: 1.25rem;
   }
 
   .paper-body .critique-link,

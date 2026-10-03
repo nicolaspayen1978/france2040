@@ -52,18 +52,28 @@ Hand-built pages that must keep working while this grows: `/documents`, `/docume
 
 Inline `**bold**` and `*italic*` are rendered in the component. They are not part of the id.
 
+These ids are stable only because the file is immutable. Inserting a paragraph in a section renumbers the later paragraphs of that section. That is acceptable in a new version and forbidden in a published one. Do not add a stable-id map across versions until a revision needs “Addressed in vX” to name a passage. When that happens, the editor writes the pair. The parser does not guess it.
+
+The Red Team 05 issuer table is `repere-des-emetteurs-gele-t-1`. That is the kind of address a disagreement uses.
+
 ## Display-only reading modes
 
 `WorkingPaper.presentation` can opt into a display treatment without changing the source
 snapshot, its bytes, hash, anchors, metadata, or the linear reading order. `dialogue` is used
-only by **Explique-moi le Pacte**: its two opening paragraphs and level-two question are placed
-on the reader’s side; the unchanged explanatory paragraphs reply on the opposite side. The
-normal paper renderer remains the default. Permalinks and critique links remain attached to each
-original block and work on narrow screens.
+only by **Explique-moi le Pacte**: the two opening lines and the level-two question are set as
+prompts; the unchanged explanatory paragraphs form a slightly indented, continuous reply.
+The layout uses typography and spacing rather than individual message cards. The normal paper
+renderer remains the default. Permalinks and critique links remain attached to each original
+block and work on narrow screens.
 
-These ids are stable only because the file is immutable. Inserting a paragraph in a section renumbers the later paragraphs of that section. That is acceptable in a new version and forbidden in a published one. Do not add a stable-id map across versions until a revision needs “Addressed in vX” to name a passage. When that happens, the editor writes the pair. The parser does not guess it.
-
-The Red Team 05 issuer table is `repere-des-emetteurs-gele-t-1`. That is the kind of address a disagreement uses.
+The home page uses the same treatment for its embedded **Explique-moi le Pacte** reading. Only
+that first home section opts in; the executive summary and other documents keep their prose
+layout. The home opening joins the age statement to the owner's request, « Expliques-moi le
+Pacte s'il te plaît. », as one displayed paragraph. This wording is a home-page adaptation;
+the frozen document retains its own two paragraphs. The landing treatment uses smaller serif
+prose and italic prompts, with a wider opening line on desktop that wraps on narrow screens.
+A narrow blue, white and red rule marks the left edge of the landing reading; the white segment
+has a faint outline so it stays visible on the page background. It is decoration only.
 
 ## How a version is cut
 
