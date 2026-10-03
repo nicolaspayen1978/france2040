@@ -101,6 +101,11 @@ Versioned En images pages follow the same rule: title, metadata, explanatory sec
 and history stay in the 48rem reading column, while the visual itself can use the full 72rem
 frame. The En images index already uses the common discovery-page shell.
 
+The En images index is editorial rather than chronological. It leads with four high-impact
+views of the Pacte and its uncertainty, then explains the mechanism, then supplies supporting
+benchmarks, risks, and context. Visible group headings make that order explicit; dates remain
+on every visual card and do not control placement.
+
 ## How a version is cut
 
 Do this by hand for each paper. Do not add a generator until two papers have been cut the same way and the steps below are annoying.

@@ -1,7 +1,8 @@
 import { createHash } from "crypto";
 import { readFileSync } from "fs";
 import path from "path";
-import { visuals } from "@/content/visuals/registry";
+import { visualGroups, visuals } from "@/content/visuals/registry";
+import type { VisualGroup } from "@/content/visuals/registry";
 import type { Visual, VisualStatus, VisualVersion } from "@/content/visuals/types";
 
 const statusLabels: Record<VisualStatus, string> = {
@@ -26,6 +27,10 @@ export function visualNatureLabel(nature: Visual["nature"]): string {
 
 export function getVisuals(): Visual[] {
   return visuals;
+}
+
+export function getVisualGroups(): VisualGroup[] {
+  return visualGroups;
 }
 
 export function getVisual(slug: string): Visual | undefined {

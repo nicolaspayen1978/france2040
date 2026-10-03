@@ -355,3 +355,9 @@ Phase 3 storage: a pending queue outside the snapshot, published comments in the
 Versioned visual pages use the same 72rem outer frame and 48rem reading column as Le Pacte and
 the Résumé. Figures remain wide; metadata and explanatory prose do not. No visual snapshot or
 publication metadata changed.
+
+## 2026-10-03 — En images is impact-first, not date-first
+
+The index now opens with Les quatre bilans and the three Phase 2 scenarios, followed by a
+mechanism group and then supporting context. Headings state the editorial structure. Current
+version dates remain visible, but chronology does not determine order. No visual snapshot changed.

@@ -16,22 +16,43 @@ import { retraitesVsActifs } from "@/content/visuals/retraites-vs-actifs";
 import { trajectoireCredit20272040 } from "@/content/visuals/trajectoire-credit-2027-2040";
 import type { Visual } from "@/content/visuals/types";
 
-/** Image 0 first; Le problème; household; mechanism; Phase 2 simulation trio; path, stock; EC-08. */
-export const visuals: Visual[] = [
-  lesQuatreBilans,
-  retraitesVsActifs,
-  demographie20272040,
-  financementRetraites,
-  parcoursMenageInteretsSeuls,
-  empruntMoyenMensualite,
-  empruntMoyenCapacite,
-  partIoNEstPasLeLtvConsolide,
-  leRatioNEstPasLeService,
-  trajectoireCredit20272040,
-  mecanismeDuEuro,
-  casCentralPhase2,
-  memeCreditTransmissionFaible,
-  chocAdverseEtArret,
-  patrimoineVsEnveloppe,
-  intensiteBilanResidentiel,
+export type VisualGroup = {
+  id: string;
+  title: string;
+  items: Visual[];
+};
+
+/** Editorial order: impact first, then mechanism, then supporting context. */
+export const visualGroups: VisualGroup[] = [
+  {
+    id: "pacte-en-quatre-images",
+    title: "Le Pacte en quatre images",
+    items: [lesQuatreBilans, casCentralPhase2, memeCreditTransmissionFaible, chocAdverseEtArret],
+  },
+  {
+    id: "comprendre-le-mecanisme",
+    title: "Comprendre le mécanisme",
+    items: [
+      empruntMoyenMensualite,
+      empruntMoyenCapacite,
+      parcoursMenageInteretsSeuls,
+      patrimoineVsEnveloppe,
+      trajectoireCredit20272040,
+      mecanismeDuEuro,
+      partIoNEstPasLeLtvConsolide,
+      leRatioNEstPasLeService,
+    ],
+  },
+  {
+    id: "reperes-risques-contexte",
+    title: "Repères, risques et contexte",
+    items: [
+      demographie20272040,
+      retraitesVsActifs,
+      financementRetraites,
+      intensiteBilanResidentiel,
+    ],
+  },
 ];
+
+export const visuals: Visual[] = visualGroups.flatMap((group) => group.items);

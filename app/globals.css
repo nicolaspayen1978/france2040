@@ -758,6 +758,24 @@ body:has(.wide-page) .shell {
   max-width: 56rem;
 }
 
+.visual-list-groups {
+  margin-top: 3rem;
+}
+
+.visual-list-group + .visual-list-group {
+  margin-top: 3.5rem;
+}
+
+.visual-list-group > h2 {
+  color: var(--ink);
+  font-size: 0.875rem;
+  letter-spacing: 0.11em;
+}
+
+.visual-list-group > .doc-list {
+  margin-top: 0.75rem;
+}
+
 .participation-page .participation-options {
   max-width: 60rem;
 }
