@@ -1,9 +1,7 @@
 import Link from "next/link";
-import { AnnouncedTests } from "@/components/AnnouncedTests";
 import { CritiqueLink } from "@/components/CritiqueLink";
 import { HomeQuatreBilansFigure } from "@/components/HomeQuatreBilansFigure";
 import { PaperProse } from "@/components/PaperProse";
-import { PublicationList } from "@/components/PublicationList";
 import { sectionMetadata } from "@/lib/paperMeta";
 import { getPaperVersion, getWorkingPaper, loadPaperBlocks, versionPath } from "@/lib/papers";
 import { homeDescription } from "@/lib/site";
@@ -64,42 +62,63 @@ export default function HomePage() {
           <Link href={letterAddress}>Version citée</Link>
         </p>
       </section>
-      <section className="section summary" aria-labelledby="summary-heading">
-        <h2 id="summary-heading">
-          <CritiqueLink
-            target={{
-              kind: "paper",
-              slug: summary.slug,
-              versionId: version.id,
-              anchorId: "summary-heading",
-              section: "Résumé exécutif",
-            }}
-          />
-          Résumé exécutif
-        </h2>
-        <PaperProse
-          blocks={loadPaperBlocks(version)}
-          insertBeforeHeadingId="ce-que-montre-maintenant-le-modele"
-          insert={<HomeQuatreBilansFigure />}
-          critique={{
-            slug: summary.slug,
-            versionId: version.id,
-            address,
-            title: "Résumé exécutif",
-          }}
-        />
-        <p className="entry">
-          Vous voulez aller plus loin ? <Link href="/documents/pacte">Lire le Pacte</Link>
+      <section className="section home-visual" aria-labelledby="visual-heading">
+        <h2 id="visual-heading">Les quatre bilans</h2>
+        <p className="home-section-intro">
+          Le schéma montre comment le crédit pourrait circuler entre banques, ménages,
+          économie productive et État. Les effets sur la production et les recettes restent à tester.
         </p>
-        <p className="entry">
-          <Link href={address}>Version citée du résumé</Link>
+        <HomeQuatreBilansFigure />
+      </section>
+      <section className="section home-numbers" aria-labelledby="numbers-heading">
+        <h2 id="numbers-heading">Quelques repères</h2>
+        <p className="home-section-intro">Un point de départ et des scénarios à éprouver, pas des promesses.</p>
+        <ul className="home-facts">
+          <li>
+            <p className="home-fact-status">Point de départ</p>
+            <p className="home-fact-value">≈ 8 850 Md€</p>
+            <p className="home-fact-copy">Logements et terrains bâtis détenus par les ménages français.</p>
+          </li>
+          <li>
+            <p className="home-fact-status">Enveloppe testée</p>
+            <p className="home-fact-value">700 Md€</p>
+            <p className="home-fact-copy">Montant cumulé de la part à intérêts seuls des prêts dans le scénario 2027–2040 ; ce n’est pas une cible.</p>
+          </li>
+          <li>
+            <p className="home-fact-status">Deux transmissions simulées</p>
+            <p className="home-fact-value">125 / 42 Md€</p>
+            <p className="home-fact-copy">Activité supplémentaire produite en France avec le même crédit, selon l’usage des fonds.</p>
+          </li>
+        </ul>
+        <p className="home-fact-source">
+          Chiffres, hypothèses et limites dans le <Link href={address}>résumé exécutif versionné</Link>.
         </p>
       </section>
-      <section className="section" aria-labelledby="documents-heading">
-        <h2 id="documents-heading">Documents de travail</h2>
-        <PublicationList omit={["resume-executif", "explique-moi-le-pacte"]} />
+      <section className="section home-method" aria-labelledby="method-heading">
+        <h2 id="method-heading">La méthode</h2>
+        <p className="home-section-intro">
+          France 2040 publie une hypothèse, cherche ce qui pourrait la faire échouer et laisse les questions ouvertes visibles.
+        </p>
+        <ol className="home-method-steps">
+          <li>
+            <h3>Publier</h3>
+            <p>Rendre le raisonnement, les sources et chaque version consultables et citables.</p>
+          </li>
+          <li>
+            <h3>Mettre à l’épreuve</h3>
+            <p>Tester les liens entre crédit, dépense, activité française, risques et finances publiques.</p>
+          </li>
+          <li>
+            <h3>Réviser sans effacer</h3>
+            <p>Publier une nouvelle version quand l’analyse évolue ; ne pas transformer un verdict ouvert en certitude.</p>
+          </li>
+        </ol>
+        <div className="home-next">
+          <Link href="/documents/resume-executif">Lire le résumé exécutif</Link>
+          <Link href="/projet">Découvrir la méthode complète</Link>
+          <Link href="/documents">Explorer les documents</Link>
+        </div>
       </section>
-      <AnnouncedTests />
     </>
   );
 }

@@ -1,5 +1,15 @@
 # Decision log
 
+## 2026-10-03 — Home becomes a gateway to the research
+
+Owner approved one landing-page slice: retain **Explique-moi le Pacte**, promote the existing
+versioned four-balance diagram, show a few numbers with observation/scenario qualifications,
+and explain the publication/testing/revision method. Remove the duplicated full executive
+summary, document list and announced tests from home. The existing summary route gains a
+Résumé navigation link; Documents already has one. The home lead no longer frames 2040 as
+the end of the Pacte, and zero new credit in 2040 is not a highlighted number. The bell curve
+remains an analysis scenario. No published snapshot, model, or diagram version changes.
+
 ## 2026-10-03 — Explique-moi le Pacte receives a dialogue display treatment
 
 Owner approved a layout-only pass. The immutable Markdown, SHA-256, version id, summary and

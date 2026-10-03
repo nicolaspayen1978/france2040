@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getVisual, getVisualVersion, loadVisualFigure, visualPath } from "@/lib/visuals";
 
-/** Home insert: image 0, just before « La proposition de valeur ». */
+/** Versioned architectural diagram featured on the home page. */
 export function HomeQuatreBilansFigure() {
   const visual = getVisual("les-quatre-bilans");
   if (!visual) {
@@ -22,6 +22,7 @@ export function HomeQuatreBilansFigure() {
         dangerouslySetInnerHTML={{ __html: figure }}
       />
       <figcaption className="visual-caption">
+        <span className="home-visual-hint">Faire glisser pour parcourir le schéma. </span>
         {visual.summary}{" "}
         <Link href={href}>Voir la fiche En images</Link>
       </figcaption>

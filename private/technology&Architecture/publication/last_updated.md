@@ -1,5 +1,10 @@
 2026-10-01
 
+2026-10-03. Home now presents the dialogue, versioned four-balance diagram, qualified scenario
+repères, and a short method section. The full résumé is reached via a new Résumé nav link;
+document lists and announced tests remain on Documents. The home lead no longer foregrounds
+a 2040 sunset. The bell-curve scenario and published snapshots are unchanged.
+
 2026-10-03. **Explique-moi le Pacte** uses a typographic dialogue treatment with prompts and
 continuous indented replies. The first card-style preview was rejected. Snapshot text,
 versioning, hashes, anchors, and Critiquer targets remain unchanged.

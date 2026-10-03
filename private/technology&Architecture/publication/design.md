@@ -78,6 +78,15 @@ landing reading uses compact book typography in two columns on wide screens and 
 narrow screens. Its opening is left-aligned. Small ENFANT and FRANCE 2040 speaker cues mark
 turns without changing the document snapshot or repeating labels on every paragraph.
 
+The landing page is a gateway, not a second document index: the full home-only dialogue
+treatment is followed by the current versioned four-balance diagram, three labelled numeric
+repères, a short method statement, and links into the corpus. The full executive summary
+remains at `/documents/resume-executif` and has its own navigation entry; the document list
+and announced tests remain on `/documents`. Numeric repères link to the current versioned
+summary and distinguish the starting stock from scenario quantities. The home page does not
+feature the model's zero-new-credit 2040 endpoint as a headline or imply that the Pacte itself
+expires then. The published papers, scenario curve, and their open verdicts are unchanged.
+
 ## How a version is cut
 
 Do this by hand for each paper. Do not add a generator until two papers have been cut the same way and the steps below are annoying.
