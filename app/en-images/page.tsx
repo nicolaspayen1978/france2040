@@ -10,13 +10,13 @@ export const metadata = sectionMetadata({
 
 export default function EnImagesPage() {
   return (
-    <>
+    <div className="wide-page index-page">
       <h1>En images</h1>
       <p className="intro">
         Une lecture visuelle du Pacte. Chaque graphique cite un document versionné. Il explique une
         lecture ; il n’établit pas, et ne clôt pas, une épreuve.
       </p>
       <VisualList />
-    </>
+    </div>
   );
 }

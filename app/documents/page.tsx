@@ -15,7 +15,7 @@ export default function DocumentsPage() {
   const notes = getDocuments();
 
   return (
-    <>
+    <div className="wide-page index-page">
       <h1>Documents de travail</h1>
       <p className="intro">Versionnés — soumis à critique.</p>
       <p className="intro">
@@ -30,6 +30,6 @@ export default function DocumentsPage() {
           <DocumentList documents={notes} />
         </section>
       ) : null}
-    </>
+    </div>
   );
 }

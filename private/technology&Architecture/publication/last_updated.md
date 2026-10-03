@@ -1,5 +1,14 @@
 2026-10-01
 
+2026-10-03. Le Pacte, Résumé and other paper readers now use the common 48rem reading column
+inside the 72rem outer frame; wide tables and figures remain unconstrained.
+
+2026-10-03. Documents, En images, Projet and Participer now share the site's 72rem outer
+frame, while their prose retains a readable maximum line length.
+
+2026-10-03. The “Le Pacte” navigation item now cites Pacte V2 version `2026-10-03-3`
+directly, rather than the shorter `/documents/pacte` text.
+
 2026-10-03. Home now presents the dialogue, versioned four-balance diagram, qualified scenario
 repères, and a short method section. The full résumé is reached via a new Résumé nav link;
 document lists and announced tests remain on Documents. The home lead no longer foregrounds

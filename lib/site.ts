@@ -9,7 +9,7 @@ export const publisherDescription =
   "Projet de recherche indépendant. Ce site n’est pas un site officiel de l’État.";
 
 export const homeDescription =
-  "France 2040 publie le Pacte du bilan français : une hypothèse de crédit adossé au logement, à déployer prudemment, pour tester ses effets sur les ménages, l’investissement productif et les finances publiques.";
+  "France 2040 publie le Pacte du bilan français : une hypothèse de crédit adossé au logement. Ce projet teste ce qu’elle pourrait changer pour les ménages, l’investissement productif et les finances publiques — et à quelles conditions.";
 
 export const socialImage = {
   url: "/og/france-2040.jpeg",

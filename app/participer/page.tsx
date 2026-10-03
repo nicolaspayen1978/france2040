@@ -11,7 +11,7 @@ export const metadata = sectionMetadata({
 
 export default function ParticipatePage() {
   return (
-    <article className="page-prose participation-page">
+    <article className="page-prose participation-page wide-page">
       <p className="kicker">Projet de recherche indépendant</p>
       <h1>Participer à France 2040</h1>
       <p className="lede">

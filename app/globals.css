@@ -1,5 +1,10 @@
 @import "./tokens.css";
 
+:root {
+  --page-width: 72rem;
+  --reading-width: 48rem;
+}
+
 *,
 *::before,
 *::after {
@@ -735,8 +740,31 @@ h2 {
 }
 
 body:has(.paper) .shell,
-body:has(.section.summary) .shell {
-  width: min(72rem, calc(100% - 3rem));
+body:has(.section.summary) .shell,
+body:has(.wide-page) .shell {
+  width: min(var(--page-width), calc(100% - 3rem));
+}
+
+.wide-page > h1,
+.wide-page > .intro,
+.wide-page > .lede,
+.wide-page > p,
+.project-page .project-method {
+  max-width: var(--reading-width);
+}
+
+.wide-page.index-page .doc-summary {
+  max-width: 56rem;
+}
+
+.participation-page .participation-options {
+  max-width: 60rem;
+}
+
+.participation-page .participation-option > h2,
+.participation-page .participation-option > h3,
+.participation-page .participation-option > p {
+  max-width: var(--reading-width);
 }
 
 .paper .lede,
@@ -750,7 +778,7 @@ body:has(.section.summary) .shell {
 .paper-body ul,
 .paper .sources,
 .paper-history {
-  max-width: 40rem;
+  max-width: var(--reading-width);
 }
 
 .paper-progress {

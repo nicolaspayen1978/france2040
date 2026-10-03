@@ -10,7 +10,7 @@ export const metadata = sectionMetadata({
 
 export default function ProjectPage() {
   return (
-    <article className="page-prose">
+    <article className="page-prose wide-page project-page">
       <h1>Le projet</h1>
 
       <section className="project-method" aria-labelledby="pourquoi-heading">

@@ -87,6 +87,16 @@ summary and distinguish the starting stock from scenario quantities. The home pa
 feature the model's zero-new-credit 2040 endpoint as a headline or imply that the Pacte itself
 expires then. The published papers, scenario curve, and their open verdicts are unchanged.
 
+Top-level discovery pages share the same 72rem outer shell as the landing and research pages:
+`/documents`, `/en-images`, `/projet`, and `/participer`. Prose remains capped inside that
+frame to preserve readable line lengths; indexes and participation dividers can use the wider
+canvas. Mobile retains the common narrow-page gutter.
+
+Paper pages use that same layout system: a 72rem outer frame and a 48rem reading column for
+the summary, version metadata, progress, contents, prose, sources, and history. Tables and
+figures can still occupy the wider frame. The shared dimensions are CSS properties rather than
+separate values for navigation pages and documents.
+
 ## How a version is cut
 
 Do this by hand for each paper. Do not add a generator until two papers have been cut the same way and the steps below are annoying.

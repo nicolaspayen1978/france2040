@@ -1,5 +1,19 @@
 # Decision log
 
+## 2026-10-03 — Paper readers use the common reading width
+
+Owner found the wide navigation frame combined with a 40rem paper column visually inconsistent.
+Le Pacte, Résumé and other paper pages now use the same 48rem reading measure as the widened
+top-level pages, inside the common 72rem frame. Tables and figures retain access to the full
+canvas. No snapshot content changes.
+
+## 2026-10-03 — Top-level pages share the wide shell
+
+Owner asked for consistent page width. Documents, En images, Projet and Participer now use the
+same 72rem outer frame as the landing and research pages. Text columns remain bounded for
+readability; the wider frame is available to indexes and section rules. No document or visual
+snapshot changes.
+
 ## 2026-10-03 — Home becomes a gateway to the research
 
 Owner approved one landing-page slice: retain **Explique-moi le Pacte**, promote the existing
