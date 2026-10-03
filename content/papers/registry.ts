@@ -1,4 +1,5 @@
 import { modele } from "@/content/papers/modele";
+import { modelePhase2 } from "@/content/papers/modele-phase-2";
 import { pacte } from "@/content/papers/pacte";
 import { resumeExecutif } from "@/content/papers/resume-executif";
 import { pacteV2 } from "@/content/papers/pacte-v2";
@@ -22,6 +23,7 @@ export const workingPapers: WorkingPaper[] = [
   pacteV2,
   parcoursMenages,
   modele,
+  modelePhase2,
   questionsOuvertes,
   contexteDemographique,
   redTeam01,

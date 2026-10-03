@@ -123,3 +123,11 @@ A = V2 + Fuites-2 + 4q. Household cash service on outputs. Phase 2 is the workbo
 
 2026-10-03. Model Phase 2 first run in Docs (xlsx + dominance note). Not a public snapshot.
 v0.1 unpatched. No EC-10.
+
+2026-10-03. Résultat de simulation Phase 2 published: `/documents/modele/phase-2` v2026-10-03.
+Does not replace v0.1. Does not close any EC.
+
+2026-10-03. Modèle Phase 2 published as current `/documents/modele` `2026-10-03`. v0.1 superseded
+as current, bytes unchanged. Simulation result `2026-10-03-2` cites that model as producer.
+
+2026-10-03. En images for that run: cas central, même crédit / transmission faible, choc adverse et arrêt.

@@ -1,52 +1,111 @@
-# Phase 2 — tagged run (not a public snapshot)
+# Phase 2 — what does the Pacte change?
 
-3 October 2026. Workbook: `Docs/20_Model_Phase2.xlsx`. Rebuild: `python3 scripts/modelPhase2.py` (needs `openpyxl`). Does not replace v0.1. Does not close any EC.
+3 October 2026. Workbook: `Docs/20_Model_Phase2.xlsx`. Rebuild: `python3 scripts/modelPhase2.py`.
 
-**The model does not resolve uncertainty. It makes uncertainty compete.**
+**Result numbers frozen 3 October 2026.** Qualities-of-use frame added the same day. Further quantification goes back into the model.
 
-Three Phase 1 corrections are in the run: bullets = vintage + 20 years (2027 → 2047); A house-price **index** 2027=100, 70 in 2030, then 70; first light **Σ** = calendar 2028 (first recession year), stop from 2029.
+Scenario analysis, not a forecast. Not a public snapshot. Does not replace v0.1. Does not close any open critique.
 
-## What the four series do
+**Story order:** What happens normally? → What if transmission disappoints? → What if France is hit by a crisis? → What does the Pacte change inside that crisis? → Why?
 
-Under Σ prepayment = 0, **C and W**: cumulative originations 2040 = outstanding 2040 = **700**. That equality is ƒ of the assumption, not an identity of the Pacte.
+Workbook identifiers (not the language of the page): Central case (C) · Weak transmission (W) · Normal reference (R) · Adverse without Pacte (A₀) · Adverse with Pacte (A).
 
-**A** (stop 2029): gross 2027–28 only = **70** outstanding. The EC-04 column is not A’s book.
+Working figure now published: `/en-images/cas-central-phase-2`. Draft SVG remains `Docs/20_cas_central.svg`.
 
-## Dominance vs R (temporary EC-03/06 pass-throughs)
+## 1. Central case — what is expected to happen?
 
-| vs R | FR volume 2027–40 Md€ | Pacte receipts 2027–40 | Δ debt/GDP 2040, pp | IO outstanding 2040 | cash released 2027–40 | HH IO interest 2040 |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| **C** Diversifié-1 | 125 | 65 | −3.2 | 700 | 223 | 23 |
-| **W** Fuites-1 | 42 | 29 | −1.3 | 700 | 223 | 23 |
-| **A** V2+Fuites-2+stop 2029 | 3 | 3 | **+45** | 70 | 30 | 3 |
+The Pacte mobilises €700bn of housing equity between 2027 and 2040. In the central scenario, households spend €315bn of it. The model estimates that this generates €125bn of additional French activity and €65bn of additional public receipts.
 
-Cash released is the same in C and W: it is the **product** (IO vs 20-year 3,30 % annuity), not the allocation. Allocation competes on volume and receipts: Diversifié-1 vs Fuites-1 cuts French volume by about two thirds.
+€700bn credit → €315bn additional spending → €125bn additional French activity → €65bn additional public receipts → −3.2 pp public debt/GDP in 2040 vs France without the Pacte.
 
-A’s +45 pp ratio vs R is **not** the Pacte overlay. Ablations:
+Counterpart: €223bn household cash-flow released (vs an equivalent 20-year amortising loan in this scenario) and €700bn IO principal still outstanding in 2040.
 
-| Ablation vs A | What it removes | What actually moves |
-| --- | --- | --- |
-| A_no_recession | growth/unemployment gap | **−32 pp** on 2040 ratio (denominator). Volume unchanged. |
-| A_no_rates | +200 bp | **−15 pp** on ratio; HH interest −0.9 |
-| A_no_stop | the 2029 origination stop | outstanding **+630**; HH interest +33; volume +25; ratio only −1.2 pp |
-| A_stop_now | keep 2028 vintage | outstanding −45; small |
-| A_Fuites-1 | Exist 30 % wedge | volume +1.4; receipts +0.2 — **tiny in this pass-through** |
-| A_no_housing | index follows R, not 70 | receipts +0.1 — **tiny** (A only originates while the index is still 100 then 90) |
+The central hypothesis: the Pacte exchanges a larger private balance sheet for more household liquidity, economic activity and public receipts during the transition.
 
-## Where the next research dollar is (this run, not a verdict)
+These numbers are not €700bn progressively shrinking into €65bn. They measure different things at different stages.
 
-1. **A’s public-finance disaster vs R is the V2 macro (recession + sovereign refinancing), not Fuites-2.** If that remains true when pass-throughs change, deepen **EC-07** (and the R baseline) before another allocation vector.
-2. **The stop clock dominates A’s household book.** 70 vs 700 is the delay convention, not EC-02. Next: whether 2028-as-first-light is admissible — still not a policy threshold.
-3. **C vs W is an EC-02 fight** on volume/receipts, with the same 700 stock and the same cash released. Deepen EC-02 if the question is “does the Pacte produce French activity,” not “does IO raise cash.”
-4. **EC-03/06 pass-throughs are still Σ.** They scale C vs W; they do not create A’s ratio gap. Do not close those ECs from this file.
-5. **Housing/Exist barely compete** because A’s originations stop before the index has fallen far, and because EC-08 losses are not in the euro identities. A silent housing channel is a **missing object in the workbook**, not proof that EC-08 is small. Wire collateral/defaults before claiming housing lost the competition.
-6. **No new object appeared** that would justify EC-10. The gaps are empty ports already named (EC-03/06 coefficients, EC-08 losses, R as official baseline).
+## What makes a use of Pacte funds valuable to France?
 
-C does **not** get an attractive headline from −3.2 pp on the ratio: that gap also sits on R’s 1,0 / 2,5 / 2,0 % Σ. Read C − R next to R’s own path on sheet `06_MacroFinance`.
+Do not choose sectors first. Define qualities, then test candidate uses.
 
-## Files
+A euro of Pacte-funded spending is more valuable to France when it combines: local employment (labour that can actually be supplied); local content; available capacity (real output, not mainly prices); capital creation (durable asset, not a sale of the existing stock); associated savings (lower future imports, bills, or public spending).
 
-- `scripts/modelPhase2.py` — source of the numbers
-- `Docs/20_Model_Phase2.xlsx` — tagged sheets
-- `Docs/19_Model_Interrogates_Red_Teams.md` — method
-- Public `/documents/modele` v0.1 — unchanged
+Immediate transmission (labour + content + capacity) is roughly what the €125bn measures. Capital and recurring effects are not in that number. Two expenditures generating the same French activity today can have very different long-term effects: one may end with the transaction, while another may also create capital and recurring savings. Insulation is an example, not a preferred use.
+
+Savings can accrue to households, the import bill, government, or firms.
+
+**Objective:** maximise the domestic economic value created per euro of private balance-sheet expansion — through current activity, capital formation and future savings — subject to capacity, inflation, household and financial-stability constraints.
+
+Renovation, domestic energy production, certain infrastructure, productive SME investment and training can all be scored on the same list. Renovation is an interesting candidate, not a declared preferred use.
+
+## Where can policy improve the result?
+
+The product is the same in the central and weak-transmission cases: €700bn credit, €223bn household cash-flow, €700bn still outstanding. French activity is not: €125bn versus €42bn. Within this model, the first policy-sensitive lever is not how much households borrow, but the incentives affecting what happens after the credit is drawn. Government cannot assign household uses in a voluntary Pacte.
+
+Phase 2.1 first slice (`Docs/21_Model_Phase2.1.xlsx`). Policy experiment: if incentives succeed in changing the use of funds, what is the consequence of the shift — not the behavioural response to the incentive.
+
+| Use-of-funds shift (Σ) | Δ activity | Δ receipts | Δ debt/GDP vs C |
+| --- | ---: | ---: | ---: |
+| +10 pp toward renovation | +€28bn | +€10bn | −0.6 pp |
+| +10 pp toward productive investment | +€21bn | +€8bn | −0.5 pp |
+| −10 pp existing-asset rotation → renovation/investment | +€27bn | +€7bn | −0.5 pp |
+| +10 pp transfers subsequently spent | +€14bn | +€7bn | −0.3 pp |
+
+Same €700bn. Activity per €1 drawn: €0.18 in Central, €0.06 in weak transmission. Government policy can **influence** how much of that liquidity becomes productive French capacity. It does not determine it.
+
+The run does not estimate what incentive would produce a 10 pp shift, its cost to the State, supply absorption, or leakage into prices/imports. Empty: policy instrument → behavioural response. Modelled: use-of-funds shift → volume → receipts. Policy cost empty.
+
+Four candidate gates (not ranked): use of funds → French capacity → employment/capacity → fiscal capture → public balance sheet. The 2.1 table scores only immediate activity and receipts. Capital, recurring savings, instrument, behavioural response and policy cost remain empty.
+
+## 2. What if households mostly don’t spend the money?
+
+Keep the financial product the same; change only how the money is used.
+
+| | Central use | Weak transmission |
+| --- | ---: | ---: |
+| Credit mobilised | €700bn | €700bn |
+| Household cash-flow effect | €223bn | €223bn |
+| Additional spending | €315bn | €105bn |
+| French activity | €125bn | €42bn |
+| Public receipts | €65bn | €29bn |
+| Debt/GDP vs no Pacte | −3.2 pp | −1.3 pp |
+
+The Pacte can successfully release household cash without successfully stimulating the French economy.
+
+Why €125bn becomes €42bn: less renovation (−56), less consumption (−21), less productive investment (−6). More remains liquid, repays debt, buys existing assets, or is transferred.
+
+## 3. What if France enters a severe adverse scenario?
+
+First without the Pacte. Recession, higher unemployment, sovereign rates +200 bp, 30% housing decline: **+44.9 pp** debt/GDP in 2040 vs the normal reference. That is the adverse France effect.
+
+Then the same world with the Pacte. Warning in 2028; new lending stops in 2029; **€70bn** originated.
+
+| Same crisis | Debt/GDP vs normal reference |
+| --- | ---: |
+| Without the Pacte | +44.9 pp |
+| Pacte effect inside that crisis | −0.2 pp |
+| With the stopped Pacte | +44.8 pp |
+
+Along the way: about €3bn French activity, €2.5bn receipts, €30bn household cash-flow, €70bn IO principal.
+
+In this adverse run, the Pacte neither causes the fiscal crisis nor rescues France from it. The stop rule limits the book to €70bn; the net effect on the 2040 public-debt ratio is small.
+
+## What drives these results?
+
+Ablation effects, not an additive causal split: recession about 32.5 pp of the adverse gap vs the normal reference; higher sovereign rates about 15 pp.
+
+Housing risk has not “lost” the test. The current model does not yet connect falling collateral values to defaults and bank losses.
+
+Stop rule: origination continues → €700bn outstanding; stop in 2029 → €70bn outstanding. Removing the stop moves 2040 debt/GDP by about 1.2 pp in this adverse run.
+
+## Assumptions (audit)
+
+- €315bn = 45% × €700bn (central use mix). €105bn = 15% × €700bn (weak use mix).
+- Activity and receipts use temporary conversion rates for this run.
+- Cash-flow comparator: 20-year loan at 3.30%. Outstanding equals originations because prepayment = 0. First bullets 2047.
+- Adverse house-price index: 100 in 2027, 70 from 2030.
+- Tags in the workbook: O observed, S sourced, Σ scenario, ƒ calculated.
+
+Provisional research order from this run: public-path assumptions and the adverse baseline → housing loss channel → how credit is used → activity and receipt conversion rates.
+
+No new named scenario family after A₀. No EC-10.

@@ -91,12 +91,20 @@ def cash_released_on_vintage(principal: float, rate: float) -> float:
 
 
 def hp_index(traj: str, year: int) -> float:
-    """2027 = 100. R follows deflator. A: 70 by 2030, then held at 70."""
+    """2027 = 100. R follows deflator. Adverse housing: 70 by 2030, then held at 70."""
     if year < 2027:
         return 100.0 / ((1.0 + DEFL) ** (2027 - year))
-    if traj != "A" and not traj.startswith("A_"):
+    housing_shock = traj in {
+        "A0",
+        "A",
+        "A_no_recession",
+        "A_no_rates",
+        "A_Fuites-1",
+        "A_no_stop",
+        "A_stop_now",
+    }
+    if not housing_shock:
         return 100.0 * ((1.0 + DEFL) ** (year - 2027))
-    # A and A-ablations that keep housing shock
     if year <= 2027:
         return 100.0
     if year == 2028:
@@ -109,35 +117,66 @@ def hp_index(traj: str, year: int) -> float:
 def real_growth(traj: str, year: int) -> float:
     if year <= 2025:
         return 0.0
-    recession = traj in {"A", "A_no_housing", "A_no_rates", "A_Fuites-1", "A_no_stop", "A_stop_now"}
+    recession = traj in {
+        "A0",
+        "A",
+        "A_no_housing",
+        "A_no_rates",
+        "A_Fuites-1",
+        "A_no_stop",
+        "A_stop_now",
+    }
     if recession and year in (2028, 2029, 2030):
         return G_REAL_R - 0.015
     return G_REAL_R
 
 
 def unemployment(traj: str, year: int) -> float:
-    shock = traj in {"A", "A_no_housing", "A_no_rates", "A_Fuites-1", "A_no_stop", "A_stop_now"}
+    shock = traj in {
+        "A0",
+        "A",
+        "A_no_housing",
+        "A_no_rates",
+        "A_Fuites-1",
+        "A_no_stop",
+        "A_stop_now",
+    }
     if shock and year in (2028, 2029, 2030):
         return U_2025 + 0.02
     return U_2025
 
 
 def refin_rate(traj: str, year: int) -> float:
-    high = traj in {"A", "A_no_recession", "A_no_housing", "A_Fuites-1", "A_no_stop", "A_stop_now"}
+    high = traj in {
+        "A0",
+        "A",
+        "A_no_recession",
+        "A_no_housing",
+        "A_Fuites-1",
+        "A_no_stop",
+        "A_stop_now",
+    }
     if high and year >= 2028:
         return REFIN_R + 0.02
     return REFIN_R
 
 
 def hh_new_rate(traj: str, year: int) -> float:
-    high = traj in {"A", "A_no_recession", "A_no_housing", "A_Fuites-1", "A_no_stop", "A_stop_now"}
+    high = traj in {
+        "A",
+        "A_no_recession",
+        "A_no_housing",
+        "A_Fuites-1",
+        "A_no_stop",
+        "A_stop_now",
+    }
     if high and year >= 2028:
         return HH_RATE_CW + 0.02
     return HH_RATE_CW
 
 
 def allocation_name(traj: str) -> str | None:
-    if traj == "R":
+    if traj in {"R", "A0"}:
         return None
     if traj == "C":
         return "Diversifié-1"
@@ -149,7 +188,7 @@ def allocation_name(traj: str) -> str | None:
 
 
 def gross_for_year(traj: str, year: int) -> float:
-    if traj == "R" or year not in NET_NEW:
+    if traj in {"R", "A0"} or year not in NET_NEW:
         return 0.0
     scheduled = NET_NEW[year]
     if traj == "A_stop_now" and year >= 2028:
@@ -159,7 +198,20 @@ def gross_for_year(traj: str, year: int) -> float:
     return scheduled
 
 
-def volume_and_receipts(gross: float, alloc: dict | None, hp: float | None) -> tuple[float, float]:
+def mix_without_trf(alloc: dict) -> dict:
+    rest = {k: v for k, v in alloc.items() if k != "Trf"}
+    total = sum(rest.values())
+    if total <= 0:
+        return dict(alloc)
+    return {k: v / total for k, v in rest.items()} | {"Trf": 0.0}
+
+
+def volume_and_receipts(
+    gross: float,
+    alloc: dict | None,
+    hp: float | None,
+    follow_trf: bool = False,
+) -> tuple[float, float]:
     if not alloc or gross <= 0:
         return 0.0, 0.0
     vol = gross * (
@@ -179,10 +231,25 @@ def volume_and_receipts(gross: float, alloc: dict | None, hp: float | None) -> t
         + alloc["Sub"] * RECEIPT["Sub"]
         + alloc["Trf"] * RECEIPT["Trf"]
     )
+    if follow_trf and alloc.get("Trf", 0) > 0:
+        nested_vol, nested_rec = volume_and_receipts(
+            gross * alloc["Trf"],
+            mix_without_trf(alloc),
+            hp,
+            follow_trf=False,
+        )
+        vol += nested_vol
+        rec += nested_rec
     return vol, rec
 
 
-def run(traj: str) -> dict:
+def run(
+    traj: str,
+    *,
+    alloc_override: dict | None = None,
+    follow_trf: bool = False,
+    label: str | None = None,
+) -> dict:
     spend_2025 = SPEND_RATIO_2025 * GDP_2025
     receipts_2025 = spend_2025 - DEFICIT_2025
     spend_ex = spend_2025 - INTEREST_2025
@@ -207,9 +274,15 @@ def run(traj: str) -> dict:
 
         gross = gross_for_year(traj, year)
         repay = 0.0
-        alloc = ALLOC.get(allocation_name(traj) or "", None)
-        hp = hp_index("A" if traj.startswith("A") and traj != "A_no_housing" else "R", year) if year >= 2027 else 100.0
-        vol, pact_rec = volume_and_receipts(gross, alloc, hp if year >= 2027 else None)
+        alloc = (
+            alloc_override
+            if alloc_override is not None
+            else ALLOC.get(allocation_name(traj) or "", None)
+        )
+        hp = hp_index(traj, year) if year >= 2027 else 100.0
+        vol, pact_rec = volume_and_receipts(
+            gross, alloc, hp if year >= 2027 else None, follow_trf=follow_trf
+        )
         if year > 2025:
             real += vol / price
             nom = real * price
@@ -286,10 +359,15 @@ def run(traj: str) -> dict:
         # fix cumulative origination to actual gross sum not scheduled path
         rows[-1]["cumul"] = (rows[-2]["cumul"] if len(rows) > 1 else 0.0) + gross
 
-    return {"traj": traj, "rows": rows, "alloc": allocation_name(traj)}
+    return {
+        "traj": label or traj,
+        "rows": rows,
+        "alloc": alloc_override if alloc_override is not None else allocation_name(traj),
+        "follow_trf": follow_trf,
+    }
 
 
-TRAJECTORIES = ["R", "C", "W", "A"]
+TRAJECTORIES = ["R", "C", "W", "A0", "A"]
 ABLATIONS = ["A_no_recession", "A_no_housing", "A_no_rates", "A_Fuites-1", "A_no_stop", "A_stop_now"]
 
 
@@ -305,7 +383,7 @@ def dominance_block(runs: dict) -> list[dict]:
     r = runs["R"]
     r40 = row2040(r)
     out = []
-    for name in ["C", "W", "A"]:
+    for name in ["C", "W", "A0", "A"]:
         x = runs[name]
         x40 = row2040(x)
         out.append(
@@ -404,7 +482,8 @@ def main() -> None:
         "R = France without Pacte (tagged counterfactual).",
         "C = frozen net IO path + Diversifié-1.",
         "W = same path + Fuites-1.",
-        "A = V2 adverse + Fuites-2 + first light 2028 + stop from 2029.",
+        "A0 = V2 adverse macro, no Pacte (adverse France without the mechanism).",
+        "A = A0 + Fuites-2 + first light 2028 + stop from 2029.",
         "Housing A: index 2027=100, 70 in 2030, held at 70 (nominal −30 %, not 30 % below R).",
         "Bullets: 2027 vintage matures 2047; each vintage +20 years. None in 2027–2040.",
         "Stop clock (Σ, this run): first light = 2028 recession year; delay 4 quarters → stop 2029+.",
@@ -658,7 +737,8 @@ def main() -> None:
     lines = [
         "C − R is not a proof of the thesis. It is Diversifié-1 plus temporary pass-throughs competing against R’s tagged saisies.",
         "W − R shows how much of C’s impulse dies when the allocation is Fuites-1 (same credit path).",
-        "A − R mixes a short book (stop 2029) with a worse macro. Do not read A as ‘worse C’. Outstanding in A is ƒ of the stop clock.",
+        "A0 is the adverse world without the Pacte. Compare A to A0, not only A to R.",
+        "C − R is the expected central mechanism, not a proof of the thesis.",
         "If A_no_stop moves outstanding and household service far more than A_Fuites-1, the stop convention dominates the Exist wedge.",
         "If A_Fuites-1 barely moves volume/receipts vs A, the Exist 30 % wedge is small in this pass-through — deepen EC-06 only if receipts/DMTO move.",
         "If C − R on the ratio is mostly R’s 2.5 % deflator + constant-spend 2 % (look at R alone), the Pacte overlay is not doing the work.",
@@ -681,6 +761,23 @@ def main() -> None:
             f"d_ratio_pp={d['d_ratio_pp']:.2f} out={d['outstanding_2040']:.1f} "
             f"released={d['released_cum']:.1f} hh_int={d['hh_int_2040']:.1f} gross={d['gross_cum']:.1f}"
         )
+    print("--- A vs A0 (Pacte inside the adverse world) ---")
+    a0 = runs["A0"]
+    a = runs["A"]
+    a040 = row2040(a0)
+    a40 = row2040(a)
+    r40 = row2040(runs["R"])
+    print(
+        f"A0 vs R ratio_pp={100 * (a040['ratio'] - r40['ratio']):.2f} "
+        f"A vs A0 ratio_pp={100 * (a40['ratio'] - a040['ratio']):.2f} "
+        f"A vs R ratio_pp={100 * (a40['ratio'] - r40['ratio']):.2f}"
+    )
+    print(
+        f"A vs A0: d_vol={sum_field(a, 'vol') - sum_field(a0, 'vol'):.1f} "
+        f"d_rec={sum_field(a, 'pact_rec') - sum_field(a0, 'pact_rec'):.1f} "
+        f"d_interest={a40['interest'] - a040['interest']:.1f} "
+        f"out={a40['outstanding']:.1f}"
+    )
     print("--- Ablations vs A ---")
     for a in abl:
         print(

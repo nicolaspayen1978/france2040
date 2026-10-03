@@ -1,3 +1,5 @@
+export type PaperKind = "proposition" | "working-paper" | "red-team" | "model" | "simulation-result";
+
 export type DocumentStatus = "working-paper" | "under-review" | "frozen" | "superseded";
 
 export type PaperVersion = {
@@ -30,6 +32,11 @@ export type PaperAttachment = {
 
 export type WorkingPaper = {
   slug: string;
+  /** Public reading path. Defaults to `/documents/${slug}`. */
+  publicPath?: string;
+  kind?: PaperKind;
+  /** Overrides the documents-index kicker (kind label). */
+  listKicker?: string;
   title: string;
   lang: "fr" | "en";
   summary: string;

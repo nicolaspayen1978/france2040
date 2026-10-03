@@ -7,7 +7,7 @@ import type { WorkingPaper } from "@/content/papers/types";
 import { formatDate } from "@/lib/documents";
 import type { PaperBlock } from "@/lib/parsePaper";
 import { paperCrumbs, paperJsonLd, type PaperPlacement } from "@/lib/paperMeta";
-import { statusLabel, versionPath } from "@/lib/papers";
+import { paperKindLabel, statusLabel, versionPath } from "@/lib/papers";
 
 type WorkingPaperViewProps = {
   paper: WorkingPaper;
@@ -76,7 +76,7 @@ export function WorkingPaperView({ paper, versionId, blocks, placement }: Workin
         </ol>
       </nav>
       <p className="kicker">
-        {statusLabel(version.status)} · {formatDate(version.published)}
+        {paperKindLabel(paper)} · {statusLabel(version.status)} · {formatDate(version.published)}
       </p>
       <h1>{paper.title}</h1>
       <p className="lede">{paper.summary}</p>
@@ -212,6 +212,33 @@ export function WorkingPaperView({ paper, versionId, blocks, placement }: Workin
                     </li>
                   ))}
                 </ListTag>
+              );
+            }
+
+            if (block.kind === "vis") {
+              return (
+                <div key={block.id} className={`sim-vis sim-${block.variant}`} id={block.id}>
+                  <a className="permalink" href={`${address}#${block.id}`} aria-label="Adresse de ce schéma">
+                    <span aria-hidden="true">#</span>
+                  </a>
+                  <CritiqueLink
+                    target={{
+                      kind: "paper",
+                      slug: paper.slug,
+                      versionId: version.id,
+                      anchorId: block.id,
+                      section: sectionLabel,
+                    }}
+                  />
+                  <ol>
+                    {block.items.map((item, itemIndex) => (
+                      <li key={`${block.id}-${itemIndex}`}>
+                        <p className="sim-value">{inline(item.value)}</p>
+                        <p className="sim-label">{inline(item.label)}</p>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
               );
             }
 

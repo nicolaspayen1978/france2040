@@ -26,6 +26,10 @@ This file is a ship/history narrative. It does not replace:
 - `[publication]` EC-09 `2026-10-03-3`: return after the stack — three joint scenario families (V2 adverse × fuites / travaux / consommation) and stop rules mapped to observables; thresholds empty; no EC-10.
 - `[pacte]` Model next, not EC-10: every number tagged (observed / sourced / scenario / calculated); four trajectories (reference, central, weak-transmission, combined adverse); v0.1 unpatched. Spec `Docs/19_Model_Interrogates_Red_Teams.md`.
 - `[pacte]` Model Phase 2 first run (`Docs/20_Model_Phase2.xlsx`, `scripts/modelPhase2.py`): tagged O/S/Σ/ƒ; four trajectories + A ablations; not a public snapshot; v0.1 unchanged.
+- `[pacte]` Phase 2 recast: A₀ (adverse without Pacte); three acts C vs R → W vs C → A vs A₀; canvas title “What does the Pacte change?”.
+- `[website]` En images Phase 2 (`2026-10-03`) : `/en-images/cas-central-phase-2`, `/en-images/meme-credit-transmission-faible`, `/en-images/choc-adverse-et-arret`. Simulation ; citent le modèle 2026-10-03 et le résultat 2026-10-03-2 ; ne clôtent aucun EC.
+- `[publication]` Premier résultat de simulation Phase 2 (`/documents/modele/phase-2`) : Que change le Pacte ? `2026-10-03-2` cite le modèle Phase 2 comme producteur.
+- `[publication]` Modèle France 2040 Phase 2 (`/documents/modele` `2026-10-03`) : successeur du tableur v0.1 (octets inchangés) ; producteur du résultat de simulation. Pas le brouillon V2 du Pacte.
 - `[website]` Participation page at `/participer`, linked from the main navigation and footer: critique first, research contributions, circulation of the work, then financial support through the hosted Stripe payment page. `/soutenir` redirects to its financial-support section.
 - `[website]` Native share actions with a copy-link fallback for frozen document versions, visual versions, and the France 2040 website; no platform SDKs or tracking.
 - `[website]` Public comment intake at `/commentaires`: form (prénom, nom, e-mail, texte ; LinkedIn et référence document optionnels), Resend e-mail verification, pending queue in dedicated Upstash Redis, moderated public list; gated `/commentaires/moderation`.

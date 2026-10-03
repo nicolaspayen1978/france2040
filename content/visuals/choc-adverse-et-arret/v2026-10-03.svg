@@ -1,0 +1,45 @@
+<!--
+  En images — choc-adverse-et-arret v2026-10-03
+  Colours from app/tokens.css: --ink, --ink-2, --ink-3, --muted, --muted-2,
+  --line, --paper, --paper-2, --mark-blue, --mark-red, --blue-2.
+  Simulation. Le Pacte n’est pas la crise ; l’arrêt limite le livre.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Choc adverse, puis arrêt du Pacte</title>
+  <desc id="desc">
+    Sans Pacte, le choc V2 ajoute environ +44,9 points de dette/PIB en 2040 vs la référence normale.
+    Avec le Pacte arrêté en 2029 : 70 Md€ originés, effet du Pacte −0,2 point, total +44,8 points.
+    Le canal pertes immobilières n’est pas branché.
+  </desc>
+  <rect width="960" height="520" fill="#fff"/>
+
+  <text x="28" y="32" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a">D’abord le choc, ensuite le Pacte</text>
+  <text x="28" y="52" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Récession, chômage, taux souverains +200 pb, logement −30 % en nominal · simulation, pas une prévision</text>
+
+  <rect x="28" y="80" width="444" height="210" rx="2" fill="#fff" stroke="#ed2939" stroke-width="1.5"/>
+  <text x="250" y="112" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#ed2939">Même crise, sans Pacte</text>
+  <text x="250" y="168" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="28" font-weight="500" fill="#1a1a1a">+44,9 pts</text>
+  <text x="250" y="196" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">dette / PIB en 2040 vs référence normale</text>
+  <text x="250" y="232" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Crédit du Pacte = 0</text>
+  <text x="250" y="256" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">C’est l’effet France adverse, pas le Pacte</text>
+
+  <rect x="488" y="80" width="444" height="210" rx="2" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <text x="710" y="112" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#002395">Même crise, Pacte arrêté</text>
+  <text x="710" y="154" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="#1a1a1a">70 Md€</text>
+  <text x="710" y="176" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">originés · signal 2028, arrêt dès 2029</text>
+  <line x1="540" y1="196" x2="880" y2="196" stroke="#e6e6e6"/>
+  <text x="710" y="226" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a">−0,2 pt</text>
+  <text x="710" y="248" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">effet du Pacte dans cette crise</text>
+  <text x="710" y="270" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">total +44,8 pts vs référence normale</text>
+
+  <rect x="28" y="310" width="904" height="52" rx="2" fill="#e8e8e4"/>
+  <text x="480" y="332" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Dans cette run, le Pacte ne cause pas la crise budgétaire et n’en sauve pas la France.</text>
+  <text x="480" y="350" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Origination continue → 700 Md€ d’encours. Arrêt en 2029 → 70 Md€.</text>
+
+  <rect x="28" y="378" width="904" height="48" rx="2" fill="#fff" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="480" y="398" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Le canal pertes / défauts lié à la chute des prix n’est pas branché (EC-08).</text>
+  <text x="480" y="416" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">L’immobilier n’a pas « perdu » le test : il n’a pas encore été mis en jeu.</text>
+
+  <text x="28" y="468" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Simulation France2040 · modèle Phase 2 · 3 octobre 2026 · ne constitue pas une prévision · ne clôt aucun exercice de contradiction</text>
+  <text x="28" y="488" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Cite le résultat de simulation 2026-10-03-2. Allocations Fuites-2. Seuils d’arrêt : première lumière £ = 2028.</text>
+</svg>

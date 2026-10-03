@@ -31,3 +31,7 @@ EC-08 `2026-10-02-5`. Does not predict default or bank loss.
 2026-10-03. French vocabulary on figures: `part-io-n-est-pas-le-ltv-consolide` `2026-10-03`
 (UTF-8 + French labels); `patrimoine-vs-enveloppe` and `emprunt-moyen-mensualite` → `2026-10-03`.
 Slug kept; visible French only. Cites EC-08 / EC-01 / parcours `2026-10-03`.
+
+2026-10-03. Phase 2 simulation trio published: `cas-central-phase-2`,
+`meme-credit-transmission-faible`, `choc-adverse-et-arret`. Cite modèle 2026-10-03 and
+résultat 2026-10-03-2. Nature simulation. Do not close ECs.

@@ -37,3 +37,26 @@ first-light clock). Workbook `Docs/20_Model_Phase2.xlsx`. Dominance: A’s ratio
 V2 macro, not Fuites-2; the stop clock dominates A’s IO stock (70 vs 700); C vs W is
 allocation on volume/receipts with the same cash released; housing/Exist barely move because
 originations stop early and EC-08 losses are unwired. No EC-10. v0.1 untouched.
+
+## 2026-10-03 — Three acts + A₀
+
+Owner: missing hero is C vs R (mechanism + IO liability together). Then W vs C. Then R → A₀
+then A₀ → A. A₀ is the adverse world without Pacte, not a fifth named family. Result: A₀ vs R
++44.9 pp; A vs A₀ −0.2 pp. Page title “What does the Pacte change?”; “What moved the result”
+becomes the analytical section. €315bn spending tagged ƒ from Diversifié-1 0.45 × 700.
+
+## 2026-10-03 — Levers (Phase 2.1), not another Red Team
+
+Owner: the government question is transmission per euro of private expansion, not “does C/W/A work.” Four gates (use of funds, domestic supply, employment/capacity, fiscal capture) plus guardrails that do not maximise transmission. C vs W already shows the first gate as a range (€125bn vs €42bn on the same €700bn). Do not rank until a tagged one-at-a-time run. Empty cells where ports are missing (imports, inflation, bank losses). MaPrimeRénov’ / reduced VAT are S context, not a Pacte design. No EC-10.
+
+## 2026-10-03 — Phase 2.1 first slice (use of funds)
+
+Owner correction: government cannot assign household allocation; it changes relative incentives. Run: €700bn fixed. Diversifié-1 plus tagged 5/10/15 pp renovation, 5/10 pp Inv, Exist→Trav/Inv, and Trf followed to recipient. Cash and outstanding unchanged. Metric: French activity and receipts per €1 drawn (C €0.18 / €0.09 vs W €0.06 / €0.04). Not a ranking. Other gates unwired.
+
+## 2026-10-03 — Interpretation page frozen
+
+Owner: rows are allocation shifts, not modelled incentives. Measure the consequence of the shift, not the behavioural response. “Can influence,” not “determines.” Boundary box: instrument, response, cost, supply, prices/imports remain empty. Freeze the interpretation page; further analysis returns to the model.
+
+## 2026-10-03 — Qualities of a valuable use (not a sector pick)
+
+Owner: define qualities first — local employment, local content, available capacity, capital creation, associated savings — then test candidate uses. Immediate volume is only one of four effects (capital, recurring, fiscal; plus constraints). Objective becomes domestic economic value per euro of private expansion, not only current transmission. Renovation remains a candidate, not a preferred use. Do not lengthen the results page with more numbers.

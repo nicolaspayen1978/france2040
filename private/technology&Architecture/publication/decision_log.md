@@ -262,6 +262,19 @@ Owner GO. Three corrections in the run: 2027 vintage matures 2047; A house-price
 Workbook and dominance note in `Docs/`. Open ECs stay open. v0.1 unchanged. No EC-10.
 Next public model page is Phase 3, only if the owner wants the tagged run on the site.
 
+## 2026-10-03 — Résultat de simulation Phase 2 published
+
+Owner: not another EC, not a replacement of `/documents/modele` v0.1. New document type
+Résultat de simulation at `/documents/modele/phase-2` · `2026-10-03`. Scénarios, pas une
+prévision. Does not close any EC. French canonical. Qualities of use are framework;
+10 pp block is a sensitivity experiment, not a policy estimate. €700bn is a constraint.
+
+## 2026-10-03 — Model Phase 2 is the public producer
+
+The simulation numbers are not v0.1 (0,65 × 0,35, constant debt). Owner: publish the Phase 2
+model as current `/documents/modele` `2026-10-03`. v0.1 stays addressable, superseded as
+current, bytes frozen. Not Pacte V2. Results page `2026-10-03-2` cites that model.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

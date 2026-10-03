@@ -2,7 +2,7 @@ import { createHash } from "crypto";
 import { readFileSync } from "fs";
 import path from "path";
 import { workingPapers } from "@/content/papers/registry";
-import type { DocumentStatus, PaperVersion, WorkingPaper } from "@/content/papers/types";
+import type { DocumentStatus, PaperKind, PaperVersion, WorkingPaper } from "@/content/papers/types";
 import { parsePaper, type PaperBlock } from "@/lib/parsePaper";
 
 const statusLabels: Record<DocumentStatus, string> = {
@@ -11,6 +11,32 @@ const statusLabels: Record<DocumentStatus, string> = {
   frozen: "Gelé",
   superseded: "Remplacé",
 };
+
+const kindLabels: Record<PaperKind, string> = {
+  proposition: "Proposition",
+  "working-paper": "Document de travail",
+  "red-team": "Épreuve contradictoire",
+  model: "Modèle exploratoire",
+  "simulation-result": "Résultat de simulation",
+};
+
+export function paperKindOf(paper: WorkingPaper): PaperKind {
+  if (paper.kind) return paper.kind;
+  if (paper.slug.startsWith("red-team")) return "red-team";
+  if (paper.slug === "modele") return "model";
+  if (paper.slug === "pacte" || paper.slug === "pacte-v2" || paper.slug === "resume-executif") {
+    return "proposition";
+  }
+  return "working-paper";
+}
+
+export function paperKindLabel(paper: WorkingPaper): string {
+  return kindLabels[paperKindOf(paper)];
+}
+
+export function paperPath(paper: WorkingPaper): string {
+  return paper.publicPath ?? `/documents/${paper.slug}`;
+}
 
 export function statusLabel(status: DocumentStatus): string {
   return statusLabels[status];
@@ -41,5 +67,5 @@ export function loadPaperBlocks(version: PaperVersion): PaperBlock[] {
 }
 
 export function versionPath(paper: WorkingPaper, versionId: string): string {
-  return `/documents/${paper.slug}/v/${versionId}`;
+  return `${paperPath(paper)}/v/${versionId}`;
 }

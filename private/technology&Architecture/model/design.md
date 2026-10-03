@@ -42,4 +42,4 @@ Numbers and justifications: `Docs/19_Model_Interrogates_Red_Teams.md`.
 | 0 | Done — inventory |
 | 1 | Done — families, four series, R ports, named vectors, A sentence |
 | 2 | Not started — tagged workbook + run + dominance |
-| 3 | Not started — public snapshot; v0.1 bytes unchanged |
+| 3 | Public snapshot of the Phase 2 model as `/documents/modele` 2026-10-03; v0.1 superseded as current, bytes unchanged. |

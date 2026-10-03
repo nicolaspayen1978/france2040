@@ -1,0 +1,55 @@
+<!--
+  En images — meme-credit-transmission-faible v2026-10-03
+  Colours from app/tokens.css: --ink, --ink-2, --ink-3, --muted, --muted-2,
+  --line, --paper, --paper-2, --mark-blue, --blue-2, --blue-3.
+  Simulation. Même produit financier ; seul l’usage change.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Même crédit, transmission faible</title>
+  <desc id="desc">
+    Cas central contre transmission faible. Crédit 700 Md€ et trésorerie 223 Md€ identiques.
+    Dépense 315 contre 105, activité en France 125 contre 42, recettes 65 contre 29,
+    dette/PIB −3,2 contre −1,3 points. Volume par euro tiré ≈ 0,18 € contre 0,06 €.
+  </desc>
+  <rect width="960" height="540" fill="#fff"/>
+
+  <text x="28" y="32" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a">Même crédit, résultats très différents</text>
+  <text x="28" y="52" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Seul l’usage des fonds change · simulation, pas une prévision</text>
+
+  <rect x="28" y="72" width="904" height="56" rx="2" fill="#e8e8e4"/>
+  <text x="480" y="96" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#002395">Produit financier identique</text>
+  <text x="480" y="116" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">700 Md€ de part à intérêts seuls · 223 Md€ de trésorerie dégagée · 700 Md€ encore dus en 2040</text>
+
+  <rect x="28" y="148" width="444" height="250" rx="2" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <text x="250" y="176" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#002395">Usage central</text>
+  <text x="250" y="196" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Diversifié-1</text>
+  <text x="56" y="232" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Dépense supplémentaire</text>
+  <text x="448" y="232" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">315 Md€</text>
+  <text x="56" y="268" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Activité produite en France</text>
+  <text x="448" y="268" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">125 Md€</text>
+  <text x="56" y="304" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Recettes publiques</text>
+  <text x="448" y="304" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">65 Md€</text>
+  <text x="56" y="340" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Dette / PIB vs sans Pacte</text>
+  <text x="448" y="340" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">−3,2 pts</text>
+  <text x="250" y="376" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">≈ 0,18 € d’activité en France par euro tiré</text>
+
+  <rect x="488" y="148" width="444" height="250" rx="2" fill="#fff" stroke="#99a5cd" stroke-width="1.5"/>
+  <text x="710" y="176" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#334a9a">Transmission faible</text>
+  <text x="710" y="196" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Fuites-1</text>
+  <text x="516" y="232" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Dépense supplémentaire</text>
+  <text x="908" y="232" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">105 Md€</text>
+  <text x="516" y="268" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Activité produite en France</text>
+  <text x="908" y="268" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">42 Md€</text>
+  <text x="516" y="304" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Recettes publiques</text>
+  <text x="908" y="304" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">29 Md€</text>
+  <text x="516" y="340" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Dette / PIB vs sans Pacte</text>
+  <text x="908" y="340" text-anchor="end" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">−1,3 pts</text>
+  <text x="710" y="376" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">≈ 0,06 € d’activité en France par euro tiré</text>
+
+  <text x="28" y="430" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Le Pacte peut libérer de la trésorerie sans stimuler l’économie française.</text>
+  <text x="28" y="452" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Pourquoi 125 deviennent 42, dans ces coefficients temporaires : moins de rénovation, de consommation et d’investissement productif nouveau.</text>
+  <text x="28" y="472" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Ce ne sont pas des multiplicateurs établis. EC-02, EC-03 et EC-06 restent ouverts.</text>
+
+  <text x="28" y="508" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Simulation France2040 · modèle Phase 2 · 3 octobre 2026 · ne constitue pas une prévision · ne clôt aucun exercice de contradiction</text>
+  <text x="28" y="528" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Cite le résultat de simulation 2026-10-03-2. 0,18 € et 0,06 € = volume / origination, dans cette run.</text>
+</svg>

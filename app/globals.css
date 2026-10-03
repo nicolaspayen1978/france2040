@@ -647,7 +647,8 @@ body:has(.paper) .shell {
 .paper-body h3,
 .paper-body p,
 .paper-body li,
-.paper-table-wrap {
+.paper-table-wrap,
+.sim-vis {
   position: relative;
 }
 
@@ -722,22 +723,26 @@ body:has(.paper) .shell {
 .paper-body p:hover > .permalink,
 .paper-body li:hover > .permalink,
 .paper-table-wrap:hover > .permalink,
+.sim-vis:hover > .permalink,
 .permalink:focus-visible,
 .paper-body h2:hover > .critique-link,
 .paper-body h3:hover > .critique-link,
 .paper-body p:hover > .critique-link,
 .paper-body li:hover > .critique-link,
 .paper-table-wrap:hover > .critique-link,
+.sim-vis:hover > .critique-link,
 .paper-body h2:focus-within > .critique-link,
 .paper-body h3:focus-within > .critique-link,
 .paper-body p:focus-within > .critique-link,
 .paper-body li:focus-within > .critique-link,
 .paper-table-wrap:focus-within > .critique-link,
+.sim-vis:focus-within > .critique-link,
 .paper-body h2:has(> .critique-link:hover) > .critique-link,
 .paper-body h3:has(> .critique-link:hover) > .critique-link,
 .paper-body p:has(> .critique-link:hover) > .critique-link,
 .paper-body li:has(> .critique-link:hover) > .critique-link,
 .paper-table-wrap:has(> .critique-link:hover) > .critique-link,
+.sim-vis:has(> .critique-link:hover) > .critique-link,
 .critique-link:hover,
 .critique-link:focus-visible,
 .visual-figure:hover > .critique-link,
@@ -857,6 +862,77 @@ body:has(.paper) .shell {
   color: var(--muted);
   font-size: 0.75rem;
   font-weight: 500;
+}
+
+.sim-vis {
+  margin: 1.35rem 0 1.6rem;
+}
+
+.sim-vis ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sim-chain li {
+  margin: 0;
+  padding: 0.55rem 0 0.65rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.sim-chain li:last-child {
+  border-bottom: 0;
+}
+
+.sim-value {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.sim-label {
+  margin: 0.15rem 0 0;
+  font-size: 0.875rem;
+  color: var(--ink-3);
+}
+
+.sim-chain li + li::before {
+  content: "↓";
+  display: block;
+  margin: 0 0 0.35rem;
+  color: var(--muted-2);
+  font-size: 0.85rem;
+}
+
+.sim-pair ol,
+.sim-cards ol {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.sim-pair li,
+.sim-cards li {
+  margin: 0;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.sim-pair .sim-value {
+  font-size: 1.2rem;
+}
+
+.sim-cards .sim-value {
+  font-size: 1.05rem;
+}
+
+.sim-callout {
+  margin: 1.15rem 0;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid var(--mark-red);
 }
 
 .paper-history {

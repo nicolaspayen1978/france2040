@@ -2,7 +2,8 @@ export type PaperBlock =
   | { kind: "heading"; level: 2 | 3; id: string; text: string }
   | { kind: "paragraph"; id: string; text: string }
   | { kind: "list"; id: string; ordered: boolean; items: { id: string; text: string }[] }
-  | { kind: "table"; id: string; headers: string[]; rows: string[][] };
+  | { kind: "table"; id: string; headers: string[]; rows: string[][] }
+  | { kind: "vis"; variant: "chain" | "pair" | "cards"; id: string; items: { value: string; label: string }[] };
 
 const alignmentCell = /^:?-{3,}:?$/;
 
@@ -41,6 +42,7 @@ export function parsePaper(markdown: string): PaperBlock[] {
   let paragraphCount = 0;
   let listCount = 0;
   let tableCount = 0;
+  let visCount = 0;
   let index = 0;
 
   const takeId = (proposed: string) => {
@@ -59,6 +61,7 @@ export function parsePaper(markdown: string): PaperBlock[] {
     paragraphCount = 0;
     listCount = 0;
     tableCount = 0;
+    visCount = 0;
   };
 
   while (index < lines.length) {
@@ -82,6 +85,42 @@ export function parsePaper(markdown: string): PaperBlock[] {
       blocks.push({ kind: "heading", level, id, text });
       if (level === 2) resetSection(id);
       index += 1;
+      continue;
+    }
+
+    if (line.startsWith("::vis ")) {
+      const variantRaw = line.slice(6).trim();
+      if (variantRaw !== "chain" && variantRaw !== "pair" && variantRaw !== "cards") {
+        throw new Error(`Unknown vis variant “${variantRaw}” at “${section}”`);
+      }
+      const variant = variantRaw;
+      index += 1;
+      const items: { value: string; label: string }[] = [];
+      while (index < lines.length && lines[index].trim() !== "::end") {
+        const row = lines[index].trim();
+        if (row !== "") {
+          const parts = row.split("|").map((part) => part.trim());
+          if (parts.length < 2) {
+            throw new Error(`Vis row needs “value | label” at “${section}”`);
+          }
+          items.push({ value: parts[0], label: parts.slice(1).join(" | ") });
+        }
+        index += 1;
+      }
+      if (index >= lines.length) {
+        throw new Error(`Unclosed ::vis at “${section}”`);
+      }
+      index += 1;
+      if (items.length === 0) {
+        throw new Error(`Empty ::vis at “${section}”`);
+      }
+      visCount += 1;
+      blocks.push({
+        kind: "vis",
+        variant,
+        id: takeId(`${section}-v-${visCount}`),
+        items,
+      });
       continue;
     }
 
@@ -127,6 +166,7 @@ export function parsePaper(markdown: string): PaperBlock[] {
       lines[index].trim() !== "" &&
       !lines[index].startsWith("#") &&
       !isTableRow(lines[index]) &&
+      !lines[index].startsWith("::vis ") &&
       !/^\d+\. /.test(lines[index]) &&
       !/^[-*] /.test(lines[index])
     ) {

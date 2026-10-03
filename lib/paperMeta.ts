@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { PaperVersion, WorkingPaper } from "@/content/papers/types";
-import { versionPath } from "@/lib/papers";
+import { paperPath, versionPath } from "@/lib/papers";
 import {
   absoluteUrl,
   publisherDescription,
@@ -26,7 +26,7 @@ export function paperCrumbs(
   const crumbs: Crumb[] = [
     { name: "Accueil", path: "/" },
     { name: "Documents", path: "/documents" },
-    { name: paper.title, path: `/documents/${paper.slug}` },
+    { name: paper.title, path: paperPath(paper) },
   ];
 
   if (placement === "version") {
@@ -99,7 +99,7 @@ export function paperJsonLd(
   const path = versionPath(paper, version.id);
   const url = absoluteUrl(path);
   const crumbs = paperCrumbs(paper, version, placement);
-  const pagePath = placement === "version" ? path : `/documents/${paper.slug}`;
+  const pagePath = placement === "version" ? path : paperPath(paper);
 
   return {
     "@context": "https://schema.org",

@@ -1,5 +1,5 @@
 import { formatDate } from "@/lib/documents";
-import { getWorkingPapers, statusLabel } from "@/lib/papers";
+import { getWorkingPapers, paperKindLabel, paperPath } from "@/lib/papers";
 
 export type Publication = {
   href: string;
@@ -10,12 +10,10 @@ export type Publication = {
 };
 
 export const publications: Publication[] = getWorkingPapers().map((paper) => {
-  const current = paper.versions.find((version) => version.id === paper.currentVersionId);
-
   return {
-    href: `/documents/${paper.slug}`,
+    href: paperPath(paper),
     title: paper.title,
-    version: current ? statusLabel(current.status) : "Document de travail",
+    version: paper.listKicker ?? paperKindLabel(paper),
     date: formatDate(paper.currentVersionId),
     summary: paper.summary,
   };

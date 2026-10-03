@@ -73,6 +73,21 @@ export function PaperProse({ blocks, insertBeforeHeadingId, insert }: Props) {
           );
         }
 
+        if (block.kind === "vis") {
+          return (
+            <div key={block.id} className={`sim-vis sim-${block.variant}`}>
+              <ol>
+                {block.items.map((item, itemIndex) => (
+                  <li key={`${block.id}-${itemIndex}`}>
+                    <p className="sim-value">{inline(item.value)}</p>
+                    <p className="sim-label">{inline(item.label)}</p>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          );
+        }
+
         return (
           <table key={block.id}>
             <thead>

@@ -104,6 +104,17 @@ Published `/en-images/part-io-n-est-pas-le-ltv-consolide` `2026-10-02` (schéma)
 Anti-claim on figure: ne prédit ni défaut ni perte · verdict non tranché. Cites frozen EC-08.
 Dutch Monitor figures stay in the document only.
 
+## 2026-10-03 — Phase 2 simulation trio
+
+Owner: results and model are public; the working figures must exist as En images objects.
+Three simulations, citing `/documents/modele/phase-2/v/2026-10-03-2` and `/documents/modele/v/2026-10-03`:
+
+- `cas-central-phase-2`
+- `meme-credit-transmission-faible`
+- `choc-adverse-et-arret`
+
+Nature: simulation. Do not close EC-02/03/06/08/09. v0.1 is not the producer.
+
 ## Open, and not decided by writing this folder
 
 - Chart tooling for later visuals: hand SVG vs a generator tied to a frozen model version.

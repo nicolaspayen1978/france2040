@@ -31,6 +31,7 @@ Defined as **semantic families** first, then numbers. Not three arbitrary percen
 | **C** | Central Pacte | Frozen net IO path + allocation **Diversifié-1** (plausible diversified use of released equity). Not a proof of the thesis. |
 | **W** | Weak-transmission Pacte | Same credit path + allocation **Fuites-1** (leakage-heavy). Encours can still rise. |
 | **A** | Combined adverse Pacte | **V2 adverse macro shock + allocation Fuites-2 + stop-rule delay of 4 quarters.** |
+| **A₀** | Adverse France without Pacte | Same V2 macro as A; credit = 0. The shock, not the Pacte. |
 
 A is mechanically identifiable. Later sensitivity removes one component at a time. Do not replace A with a generic “bad case.”
 

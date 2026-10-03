@@ -1,0 +1,93 @@
+<!--
+  En images — cas-central-phase-2 v2026-10-03
+  Colours from app/tokens.css: --ink, --ink-2, --ink-3, --muted, --muted-2,
+  --line, --paper, --paper-2, --mark-blue, --blue-2.
+  Simulation. Ne constitue pas une prévision. Ne clôt aucun EC.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Cas central — ce que le Pacte est censé changer</title>
+  <desc id="desc">
+    Scénario central 2027–2040 : 700 Md€ de crédit, 315 Md€ de dépense supplémentaire,
+    125 Md€ d’activité produite en France, 65 Md€ de recettes, −3,2 points de dette/PIB
+    par rapport à la France sans le Pacte. Contrepartie ménages : 223 Md€ de trésorerie
+    dégagée et 700 Md€ encore dus. Ces montants mesurent des choses différentes.
+  </desc>
+  <rect width="960" height="560" fill="#fff"/>
+
+  <text x="28" y="32" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a">Cas central — ce que le Pacte est censé changer</text>
+  <text x="28" y="52" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">2027–2040 · simulation, pas une prévision · par rapport à la France sans le Pacte</text>
+
+  <rect x="28" y="80" width="186" height="210" rx="2" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <circle cx="48" cy="100" r="11" fill="#002395"/>
+  <text x="48" y="104" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#fff">1</text>
+  <text x="66" y="104" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Crédit mobilisé</text>
+  <text x="121" y="138" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#002395">Banques</text>
+  <text x="121" y="178" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#1a1a1a">700 Md€</text>
+  <text x="121" y="200" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">part à intérêts seuls</text>
+  <text x="121" y="216" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">adossée au logement</text>
+  <text x="121" y="248" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">origination 2027–2040</text>
+  <text x="121" y="264" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">pas tout le crédit habitat</text>
+
+  <rect x="220" y="158" width="46" height="18" rx="2" fill="#fff"/>
+  <text x="243" y="171" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#002395">crédit →</text>
+  <path d="M214 186 H266" stroke="#002395" stroke-width="2" fill="none"/>
+  <polygon points="266,186 256,181 256,191" fill="#002395"/>
+
+  <rect x="272" y="80" width="186" height="210" rx="2" fill="#fff" stroke="#002395" stroke-width="1.5"/>
+  <circle cx="292" cy="100" r="11" fill="#002395"/>
+  <text x="292" y="104" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#fff">2</text>
+  <text x="310" y="104" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Liquidité et dette</text>
+  <text x="365" y="138" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#002395">Ménages</text>
+  <text x="365" y="172" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a">223 Md€</text>
+  <text x="365" y="190" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">trésorerie dégagée*</text>
+  <line x1="300" y1="206" x2="430" y2="206" stroke="#e6e6e6"/>
+  <text x="365" y="230" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a">700 Md€</text>
+  <text x="365" y="248" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">encore dus en 2040</text>
+  <text x="365" y="272" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">le capital reste à porter</text>
+
+  <rect x="464" y="148" width="46" height="18" rx="2" fill="#fff"/>
+  <text x="487" y="161" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#334a9a">dépense →</text>
+  <path d="M458 186 H510" stroke="#334a9a" stroke-width="2" fill="none"/>
+  <polygon points="510,186 500,181 500,191" fill="#334a9a"/>
+
+  <rect x="516" y="80" width="186" height="210" rx="2" fill="#fff" stroke="#334a9a" stroke-width="1.5"/>
+  <circle cx="536" cy="100" r="11" fill="#334a9a"/>
+  <text x="536" y="104" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#fff">3</text>
+  <text x="554" y="104" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Dépense et activité</text>
+  <text x="609" y="138" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#334a9a">Économie</text>
+  <text x="609" y="172" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a">315 Md€</text>
+  <text x="609" y="190" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">dépense supplémentaire</text>
+  <line x1="544" y1="206" x2="674" y2="206" stroke="#e6e6e6"/>
+  <text x="609" y="230" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a">125 Md€</text>
+  <text x="609" y="248" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">activité produite en France</text>
+  <text x="609" y="272" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">pas un sous-ensemble du 315</text>
+
+  <rect x="708" y="148" width="46" height="18" rx="2" fill="#fff"/>
+  <text x="731" y="161" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#334a9a">recettes →</text>
+  <path d="M702 186 H754" stroke="#334a9a" stroke-width="2" fill="none"/>
+  <polygon points="754,186 744,181 744,191" fill="#334a9a"/>
+
+  <rect x="760" y="80" width="172" height="210" rx="2" fill="#fff" stroke="#334a9a" stroke-width="1.5"/>
+  <circle cx="780" cy="100" r="11" fill="#334a9a"/>
+  <text x="780" y="104" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#fff">4</text>
+  <text x="796" y="104" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Recettes et ratio</text>
+  <text x="846" y="138" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#334a9a">État</text>
+  <text x="846" y="172" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a">65 Md€</text>
+  <text x="846" y="190" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">recettes supplémentaires</text>
+  <line x1="784" y1="206" x2="908" y2="206" stroke="#e6e6e6"/>
+  <text x="846" y="230" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a">−3,2 pp</text>
+  <text x="846" y="248" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#5c5c5c">dette / PIB en 2040</text>
+  <text x="846" y="272" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">vs la France sans Pacte</text>
+
+  <rect x="28" y="310" width="904" height="52" rx="2" fill="#e8e8e4"/>
+  <text x="480" y="332" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Hypothèse centrale : un bilan privé plus large, contre de la liquidité, de l’activité et des recettes pendant la transition.</text>
+  <text x="480" y="350" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">700, 315, 125 et 65 mesurent des choses différentes — ce n’est pas un même tas d’euros qui se réduit.</text>
+
+  <text x="28" y="390" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">* Trésorerie dégagée = différence de flux avec un prêt amortissable équivalent sur 20 ans, dans ce scénario.</text>
+  <text x="28" y="410" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Les 700 Md€ encore dus en 2040 supposent aucun remboursement anticipé. Premières échéances de capital : millésime 2027 en 2047.</text>
+  <text x="28" y="430" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Si les ménages dépensent peu, le crédit et la trésorerie restent ; l’activité et les recettes chutent. Ce n’est pas montré ici.</text>
+
+  <text x="28" y="478" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Simulation France2040 · modèle Phase 2 · 3 octobre 2026 · ne constitue pas une prévision · ne clôt aucun exercice de contradiction</text>
+  <text x="28" y="498" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Cite le résultat de simulation 2026-10-03-2 et le modèle 2026-10-03. v0.1 n’est pas le moteur de cette run.</text>
+  <text x="28" y="518" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Les liens dépense / activité / recettes restent des hypothèses de scénario, pas des coefficients établis.</text>
+</svg>
