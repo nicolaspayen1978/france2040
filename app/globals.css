@@ -741,6 +741,7 @@ h2 {
 
 body:has(.paper) .shell,
 body:has(.section.summary) .shell,
+body:has(.visual) .shell,
 body:has(.wide-page) .shell {
   width: min(var(--page-width), calc(100% - 3rem));
 }
@@ -778,6 +779,16 @@ body:has(.wide-page) .shell {
 .paper-body ul,
 .paper .sources,
 .paper-history {
+  max-width: var(--reading-width);
+}
+
+.visual > .doc-meta,
+.visual > h1,
+.visual > .lede,
+.visual > p,
+.visual > .visual-section,
+.visual > .sources,
+.visual > .paper-history {
   max-width: var(--reading-width);
 }
 

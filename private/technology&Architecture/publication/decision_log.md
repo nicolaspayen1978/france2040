@@ -349,3 +349,9 @@ that freeze with Phase 2.
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.
+
+## 2026-10-03 — En images joins the common page grid
+
+Versioned visual pages use the same 72rem outer frame and 48rem reading column as Le Pacte and
+the Résumé. Figures remain wide; metadata and explanatory prose do not. No visual snapshot or
+publication metadata changed.

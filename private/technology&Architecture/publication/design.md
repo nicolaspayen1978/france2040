@@ -97,6 +97,10 @@ the summary, version metadata, progress, contents, prose, sources, and history. 
 figures can still occupy the wider frame. The shared dimensions are CSS properties rather than
 separate values for navigation pages and documents.
 
+Versioned En images pages follow the same rule: title, metadata, explanatory sections, sources,
+and history stay in the 48rem reading column, while the visual itself can use the full 72rem
+frame. The En images index already uses the common discovery-page shell.
+
 ## How a version is cut
 
 Do this by hand for each paper. Do not add a generator until two papers have been cut the same way and the steps below are annoying.

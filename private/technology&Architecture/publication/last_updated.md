@@ -3,6 +3,9 @@
 2026-10-03. Le Pacte, Résumé and other paper readers now use the common 48rem reading column
 inside the 72rem outer frame; wide tables and figures remain unconstrained.
 
+2026-10-03. Versioned En images pages now use the same 72rem frame and 48rem reading column;
+the figures retain the full wide canvas.
+
 2026-10-03. Documents, En images, Projet and Participer now share the site's 72rem outer
 frame, while their prose retains a readable maximum line length.
 
