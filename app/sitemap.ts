@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl("/projet"), lastModified: latestDate },
     { url: absoluteUrl("/participer"), lastModified: latestDate },
     { url: absoluteUrl("/commentaires"), lastModified: latestDate },
+    { url: absoluteUrl("/llms.txt"), lastModified: latestDate },
+    { url: absoluteUrl("/llms-full.txt"), lastModified: latestDate },
     { url: absoluteUrl("/documents"), lastModified: latestDate },
     { url: absoluteUrl("/en-images"), lastModified: latestDate },
   ];

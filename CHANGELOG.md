@@ -15,6 +15,7 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
+- `[website]` `/llms.txt` (versions actuelles) et `/llms-full.txt` (pack Markdown courant). Participer : revue avec un modèle de langage.
 - `[website]` Flèches de la chaîne de simulation en bleu (`--mark-blue`) pour les rendre lisibles.
 - `[website]` Accueil : Critiquer le résumé exécutif, comme les documents. Résumé `2026-10-03-7` : note de trésorerie sans `\*`.
 - `[publication]` Enveloppe et rythme : résumé `2026-10-03-6`, Pacte `2026-10-03-2`, V2 `2026-10-03-3`, intensité `2026-10-03-2`. 700 Md€ = enveloppe ; trajectoire indicative, suivi liant. NL ne relève pas l’enveloppe.

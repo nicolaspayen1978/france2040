@@ -9,5 +9,6 @@ Last updated: 2026-10-02.
 | 2 | Built | Native share / copy-link actions for the site, document versions, and visual versions |
 | 3 | Building | Comment form + e-mail verify + Critiquer-on-passage → moderated `/commentaires` |
 
-Contact intake for research contributions (Participer §02) remains unbuilt. Inline document
-anchors remain publication phase 3 work beyond this site-level intake.
+Contact intake for research contributions (Participer §02) remains unbuilt. LLM review pack
+(`/llms.txt`, `/llms-full.txt`) is built. Inline document anchors remain publication phase 3
+work beyond this site-level intake.

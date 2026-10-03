@@ -42,6 +42,24 @@ export default function ParticipatePage() {
             <Link href="/commentaires">Déposer ou lire un commentaire</Link>
             <Link href="/documents">Examiner les documents</Link>
           </p>
+          <h3 id="revue-avec-un-modele-de-langage">Revue avec un modèle de langage</h3>
+          <p>
+            Un lecteur qui dispose d’un modèle avancé (Anthropic, OpenAI ou autre) peut lui faire
+            relire le corpus <strong>actuel</strong>, puis déposer une critique sourcée. Ne pas
+            mélanger les anciennes versions : le pack ci-dessous ne contient que les textes
+            courants.
+          </p>
+          <p className="participation-note">
+            Demander au modèle de citer le titre et l’identifiant de version, de distinguer
+            hypothèse de scénario et nombre calculé, et de ne pas traiter les 700 Md€ comme une
+            cible. La critique humaine passe ensuite par le formulaire ; elle n’écrit pas dans le
+            snapshot.
+          </p>
+          <p className="participation-links">
+            <a href="/llms-full.txt">Pack Markdown à coller dans le modèle</a>
+            <a href="/llms.txt">Liste des versions actuelles à citer</a>
+            <Link href="/commentaires">Envoyer la critique</Link>
+          </p>
         </section>
 
         <section className="participation-option" id="contribuer-a-la-recherche">

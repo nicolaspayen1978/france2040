@@ -54,7 +54,7 @@ export function getPaperVersion(paper: WorkingPaper, versionId: string): PaperVe
   return paper.versions.find((version) => version.id === versionId);
 }
 
-export function loadPaperBlocks(version: PaperVersion): PaperBlock[] {
+function readPaperSnapshot(version: PaperVersion): string {
   const fullPath = path.join(process.cwd(), version.file);
   const bytes = readFileSync(fullPath);
   const hash = createHash("sha256").update(bytes).digest("hex");
@@ -63,7 +63,15 @@ export function loadPaperBlocks(version: PaperVersion): PaperBlock[] {
     throw new Error(`Snapshot hash mismatch for ${version.file}`);
   }
 
-  return parsePaper(bytes.toString("utf8"));
+  return bytes.toString("utf8");
+}
+
+export function loadPaperMarkdown(version: PaperVersion): string {
+  return readPaperSnapshot(version);
+}
+
+export function loadPaperBlocks(version: PaperVersion): PaperBlock[] {
+  return parsePaper(readPaperSnapshot(version));
 }
 
 export function versionPath(paper: WorkingPaper, versionId: string): string {

@@ -14,6 +14,6 @@ tracking parameters.
 required names + email + body, optional LinkedIn. Resend e-mail verification before moderation.
 Critiquer control on document passages and visuals prefills target refs. Turnstile deferred. Gated
 
-2026-10-02. Critiquer on touch: removed always-on opacity under `(hover: none)` — chips were
-visible on every passage on mobile. Reveal again via sticky hover / focus-within only.
+2026-10-03. `/llms.txt` and `/llms-full.txt` generated from current versions. Participer
+gains a “revue avec un modèle de langage” paragraph.
 moderation route.

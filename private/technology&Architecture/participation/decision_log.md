@@ -64,3 +64,10 @@ Turnstile stays deferred. Env: `RESEND_API_KEY` and either `RESEND_FROM` or
 Owner OK: hover/focus « Critiquer » on document blocks and visual figure/sections opens
 `/commentaires` with kind, slug, version, anchor, and section prefilled. Moderation and the public
 list link back to that passage. Inline rendering of accepted comments under paragraphs stays later.
+
+## 2026-10-03 — LLM review pack (current freeze only)
+
+Owner: `/llms.txt` lists current paper and visual URLs from `currentVersionId`. `/llms-full.txt`
+concatenates current paper Markdown only. `/participer` explains review-with-a-model and points
+to the pack, the current-URL list, and `/commentaires`. Superseded `/v/…` stay out of the pack.
+
