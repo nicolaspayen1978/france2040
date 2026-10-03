@@ -100,3 +100,8 @@ Parts empty. UK MEW is a counter-test. Prior snapshot bytes unchanged.
 2026-10-03. EC-03 revised as `2026-10-03`. Reads only additional spend from EC-02, category by
 category (content, volume elasticity, labour). 78/38/96 % stay 2019 averages. BTP scale table
 is stress if the spent sum were works, not a retained basket. Prior snapshot bytes unchanged.
+
+2026-10-03. EC-06 revised as `2026-10-03`. Marginal receipts by EC-02 usage (VAT, social
+contributions, PIT, CIT, transfer duties). 43.6 % and 25/50/75 % are not a fiscal basket.
+VAT on imports and DMTO can exist without EC-03 volume. Cells empty. Prior snapshot bytes
+unchanged.

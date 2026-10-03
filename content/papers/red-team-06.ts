@@ -5,8 +5,8 @@ export const redTeam06: WorkingPaper = {
   title: "Épreuve contradictoire EC-06 — Boucle fiscale",
   lang: "fr",
   summary:
-    "Pour 1 € de crédit effectivement dépensé, quelles assiettes fiscales sont créées, et combien revient aux administrations publiques ? Verdict : non tranché. 43,6 % n’est pas cette réponse.",
-  currentVersionId: "2026-10-01-3",
+    "Pour chaque euro tiré, selon l’usage d’EC-02, quelles assiettes fiscales apparaissent, et combien revient ? Verdict : non tranché. 43,6 % n’est pas un rendement par panier.",
+  currentVersionId: "2026-10-03",
   versions: [
     {
       id: "2026-10-01",
@@ -29,19 +29,29 @@ export const redTeam06: WorkingPaper = {
     {
       id: "2026-10-01-3",
       published: "2026-10-01",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Non tranché. Le taux moyen de prélèvements n’est pas le retour par euro.",
       file: "content/papers/red-team-06/v2026-10-01-3.md",
       sha256: "2bdfd3e4445aae7724e9702d34383eb93460d5a5ac7145c407efe9997c066ac3",
       note: "Scénario nommé comme part à intérêts seuls (~700 Md€), pas crédit habitat consolidé.",
     },
+    {
+      id: "2026-10-03",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict:
+        "Non tranché. Recettes = somme pondérée des assiettes du panier EC-02, pas 43,6 %.",
+      file: "content/papers/red-team-06/v2026-10-03.md",
+      sha256: "7961e21b0608428c42c9b89f4fa4f2ffb6efb7bae00b3ca25f353d7cf340a3e6",
+      note: "Par usage : TVA, cotisations, IR, IS, DMTO. 43,6 % et 25/50/75 % ne sont pas un panier. Cellules vides.",
+    },
   ],
   progress: [
-    { id: "spend", label: "Du crédit à la dépense", state: "Laissée à EC-02" },
-    { id: "output", label: "De la dépense au volume français", state: "Laissée à EC-03" },
-    { id: "base", label: "Assiette du retour", state: "Non mesurée" },
+    { id: "spend", label: "Du crédit à la dépense", state: "Vecteur EC-02 ; parts vides" },
+    { id: "output", label: "De la dépense au volume français", state: "Laissée à EC-03, par catégorie" },
+    { id: "base", label: "Assiettes par usage", state: "Lignes posées ; rendements vides" },
     { id: "rule", label: "Affectation à la consolidation", state: "Règle posée, non vérifiée" },
-    { id: "coefficient", label: "Coefficient par euro", state: "Vide" },
+    { id: "coefficient", label: "€1 tiré → €X recettes", state: "Vide — attend le vecteur EC-02" },
   ],
   sources: [
     {
@@ -73,6 +83,18 @@ export const redTeam06: WorkingPaper = {
       citation:
         "Ministère de l’Économie, TVA à taux réduit pour quels travaux. Taux normal 20 %. Travaux éligibles dans un logement achevé depuis plus de deux ans : 10 % ou 5,5 %, articles 278, 279-0 bis et 278-0 bis A du code général des impôts.",
       href: "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/tva-taux-reduit-pour-quels-travaux",
+    },
+    {
+      id: "ec-02",
+      citation:
+        "Épreuve contradictoire EC-02, version 2026-10-03. Vecteur d’usages ; dépense supplémentaire = rénovation + consommation + investissement productif nouveau.",
+      href: "/documents/red-team-02/v/2026-10-03",
+    },
+    {
+      id: "ec-03",
+      citation:
+        "Épreuve contradictoire EC-03, version 2026-10-03. Volume français par catégorie ; 78 / 38 / 96 % restent des moyennes 2019.",
+      href: "/documents/red-team-03/v/2026-10-03",
     },
   ],
 };

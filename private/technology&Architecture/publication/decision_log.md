@@ -207,6 +207,15 @@ volume elasticity and labour are separate. Existing assets / leaks stay out of r
 non tranché. Cell €1 spent → €X French volume stays empty until EC-02 shares exist.
 Next in the stack: EC-06 marginal receipts by basket.
 
+## 2026-10-03 — EC-06 by basket
+
+Owner: EC-06 on each EC-02 usage, not 43.6 % of GDP or of a spend probe. Version `2026-10-03`
+maps VAT, contributions, PIT, CIT and transfer duties onto the credit-use vector. Receipts
+can exist without French volume (import VAT, DMTO); French volume can exist with thin current
+receipts (reduced-rate works, no extra employment). Assignment of receipts to consolidation
+stays a separate untested rule. Cells empty until EC-02 shares exist. Next: EC-07 2027–2040
+path (solde, debt ratio, interest), not a filled coefficient.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.
