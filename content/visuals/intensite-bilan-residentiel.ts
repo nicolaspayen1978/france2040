@@ -2,10 +2,10 @@ import type { Visual } from "@/content/visuals/types";
 
 export const intensiteBilanResidentiel: Visual = {
   slug: "intensite-bilan-residentiel",
-  title: "Intensité du bilan résidentiel",
+  title: "France et Pays-Bas — intensité à intérêts seuls",
   lang: "fr",
   summary:
-    "700 Md€ ≈ 8 % du parc français retenu. Intérêts seuls néerlandais ≈ 16 % des résidences principales. 1 400 Md€ = benchmark, pas un scénario.",
+    "Scénario français ≈ 8 % du parc retenu. Encours néerlandais ≈ 16 % des résidences principales. 1 400 Md€ = benchmark, pas un scénario.",
   shows:
     "Le scénario de 700 Md€ d’origination / encours à intérêts seuls représente environ 8 % de 8 850 Md€ de logements et terrains bâtis. L’ordre de grandeur néerlandais est le double en intensité agrégée. À ce ratio, la France serait près de 1 400 Md€ — ce n’est pas une cible du Pacte.",
   doesNotEstablish:
@@ -27,15 +27,23 @@ export const intensiteBilanResidentiel: Visual = {
       label: "Épreuve contradictoire EC-01 (2026-10-03-2)",
     },
   ],
-  currentVersionId: "2026-10-03",
+  currentVersionId: "2026-10-03-2",
   versions: [
     {
       id: "2026-10-03",
       published: "2026-10-03",
-      status: "working",
+      status: "superseded",
       figure: "content/visuals/intensite-bilan-residentiel/v2026-10-03.svg",
       sha256: "62d55597f1505712962140eae3a347d7ee35a4f5d0fa8b22759be65f8d96e968",
-      note: "8 % vs ≈ 16 %. Qualifier rouge : benchmark de bilan, pas de politique.",
+      note: "Première barre 8 % / 16 %. Remplacée pour le titre France / Pays-Bas.",
+    },
+    {
+      id: "2026-10-03-2",
+      published: "2026-10-03",
+      status: "working",
+      figure: "content/visuals/intensite-bilan-residentiel/v2026-10-03-2.svg",
+      sha256: "86e2e3b3c41026eaa2adbf1b959d2d281195d17e34f6d677091b27af1d977d39",
+      note: "France / Pays-Bas en titre. Barres 8 % et 16 % à la même échelle. Qualifier politique en rouge.",
     },
   ],
 };

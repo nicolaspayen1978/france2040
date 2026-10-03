@@ -295,6 +295,14 @@ Owner: mature enough to communicate. Next research is (1) Eurosystem role, not a
 (2) societal channels by household archetype, unsigned; (3) Dutch IO/housing-value balance
 sheet. First NL arithmetic stays in Docs until DNB/CBS dates align. No EC-10.
 
+## 2026-10-03 — Crawl current freeze only
+
+Owner GO. Sitemap: current paper and visual version URLs only. Non-current `/v/…`:
+`noindex, follow`. No canonical of superseded → current. No `Disallow: /*/v/`.
+Old bytes stay public. Preview deploys remain fully `noindex`. A scholar with
+`/documents/modele/v/2026-09-28` still gets those exact bytes. HEA ingest should not mix
+that freeze with Phase 2.
+
 ## Open, and not decided by starting to code
 
 Phase 3 storage: a pending queue outside the snapshot, published comments in their own records. Email addresses are personal data and are not rendered. That phase waits for acceptance of the Red Team 05 page and for an explicit go-ahead before any store or mail secret is added.

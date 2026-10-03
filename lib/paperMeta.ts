@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { supersededVersionRobots } from "@/lib/crawl";
 import type { PaperVersion, WorkingPaper } from "@/content/papers/types";
 import { paperPath, versionPath } from "@/lib/papers";
 import {
@@ -46,6 +47,7 @@ export function documentMetadata(paper: WorkingPaper, version: PaperVersion): Me
   return {
     title,
     description: paper.summary,
+    ...supersededVersionRobots(version.id === paper.currentVersionId),
     alternates: {
       canonical: path,
       languages: { fr: path },

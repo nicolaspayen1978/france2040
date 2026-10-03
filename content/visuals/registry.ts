@@ -32,6 +32,6 @@ export const visuals: Visual[] = [
   casCentralPhase2,
   memeCreditTransmissionFaible,
   chocAdverseEtArret,
-  intensiteBilanResidentiel,
   patrimoineVsEnveloppe,
+  intensiteBilanResidentiel,
 ];

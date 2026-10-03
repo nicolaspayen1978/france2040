@@ -15,6 +15,8 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
+- `[website]` Crawlers / HEA : sitemap lists only the current freeze; superseded `/v/…` are `noindex, follow`. Frozen URLs stay addressable. Canonicals unchanged.
+- `[website]` En images `France et Pays-Bas — intensité à intérêts seuls` (`/en-images/intensite-bilan-residentiel` `2026-10-03-2`) : 8 % vs ≈ 16 % ; 1 400 Md€ n’est pas un scénario.
 - `[publication]` Benchmark d’intensité de bilan : note `/documents/intensite-bilan-residentiel`, En images, résumé `2026-10-03-5`, EC-01 `2026-10-03-2`. 700 Md€ ≈ 8 % ; NL ≈ 16 % ; 1 400 Md€ n’est pas un scénario.
 - `[publication]` Questions ouvertes `2026-10-03-3` : premiers constats sourcés sur Eurosystème, impact sociétal (Insee), bilan néerlandais (40 % de la dette, illustration ~15 %). Verdicts ouverts.
 - `[publication]` Trois extensions de recherche (`questions-ouvertes` `2026-10-03-2`) : Eurosystème sans garantie ; impact sociétal par archétypes ; bilan néerlandais (trois ratios). Premier calcul NL non publié. Résumé `2026-10-03-4` les pointe.

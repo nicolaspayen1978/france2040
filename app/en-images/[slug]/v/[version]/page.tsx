@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { VisualView } from "@/components/VisualView";
 import { getVisual, getVisuals, getVisualVersion, visualPath } from "@/lib/visuals";
+import { supersededVersionRobots } from "@/lib/crawl";
 import { absoluteUrl, socialImage, socialTwitter } from "@/lib/site";
 
 type Props = {
@@ -26,6 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description: visual.summary,
+    ...supersededVersionRobots(version.id === visual.currentVersionId),
     alternates: { canonical: absoluteUrl(path) },
     openGraph: {
       title,

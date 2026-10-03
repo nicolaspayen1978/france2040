@@ -23,21 +23,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   for (const paper of papers) {
-    for (const version of paper.versions) {
-      pages.push({
-        url: absoluteUrl(versionPath(paper, version.id)),
-        lastModified: new Date(`${version.published}T00:00:00.000Z`),
-      });
-    }
+    const version = paper.versions.find((item) => item.id === paper.currentVersionId);
+    if (!version) continue;
+    pages.push({
+      url: absoluteUrl(versionPath(paper, version.id)),
+      lastModified: new Date(`${version.published}T00:00:00.000Z`),
+    });
   }
 
   for (const visual of visuals) {
-    for (const version of visual.versions) {
-      pages.push({
-        url: absoluteUrl(visualPath(visual, version.id)),
-        lastModified: new Date(`${version.published}T00:00:00.000Z`),
-      });
-    }
+    const version = visual.versions.find((item) => item.id === visual.currentVersionId);
+    if (!version) continue;
+    pages.push({
+      url: absoluteUrl(visualPath(visual, version.id)),
+      lastModified: new Date(`${version.published}T00:00:00.000Z`),
+    });
   }
 
   return pages;
