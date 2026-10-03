@@ -132,5 +132,5 @@ as current, bytes unchanged. Simulation result `2026-10-03-2` cites that model a
 
 2026-10-03. En images for that run: cas central, même crédit / transmission faible, choc adverse et arrêt.
 
-2026-10-03. Envelope vs pace: 700 Md€ remains the central modelling envelope. Trajectory
-indicative; monitoring rule binding. Dutch benchmark does not raise the envelope.
+2026-10-03. Canonical Pacte: `/documents/pacte` is the reference text. First public
+formulation 2026-09-28 kept for history. Homepage CTA is “Lire le Pacte”, not brouillon.

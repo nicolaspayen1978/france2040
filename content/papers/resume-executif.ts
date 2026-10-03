@@ -6,7 +6,7 @@ export const resumeExecutif: WorkingPaper = {
   lang: "fr",
   summary:
     "Le crédit ouvre une fenêtre ; l’usage décide du volume français. Même 700 Md€ : 125 Md€ d’activité en France dans le cas central, 42 Md€ si la transmission est faible. Scénario, pas une prévision.",
-  currentVersionId: "2026-10-03-7",
+  currentVersionId: "2026-10-03-8",
   versions: [
     {
       id: "2026-10-01",
@@ -155,11 +155,20 @@ export const resumeExecutif: WorkingPaper = {
     {
       id: "2026-10-03-7",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse, non un programme arrêté. Scénarios Phase 2, pas une prévision.",
       file: "content/papers/resume-executif/v2026-10-03-7.md",
       sha256: "3d7327ff07db7781b829ae5976579a5cfea8380a23e3b38f77aecea3a7a9e1aa",
       note: "Note de trésorerie sans barre oblique. Accueil : Critiquer le résumé.",
+    },
+    {
+      id: "2026-10-03-8",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict: "Hypothèse, non un programme arrêté. Scénarios Phase 2, pas une prévision.",
+      file: "content/papers/resume-executif/v2026-10-03-8.md",
+      sha256: "845eb343c83540379a6efb72f8da20cc6ba65e11ca564aab61dd26493a8f8fbf",
+      note: "Pointe Le Pacte comme texte de référence. Plus de « brouillon public ».",
     },
   ],
   progress: [

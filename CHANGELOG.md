@@ -15,6 +15,8 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
+- `[publication]` Le Pacte est le texte de référence (`2026-10-03-3`). Le brouillon 2026-09-28 reste historique. Accueil : « Lire le Pacte ». Résumé `2026-10-03-8`.
+- `[publication]` Lecture « Explique-moi le Pacte » (`/documents/explique-moi-le-pacte`), placée sur l’accueil avant le résumé exécutif.
 - `[website]` Commentaires : plafond du texte porté à 16 000 caractères (formulaire et serveur), pour un avis collé depuis un modèle.
 - `[website]` `/llms.txt` (versions actuelles) et `/llms-full.txt` (pack Markdown courant). Participer : revue avec un modèle de langage.
 - `[website]` Flèches de la chaîne de simulation en bleu (`--mark-blue`) pour les rendre lisibles.

@@ -2,10 +2,11 @@ import type { WorkingPaper } from "@/content/papers/types";
 
 export const pacteV2: WorkingPaper = {
   slug: "pacte-v2",
+  listKicker: "Élaboration longue",
   title: "Pacte du Bilan Français — V2",
   lang: "fr",
   summary:
-    "Texte long de l’hypothèse. Fenêtre 2027–2040 : part à intérêts seuls, origination, qualités d’usage. Le fichier Word est la pièce jointe antérieure. Cette page est le texte cité.",
+    "Élaboration de travail, plus longue. Le texte de référence de la proposition est Le Pacte du bilan français.",
   currentVersionId: "2026-10-03-3",
   attachments: [
     {

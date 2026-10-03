@@ -2,11 +2,12 @@ import type { WorkingPaper } from "@/content/papers/types";
 
 export const pacte: WorkingPaper = {
   slug: "pacte",
+  listKicker: "Proposition · texte de référence",
   title: "Le Pacte du bilan français",
   lang: "fr",
   summary:
-    "Brouillon public. Fenêtre 2027–2040 : enveloppe 700 Md€, rythme conditionnel, usages selon leurs qualités. Hypothèse, non un programme arrêté.",
-  currentVersionId: "2026-10-03-2",
+    "Texte de référence de la proposition. Fenêtre 2027–2040 : enveloppe 700 Md€, rythme conditionnel, usages selon leurs qualités. Hypothèse, non un programme arrêté.",
+  currentVersionId: "2026-10-03-3",
   versions: [
     {
       id: "2026-09-28",
@@ -15,7 +16,7 @@ export const pacte: WorkingPaper = {
       verdict: "Hypothèse, non un programme arrêté.",
       file: "content/papers/pacte/v2026-09-28.md",
       sha256: "41a752b2dcf2afec4cb0a5606ba3a96c7173005891d8948cc87189cbb0fdb9b6",
-      note: "Première version publique. Levier consolidé 40–50 % et programme d’offre sectoriel. Remplacée le 3 octobre 2026.",
+      note: "Première formulation publique — remplacée par Le Pacte (version actuelle). Conservée pour traçabilité.",
     },
     {
       id: "2026-10-03",
@@ -29,19 +30,28 @@ export const pacte: WorkingPaper = {
     {
       id: "2026-10-03-2",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse, non un programme arrêté.",
       file: "content/papers/pacte/v2026-10-03-2.md",
       sha256: "fc3c5e0e963ab0a56e9a9d09022bd18a4238b56629286be9fdeb9a6c80015e93",
-      note: "700 Md€ = enveloppe. Trajectoire indicative, règle de suivi liante. Stock vs vitesse.",
+      note: "700 Md€ = enveloppe. Trajectoire indicative, règle de suivi liante.",
+    },
+    {
+      id: "2026-10-03-3",
+      published: "2026-10-03",
+      status: "working-paper",
+      verdict: "Hypothèse, non un programme arrêté.",
+      file: "content/papers/pacte/v2026-10-03-3.md",
+      sha256: "8b707d5371e7f767673c40d36dba47a96a1761f3241056e71f47d51667c3aab0",
+      note: "Texte de référence de la proposition. La V2 n’est plus présentée comme le texte canonique.",
     },
   ],
   progress: [
-    { id: "draft", label: "Brouillon", state: "Publié pour être éprouvé" },
+    { id: "canon", label: "Texte de référence", state: "Version actuelle" },
     { id: "tranche", label: "Part à intérêts seuls", state: "Plafond 40 % / 50 %" },
     { id: "pace", label: "Rythme", state: "Conditionnel ; suivi liant" },
     { id: "usages", label: "Usages", state: "Qualités, pas une liste de secteurs" },
-    { id: "reference", label: "Texte long", state: "V2, document séparé" },
+    { id: "long", label: "Élaboration V2", state: "Document séparé, non canonique" },
     { id: "programme", label: "Programme arrêté", state: "Non" },
   ],
   sources: [

@@ -39,6 +39,7 @@ type Props = {
     slug: string;
     versionId: string;
     address: string;
+    title?: string;
   };
 };
 
@@ -48,7 +49,7 @@ export function PaperProse({
   insert,
   critique,
 }: Props) {
-  let sectionLabel = "Résumé exécutif";
+  let sectionLabel = critique?.title ?? "Résumé exécutif";
 
   return (
     <div className="summary-body">

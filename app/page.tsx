@@ -14,13 +14,21 @@ export const metadata = sectionMetadata({
 });
 
 export default function HomePage() {
+  const letter = getWorkingPaper("explique-moi-le-pacte");
+  const letterVersion = letter
+    ? getPaperVersion(letter, letter.currentVersionId)
+    : undefined;
   const summary = getWorkingPaper("resume-executif");
   const version = summary ? getPaperVersion(summary, summary.currentVersionId) : undefined;
 
+  if (!letter || !letterVersion) {
+    throw new Error("Lecture « Explique-moi le Pacte » manquante");
+  }
   if (!summary || !version) {
     throw new Error("Résumé exécutif manquant");
   }
 
+  const letterAddress = versionPath(letter, letterVersion.id);
   const address = versionPath(summary, version.id);
 
   return (
@@ -28,9 +36,32 @@ export default function HomePage() {
       <p className="kicker">Projet de recherche</p>
       <h1>France 2040</h1>
       <p className="lede">{homeDescription}</p>
-      <p className="entry">
-        <Link href="/documents/pacte">Lire le brouillon public</Link>
-      </p>
+      <section className="section summary" aria-labelledby="explain-heading">
+        <h2 id="explain-heading">
+          <CritiqueLink
+            target={{
+              kind: "paper",
+              slug: letter.slug,
+              versionId: letterVersion.id,
+              anchorId: "explain-heading",
+              section: letter.title,
+            }}
+          />
+          {letter.title}
+        </h2>
+        <PaperProse
+          blocks={loadPaperBlocks(letterVersion)}
+          critique={{
+            slug: letter.slug,
+            versionId: letterVersion.id,
+            address: letterAddress,
+            title: letter.title,
+          }}
+        />
+        <p className="entry">
+          <Link href={letterAddress}>Version citée</Link>
+        </p>
+      </section>
       <section className="section summary" aria-labelledby="summary-heading">
         <h2 id="summary-heading">
           <CritiqueLink
@@ -52,15 +83,19 @@ export default function HomePage() {
             slug: summary.slug,
             versionId: version.id,
             address,
+            title: "Résumé exécutif",
           }}
         />
         <p className="entry">
-          <Link href={address}>Version citée</Link>
+          Vous voulez aller plus loin ? <Link href="/documents/pacte">Lire le Pacte</Link>
+        </p>
+        <p className="entry">
+          <Link href={address}>Version citée du résumé</Link>
         </p>
       </section>
       <section className="section" aria-labelledby="documents-heading">
         <h2 id="documents-heading">Documents de travail</h2>
-        <PublicationList omit={["resume-executif"]} />
+        <PublicationList omit={["resume-executif", "explique-moi-le-pacte"]} />
       </section>
       <AnnouncedTests />
     </>

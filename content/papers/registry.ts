@@ -1,3 +1,4 @@
+import { expliqueMoiLePacte } from "@/content/papers/explique-moi-le-pacte";
 import { intensiteBilanResidentiel } from "@/content/papers/intensite-bilan-residentiel";
 import { modele } from "@/content/papers/modele";
 import { modelePhase2 } from "@/content/papers/modele-phase-2";
@@ -20,6 +21,7 @@ import type { WorkingPaper } from "@/content/papers/types";
 
 export const workingPapers: WorkingPaper[] = [
   pacte,
+  expliqueMoiLePacte,
   resumeExecutif,
   pacteV2,
   parcoursMenages,
