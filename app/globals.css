@@ -253,14 +253,9 @@ h1 {
     width: min(62rem, 100%);
   }
 
-  .home-dialogue .summary-body--dialogue {
+  .home-dialogue .dialogue-columns {
     column-count: 2;
     column-gap: 4.5rem;
-  }
-
-  .summary-body--dialogue .dialogue-opening,
-  .summary-body--dialogue .dialogue-chapter {
-    column-span: all;
   }
 }
 

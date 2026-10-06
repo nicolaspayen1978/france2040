@@ -1,5 +1,12 @@
 # Decision log
 
+## 2026-10-06 — Home dialogue chapter stays outside column flow
+
+The owner reported the 8 850 Md€ sentence appearing on both sides of the chapter heading.
+The snapshot and parsed content contain it once. On the landing page, the opening and chapter
+heading now sit between separate two-column prose containers, avoiding a spanning element
+inside an active column flow. The cited document and its snapshot remain unchanged.
+
 ## 2026-10-03 — Paper readers use the common reading width
 
 Owner found the wide navigation frame combined with a 40rem paper column visually inconsistent.

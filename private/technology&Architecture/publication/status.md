@@ -1,6 +1,6 @@
 # Status
 
-Last updated: 2026-10-02.
+Last updated: 2026-10-06.
 
 The public decision is `Docs/14_Architecture_Publication_Consultation.md`. This folder is how that decision gets built. It is not a site page. `.vercelignore` excludes `private/`, and nothing under it is imported by the app.
 
@@ -17,5 +17,8 @@ Machine-readable slice, built 2026-10-01: French titles, descriptions, canonical
 
 The project page discloses the public-source method and the role of AI assistance. AI is not treated
 as a source and does not replace human verification, contradiction, or editorial responsibility.
+
+The landing dialogue's chapter heading is outside the two-column prose flow. Its published
+Markdown snapshot is unchanged.
 
 Do not start phase 3 because the document model exists. The exit of phase 1 is a human judgement: this page is how Pacte research should exist in public.

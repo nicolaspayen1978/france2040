@@ -61,130 +61,155 @@ export function PaperProse({
   const landingDialogue = dialogue && Boolean(openingRequest);
   let needsReplyCue = false;
 
-  return (
-    <div className={`summary-body${dialogue ? " summary-body--dialogue" : ""}`}>
-      {blocks.map((block) => {
-        const ahead =
-          insert &&
-          insertBeforeHeadingId &&
-          block.kind === "heading" &&
-          block.id === insertBeforeHeadingId
-            ? insert
-            : null;
+  const renderedBlocks = blocks.map((block) => {
+    const ahead =
+      insert &&
+      insertBeforeHeadingId &&
+      block.kind === "heading" &&
+      block.id === insertBeforeHeadingId
+        ? insert
+        : null;
 
-        const passage = (anchorId: string, section: string) =>
-          critique ? (
-            <>
-              <a className="permalink" href={`${critique.address}#${anchorId}`} aria-label="Adresse de ce passage">
-                <span aria-hidden="true">#</span>
-              </a>
-              <CritiqueLink
-                target={{
-                  kind: "paper",
-                  slug: critique.slug,
-                  versionId: critique.versionId,
-                  anchorId,
-                  section,
-                }}
-              />
-            </>
-          ) : null;
+    const passage = (anchorId: string, section: string) =>
+      critique ? (
+        <>
+          <a className="permalink" href={`${critique.address}#${anchorId}`} aria-label="Adresse de ce passage">
+            <span aria-hidden="true">#</span>
+          </a>
+          <CritiqueLink
+            target={{
+              kind: "paper",
+              slug: critique.slug,
+              versionId: critique.versionId,
+              anchorId,
+              section,
+            }}
+          />
+        </>
+      ) : null;
 
-        if (block.kind === "heading") {
-          sectionLabel = block.text;
-          const Tag = block.level === 2 ? "h3" : "h4";
-          if (landingDialogue) needsReplyCue = true;
-          return (
-            <div key={block.id} className={landingDialogue && block.level === 2 ? "dialogue-chapter" : undefined}>
-              {ahead}
-              <Tag id={block.id} className={dialogue && block.level === 2 ? "dialogue-prompt" : undefined}>
-                {passage(block.id, block.text)}
-                {landingDialogue && <span className="dialogue-speaker">ENFANT&nbsp;: </span>}
-                {block.text}
-              </Tag>
-            </div>
-          );
-        }
+    if (block.kind === "heading") {
+      sectionLabel = block.text;
+      const Tag = block.level === 2 ? "h3" : "h4";
+      if (landingDialogue) needsReplyCue = true;
+      return (
+        <div key={block.id} className={landingDialogue && block.level === 2 ? "dialogue-chapter" : undefined}>
+          {ahead}
+          <Tag id={block.id} className={dialogue && block.level === 2 ? "dialogue-prompt" : undefined}>
+            {passage(block.id, block.text)}
+            {landingDialogue && <span className="dialogue-speaker">ENFANT&nbsp;: </span>}
+            {block.text}
+          </Tag>
+        </div>
+      );
+    }
 
-        if (block.kind === "paragraph") {
-          const openingLine = dialogue && openingParagraphCount === 0;
-          const prompt = dialogue && openingParagraphCount < 2;
-          openingParagraphCount += 1;
-          if (dialogue && openingRequest && openingParagraphCount === 2) return null;
-          const replyCue = landingDialogue && !prompt && needsReplyCue;
-          if (openingLine) needsReplyCue = true;
-          if (replyCue) needsReplyCue = false;
-          return (
-            <p
-              key={block.id}
-              id={block.id}
-              className={dialogue ? `dialogue-${prompt ? "prompt" : "reply"}${openingLine ? " dialogue-opening" : ""}${replyCue ? " dialogue-turn-start" : ""}` : undefined}
-            >
-              {passage(block.id, sectionLabel)}
-              {landingDialogue && (openingLine || replyCue) && (
-                <span className="dialogue-speaker">{openingLine ? "ENFANT" : "FRANCE 2040"}&nbsp;: </span>
-              )}
-              {inline(openingLine && openingRequest ? `${block.text} ${openingRequest}` : block.text)}
-            </p>
-          );
-        }
+    if (block.kind === "paragraph") {
+      const openingLine = dialogue && openingParagraphCount === 0;
+      const prompt = dialogue && openingParagraphCount < 2;
+      openingParagraphCount += 1;
+      if (dialogue && openingRequest && openingParagraphCount === 2) return null;
+      const replyCue = landingDialogue && !prompt && needsReplyCue;
+      if (openingLine) needsReplyCue = true;
+      if (replyCue) needsReplyCue = false;
+      return (
+        <p
+          key={block.id}
+          id={block.id}
+          className={dialogue ? `dialogue-${prompt ? "prompt" : "reply"}${openingLine ? " dialogue-opening" : ""}${replyCue ? " dialogue-turn-start" : ""}` : undefined}
+        >
+          {passage(block.id, sectionLabel)}
+          {landingDialogue && (openingLine || replyCue) && (
+            <span className="dialogue-speaker">{openingLine ? "ENFANT" : "FRANCE 2040"}&nbsp;: </span>
+          )}
+          {inline(openingLine && openingRequest ? `${block.text} ${openingRequest}` : block.text)}
+        </p>
+      );
+    }
 
-        if (block.kind === "list") {
-          const ListTag = block.ordered ? "ol" : "ul";
-          return (
-            <ListTag key={block.id} id={block.id}>
-              {block.items.map((item) => (
-                <li key={item.id} id={item.id}>
-                  {passage(item.id, sectionLabel)}
-                  {inline(item.text)}
-                </li>
+    if (block.kind === "list") {
+      const ListTag = block.ordered ? "ol" : "ul";
+      return (
+        <ListTag key={block.id} id={block.id}>
+          {block.items.map((item) => (
+            <li key={item.id} id={item.id}>
+              {passage(item.id, sectionLabel)}
+              {inline(item.text)}
+            </li>
+          ))}
+        </ListTag>
+      );
+    }
+
+    if (block.kind === "vis") {
+      return (
+        <div key={block.id} className={`sim-vis sim-${block.variant}`} id={block.id}>
+          {passage(block.id, sectionLabel)}
+          <ol>
+            {block.items.map((item, itemIndex) => (
+              <li key={`${block.id}-${itemIndex}`}>
+                <p className="sim-value">{inline(item.value)}</p>
+                <p className="sim-label">{inline(item.label)}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      );
+    }
+
+    return (
+      <div key={block.id} className="paper-table-wrap" id={block.id}>
+        {passage(block.id, sectionLabel)}
+        <table>
+          <thead>
+            <tr>
+              {block.headers.map((header) => (
+                <th key={header} scope="col">
+                  {inline(header)}
+                </th>
               ))}
-            </ListTag>
-          );
-        }
-
-        if (block.kind === "vis") {
-          return (
-            <div key={block.id} className={`sim-vis sim-${block.variant}`} id={block.id}>
-              {passage(block.id, sectionLabel)}
-              <ol>
-                {block.items.map((item, itemIndex) => (
-                  <li key={`${block.id}-${itemIndex}`}>
-                    <p className="sim-value">{inline(item.value)}</p>
-                    <p className="sim-label">{inline(item.label)}</p>
-                  </li>
+            </tr>
+          </thead>
+          <tbody>
+            {block.rows.map((row) => (
+              <tr key={row.join("|")}>
+                {row.map((cell, index) => (
+                  <td key={`${cell}-${index}`}>{inline(cell)}</td>
                 ))}
-              </ol>
-            </div>
-          );
-        }
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  });
 
-        return (
-          <div key={block.id} className="paper-table-wrap" id={block.id}>
-            {passage(block.id, sectionLabel)}
-            <table>
-              <thead>
-                <tr>
-                  {block.headers.map((header) => (
-                    <th key={header} scope="col">
-                      {inline(header)}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {block.rows.map((row) => (
-                  <tr key={row.join("|")}>
-                    {row.map((cell, index) => (
-                      <td key={`${cell}-${index}`}>{inline(cell)}</td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        );
-      })}
-    </div>
-  );
+  if (landingDialogue) {
+    const grouped: ReactNode[] = [];
+    let columnBlocks: ReactNode[] = [];
+    const openingId = blocks.find((block) => block.kind === "paragraph")?.id;
+    const flushColumns = () => {
+      if (columnBlocks.length === 0) return;
+      grouped.push(
+        <div key={`columns-${grouped.length}`} className="dialogue-columns">
+          {columnBlocks}
+        </div>,
+      );
+      columnBlocks = [];
+    };
+
+    blocks.forEach((block, index) => {
+      if (block.id === openingId || (block.kind === "heading" && block.level === 2)) {
+        flushColumns();
+        grouped.push(renderedBlocks[index]);
+      } else {
+        columnBlocks.push(renderedBlocks[index]);
+      }
+    });
+    flushColumns();
+
+    return <div className="summary-body summary-body--dialogue">{grouped}</div>;
+  }
+
+  return <div className={`summary-body${dialogue ? " summary-body--dialogue" : ""}`}>{renderedBlocks}</div>;
 }

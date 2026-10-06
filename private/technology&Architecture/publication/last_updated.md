@@ -1,4 +1,8 @@
-2026-10-01
+2026-10-06
+
+2026-10-06. The landing dialogue uses separate two-column prose containers around its
+full-width opening and chapter heading, correcting a duplicate paint of the 8 850 Md€ sentence.
+The published snapshot and document reader are unchanged.
 
 2026-10-03. Le Pacte, Résumé and other paper readers now use the common 48rem reading column
 inside the 72rem outer frame; wide tables and figures remain unconstrained.
