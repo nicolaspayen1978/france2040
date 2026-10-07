@@ -36,6 +36,7 @@ export async function POST(request: NextRequest) {
         anchorId: body.anchorId,
         section: body.section,
         website: body.website,
+        publicationConsent: body.publicationConsent,
       },
       clientIpHash(request),
     );

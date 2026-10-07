@@ -1492,7 +1492,8 @@ body:has(.wide-page) .shell {
 }
 
 .comment-form input,
-.comment-form textarea {
+.comment-form textarea,
+.comment-form select {
   width: 100%;
   margin: 0;
   padding: 0.65rem 0.75rem;
@@ -1510,6 +1511,7 @@ body:has(.wide-page) .shell {
 
 .comment-form input:focus-visible,
 .comment-form textarea:focus-visible,
+.comment-form select:focus-visible,
 .comment-form button:focus-visible {
   outline: 2px solid var(--ink);
   outline-offset: 2px;
@@ -1530,6 +1532,29 @@ body:has(.wide-page) .shell {
   color: var(--muted);
   font-size: 0.8125rem;
   font-weight: 400;
+}
+
+.comment-form-notice {
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+.comment-form-notice a {
+  color: inherit;
+  text-underline-offset: 0.18em;
+}
+
+.comment-form .comment-form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-weight: 400;
+}
+
+.comment-form .comment-form-consent input {
+  width: auto;
+  flex: none;
+  margin-top: 0.35rem;
 }
 
 .comment-form-refs {

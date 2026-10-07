@@ -71,3 +71,19 @@ Owner: `/llms.txt` lists current paper and visual URLs from `currentVersionId`. 
 concatenates current paper Markdown only. `/participer` explains review-with-a-model and points
 to the pack, the current-URL list, and `/commentaires`. Superseded `/v/…` stay out of the pack.
 
+## 2026-10-07 — Comment publication and privacy (Phase 3.3, P1)
+
+Owner approved a French disclosure at the comment form, linked publication rules and a
+comment-specific privacy notice, an unchecked publication consent checkbox enforced on the server,
+and a real retention/deletion policy. The HEA chat notice is a separate process and does not cover
+the site's Redis comment store or Resend verification mail. Keep the privacy notice distinct from
+the publication rules. Record the consent time and wording version privately. No published paper
+snapshot is changed.
+
+Retention for new records: unverified 48 hours; pending 90 days after verification; rejected
+90 days after decision; accepted 3 years after acceptance. The Redis record expires automatically.
+Moderator reads prune stale indexes and legacy records past those periods. A moderator can delete
+an individual record immediately after a privacy request. The owner identified Nicolas Payen,
+acting via NPE Holding B.V., as controller and `support@france2040.eu` as the rights contact.
+Before live release, verify any international data-transfer details against the configured Vercel,
+Upstash, and Resend accounts. Owner confirms live behavior.

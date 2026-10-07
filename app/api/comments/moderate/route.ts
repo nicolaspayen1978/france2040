@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { listCommentsByStatus, moderateComment, toPublicComment } from "@/lib/comments";
+import { deleteComment, listCommentsByStatus, moderateComment, pruneExpiredComments, toPublicComment } from "@/lib/comments";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -28,6 +28,7 @@ export async function GET(request: NextRequest) {
       ? statusParam
       : "pending";
 
+  await pruneExpiredComments();
   const records = await listCommentsByStatus(status);
   return NextResponse.json({
     comments: records.map((record) => ({
@@ -50,15 +51,21 @@ export async function POST(request: NextRequest) {
   }
 
   const id = typeof body.id === "string" ? body.id : "";
-  const action = body.action === "accepted" || body.action === "rejected" ? body.action : null;
+  const action = body.action === "accepted" || body.action === "rejected" || body.action === "delete"
+    ? body.action
+    : null;
   if (!id || !action) {
     return NextResponse.json(
-      { error: "Indiquez id et action (accepted | rejected)." },
+      { error: "Indiquez id et action (accepted | rejected | delete)." },
       { status: 400 },
     );
   }
 
   try {
+    if (action === "delete") {
+      await deleteComment(id);
+      return NextResponse.json({ ok: true });
+    }
     const record = await moderateComment(id, action);
     return NextResponse.json({ ok: true, comment: { ...toPublicComment(record), email: record.email } });
   } catch (error) {

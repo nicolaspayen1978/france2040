@@ -8,11 +8,11 @@ import {
   kvSAdd,
   kvSMembers,
   kvSRem,
-  kvSet,
   kvSetWithOptions,
 } from "@/lib/kv/client";
 import { isMailConfigured, sendCommentVerificationEmail } from "@/lib/mail";
 import { COMMENT_BODY_MAX } from "@/lib/commentLimits";
+import { COMMENT_RETENTION_SECONDS, COMMENT_RULES_VERSION } from "@/lib/commentPolicy";
 
 export type CommentStatus = "unverified" | "pending" | "accepted" | "rejected";
 
@@ -34,6 +34,8 @@ export type CommentRecord = {
   anchorId: string | null;
   section: string | null;
   moderatedAt: string | null;
+  publicationConsentAt: string | null;
+  publicationRulesVersion: string | null;
 };
 
 type VerifyTokenRecord = {
@@ -42,8 +44,8 @@ type VerifyTokenRecord = {
   createdAt: string;
 };
 
-/** Public shape: email never leaves the server for HTML. */
-export type PublicComment = Omit<CommentRecord, "email">;
+/** Public shape: email and proof of consent never leave the server for HTML. */
+export type PublicComment = Omit<CommentRecord, "email" | "publicationConsentAt" | "publicationRulesVersion">;
 
 const INDEX: Record<CommentStatus, string> = {
   unverified: "comments:unverified",
@@ -139,7 +141,12 @@ function newVerifyToken(): string {
 }
 
 export function toPublicComment(record: CommentRecord): PublicComment {
-  const { email: _email, ...rest } = record;
+  const {
+    email: _email,
+    publicationConsentAt: _publicationConsentAt,
+    publicationRulesVersion: _publicationRulesVersion,
+    ...rest
+  } = record;
   return rest;
 }
 
@@ -156,6 +163,7 @@ export type SubmitCommentInput = {
   section?: unknown;
   /** Honeypot — must be empty. */
   website?: unknown;
+  publicationConsent: unknown;
 };
 
 function normalizeKind(value: unknown): CommentTargetKind | null {
@@ -173,9 +181,11 @@ export async function submitComment(
   if (!isMailConfigured()) {
     throw new Error("La confirmation par e-mail n’est pas configurée.");
   }
-
   if (typeof input.website === "string" && input.website.trim()) {
     throw new Error("Soumission refusée.");
+  }
+  if (input.publicationConsent !== true) {
+    throw new Error("Confirmez votre accord pour la publication avant d’envoyer le commentaire.");
   }
 
   const rateKey = `comments:ratelimit:${ipHash || "unknown"}`;
@@ -189,6 +199,7 @@ export async function submitComment(
   const versionId = trimOrNull(input.versionId, MAX_REF);
   const kind = normalizeKind(input.kind) ?? (slug ? "paper" : null);
 
+  const submittedAt = new Date().toISOString();
   const record: CommentRecord = {
     id: newId(),
     firstName: requireText(input.firstName, "Le prénom", MAX_NAME),
@@ -197,7 +208,7 @@ export async function submitComment(
     linkedin: normalizeLinkedIn(input.linkedin),
     body: requireText(input.body, "Le commentaire", MAX_BODY),
     status: "unverified",
-    submittedAt: new Date().toISOString(),
+    submittedAt,
     verifiedAt: null,
     kind,
     slug,
@@ -205,6 +216,8 @@ export async function submitComment(
     anchorId: trimOrNull(input.anchorId, MAX_REF),
     section: trimOrNull(input.section, 200),
     moderatedAt: null,
+    publicationConsentAt: submittedAt,
+    publicationRulesVersion: COMMENT_RULES_VERSION,
   };
 
   const token = newVerifyToken();
@@ -214,7 +227,11 @@ export async function submitComment(
     createdAt: record.submittedAt,
   };
 
-  await kvSet(commentKey(record.id), record);
+  if ((await kvSetWithOptions(commentKey(record.id), record, {
+    ex: COMMENT_RETENTION_SECONDS.unverified,
+  })) !== true) {
+    throw new Error("Impossible d’enregistrer le commentaire. Réessayez.");
+  }
   await kvSAdd(indexKey("unverified"), record.id);
   const tokenStored = await kvSetWithOptions(verifyTokenKey(token), tokenRecord, {
     nx: true,
@@ -244,23 +261,48 @@ export async function submitComment(
   return { id: record.id };
 }
 
-async function loadByIds(ids: string[]): Promise<CommentRecord[]> {
+function retentionStart(record: CommentRecord): string {
+  if (record.status === "pending") return record.verifiedAt || record.submittedAt;
+  if (record.status === "accepted" || record.status === "rejected") {
+    return record.moderatedAt || record.submittedAt;
+  }
+  return record.submittedAt;
+}
+
+function isPastRetention(record: CommentRecord): boolean {
+  const start = Date.parse(retentionStart(record));
+  return (
+    Number.isFinite(start) &&
+    Date.now() >= start + COMMENT_RETENTION_SECONDS[record.status] * 1000
+  );
+}
+
+async function loadByIds(ids: string[], status: CommentStatus): Promise<CommentRecord[]> {
   const records: CommentRecord[] = [];
   for (const id of ids) {
     const record = await kvGetJson<CommentRecord>(commentKey(id));
-    if (record && record.id) {
-      records.push({
-        ...record,
-        kind: record.kind ?? null,
-        section: record.section ?? null,
-        verifiedAt: record.verifiedAt ?? null,
-        linkedin: record.linkedin ?? null,
-        slug: record.slug ?? null,
-        versionId: record.versionId ?? null,
-        anchorId: record.anchorId ?? null,
-        moderatedAt: record.moderatedAt ?? null,
-      });
+    if (!record || !record.id || record.status !== status) {
+      await kvSRem(indexKey(status), id);
+      continue;
     }
+    if (isPastRetention(record)) {
+      await kvDel(commentKey(id));
+      await kvSRem(indexKey(status), id);
+      continue;
+    }
+    records.push({
+      ...record,
+      kind: record.kind ?? null,
+      section: record.section ?? null,
+      verifiedAt: record.verifiedAt ?? null,
+      linkedin: record.linkedin ?? null,
+      slug: record.slug ?? null,
+      versionId: record.versionId ?? null,
+      anchorId: record.anchorId ?? null,
+      moderatedAt: record.moderatedAt ?? null,
+      publicationConsentAt: record.publicationConsentAt ?? null,
+      publicationRulesVersion: record.publicationRulesVersion ?? null,
+    });
   }
   return records.sort((a, b) => (a.submittedAt < b.submittedAt ? 1 : -1));
 }
@@ -270,12 +312,19 @@ export async function listCommentsByStatus(
 ): Promise<CommentRecord[]> {
   if (!isKVConfigured()) return [];
   const ids = await kvSMembers(indexKey(status));
-  return loadByIds(ids);
+  return loadByIds(ids, status);
 }
 
 export async function listPublicComments(): Promise<PublicComment[]> {
   const accepted = await listCommentsByStatus("accepted");
   return accepted.map(toPublicComment);
+}
+
+/** Admin reads also clear stale IDs and legacy records that predate Redis TTLs. */
+export async function pruneExpiredComments(): Promise<void> {
+  for (const status of ["unverified", "pending", "accepted", "rejected"] as const) {
+    await listCommentsByStatus(status);
+  }
 }
 
 export async function verifyCommentToken(token: unknown): Promise<CommentRecord> {
@@ -308,6 +357,11 @@ export async function verifyCommentToken(token: unknown): Promise<CommentRecord>
   if (record.status !== "unverified") {
     throw new Error("Ce commentaire ne peut plus être confirmé.");
   }
+  if (isPastRetention(record)) {
+    await deleteComment(record.id);
+    await kvDel(tokenKey);
+    throw new Error("Ce lien de confirmation a expiré.");
+  }
 
   if (record.email !== tokenRecord.email) {
     throw new Error("Lien de confirmation invalide.");
@@ -316,7 +370,12 @@ export async function verifyCommentToken(token: unknown): Promise<CommentRecord>
   record.status = "pending";
   record.verifiedAt = new Date().toISOString();
 
-  await kvSet(commentKey(record.id), record);
+  if ((await kvSetWithOptions(commentKey(record.id), record, {
+    xx: true,
+    ex: COMMENT_RETENTION_SECONDS.pending,
+  })) !== true) {
+    throw new Error("Impossible de confirmer le commentaire. Réessayez.");
+  }
   await kvSRem(indexKey("unverified"), record.id);
   await kvSAdd(indexKey("pending"), record.id);
   await kvDel(tokenKey);
@@ -337,9 +396,16 @@ export async function moderateComment(
 
   const record = await kvGetJson<CommentRecord>(commentKey(safeId));
   if (!record) throw new Error("Commentaire introuvable.");
+  if (isPastRetention(record)) {
+    await deleteComment(safeId);
+    throw new Error("Ce commentaire a expiré.");
+  }
 
   if (record.status === "unverified") {
     throw new Error("Ce commentaire n’a pas encore confirmé son adresse e-mail.");
+  }
+  if (next === "accepted" && !record.publicationConsentAt) {
+    throw new Error("Accord de publication absent : demandez un nouvel envoi au contributeur.");
   }
 
   const previous = record.status;
@@ -348,10 +414,24 @@ export async function moderateComment(
   record.status = next;
   record.moderatedAt = new Date().toISOString();
 
-  await kvSet(commentKey(safeId), record);
+  if ((await kvSetWithOptions(commentKey(safeId), record, {
+    xx: true,
+    ex: COMMENT_RETENTION_SECONDS[next],
+  })) !== true) {
+    throw new Error("Impossible de modérer le commentaire. Réessayez.");
+  }
   await kvSRem(indexKey(previous), safeId);
   await kvSAdd(indexKey(next), safeId);
   return record;
+}
+
+export async function deleteComment(id: string): Promise<void> {
+  const safeId = String(id || "").trim();
+  if (!safeId) throw new Error("Identifiant manquant.");
+  await kvDel(commentKey(safeId));
+  for (const status of ["unverified", "pending", "accepted", "rejected"] as const) {
+    await kvSRem(indexKey(status), safeId);
+  }
 }
 
 /** Stable short hash for rate-limit keys (also used by the API route). */

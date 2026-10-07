@@ -21,6 +21,7 @@ type ModerationComment = {
 
 export function CommentModerationPanel() {
   const [secret, setSecret] = useState("");
+  const [filter, setFilter] = useState<"pending" | "accepted" | "rejected">("pending");
   const [comments, setComments] = useState<ModerationComment[]>([]);
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
@@ -30,7 +31,7 @@ export function CommentModerationPanel() {
     setBusy(true);
     setError("");
     try {
-      const response = await fetch("/api/comments/moderate?status=pending", {
+      const response = await fetch(`/api/comments/moderate?status=${filter}`, {
         headers: { Authorization: `Bearer ${secret}` },
       });
       const payload = (await response.json().catch(() => ({}))) as {
@@ -50,7 +51,10 @@ export function CommentModerationPanel() {
     }
   }
 
-  async function act(id: string, action: "accepted" | "rejected") {
+  async function act(id: string, action: "accepted" | "rejected" | "delete") {
+    if (action === "delete" && !window.confirm("Supprimer définitivement ce commentaire et ses données ?")) {
+      return;
+    }
     setBusy(true);
     setError("");
     try {
@@ -88,9 +92,20 @@ export function CommentModerationPanel() {
             autoComplete="current-password"
           />
         </label>
+        <label>
+          Statut
+          <select
+            value={filter}
+            onChange={(event) => setFilter(event.target.value as typeof filter)}
+          >
+            <option value="pending">En attente</option>
+            <option value="accepted">Publiés</option>
+            <option value="rejected">Refusés</option>
+          </select>
+        </label>
         <p className="comment-form-actions">
           <button type="submit" disabled={busy || !secret}>
-            Charger les commentaires en attente
+            Charger les commentaires
           </button>
         </p>
       </form>
@@ -102,7 +117,7 @@ export function CommentModerationPanel() {
       ) : null}
 
       {comments.length === 0 ? (
-        <p className="comment-empty">Aucun commentaire en attente, ou file non chargée.</p>
+        <p className="comment-empty">Aucun commentaire pour ce statut, ou liste non chargée.</p>
       ) : (
         <ul className="comment-list comment-moderation-list">
           {comments.map((comment) => (
@@ -149,11 +164,18 @@ export function CommentModerationPanel() {
               )}
               <p className="comment-body">{comment.body}</p>
               <p className="comment-form-actions">
-                <button type="button" disabled={busy} onClick={() => act(comment.id, "accepted")}>
-                  Accepter
-                </button>
-                <button type="button" disabled={busy} onClick={() => act(comment.id, "rejected")}>
-                  Refuser
+                {filter === "pending" ? (
+                  <>
+                    <button type="button" disabled={busy} onClick={() => act(comment.id, "accepted")}>
+                      Accepter
+                    </button>
+                    <button type="button" disabled={busy} onClick={() => act(comment.id, "rejected")}>
+                      Refuser
+                    </button>
+                  </>
+                ) : null}
+                <button type="button" disabled={busy} onClick={() => act(comment.id, "delete")}>
+                  Supprimer définitivement
                 </button>
               </p>
             </li>

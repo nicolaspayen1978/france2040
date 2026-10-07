@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import Link from "next/link";
 import type { CritiqueTargetKind } from "@/lib/critique";
 import { COMMENT_BODY_MAX } from "@/lib/commentLimits";
 
@@ -28,6 +29,12 @@ export function CommentForm({
     const form = event.currentTarget;
     const data = new FormData(form);
 
+    if (data.get("publicationConsent") !== "on") {
+      setStatus("error");
+      setMessage("Confirmez votre accord pour la publication avant d’envoyer le commentaire.");
+      return;
+    }
+
     setStatus("submitting");
     setMessage("");
 
@@ -47,6 +54,7 @@ export function CommentForm({
           anchorId: data.get("anchorId"),
           section: data.get("section"),
           website: data.get("website"),
+          publicationConsent: true,
         }),
       });
 
@@ -65,6 +73,8 @@ export function CommentForm({
         const field = form.elements.namedItem(name);
         if (field && "value" in field) field.value = "";
       }
+      const consent = form.elements.namedItem("publicationConsent");
+      if (consent instanceof HTMLInputElement) consent.checked = false;
 
       setStatus("ok");
       setMessage(
@@ -111,7 +121,9 @@ export function CommentForm({
       <label>
         E-mail
         <input name="email" type="email" autoComplete="email" required maxLength={200} />
-        <span className="comment-form-hint">Non publié. Conservé pour le contact et la suite.</span>
+        <span className="comment-form-hint">
+          Non publié. Utilisé pour la confirmation et le suivi de votre commentaire.
+        </span>
       </label>
 
       <label>
@@ -180,6 +192,23 @@ export function CommentForm({
           <input name="website" type="text" tabIndex={-1} autoComplete="off" />
         </label>
       </div>
+
+      <p className="comment-form-notice">
+        Après confirmation de votre e-mail et modération, votre prénom, votre nom, votre commentaire,
+        sa date, sa référence éventuelle et, si vous l’indiquez, votre lien LinkedIn seront visibles
+        publiquement. N’incluez pas de données personnelles concernant d’autres personnes. Consultez les{" "}
+        <Link href="/commentaires/regles">règles de publication</Link> et la{" "}
+        <Link href="/commentaires/confidentialite">notice sur les données des commentaires</Link>.
+      </p>
+
+      <label className="comment-form-consent">
+        <input name="publicationConsent" type="checkbox" required />
+        <span>
+          Je consens à la publication de mon prénom, de mon nom, de mon commentaire, de sa date et
+          de sa référence éventuelle, ainsi que de mon lien LinkedIn si je l’ai indiqué, après
+          modération. J’ai lu les règles de publication.
+        </span>
+      </label>
 
       <p className="comment-form-actions">
         <button type="submit" disabled={status === "submitting"}>

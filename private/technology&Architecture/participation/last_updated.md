@@ -19,3 +19,7 @@ moderation route.
 gains a “revue avec un modèle de langage” paragraph.
 
 2026-10-03. Comment body cap 16 000 characters (form + server) so a pasted model review fits.
+
+2026-10-07. Phase 3.3: French publication rules and comment privacy notice, server-enforced
+publication consent with version/time, record expiry by status, and moderator deletion. Live
+privacy contact and controller details confirmed by owner.

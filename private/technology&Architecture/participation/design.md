@@ -45,6 +45,7 @@ yet the full publication phase 3 model (inline anchors beside paper HTML).
 | linkedin | no | yes when set (as profile link) |
 | body | yes | yes |
 | slug / versionId / anchorId / section / kind | no (prefilled from Critiquer) | yes when set |
+| publicationConsentAt / publicationRulesVersion | yes for new submissions | no |
 
 Statuses: `unverified` → `pending` → `accepted` | `rejected`. Body max 16 000 characters
 (form and server), so a pasted model review fits.
@@ -58,6 +59,29 @@ Statuses: `unverified` → `pending` → `accepted` | `rejected`. Body max 16 00
 Email is never written into the public HTML. Unverified comments never appear in moderation or
 public lists. Accepted comments are listed on `/commentaires` in this slice; they are not yet
 rendered inline under each paper paragraph.
+
+### Publication rules and privacy (Phase 3.3)
+
+The form explains the public fields before submission, links separately to French publication
+rules and a comment-specific privacy notice, and requires an unchecked checkbox for publication
+of name, text, date, target reference, and optional LinkedIn link after moderation. Both browser and API enforce it. The
+server records the time and wording version, which are excluded from public output. E-mail is used
+for verification and comment follow-up only; the previous vague "contact et suite" hint is removed.
+
+Record TTLs match the notice: `unverified` 48h from submission, `pending` 90d from verification,
+`rejected` 90d from decision, and `accepted` 3 × 365 days from acceptance. The rate-limit IP hash
+key expires after one hour. On moderation reads, stale set members and older pre-TTL records are
+pruned. The owner can delete pending, rejected, or accepted records through the gated moderation
+route, including on a rights request. The public notice requires a real privacy contact and
+accurate processor/transfer facts before live release. The controller is Nicolas Payen, acting
+via NPE Holding B.V.; rights requests go to `support@france2040.eu`.
+The notice links to the providers' current DPAs and flags possible processing outside the EEA;
+the actual account regions and contracted terms still need a live configuration review.
+Legacy pending records without an agreement timestamp cannot be accepted; the contributor must
+submit again under the current wording.
+
+This does not replace a review of any existing comments or of the site-wide HEA embed's separate
+tracker behavior.
 
 ### Storage
 
