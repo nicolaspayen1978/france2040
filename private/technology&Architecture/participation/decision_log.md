@@ -87,3 +87,9 @@ an individual record immediately after a privacy request. The owner identified N
 acting via NPE Holding B.V., as controller and `support@france2040.eu` as the rights contact.
 Before live release, verify any international data-transfer details against the configured Vercel,
 Upstash, and Resend accounts. Owner confirms live behavior.
+
+## 2026-10-07 — Comment page width correction (Phase 3.3, P2)
+
+The comment routes had no `wide-page` class and therefore kept the base 40rem shell, while
+participation and other sections use the wider shell. Apply the existing class to the public
+comment, rules, privacy, verification, and moderation pages. Keep the established form width.

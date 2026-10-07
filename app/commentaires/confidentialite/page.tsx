@@ -10,7 +10,7 @@ export const metadata = sectionMetadata({
 
 export default function CommentPrivacyPage() {
   return (
-    <article className="page-prose comments-page">
+    <article className="page-prose comments-page wide-page">
       <p className="kicker">Participation</p>
       <h1>Données personnelles des commentaires</h1>
       <p>

@@ -34,6 +34,8 @@ permalinks remain separate and unchanged.
 
 Visitors can submit a comment through a form on `/commentaires`. This is a site-level intake, not
 yet the full publication phase 3 model (inline anchors beside paper HTML).
+All comment routes use the same wide page shell as the other site sections; prose and the form
+remain constrained to readable widths inside it.
 
 ### Record
 

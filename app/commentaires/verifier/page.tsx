@@ -38,7 +38,7 @@ export default async function VerifyCommentPage({ searchParams }: PageProps) {
   }
 
   return (
-    <article className="page-prose comments-page">
+    <article className="page-prose comments-page wide-page">
       <p className="kicker">Participation</p>
       <h1>Confirmation</h1>
       <p className={ok ? "comment-form-success" : "comment-form-error"} role="status">

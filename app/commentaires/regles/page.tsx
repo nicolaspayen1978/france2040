@@ -9,7 +9,7 @@ export const metadata = sectionMetadata({
 
 export default function CommentRulesPage() {
   return (
-    <article className="page-prose comments-page">
+    <article className="page-prose comments-page wide-page">
       <p className="kicker">Participation</p>
       <h1>Règles de publication des commentaires</h1>
       <p>

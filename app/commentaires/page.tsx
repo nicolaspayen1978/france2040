@@ -64,7 +64,7 @@ export default async function CommentairesPage({ searchParams }: PageProps) {
   }
 
   return (
-    <article className="page-prose comments-page">
+    <article className="page-prose comments-page wide-page">
       <p className="kicker">Participation</p>
       <h1>Commentaires</h1>
       <p className="lede">

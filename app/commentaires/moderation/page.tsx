@@ -16,7 +16,7 @@ export default function CommentModerationPage() {
   const configured = Boolean(process.env.COMMENTS_MODERATION_SECRET?.trim());
 
   return (
-    <article className="page-prose comments-page">
+    <article className="page-prose comments-page wide-page">
       <p className="kicker">Interne</p>
       <h1>Modération des commentaires</h1>
       <p className="lede">
