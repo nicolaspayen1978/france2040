@@ -4,7 +4,7 @@
 
 The core Pacte can be communicated with these three left open. Public text: `/documents/questions-ouvertes` `2026-10-03-2`.
 
-Related product benchmark: [HELOC in the United States and Canada](23_HELOC_Benchmark_US_Canada.md). This is a qualitative comparison with the Pacte’s new interest-only share, including how an existing amortising mortgage may coexist. It adds no fourth research extension or French scenario parameter.
+Related published product benchmark: [HELOC and interest-only mortgages](23_HELOC_Benchmark_US_Canada.md), at `/documents/heloc-interets-seuls`. It compares US and Canadian HELOCs, then the Dutch interest-only case, with the Pacte’s new share. Existing amortising debt is treated as a coexistence question. It adds no fourth research extension or French scenario parameter.
 
 ## 1. Eurosystem — role, not a guarantee
 

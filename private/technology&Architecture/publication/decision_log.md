@@ -1,5 +1,15 @@
 # Decision log
 
+## 2026-10-08 — HELOC and Dutch product repères published as a benchmark note
+
+Owner proposed publishing the HELOC research note and asked whether the Netherlands belongs.
+The public note is one versioned working paper under `/documents/heloc-interets-seuls`.
+HELOC US/Canada is compared on revolving access, rate and repayment; the Dutch case is a
+separate non-amortisation comparator, linked to the existing Dutch balance note. The latter's
+aggregate ratio is not imported as a product parameter or a French capacity claim. Existing
+loan coexistence remains an underwriting question. This is a benchmark note, not a new EC,
+and it changes no model number or existing published snapshot.
+
 ## 2026-10-08 — Interest-only share is the Pacte innovation; HELOC is a product benchmark
 
 Owner clarified the product boundary and approved one editorial slice before the HELOC note.

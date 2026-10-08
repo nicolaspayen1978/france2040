@@ -1,5 +1,10 @@
 2026-10-08
 
+2026-10-08. The HELOC working note is published as a versioned product benchmark at
+`/documents/heloc-interets-seuls`. A separate Dutch interest-only section points to the
+existing residential-balance benchmark with its comparability caveat. The new note is
+registered for the Documents index and current-version LLM corpus. No model parameter changed.
+
 2026-10-08. Le Pacte, V2, Résumé and Parcours ménages have new versioned snapshots clarifying that
 the proposed new credit is the interest-only share. Existing or new amortising credit may
 coexist depending on underwriting; the household two-credit figures remain illustrative.

@@ -1,5 +1,6 @@
 import { expliqueMoiLePacte } from "@/content/papers/explique-moi-le-pacte";
 import { intensiteBilanResidentiel } from "@/content/papers/intensite-bilan-residentiel";
+import { helocInteretsSeuls } from "@/content/papers/heloc-interets-seuls";
 import { modele } from "@/content/papers/modele";
 import { modelePhase2 } from "@/content/papers/modele-phase-2";
 import { pacte } from "@/content/papers/pacte";
@@ -28,6 +29,7 @@ export const workingPapers: WorkingPaper[] = [
   modele,
   modelePhase2,
   intensiteBilanResidentiel,
+  helocInteretsSeuls,
   questionsOuvertes,
   contexteDemographique,
   redTeam01,
