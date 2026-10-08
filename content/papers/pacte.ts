@@ -7,7 +7,7 @@ export const pacte: WorkingPaper = {
   lang: "fr",
   summary:
     "Texte de référence de la proposition. Fenêtre 2027–2040 : enveloppe 700 Md€, rythme conditionnel, usages selon leurs qualités. Hypothèse, non un programme arrêté.",
-  currentVersionId: "2026-10-03-3",
+  currentVersionId: "2026-10-08",
   versions: [
     {
       id: "2026-09-28",
@@ -39,11 +39,20 @@ export const pacte: WorkingPaper = {
     {
       id: "2026-10-03-3",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse, non un programme arrêté.",
       file: "content/papers/pacte/v2026-10-03-3.md",
       sha256: "8b707d5371e7f767673c40d36dba47a96a1761f3241056e71f47d51667c3aab0",
       note: "Texte de référence de la proposition. La V2 n’est plus présentée comme le texte canonique.",
+    },
+    {
+      id: "2026-10-08",
+      published: "2026-10-08",
+      status: "working-paper",
+      verdict: "Hypothèse, non un programme arrêté.",
+      file: "content/papers/pacte/v2026-10-08.md",
+      sha256: "a745312ede42d2d11c573457b203e7b600e0ee5db4f974c26f78e9802d0dd940",
+      note: "La part à intérêts seuls est le mécanisme nouveau ; un prêt amortissable peut coexister sans être requis. Plafond de la part et dette totale distingués.",
     },
   ],
   progress: [

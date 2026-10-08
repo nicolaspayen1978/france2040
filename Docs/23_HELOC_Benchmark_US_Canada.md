@@ -1,0 +1,31 @@
+# HELOC — repère de produit aux États-Unis et au Canada
+
+8 octobre 2026. Fiche de recherche interne, non publiée comme document du site. Elle compare le HELOC à la **nouvelle part à intérêts seuls** du Pacte. Un éventuel prêt amortissable du ménage est traité séparément. Ce repère n’établit ni une capacité de financement française, ni la destination des fonds tirés, ni un effet macroéconomique.
+
+## Objet comparable
+
+Aux États-Unis, le *home equity line of credit* (HELOC) est une ligne de crédit ouverte, garantie par le logement, qui permet des tirages répétés pendant une période de tirage. Au Canada, c’est également un crédit renouvelable garanti par le logement : les sommes remboursées peuvent redevenir disponibles. Dans les deux cas, le crédit donne accès à une partie du capital immobilier net sans vendre le bien, en créant une dette à rembourser. [CFPB — définition](https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/) · [ACFC — fonctionnement](https://www.canada.ca/en/financial-consumer-agency/services/mortgages/home-equity-line-credit.html).
+
+| Question | HELOC américain | HELOC canadien | Part à intérêts seuls du Pacte |
+| --- | --- | --- | --- |
+| **Tirage et réutilisation** | Tirages possibles jusqu’à la limite pendant la période de tirage ; l’accès peut être gelé ou réduit dans certaines circonstances. | Ligne renouvelable : remboursement puis nouveau tirage possible jusqu’à la limite. | Le scénario porte sur l’origination d’une part longue. Il ne pose aucun droit automatique de re-tirage renouvelable. |
+| **Taux** | Généralement variable ; certains contrats permettent de convertir une partie ou la totalité du solde à taux fixe. | Généralement variable, souvent lié au taux préférentiel du prêteur. | Principalement fixe dans la proposition ; la tarification et l’originabilité restent à éprouver. |
+| **Remboursement du capital** | Certains contrats autorisent les intérêts seuls pendant la période de tirage ; vient ensuite une période de remboursement, parfois avec forte hausse des mensualités ou solde exigible. | Le paiement régulier peut couvrir seulement les intérêts ou aussi une part de capital selon le prêteur ; payer seulement les intérêts ne réduit pas la dette. | Pas d’amortissement programmé de la nouvelle part dans le scénario de référence ; le capital reste dû à l’échéance ou jusqu’à remboursement. |
+| **Risques pour le ménage** | Hausse du taux variable, rupture entre tirage et remboursement, gel de ligne, perte possible du logement en cas de non-remboursement. | Hausse du taux variable, surendettement facilité par la réutilisation, dette persistante, perte possible du logement en cas de non-remboursement. | Dette persistante et remboursement final ; revenu, valeur du bien, dette totale, sûretés et financement bancaire sont à tester. Le risque de taux du ménage dépend de la fixation effective du taux. |
+
+Sources des caractéristiques américaines : [CFPB — définition et risques](https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/) et [guide HELOC, pages 6–7](https://files.consumerfinance.gov/f/documents/cfpb_heloc-brochure_print.pdf). Sources canadiennes : [ACFC — guide consommateur](https://www.canada.ca/en/financial-consumer-agency/services/mortgages/home-equity-line-credit.html) et [ACFC — étude sur les risques](https://www.canada.ca/en/financial-consumer-agency/programs/research/home-equity-lines-credit-trends-issues.html). L’étude sur les risques est historique ; elle sert à identifier des mécanismes, pas à fournir un taux actuel pour la France.
+
+## Coexistence avec un prêt immobilier
+
+Le HELOC peut exister à côté d’un prêt amortissable, mais les montages diffèrent. Le CFPB décrit le HELOC américain ajouté à une hypothèque existante comme une seconde hypothèque. L’ACFC distingue au Canada le HELOC autonome, possible sans autre prêt ou auprès d’un autre prêteur, du HELOC lié à un prêt amortissable chez le même prêteur, dont le crédit disponible peut augmenter lorsque le capital amortissable est remboursé. [CFPB — prêt et ligne](https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-home-equity-loan-and-a-home-equity-line-of-credit-heloc-en-247/) · [ACFC — deux formes](https://www.canada.ca/en/financial-consumer-agency/services/mortgages/home-equity-line-credit.html).
+
+Pour le Pacte, la nouvelle part à intérêts seuls pourrait être souscrite par un propriétaire sans autre dette, coexister avec un prêt déjà en place ou accompagner un nouveau financement d’achat. La faisabilité de chaque montage en France reste à établir : prêteur, caution ou sûreté, rang, revenu et ratio de **l’ensemble des dettes / valeur du bien**. Le plafond testé de la seule part à intérêts seuls est 40 % de la valeur dans le cas central, 50 % en sensibilité ; il ne plafonne pas la dette totale à ce niveau. Voir le texte de référence du Pacte, *Parcours des ménages* et EC-05 / EC-08.
+
+## Ce que ce repère apporte à la recherche
+
+1. Distinguer l’utilité d’un accès répété aux fonds de l’utilité d’une avance longue à intérêts seuls. Le HELOC combine ces deux propriétés ; le Pacte ne modélise pas la première.
+2. Examiner les risques de dette persistante et de remboursement final, même si la proposition française privilégie un taux fixe.
+3. Étudier les usages réels des sommes tirées avant toute hypothèse de dépense additionnelle. Une ligne ouverte ne prouve ni consommation, ni investissement, ni recettes publiques ; c’est une question d’EC-02.
+4. Tester la coexistence avec un prêt existant comme une question d’octroi et de sûretés, pas comme une preuve que le contrat français peut copier un montage américain ou canadien.
+
+Aucun plafond, volume, taux de tirage ou comportement observé aux États-Unis ou au Canada n’est importé dans le scénario de 700 Md€.

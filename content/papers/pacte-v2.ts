@@ -7,11 +7,11 @@ export const pacteV2: WorkingPaper = {
   lang: "fr",
   summary:
     "Élaboration de travail, plus longue. Le texte de référence de la proposition est Le Pacte du bilan français.",
-  currentVersionId: "2026-10-03-3",
+  currentVersionId: "2026-10-08",
   attachments: [
     {
       href: "/sources/pacte-du-bilan-francais-v2.docx",
-      label: "Fichier source Word",
+      label: "Document Word d’origine",
     },
   ],
   versions: [
@@ -54,11 +54,20 @@ export const pacteV2: WorkingPaper = {
     {
       id: "2026-10-03-3",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse à tester, non un programme arrêté.",
       file: "content/papers/pacte-v2/v2026-10-03-3.md",
       sha256: "ffde0c07acea4821bfa76bd2ca200c027d12382096778be5acf3ba25a80a66f1",
       note: "Enveloppe 700 Md€. Trajectoire indicative, règle de suivi liante. Stock vs vitesse.",
+    },
+    {
+      id: "2026-10-08",
+      published: "2026-10-08",
+      status: "working-paper",
+      verdict: "Hypothèse à tester, non un programme arrêté.",
+      file: "content/papers/pacte-v2/v2026-10-08.md",
+      sha256: "12eee425b75c40a0c6b451c667508cf388163ce769de95230891661ef1ba0b18",
+      note: "Clarifie que la part à intérêts seuls est le mécanisme nouveau ; un prêt amortissable peut coexister sans être imposé.",
     },
   ],
   progress: [

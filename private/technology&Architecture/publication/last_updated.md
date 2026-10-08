@@ -1,4 +1,12 @@
-2026-10-06
+2026-10-08
+
+2026-10-08. Le Pacte, V2, Résumé and Parcours ménages have new versioned snapshots clarifying that
+the proposed new credit is the interest-only share. Existing or new amortising credit may
+coexist depending on underwriting; the household two-credit figures remain illustrative.
+The 40 % central / 50 % sensitivity cap and 700 Md€ envelope still refer only to the
+interest-only share. A sourced HELOC product benchmark was added to the internal research pack.
+The Le Pacte navigation link now points to the new V2 version. Prior public snapshots retain
+their bytes and hashes.
 
 2026-10-06. The landing dialogue uses separate two-column prose containers around its
 full-width opening and chapter heading, correcting a duplicate paint of the 8 850 Md€ sentence.

@@ -9,8 +9,8 @@ export const parcoursMenages: WorkingPaper = {
   title: "Parcours des ménages et trésorerie",
   lang: "fr",
   summary:
-    "Prêt en deux parts. Le prêt existant ne disparaît pas : conserver un taux bas peut valoir plus que refinancer. Les 700 Md€ sont l’encours à intérêts seuls.",
-  currentVersionId: "2026-10-03",
+    "Part à intérêts seuls du Pacte et montages d’achat illustratifs. Le prêt existant ne disparaît pas : conserver un taux bas peut valoir plus que refinancer. Les 700 Md€ comptent cette seule part.",
+  currentVersionId: "2026-10-08",
   versions: [
     {
       id: "2026-10-01",
@@ -64,20 +64,30 @@ export const parcoursMenages: WorkingPaper = {
     {
       id: "2026-10-03",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict:
         "Le prêt existant compte. Conserver un taux bas peut valoir plus que refinancer. Pas une hypothèse de V2. Test 06 non ouvert",
       file: "content/papers/parcours-menages/v2026-10-03.md",
       sha256: "9992a4f9c8d2554ee83a867c09514194747c81addb3466409b17134c54ae370c",
       note: "Vocabulaire public français (ratio prêt / valeur d’achat). Fond inchangé.",
     },
+    {
+      id: "2026-10-08",
+      published: "2026-10-08",
+      status: "working-paper",
+      verdict:
+        "Le prêt existant compte. Conserver un taux bas peut valoir plus que refinancer. Pas une hypothèse de V2. Test 06 non ouvert",
+      file: "content/papers/parcours-menages/v2026-10-08.md",
+      sha256: "4f11d77d51a15f0b788d5064c309eb3990d16b388466a2fd46264a255732aa63",
+      note: "La part à intérêts seuls définit le mécanisme nouveau. Les deux crédits des cas d’achat sont un montage illustratif ; calculs inchangés.",
+    },
   ],
   progress: [
-    { id: "product", label: "Produit en deux parts", state: "Intérêts seuls = % de la valeur ; 40 % central" },
+    { id: "product", label: "Part à intérêts seuls", state: "Plafond = % de la valeur ; 40 % central" },
     { id: "access", label: "Cadre d’accès au crédit", state: "Établi à partir de BdF, ACPR, HCSF, PTZ" },
     { id: "case1", label: "Cas 1 — crédit moyen 200 k€", state: "862 € vs 1 139 € à 40 %" },
-    { id: "case2", label: "Cas 2 — primo 178 k€", state: "Deux parts, pas un gain Pacte" },
-    { id: "arithmetic", label: "Brique unitaire 100 k€", state: "Pour lire une part, pas le produit" },
+    { id: "case2", label: "Cas 2 — primo 178 k€", state: "Montage illustratif, pas un gain Pacte" },
+    { id: "arithmetic", label: "Brique unitaire 100 k€", state: "Service de la part à intérêts seuls" },
     { id: "sophie", label: "Sophie à 42 ans et à 62 ans", state: "Encours existant : tranche ou refinancement" },
     { id: "jean-amina", label: "Jean et Amina", state: "Sans dette ; extraction, montants vides" },
     { id: "mehdi-lea", label: "Mehdi et Léa", state: "Pas de gain direct" },
@@ -113,7 +123,7 @@ export const parcoursMenages: WorkingPaper = {
     {
       id: "v2-ltv",
       citation:
-        "Pacte V2 / résumé exécutif. Levier consolidé visé 40 à 50 % de la valeur. L’exposé ménage prend 40 % comme cas central de la part à intérêts seuls et 50 % comme sensibilité.",
+        "Le Pacte, texte de référence. Le plafond de la part à intérêts seuls est de 40 % de la valeur dans le cas central, 50 % en sensibilité. Le ratio dette consolidée / valeur relève d’un examen distinct à l’octroi.",
     },
     {
       id: "notaires-2025",

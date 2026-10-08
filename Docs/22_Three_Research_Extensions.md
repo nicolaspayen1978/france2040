@@ -4,6 +4,8 @@
 
 The core Pacte can be communicated with these three left open. Public text: `/documents/questions-ouvertes` `2026-10-03-2`.
 
+Related product benchmark: [HELOC in the United States and Canada](23_HELOC_Benchmark_US_Canada.md). This is a qualitative comparison with the Pacte’s new interest-only share, including how an existing amortising mortgage may coexist. It adds no fourth research extension or French scenario parameter.
+
 ## 1. Eurosystem — role, not a guarantee
 
 Do not frame an ECB guarantee of Pacte mortgages.
@@ -56,4 +58,3 @@ CBS 1 Jan 2024* (provisional): eigen woning €2 180.7bn; mortgage on that dwell
 Illustration, not a DNB statistic: 40% × 807.5 / 2 180.7 ≈ **14.8%**. Mixing DNB €890bn end-2025 with CBS 2024 housing ≈ 16%. Neither is IO-collateral-only.
 
 Stress 2008–2013: ~20% nominal house-price fall; ~30% of mortgages underwater in 2013 (DNB LLD); four largest banks’ mortgage losses ~0.2% of book (DNB 2016). Does not prove the Pacte. French loss channel still unwired.
-

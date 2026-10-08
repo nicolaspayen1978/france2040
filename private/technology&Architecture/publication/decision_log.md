@@ -1,5 +1,22 @@
 # Decision log
 
+## 2026-10-08 — Interest-only share is the Pacte innovation; HELOC is a product benchmark
+
+Owner clarified the product boundary and approved one editorial slice before the HELOC note.
+The new interest-only share is the Pacte mechanism. An amortising mortgage can be pre-existing,
+new alongside it for a purchase, or absent; the paired household calculations are one
+illustrative financing arrangement. The 40 % central / 50 % sensitivity limit applies only to
+the interest-only share. Total debt/value is a separate underwriting question, so the 85 %
+purchase example is not a Pacte limit. The 700 Md€ scenario counts only origination of that
+share. Le Pacte, V2, Résumé and Parcours receive new snapshots; earlier bytes remain frozen.
+The Le Pacte navigation link to V2 follows its current version. The Word attachment is labelled
+as the original document because it predates the latest HTML wording.
+
+The internal HELOC note compares US and Canadian draw/reuse, rate, principal repayment and
+household risks with the interest-only share. Existing-loan coexistence is a separate
+underwriting question. The note imports no foreign numeric parameter into the French scenario.
+V2 remains a longer elaboration rather than the text of reference.
+
 ## 2026-10-06 — Home dialogue chapter stays outside column flow
 
 The owner reported the 8 850 Md€ sentence appearing on both sides of the chapter heading.
