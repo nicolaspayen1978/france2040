@@ -1,5 +1,9 @@
 2026-10-13
 
+Schéma `quatre-voies-vers-un-marche` version `2026-10-13`. Four escalating routes
+from the frozen standardisation note `2026-10-13-2`. Not four products. A failed
+case does not stop the others. Does not close EC-01, EC-05, or the 700 Md€ path.
+
 Schéma `meme-capital-trois-mesures` version `2026-10-13`. Same 100 000 €, three measures, citing the Dutch note of 12 October. Does not recommend the Dutch calculation.
 
 2026-10-01

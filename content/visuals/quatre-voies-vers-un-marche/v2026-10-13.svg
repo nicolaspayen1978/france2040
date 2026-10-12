@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 660" role="img" aria-labelledby="title desc">
+<title id="title">Quatre voies vers un marché</title>
+<desc id="desc">Quatre niveaux croissants : expérimenter sous le droit existant, ouvrir un cahier des charges interbancaire, traiter le verrou prudentiel du capital final, et légiférer seulement si un obstacle résiduel est démontré. Un cas qui échoue n’arrête pas les autres.</desc>
+<rect width="720" height="660" fill="#ffffff"/>
+<text x="24" y="36" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">Quatre voies vers un marché</text>
+<text x="24" y="58" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6a6a6a">Une escalade. Pas quatre produits.</text>
+<rect x="24" y="80" width="672" height="92" fill="#ffffff" stroke="#e8e8e4"/>
+<circle cx="47" cy="108" r="12" fill="#ffffff" stroke="#002395"/>
+<text x="47" y="113" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#002395">1</text>
+<text x="84" y="112" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Expérimentation bancaire</text>
+<text x="84" y="136" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3f3f3f">Sous le droit existant. La banque garde l’octroi, le prix et le financement.</text>
+<text x="84" y="156" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3f3f3f">Ce n’est pas une distribution de masse du crédit long in fine.</text>
+<rect x="24" y="186" width="672" height="112" fill="#ffffff" stroke="#e8e8e4"/>
+<circle cx="47" cy="214" r="12" fill="#ffffff" stroke="#002395"/>
+<text x="47" y="219" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#002395">2</text>
+<text x="84" y="218" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Standard interbancaire et notarial</text>
+<text x="84" y="242" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3f3f3f">Un cahier des charges ouvert. Chaque banque décide et fixe son prix.</text>
+<text x="84" y="262" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3f3f3f">L’opération peut devenir plus simple, et potentiellement moins coûteuse.</text>
+<text x="84" y="282" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3f3f3f">La norme ne rend pas, à elle seule, le produit bon marché.</text>
+<rect x="24" y="312" width="672" height="112" fill="#ffffff" stroke="#e8e8e4"/>
+<circle cx="47" cy="340" r="12" fill="#ffffff" stroke="#002395"/>
+<text x="47" y="345" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#002395">3</text>
+<text x="84" y="344" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Traitement prudentiel, pour l’échelle</text>
+<text x="84" y="368" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3f3f3f">Sous la lecture publiée, le capital final entre dans la dernière année.</text>
+<text x="84" y="388" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3f3f3f">L’annuité notionnelle est à tester. Le HCSF ne l’a pas acceptée.</text>
+<text x="84" y="408" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3f3f3f">Les Pays-Bas montrent une séparation possible. Ils ne décident pas pour la France.</text>
+<rect x="24" y="438" width="672" height="112" fill="#ffffff" stroke="#e8e8e4"/>
+<circle cx="47" cy="466" r="12" fill="#ffffff" stroke="#002395"/>
+<text x="47" y="471" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#002395">4</text>
+<text x="84" y="470" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Loi seulement si un verrou reste</text>
+<text x="84" y="494" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3f3f3f">Pour un obstacle que ni la norme privée ni le HCSF ne lèvent.</text>
+<text x="84" y="514" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3f3f3f">Elle peut régler une donnée ou un consentement, et ne créer aucun crédit.</text>
+<text x="84" y="534" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3f3f3f">Pas un produit public. Pas le point de départ.</text>
+<text x="24" y="572" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Tester la transaction → standardiser le marché</text>
+<text x="24" y="594" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">→ traiter le verrou prudentiel → légiférer seulement sur les obstacles résiduels démontrés.</text>
+<text x="24" y="620" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#5c5c5c">Un cas qui échoue n’arrête pas les autres.</text>
+<text x="24" y="640" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6a6a6a">Ne crée pas un produit. Ne ferme ni EC-01 ni EC-05. 700 Md€ inchangés.</text>
+</svg>

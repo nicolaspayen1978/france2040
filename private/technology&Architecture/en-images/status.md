@@ -7,7 +7,7 @@ EC-08 schéma `part-io-n-est-pas-le-ltv-consolide` published. Phase 2 simulation
 (`cas-central-phase-2`, `meme-credit-transmission-faible`, `choc-adverse-et-arret`).
 Implementation schéma `surete-distincte-pas-echelle` published; it cites the 12 October 2026
 note and does not close EC-01 or EC-05. Schéma `meme-capital-trois-mesures` published
-13 October 2026; it cites the Dutch note’s worked example and does not recommend that calculation.
+13 October 2026; it cites the Dutch note’s worked example and does not recommend that calculation. Schéma `quatre-voies-vers-un-marche` published the same day; it cites the frozen standardisation note `2026-10-13-2` and does not create a public product.
 
 | Phase | State | What it is |
 | --- | --- | --- |

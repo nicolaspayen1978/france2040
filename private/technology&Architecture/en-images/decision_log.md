@@ -1,5 +1,14 @@
 # Decision log
 
+## 2026-10-13 — Four routes to a market
+
+Owner asked for one schéma of the four implementation routes, which are the frozen
+path in the standardisation note `2026-10-13-2`. `quatre-voies-vers-un-marche`,
+version `2026-10-13`, sits in Comprendre le mécanisme after the security schema.
+It cites that note’s routes and stop conditions. The routes are an escalation, not
+four products. A failed case does not stop the others. It does not close EC-01,
+EC-05, or the 700 Md€ path.
+
 ## 2026-10-13 — Same capital, three measures
 
 Owner asked for one schéma of the Dutch note’s worked example, after the amounts were
