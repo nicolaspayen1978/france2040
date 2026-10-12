@@ -1,8 +1,10 @@
 # Standardising home-equity credit
 
-12 October 2026. Research conclusion, not a product approval. Not a public snapshot. Not an épreuve contradictoire.
+12 October 2026. Research conclusion, not a product approval. Not an épreuve contradictoire.
 
-Working file. English stays here. A later public page would be a new French snapshot, a new id, and a new sha256. This note does not close EC-01, EC-05, or the 700 Md€ path, and it does not approve a product.
+Working file. English stays here. Public French snapshot: `/documents/standard-credit-logement`, version `2026-10-12`. Diagram: `/en-images/surete-distincte-pas-echelle`. This note does not close EC-01, EC-05, or the 700 Md€ path, and it does not approve a product.
+
+Checked against primary sources before that publication, and stated there rather than by rewriting this file: the HCSF FAQ of 29 January 2024 says it has no normative force; a 20-year final repayment can sit inside the 25-year maturity cap while the last-year effort rate, on that FAQ’s question 22, very probably exceeds 35%; Banque de France usury categories for Q4 2026 split cash credit from housing credit by article L313-1(1°), not by the whole article; ACPR 2024 states 99% fixed-rate production, 97% of outstanding secured, and mortgages at 27% of outstanding. “Crédit Logement covers over a third” is not repeated on the public page. Code civil article 2416 is the professional rechargeable mortgage. CRR article 108(5)(c) is a prudential condition for treating a cautioned loan as a mortgage exposure, not a general civil ban.
 
 Established here: a separate mortgage can be registered behind an earlier one under existing security law. Still open: cheap, interoperable distribution at scale.
 
@@ -65,3 +67,5 @@ Banks should retain their own customer selection, tighter limits, income and exi
 Reasons to stop: no acceptable HCSF treatment; consent routinely refused or too slow for cautioned first loans; unreliable first-loan balances or valuations; junior-lien capital and funding costs that prevent attractive all-in pricing; inability to demonstrate a credible final repayment without relying on rising house prices or refinancing; or weak customer understanding of the capital still due. The PTZ’s operational success and the rechargeable mortgage’s repeal both argue for measuring these conditions before building a national label.
 
 Research still needed: a sample review of existing mortgage and caution contracts; a French-law opinion against CRR3’s junior-lien enforcement conditions; guarantor eligibility and pricing decisions; loan-purpose-specific usury and covered-bond opinions; bank-by-bank funding quotes; and pilot evidence on borrower demand and principal repayment. Until those results and an HCSF position exist, “standardisable under existing security law” is established; “cheap, interoperable and distributable at scale” remains open.
+
+Dutch comparison, filed separately and not a correction of this note: `Docs/25_Dutch_Interest_Only_Affordability.md`. The Dutch income test uses a notional annuity regardless of product form. It does not show that an interest-only bill can be the affordability test.

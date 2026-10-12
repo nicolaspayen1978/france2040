@@ -1,4 +1,11 @@
-2026-10-08
+2026-10-12
+
+2026-10-12. Implementation research published as `/documents/standard-credit-logement`
+version `2026-10-12`. Separate mortgage under existing security law is established there.
+The HCSF secretariat FAQ of 29 January 2024 is recorded as a non-normative reading that
+counts an in-fine final principal in the last year’s effort rate. Cheap, interoperable
+scale stays open. EC-01, EC-05 and the 700 Md€ path are unchanged. Diagram:
+`/en-images/surete-distincte-pas-echelle`.
 
 2026-10-08. The HELOC working note is published as a versioned product benchmark at
 `/documents/heloc-interets-seuls`. A separate Dutch interest-only section points to the

@@ -1,0 +1,77 @@
+<!--
+  En images — surete-distincte-pas-echelle v2026-10-12
+  Colours from app/tokens.css: --ink #1a1a1a, --ink-2 #3f3f3f, --ink-3 #5c5c5c,
+  --muted #6a6a6a, --muted-2 #9a9a9a, --paper #fff, --paper-2 #e8e8e4, --mark-blue #002395, --blue-3 #99a5cd
+  Schéma. Ne ferme ni EC-01 ni EC-05. La FAQ du secrétariat n’a pas de portée normative.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 640" role="img" aria-labelledby="title desc">
+  <title id="title">Une hypothèque distincte n’est pas une distribution à l’échelle</title>
+  <desc id="desc">
+    Le droit des sûretés permet d’inscrire une hypothèque nouvelle sans refinancer le premier prêt. La lecture publiée du secrétariat du HCSF fait entrer le capital final dans le taux d’effort de la dernière année, très probablement au-dessus de 35 %. Le consentement des cautions, le prix et le refinancement restent non établis. Ce schéma n’approuve pas un produit et ne ferme ni EC-01 ni EC-05.
+  </desc>
+  <rect width="720" height="640" fill="#fff"/>
+
+  <text x="24" y="32" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">Une hypothèque distincte n’est pas une distribution à l’échelle</text>
+  <text x="24" y="52" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Note du 12 octobre 2026 · FAQ du secrétariat du HCSF, 29 janvier 2024 · trois qualifications</text>
+
+  <rect x="24" y="74" width="214" height="228" fill="#fff" stroke="#002395" stroke-width="1.25"/>
+  <text x="36" y="98" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#002395">Droit des sûretés</text>
+  <text x="36" y="116" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#002395">Établi</text>
+  <text x="36" y="148" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">Hypothèque nouvelle,</text>
+  <text x="36" y="166" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">inscrite après la première.</text>
+  <text x="36" y="192" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">L’ancien prêt à taux fixe</text>
+  <text x="36" y="210" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">peut rester en place.</text>
+  <text x="36" y="236" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Pas de loi de produit</text>
+  <text x="36" y="254" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">identifiée pour cela.</text>
+  <text x="36" y="282" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Code civil, art. 2418</text>
+
+  <rect x="252" y="74" width="216" height="228" fill="#e8e8e4" stroke="#1a1a1a" stroke-width="1.25"/>
+  <text x="264" y="98" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Lecture du HCSF</text>
+  <text x="264" y="116" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#3f3f3f">Contrainte pour l’échelle</text>
+  <text x="264" y="148" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">Le capital final entre</text>
+  <text x="264" y="166" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">dans le taux d’effort</text>
+  <text x="264" y="184" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">de la dernière année.</text>
+  <text x="264" y="210" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">Très probablement &gt; 35 %.</text>
+  <text x="264" y="236" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Une maturité de 20 ans</text>
+  <text x="264" y="254" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">tient dans les 25 ans.</text>
+  <text x="264" y="282" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">FAQ, questions 22 et 23</text>
+
+  <rect x="482" y="74" width="214" height="228" fill="#fff" stroke="#9a9a9a" stroke-width="1.25"/>
+  <text x="494" y="98" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#3f3f3f">Distribution</text>
+  <text x="494" y="116" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Non établi</text>
+  <text x="494" y="148" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">Consentement des cautions.</text>
+  <text x="494" y="174" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">Prix du rang postérieur.</text>
+  <text x="494" y="200" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">Solde du premier prêt.</text>
+  <text x="494" y="226" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">Refinancement éligible.</text>
+  <text x="494" y="260" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Une norme volontaire</text>
+  <text x="494" y="278" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">ne lève pas le test.</text>
+
+  <text x="24" y="332" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Trois cas de prêt déjà en place</text>
+
+  <rect x="24" y="346" width="214" height="132" fill="#fff" stroke="#9a9a9a" stroke-width="1"/>
+  <text x="36" y="368" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1a1a1a">1 · Hypothèque inscrite</text>
+  <text x="36" y="392" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Rang postérieur possible</text>
+  <text x="36" y="410" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">sans refinancement.</text>
+  <text x="36" y="434" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Lire quand même les covenants.</text>
+  <text x="36" y="456" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Inférence, pas un avis d’acte.</text>
+
+  <rect x="252" y="346" width="216" height="132" fill="#fff" stroke="#9a9a9a" stroke-width="1"/>
+  <text x="264" y="368" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1a1a1a">2 · Prêt cautionné</text>
+  <text x="264" y="392" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Peut être premier au fichier.</text>
+  <text x="264" y="416" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Depuis 2014, le traitement</text>
+  <text x="264" y="434" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">prudentiel demande souvent</text>
+  <text x="264" y="452" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">le consentement d’origine.</text>
+
+  <rect x="482" y="346" width="214" height="132" fill="#fff" stroke="#9a9a9a" stroke-width="1"/>
+  <text x="494" y="368" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1a1a1a">3 · Aucun prêt en cours</text>
+  <text x="494" y="392" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Sûreté et rang plus simples.</text>
+  <text x="494" y="416" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Les intérêts seuls et le</text>
+  <text x="494" y="434" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">financement restent entiers.</text>
+
+  <text x="24" y="508" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Exemple arithmétique, pas une statistique : avance 40 % sur une dette déjà à 40 % → dette consolidée 80 %.</text>
+  <text x="24" y="528" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Deux tests distincts. Le second ne se lit pas dans le fichier immobilier seul.</text>
+
+  <text x="24" y="568" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">La FAQ du secrétariat n’a pas de portée normative. Elle ne remplace pas une décision du HCSF.</text>
+  <text x="24" y="592" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Schéma · 12 octobre 2026 · ne constitue pas un produit · ne ferme ni EC-01 ni EC-05 · n’établit ni un prix ni 700 Md€</text>
+  <text x="24" y="616" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Lecture : note sur le crédit garanti par le logement déjà détenu, version 2026-10-12</text>
+</svg>

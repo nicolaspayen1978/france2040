@@ -32,6 +32,11 @@ EC-08 `2026-10-02-5`. Does not predict default or bank loss.
 (UTF-8 + French labels); `patrimoine-vs-enveloppe` and `emprunt-moyen-mensualite` → `2026-10-03`.
 Slug kept; visible French only. Cites EC-08 / EC-01 / parcours `2026-10-03`.
 
+2026-10-12. Implementation schéma published: `/en-images/surete-distincte-pas-echelle`
+`2026-10-12`. Three qualifications (security law established, HCSF reading binding for scale,
+distribution open) and three existing-loan cases. Cites
+`/documents/standard-credit-logement/v/2026-10-12`. Does not close EC-01 or EC-05.
+
 2026-10-03. Phase 2 simulation trio published: `cas-central-phase-2`,
 `meme-credit-transmission-faible`, `choc-adverse-et-arret`. Cite modèle 2026-10-03 and
 résultat 2026-10-03-2. Nature simulation. Do not close ECs.

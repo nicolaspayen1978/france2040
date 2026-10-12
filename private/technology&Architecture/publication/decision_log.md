@@ -1,5 +1,17 @@
 # Decision log
 
+## 2026-10-12 — Housing-equity credit can be standardised in security law; scale stays open
+
+Owner delivered the research conclusion and asked to complete it if needed, then publish it,
+with an En images figure if relevant. The public note is one versioned working paper,
+`/documents/standard-credit-logement` `2026-10-12`. Checked additions, not a new thesis:
+the HCSF FAQ says it has no normative force; a 20-year bullet can fit the 25-year maturity
+cap while question 22 still puts the final principal in the last-year effort rate; usury
+categories follow L. 313-1 1°, not the whole article; ACPR 2024 figures replace an
+unverified Crédit Logement market share. The diagram
+`/en-images/surete-distincte-pas-echelle` explains that split and does not close EC-01
+or EC-05. No model number and no earlier snapshot changed.
+
 ## 2026-10-08 — HELOC and Dutch product repères published as a benchmark note
 
 Owner proposed publishing the HELOC research note and asked whether the Netherlands belongs.

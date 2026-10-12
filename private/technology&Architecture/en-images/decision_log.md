@@ -1,5 +1,13 @@
 # Decision log
 
+## 2026-10-12 — Separate mortgage is not scale
+
+Owner asked to publish the housing-equity implementation note and to add an En images figure
+if relevant. One schéma, `surete-distincte-pas-echelle`, version `2026-10-12`, placed in
+Comprendre le mécanisme after the consolidated-ratio figure. It cites the new paper’s
+sections on the existing loan and on the HCSF constraint. Grey carries what is not
+established. It does not invent a price, a volume, or a closed verdict.
+
 ## 2026-10-01 — En images as addressable knowledge objects
 
 Proposed (not built). Triggered by the public-product thread: each graph needs a URL so a later HEA can retrieve meaning as text, not as pixels.

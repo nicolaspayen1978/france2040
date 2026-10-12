@@ -13,6 +13,7 @@ import { parcoursMenageInteretsSeuls } from "@/content/visuals/parcours-menage-i
 import { partIoNEstPasLeLtvConsolide } from "@/content/visuals/part-io-n-est-pas-le-ltv-consolide";
 import { patrimoineVsEnveloppe } from "@/content/visuals/patrimoine-vs-enveloppe";
 import { retraitesVsActifs } from "@/content/visuals/retraites-vs-actifs";
+import { sureteDistinctePasEchelle } from "@/content/visuals/surete-distincte-pas-echelle";
 import { trajectoireCredit20272040 } from "@/content/visuals/trajectoire-credit-2027-2040";
 import type { Visual } from "@/content/visuals/types";
 
@@ -40,6 +41,7 @@ export const visualGroups: VisualGroup[] = [
       trajectoireCredit20272040,
       mecanismeDuEuro,
       partIoNEstPasLeLtvConsolide,
+      sureteDistinctePasEchelle,
       leRatioNEstPasLeService,
     ],
   },
