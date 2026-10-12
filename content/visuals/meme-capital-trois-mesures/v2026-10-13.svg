@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 620" role="img" aria-labelledby="title desc">
+  <title id="title">Le même capital, trois mesures</title>
+  <desc id="desc">Pour 100 000 euros à 4 % sur 20 ans : le contrat demande 333 euros par mois, le test néerlandais par défaut 606 euros par mois, et la lecture publiée du HCSF place environ 104 000 euros dans la dernière année.</desc>
+  <rect width="720" height="620" fill="#ffffff"/>
+  <text x="24" y="36" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">Le même capital, trois mesures</text>
+  <text x="24" y="58" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">100 000 € · 4 % fixé sur 20 ans · assurance exclue · pas une offre</text>
+
+  <rect x="24" y="84" width="214" height="360" fill="#ffffff" stroke="#e8e8e4"/>
+  <text x="40" y="114" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Contrat</text>
+  <text x="40" y="134" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Ce que le ménage paie</text>
+  <text x="40" y="196" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="32" font-weight="500" fill="#1a1a1a">333 €</text>
+  <text x="40" y="222" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#3f3f3f">par mois</text>
+  <text x="40" y="268" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">4 000 € par an</text>
+  <text x="40" y="292" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Intérêts seuls.</text>
+  <text x="40" y="320" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Le capital reste dû</text>
+  <text x="40" y="338" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">à l’échéance.</text>
+
+  <rect x="254" y="84" width="214" height="360" fill="#ffffff" stroke="#e8e8e4"/>
+  <text x="270" y="114" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#002395">Test néerlandais</text>
+  <text x="270" y="134" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#002395">Annuité de 20 ans, le défaut</text>
+  <text x="270" y="196" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="32" font-weight="500" fill="#1a1a1a">606 €</text>
+  <text x="270" y="222" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#3f3f3f">par mois</text>
+  <text x="270" y="268" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">7 272 € par an</text>
+  <text x="270" y="292" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Intérêts et capital,</text>
+  <text x="270" y="310" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">quelle que soit la forme.</text>
+  <text x="270" y="346" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Le contrat peut rester</text>
+  <text x="270" y="364" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">à 333 € par mois.</text>
+
+  <rect x="484" y="84" width="212" height="360" fill="#ffffff" stroke="#e8e8e4"/>
+  <text x="500" y="114" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Lecture du HCSF</text>
+  <text x="500" y="134" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">Dernière année</text>
+  <text x="500" y="188" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#1a1a1a">104 000 €</text>
+  <text x="500" y="214" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#3f3f3f">une fois</text>
+  <text x="500" y="260" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">100 000 € de capital</text>
+  <text x="500" y="278" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">+ 4 000 € d’intérêts</text>
+  <text x="500" y="314" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Très probablement</text>
+  <text x="500" y="332" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">au-dessus de 35 %.</text>
+  <text x="500" y="368" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">FAQ, question 22</text>
+
+  <text x="24" y="480" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Même crédit. Trois mesures. Le ménage qui passe le test à 606 € paie toujours 333 €.</text>
+  <text x="24" y="504" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">L’annuité de 30 ans, 477 € par mois, n’est permise que si le prêteur la juge responsable.</text>
+  <text x="24" y="536" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#6a6a6a">La FAQ du 29 janvier 2024 dit n’avoir pas de portée normative. Elle ne remplace pas une décision du HCSF.</text>
+  <text x="24" y="564" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Schéma · 13 octobre 2026 · ne copie pas les Pays-Bas · ne ferme ni EC-01 ni EC-05 · n’établit pas 700 Md€</text>
+  <text x="24" y="588" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#9a9a9a">Lecture : note Pays-Bas, version 2026-10-12, exemple à 4 %</text>
+</svg>

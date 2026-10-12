@@ -1,14 +1,14 @@
 # Standardising home-equity credit
 
-12 October 2026. Research conclusion, not a product approval. Not an épreuve contradictoire.
+12 October 2026. Research conclusion, not a product approval. Not an épreuve contradictoire. Editorial structure updated 13 October 2026, and tightened the same day before the public text was frozen. The findings are unchanged.
 
-Working file. English stays here. Public French snapshot: `/documents/standard-credit-logement`, version `2026-10-12-2`. The version `2026-10-12` remains. Diagram: `/en-images/surete-distincte-pas-echelle`. The Dutch sequel is `/documents/pays-bas-interets-seuls`. This note does not close EC-01, EC-05, or the 700 Md€ path, and it does not approve a product.
+Working file. English stays here. Public French snapshot: `/documents/standard-credit-logement`, version `2026-10-13-2`, frozen. Versions `2026-10-12`, `2026-10-12-2` and `2026-10-13` remain. Diagram: `/en-images/surete-distincte-pas-echelle`. The Dutch sequel is `/documents/pays-bas-interets-seuls`. This note does not close EC-01, EC-05, or the 700 Md€ path, and it does not approve a product.
 
 Checked against primary sources before that publication, and stated there rather than by rewriting this file: the HCSF FAQ of 29 January 2024 says it has no normative force; a 20-year final repayment can sit inside the 25-year maturity cap while the last-year effort rate, on that FAQ’s question 22, very probably exceeds 35%; Banque de France usury categories for Q4 2026 split cash credit from housing credit by article L313-1(1°), not by the whole article; ACPR 2024 states 99% fixed-rate production, 97% of outstanding secured, and mortgages at 27% of outstanding. “Crédit Logement covers over a third” is not repeated on the public page. Code civil article 2416 is the professional rechargeable mortgage. CRR article 108(5)(c) is a prudential condition for treating a cautioned loan as a mortgage exposure, not a general civil ban.
 
 Established here: a separate mortgage can be registered behind an earlier one under existing security law. Still open: cheap, interoperable distribution at scale.
 
-France does not need a new law to let a homeowner take a new mortgage-backed loan while keeping an existing loan. A separate mortgage can be registered behind an earlier one. The harder question is whether banks can routinely offer a long, fixed-rate loan with interest payments and a final principal payment. Under the HCSF’s published interpretation, that final payment enters the affordability test, so a low monthly interest bill does not make an ordinary in fine loan compliant at scale. A voluntary banking standard could solve much of the documentation and collateral problem; broad distribution of the proposed repayment structure would likely also need an HCSF decision. Code de la consommation, art. L313-1; Code civil, art. 2418; HCSF FAQ, questions 20–23.
+France does not need a new law to let a homeowner take a new mortgage-backed loan while keeping an existing loan. A separate mortgage can be registered behind an earlier one. The harder question is whether banks can routinely offer a long, fixed-rate loan with interest payments and a final principal payment. Under the HCSF’s published interpretation, that final payment enters the affordability test, so a low monthly interest bill does not make an ordinary in fine loan compliant at scale. A voluntary banking standard could solve much of the documentation and collateral problem; broad distribution of the proposed repayment structure would likely also need an HCSF decision. Section 5 sets those two facts out as routes, and says where the path can stop. Code de la consommation, art. L313-1; Code civil, art. 2418; HCSF FAQ, questions 20–23.
 
 ## 1. What the French precedents show
 
@@ -46,26 +46,94 @@ The CCSF’s 2026 review likewise calls in fine credit marginal for primary resi
 
 ## 4. Minimum target architecture
 
-Share a specification, not a credit decision. An FBF-led, open interbank standard could define: the fixed-term product and final-payment disclosure; permitted purposes; separate advance LTV and consolidated LTV; a conservative, independently governed valuation method; an existing-loan balance and secured-amount certificate; lien and caution consent workflows; standard notarial instructions; annual borrower statements; and portfolio reporting of defaults, extensions, sales and final-payment outcomes. Independent valuation and documented solvency already have legal or prudential foundations. Code de la consommation, arts. L313-16 and L313-20; EBA loan-origination guidelines.
+Share a specification, not a credit decision. The shared piece is operational: how the product is defined, how collateral and existing debt are described, and how data, consent, documents and reporting move between banks and notaries. It is not a joint decision to lend, and it is not a common price.
 
-Banks should retain their own customer selection, tighter limits, income and exit tests, pricing, funding, guarantee choice and decision to lend. An interbank standard must remain accessible without coordinating prices or exchanging competitively sensitive underwriting plans. European Commission horizontal-cooperation guidelines.
+Banks retain their own customer selection, tighter limits, income and exit tests, pricing, funding, guarantee choice and decision to lend. An interbank standard must stay open without coordinating prices or exchanging competitively sensitive underwriting plans. European Commission horizontal-cooperation guidelines. Independent valuation and documented solvency already have legal or prudential foundations. Code de la consommation, arts. L313-16 and L313-20; EBA loan-origination guidelines.
 
-| Actor or instrument | Minimum intervention |
-| --- | --- |
-| Individual banks and notaries | Under existing law: pilot a separately documented mortgage advance; preserve the old loan; verify title, covenants, total debts, valuation, affordability, security costs and a credible way to repay principal. Use existing mortgage-credit information and reflection requirements. |
-| FBF, banks, notaries and guarantors | Agree voluntary data fields, customer-authorised balance exchange, model consent requests, ranking and discharge instructions, comparable cost disclosures and outcome reporting. Guarantors must decide separately whether their existing guarantees tolerate a later lien and whether to underwrite the new product. |
-| HCSF; ACPR and Banque de France | HCSF first clarifies how the proposed final payment is treated and, if it wants compliant broad origination, decides whether a narrowly bounded amendment is justified. ACPR then clarifies reporting and supervises application; with banks it validates the legal and prudential treatment of junior liens and cautions. Banque de France checks data and applicable rate-category issues. Clarification alone cannot waive a binding HCSF test. |
-| Government and Parliament | No initial product-creation law is identified. Consider legislation only if the pilot shows that a mandatory right to loan data or consent, a new reusable consumer security, a public guarantee or subsidy, or access to a particular funding vehicle is indispensable. A decree or order would then implement the chosen statute or amend rules within an existing delegation. |
+If the evidence supports going that far, the result is an ordinary competitive bank product inside that standard. It is not a loan created or funded by the state, and it does not need a public product name. A statute, if one is ever required, can be limited to a residual obstacle such as data access or consent. It does not have to create a named public loan. The next section is how coordination can increase, and where the path can stop.
 
-## 5. Sequence and stop conditions
+## 5. Possible paths from legal possibility to a market
 
-1. Design and legal opinion. Assemble lenders, guarantors, notaries, HCSF and ACPR. Map first-security types and legacy covenants. Obtain written positions on in fine treatment, junior-lien recognition, caution consent, usury classification and eligible funding. Cost a loan using actual bank capital and funding assumptions.
-2. Bounded, separately priced pilots under existing law. Start where ranking and consent are documentable. Include both same-bank and different-bank cases; record refusals and time spent obtaining existing-loan data. Do not describe use of HCSF flexibility as a scalable solution.
-3. Decide the prudential question from evidence. If principal-at-maturity loans cannot satisfy the current rule outside limited flexibility, seek a proposed HCSF amendment with explicit income, consolidated LTV, maturity, exit-plan, stress and reporting conditions. The HCSF may reasonably decline it.
-4. Only then standardise distribution. Adopt the voluntary interbank and notarial specification, obtain guarantor participation where viable, and have several banks implement and report against it. Assess a statutory or funding change only for a demonstrated gap.
+These routes were already present in the note. They were not set out as a path from today’s bespoke transaction to a contestable market. They are increasing levels of coordination, and a possible escalation. They are not four mutually exclusive policy choices. At each stage, stop the route or segment that fails. Do not extrapolate feasibility from one segment to another.
 
-Reasons to stop: no acceptable HCSF treatment; consent routinely refused or too slow for cautioned first loans; unreliable first-loan balances or valuations; junior-lien capital and funding costs that prevent attractive all-in pricing; inability to demonstrate a credible final repayment without relying on rising house prices or refinancing; or weak customer understanding of the capital still due. The PTZ’s operational success and the rechargeable mortgage’s repeal both argue for measuring these conditions before building a national label.
+Prove the transaction, then standardise the market, then resolve the prudential constraint if scale requires it, then legislate only for a demonstrated residual gap.
 
-Research still needed: a sample review of existing mortgage and caution contracts; a French-law opinion against CRR3’s junior-lien enforcement conditions; guarantor eligibility and pricing decisions; loan-purpose-specific usury and covered-bond opinions; bank-by-bank funding quotes; and pilot evidence on borrower demand and principal repayment. Until those results and an HCSF position exist, “standardisable under existing security law” is established; “cheap, interoperable and distributable at scale” remains open.
+### Route 1 — Bank-led product / pilot under existing law
 
-Dutch comparison, filed separately and not a correction of this note: `Docs/25_Dutch_Interest_Only_Affordability.md`. The Dutch income test uses a notional annuity regardless of product form. It does not show that an interest-only bill can be the affordability test.
+An individual bank, working with notaries, can originate a separately documented low-LTV home-equity mortgage advance under existing law. It retains its own underwriting, pricing, funding and eligibility rules. The purpose is to establish operational feasibility, actual costs, customer demand, security and ranking issues, and friction with the existing loan. Include same-bank and different-bank cases. Record refusals, and the time spent obtaining the existing balance.
+
+Do not read this route as permission for mass origination. On the published HCSF reading in section 3, a long in-fine structure very probably fails the last-year effort rate. The flexibility allowance can support a bounded experiment where it is available. It is not a mass-market channel.
+
+### Route 2 — Voluntary open interbank and notarial standard
+
+Several banks, the FBF, notaries and, where they choose to take part, guarantors can agree a common operational specification: valuation; an advance loan-to-value; a consolidated loan-to-value, kept separate; existing-loan information; customer-authorised data exchange; a ranking and consent workflow; documentation; disclosures; and reporting. Each guarantor decides whether an existing guarantee tolerates a later lien, and whether to underwrite the new advance.
+
+The principle in section 4 still governs. Share a specification, not a credit decision. Banks remain independent on approval, underwriting, funding and pricing.
+
+The objective is not one national provider, and not a single loan carrying a public name. It is several lenders able to compete over the same intelligible transaction. Crédit Agricole, BNP Paribas, BPCE or Société Générale could, in theory, quote against that specification. Nothing here says that they will.
+
+This route addresses the original question of whether the transaction can become simpler and, through standardisation and competition, potentially less costly.
+
+- Standardisation can reduce operational friction.
+- Common definitions and documentation can improve comparability.
+- Several banks on an open standard can make the market contestable.
+- Pricing should remain competitive rather than administered.
+
+Standardisation can create the conditions for scale, comparability and competition. It does not, by itself, make the product cheap. The all-in price still has to be demonstrated from funding, capital, security, notarial and operational costs.
+
+Formulation to test: “Standardisation can create scale and comparability; competition should determine the price. Whether that price is sufficiently low remains an empirical banking question.”
+
+An agreed standard does not remove the final-payment constraint in section 3. Comparable offers are not the same thing as broad permission to originate the long in-fine loan.
+
+### Route 3 — Interbank standard plus prudential adaptation
+
+Operational standardisation does not solve the HCSF final-payment problem. Under the published FAQ reading, the final principal still enters the last year’s charges.
+
+`Docs/25_Dutch_Interest_Only_Affordability.md` supplies one candidate architecture for a future HCSF consideration. It is not reproduced here. The candidate is: a contractual interest-only cash flow; affordability assessed on a notional amortising burden, rather than on contractual interest alone or on the whole balloon in the final year; a conservative cap on the non-amortising tranche; a separate consolidated loan-to-value; existing debt included; a retirement and terminal-risk assessment; disclosure and reporting.
+
+The Netherlands shows that this separation is possible inside a functioning mortgage framework. The contractual cash-flow benefit of interest-only borrowing is preserved, without the extra borrowing capacity that would follow from testing contractual interest alone. That demonstration does not establish that France should adopt the separation, or that the HCSF would accept it. No Dutch parameter is imported, including a 50% cap or a 100% consolidated loan-to-value.
+
+This is potentially the route from a niche transaction to a scalable market. The proposition is untested. Putting the notional test in place of the last-year balloon would be an HCSF decision. Private caps do not, under the published FAQ, keep the balloon out of the last year’s charges.
+
+### Route 4 — Targeted statutory intervention
+
+Legislation is residual. It is not the default, and it is not a public product. Government or Parliament would intervene only if a pilot identifies a specific obstacle that private standardisation and HCSF treatment cannot reasonably remove. Examples: a mandatory right to existing-loan data, a consent rule, a new or reusable security, access to a particular funding vehicle, a public guarantee, or a subsidy.
+
+Current research does not identify a need to begin with a new statutory national loan, a state-administered interest rate, a €500–700bn public guarantee, or public lending. Those instruments are not ruled out. They have not been shown to be necessary.
+
+A law can be narrower than a product. It can fix data portability or consent and create no loan at all. The credit, if the evidence supports it, remains a normal competitive bank product inside a common standard. It does not need a France 2040 label.
+
+## 6. Sequence and stop conditions
+
+The sequence is the same escalation, as four empirical questions. It does not repeat the routes.
+
+1. Can it be manufactured? A pilot under existing law. Map first-security types and legacy covenants. Obtain written positions on in-fine treatment, junior-lien recognition, caution consent, usury classification and eligible funding. Cost one loan on that bank’s actual capital and funding assumptions. Do not describe use of the HCSF flexibility allowance as a scalable solution.
+2. Can it become a competitive market? An open interbank and notarial standard used by more than one lender, each still deciding and pricing alone. What this can show is comparability and contestability. It does not show that the published effort-rate reading allows the long in-fine loan at scale.
+3. Can it scale prudentially? The HCSF treatment of the final payment, including a test of the notional-amortisation alternative identified in Docs/25. If a principal-at-maturity loan cannot satisfy the current rule outside limited flexibility, the question for the HCSF is whether a narrowly bounded amendment is justified. The HCSF may decline it. An ACPR clarification cannot waive a binding HCSF test.
+4. Does anything still require legislation or another public intervention? Legislate only against a residual problem the earlier stages have demonstrated. A decree or order would then implement the chosen statute, or amend rules inside an existing delegation.
+
+At each stage, stop the route or segment that fails. Do not extrapolate feasibility from one segment to another.
+
+A segment can fail on its own. A different-lender junior mortgage can be too expensive while a same-bank additional advance still works. Consent on a cautioned existing loan can be too slow while outright owners, or households with an ordinary mortgage, still form a substantial market. Unreliable balances or valuations stop the cases that depend on them.
+
+A segment failure is not a programme-level stop. A programme-level stop is a failure that leaves no sufficiently large eligible population. France 2040 does not require every homeowner to qualify.
+
+Programme-level reasons to stop: no acceptable prudential treatment for the proposed long in-fine structure, and no other contractual structure that reaches similar economics without that decision; funding, capital and pricing that remain too expensive in every segment that otherwise works, because competition cannot overcome an intrinsically expensive risk structure; no credible repayment of principal without rising house prices or refinancing; or customers who do not understand that the capital is still due. The operational success of the PTZ, and the repeal of the rechargeable mortgage for households, both argue for measuring these conditions before any national label.
+
+## 7. Conclusion
+
+Four levels of confidence.
+
+Established. The basic transaction, a separate security, is possible under existing French law.
+
+Plausible but unproven. Much of the operational complexity can be standardised privately across banks, notaries and guarantors.
+
+A prudential decision appears necessary for broad distribution of the proposed long in-fine structure. The current published HCSF treatment of the final principal appears incompatible with that distribution. Docs/25 identifies notional amortisation as a candidate alternative to test. It is not an approved solution.
+
+Still empirical. Whether several banks can fund and price the standardised product cheaply enough for a competitive mass market. The relevant cost is funding, capital, security, notarial work and operations, not the interest rate alone.
+
+The research does not identify a need for the state to create or fund a new mortgage product. It identifies a possible path in which private standardisation makes the transaction simple and comparable, competition determines the price, prudential rules determine safe borrowing capacity, and legislation is reserved for residual obstacles demonstrated by evidence.
+
+Still to be established before any of those levels moves: a sample of existing mortgage and caution contracts; a French-law opinion on the junior-lien enforcement conditions; guarantor eligibility and pricing; usury by loan purpose and covered-bond eligibility; bank-by-bank funding quotes; and pilot evidence on demand and on repayment of principal. The next substantive measurement is household-level French origination capacity: property value, existing debt, income, age and retirement, under the alternative affordability treatments. It is specified in Docs/25 and prepared, as data only, in Docs/26. It has not been run. It can reduce or support the €700bn path. This note does not change that path, and it does not close EC-01 or EC-05.
+
+The Dutch comparison stays in `Docs/25_Dutch_Interest_Only_Affordability.md`. It is the evidence for Route 3. It does not recommend that France copy the Netherlands.

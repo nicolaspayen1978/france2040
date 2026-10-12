@@ -1,4 +1,17 @@
-2026-10-12
+2026-10-13
+
+2026-10-13. Standardisation note frozen as `/documents/standard-credit-logement` version
+`2026-10-13-2`. Version `2026-10-13` is unchanged and superseded. Dutch note frozen as
+`/documents/pays-bas-interets-seuls` version `2026-10-13`; version `2026-10-12` remains.
+Wording only: prudential decision appears necessary for the long in-fine structure;
+potentially less costly, not cheap; several lenders on one transaction; a failed case
+is not a programme stop. French anglicisms removed. EC-01, EC-05 and 700 Md€ unchanged.
+
+2026-10-13. Standardisation note revised as `/documents/standard-credit-logement` version
+`2026-10-13`. Versions `2026-10-12` and `2026-10-12-2` are unchanged and superseded.
+Four routes: bank pilot, open interbank and notarial standard, prudential adaptation
+for scale, targeted statute only for a demonstrated residual gap. Not a public product.
+Docs/25 cross-reference only. EC-01, EC-05 and the 700 Md€ path are unchanged.
 
 2026-10-12. Standardisation note revised as `/documents/standard-credit-logement` version
 `2026-10-12-2`. Version `2026-10-12` is unchanged and superseded. Dutch sequel published at

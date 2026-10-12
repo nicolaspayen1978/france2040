@@ -1,5 +1,31 @@
 # Decision log
 
+## 2026-10-13 — Routes tightened, then both notes frozen
+
+Owner accepted the four-route ladder and asked for three tightenings before a freeze.
+Version `2026-10-13-2` of the standardisation note replaces “required before scale”
+with a prudential decision that appears necessary for broad distribution of the proposed
+long in-fine structure; states that standardisation can make the transaction simpler and
+potentially less costly; names competition among several lenders on one intelligible
+transaction; and separates a failed segment from a programme-level stop. Anglicisms in
+the French text were removed. Bytes of `2026-10-13` are unchanged and that version is
+superseded. The Dutch note gains version `2026-10-13`, wording only, and is frozen.
+Version `2026-10-12` of that note remains. EC-01, EC-05 and the 700 Md€ path are unchanged.
+No origination stock is estimated. Next measurement is EC-10.
+
+## 2026-10-13 — Implementation routes made explicit
+
+Owner accepted the research conclusions and asked for a structural update of the
+standardisation note. Version `2026-10-13` sets out four escalating routes: a bank
+pilot under existing law, an open interbank and notarial standard, prudential
+adaptation if scale requires it, and targeted legislation only for a demonstrated
+residual gap. The operational standard can precede an HCSF decision. It does not
+authorise mass origination of a long in-fine loan. Legislation here is not a public
+product: a statute could fix data access or consent and create no loan. Bytes of
+`2026-10-12` and `2026-10-12-2` are unchanged; `2026-10-12-2` is superseded.
+Docs/25 gains only a cross-reference to Route 3. EC-01, EC-05 and the 700 Md€ path
+are unchanged. No origination stock is estimated.
+
 ## 2026-10-12 — Dutch affordability note published; standardisation reading sharpened
 
 Owner asked to publish the French standardisation conclusion and the Dutch sequel separately,

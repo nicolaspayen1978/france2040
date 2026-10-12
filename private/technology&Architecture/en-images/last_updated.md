@@ -1,3 +1,7 @@
+2026-10-13
+
+Schéma `meme-capital-trois-mesures` version `2026-10-13`. Same 100 000 €, three measures, citing the Dutch note of 12 October. Does not recommend the Dutch calculation.
+
 2026-10-01
 
 Design note, decision log, and phases 0–3 written. No implementation. Owner OK required before code.

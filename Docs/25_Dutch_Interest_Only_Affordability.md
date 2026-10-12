@@ -2,9 +2,11 @@
 
 12 October 2026. Second-pass research. Not a product approval. Not a recommendation that France copy the Netherlands.
 
-Working file. English stays here. Public French snapshot: `/documents/pays-bas-interets-seuls`, version `2026-10-12`. It does not change `Docs/24_Home_Equity_Credit_Standard.md` in substance, and it does not change the public snapshot `/documents/standard-credit-logement` version `2026-10-12`. The later public reading of that note is `2026-10-12-2`. No primary source read here corrects French security law or the HCSF reading of an in fine loan. EC-01, EC-05, and the 700 Md€ path stay open.
+Working file. English stays here. Public French snapshot: `/documents/pays-bas-interets-seuls`, version `2026-10-13`, frozen. Version `2026-10-12` remains. The later public text changes wording only. It does not change `Docs/24_Home_Equity_Credit_Standard.md` in substance, and it does not change the public snapshot `/documents/standard-credit-logement` version `2026-10-12`. Public readings of that note after the first snapshot are `2026-10-12-2`, `2026-10-13` and `2026-10-13-2`. The last of those is frozen. This file is not merged into them. No primary source read here corrects French security law or the HCSF reading of an in fine loan. EC-01, EC-05, and the 700 Md€ path stay open.
 
 Frozen on 12 October 2026. Do not reopen this comparison unless a primary source contradicts a finding already filed. The next measurement is the household-level French origination-capacity test specified below. It is not part of this note.
+
+Cross-reference only, added 13 October 2026, without reopening the findings: the candidate architecture below is Route 3 in `Docs/24_Home_Equity_Credit_Standard.md`.
 
 ## The proposition, tested
 
@@ -233,6 +235,8 @@ The combination to test, and not yet to adopt:
 - valuation;
 - a retirement and terminal-risk assessment;
 - disclosure and reporting.
+
+That list is the candidate prudential architecture cited as Route 3 in `Docs/24_Home_Equity_Credit_Standard.md`. The routes stay in that note.
 
 Asking the HCSF to apply a notional annuity instead of the last-year balloon would be an HCSF decision. The tranche cap, the consolidated cap, valuation, and disclosure can be specified privately and still would not, under the published FAQ, stop the balloon from entering the last year’s charges. Banks’ ability to fund and price the product is untouched. So is household take-up.
 

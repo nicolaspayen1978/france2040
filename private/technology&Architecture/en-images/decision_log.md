@@ -1,5 +1,14 @@
 # Decision log
 
+## 2026-10-13 — Same capital, three measures
+
+Owner asked for one schéma of the Dutch note’s worked example, after the amounts were
+confirmed in the published text. `meme-capital-trois-mesures`, version `2026-10-13`,
+sits in Comprendre le mécanisme after the security schema. It cites the 12 October
+Dutch note: 333 € on the contract, 606 € on the default 20-year notional annuity,
+about 104 000 € in the last year under the published HCSF reading. It does not
+recommend the Dutch calculation and does not close EC-01, EC-05, or the 700 Md€ path.
+
 ## 2026-10-12 — Separate mortgage is not scale
 
 Owner asked to publish the housing-equity implementation note and to add an En images figure

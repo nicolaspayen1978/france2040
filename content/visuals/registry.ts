@@ -14,6 +14,7 @@ import { partIoNEstPasLeLtvConsolide } from "@/content/visuals/part-io-n-est-pas
 import { patrimoineVsEnveloppe } from "@/content/visuals/patrimoine-vs-enveloppe";
 import { retraitesVsActifs } from "@/content/visuals/retraites-vs-actifs";
 import { sureteDistinctePasEchelle } from "@/content/visuals/surete-distincte-pas-echelle";
+import { memeCapitalTroisMesures } from "@/content/visuals/meme-capital-trois-mesures";
 import { trajectoireCredit20272040 } from "@/content/visuals/trajectoire-credit-2027-2040";
 import type { Visual } from "@/content/visuals/types";
 
@@ -42,6 +43,7 @@ export const visualGroups: VisualGroup[] = [
       mecanismeDuEuro,
       partIoNEstPasLeLtvConsolide,
       sureteDistinctePasEchelle,
+      memeCapitalTroisMesures,
       leRatioNEstPasLeService,
     ],
   },

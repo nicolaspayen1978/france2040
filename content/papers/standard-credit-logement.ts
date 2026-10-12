@@ -7,8 +7,8 @@ export const standardCreditLogement: WorkingPaper = {
   title: "Standardiser un crédit adossé au logement en France",
   lang: "fr",
   summary:
-    "Le droit permet déjà une hypothèque distincte derrière un prêt en place. La standardisation opérationnelle est plausible et non établie. Le traitement du capital final et le coût du second rang restent ouverts.",
-  currentVersionId: "2026-10-12-2",
+    "Le droit permet déjà une hypothèque distincte. Une norme privée est plausible et non établie. Une décision prudentielle paraît nécessaire pour distribuer largement le crédit long in fine, et elle n’est pas obtenue. Le prix reste empirique. Aucune création publique de produit n’est identifiée.",
+  currentVersionId: "2026-10-13-2",
   versions: [
     {
       id: "2026-10-12",
@@ -23,17 +23,38 @@ export const standardCreditLogement: WorkingPaper = {
     {
       id: "2026-10-12-2",
       published: "2026-10-12",
-      status: "working-paper",
+      status: "superseded",
       verdict:
         "Hypothèque distincte établie. Standardisation opérationnelle plausible, non établie. Traitement du capital final, coût du second rang, consentement et adoption ouverts.",
       file: "content/papers/standard-credit-logement/v2026-10-12-2.md",
       sha256: "a04e049b2066d17e7f14fd6ef6107891ef9c6c3d16bfd1897b5448721fa62456",
       note: "Même recherche. La lecture distingue l’établi, le plausible non établi et l’ouvert. Le titre public est resserré. La version 2026-10-12 reste inchangée. 700 Md€ inchangés.",
     },
+    {
+      id: "2026-10-13",
+      published: "2026-10-13",
+      status: "superseded",
+      verdict:
+        "Hypothèque distincte établie. Standard privé plausible, non établi. Échelle : décision prudentielle requise, non obtenue. Prix concurrentiel encore empirique.",
+      file: "content/papers/standard-credit-logement/v2026-10-13.md",
+      sha256: "8b09e6ff42549c980bdc15e4d979e4ecdcafe9176db93d671ca41f60a9d00673",
+      note: "Chemins : expérimentation, standard ouvert, traitement prudentiel, loi seulement sur un verrou résiduel. Pas un produit public. Les versions 2026-10-12 et 2026-10-12-2 restent inchangées. 700 Md€ inchangés.",
+    },
+    {
+      id: "2026-10-13-2",
+      published: "2026-10-13",
+      status: "frozen",
+      verdict:
+        "Hypothèque distincte établie. Norme privée plausible, non établie. Distribution large du crédit long in fine : décision prudentielle apparemment nécessaire, non obtenue. Prix encore empirique.",
+      file: "content/papers/standard-credit-logement/v2026-10-13-2.md",
+      sha256: "89c2a5852c674f2baa52dd4b0453c62fd1c8b317115e3d22f2d287668294665b",
+      note: "Gelé. Décision prudentielle qui paraît nécessaire pour le crédit long in fine. Coût potentiel, non acquis. Concurrence entre plusieurs banques. L’échec d’un cas n’arrête pas le programme. 700 Md€ inchangés.",
+    },
   ],
   progress: [
     { id: "surete", label: "Hypothèque distincte", state: "Établie, sans refinancement nécessaire pour la créer" },
     { id: "operations", label: "Machinerie banques, notaires, garants", state: "Plausible, non établie" },
+    { id: "voies", label: "Chemins vers un marché", state: "Gelés ; un cas qui échoue n’arrête pas le programme" },
     { id: "hcsf", label: "Capital final et taux d’effort", state: "Lecture publiée ; FAQ non normative" },
     { id: "caution", label: "Prêt déjà cautionné", state: "Consentement non établi" },
     { id: "prix", label: "Prix du second rang", state: "Non établi" },
