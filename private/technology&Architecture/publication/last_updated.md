@@ -1,5 +1,10 @@
 2026-10-12
 
+2026-10-12. Standardisation note revised as `/documents/standard-credit-logement` version
+`2026-10-12-2`. Version `2026-10-12` is unchanged and superseded. Dutch sequel published at
+`/documents/pays-bas-interets-seuls` version `2026-10-12`. EC-10 is announced and not written.
+No origination stock estimated. EC-01, EC-05 and the 700 Md€ path are unchanged.
+
 2026-10-12. Implementation research published as `/documents/standard-credit-logement`
 version `2026-10-12`. Separate mortgage under existing security law is established there.
 The HCSF secretariat FAQ of 29 January 2024 is recorded as a non-normative reading that

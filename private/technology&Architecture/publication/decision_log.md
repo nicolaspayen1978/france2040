@@ -1,5 +1,17 @@
 # Decision log
 
+## 2026-10-12 — Dutch affordability note published; standardisation reading sharpened
+
+Owner asked to publish the French standardisation conclusion and the Dutch sequel separately,
+then to stop product-architecture research. The standardisation paper gains version
+`2026-10-12-2`: same legal findings, with the public distinction between what is established,
+what is plausible but unproven, and what stays open. Bytes of `2026-10-12` are unchanged and
+that version is superseded. The Dutch note is a new paper,
+`/documents/pays-bas-interets-seuls` version `2026-10-12`. It does not copy Dutch parameters
+into the 700 Md€ path and does not recommend the candidate architecture. EC-10 is announced
+and not written. Its data foundation is the working file `Docs/26_EC10_Data_Foundation.md`.
+No origination stock is estimated.
+
 ## 2026-10-12 — Housing-equity credit can be standardised in security law; scale stays open
 
 Owner delivered the research conclusion and asked to complete it if needed, then publish it,

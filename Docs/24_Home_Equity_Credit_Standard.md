@@ -2,7 +2,7 @@
 
 12 October 2026. Research conclusion, not a product approval. Not an épreuve contradictoire.
 
-Working file. English stays here. Public French snapshot: `/documents/standard-credit-logement`, version `2026-10-12`. Diagram: `/en-images/surete-distincte-pas-echelle`. This note does not close EC-01, EC-05, or the 700 Md€ path, and it does not approve a product.
+Working file. English stays here. Public French snapshot: `/documents/standard-credit-logement`, version `2026-10-12-2`. The version `2026-10-12` remains. Diagram: `/en-images/surete-distincte-pas-echelle`. The Dutch sequel is `/documents/pays-bas-interets-seuls`. This note does not close EC-01, EC-05, or the 700 Md€ path, and it does not approve a product.
 
 Checked against primary sources before that publication, and stated there rather than by rewriting this file: the HCSF FAQ of 29 January 2024 says it has no normative force; a 20-year final repayment can sit inside the 25-year maturity cap while the last-year effort rate, on that FAQ’s question 22, very probably exceeds 35%; Banque de France usury categories for Q4 2026 split cash credit from housing credit by article L313-1(1°), not by the whole article; ACPR 2024 states 99% fixed-rate production, 97% of outstanding secured, and mortgages at 27% of outstanding. “Crédit Logement covers over a third” is not repeated on the public page. Code civil article 2416 is the professional rechargeable mortgage. CRR article 108(5)(c) is a prudential condition for treating a cautioned loan as a mortgage exposure, not a general civil ban.
 

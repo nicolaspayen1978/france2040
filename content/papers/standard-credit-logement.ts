@@ -4,28 +4,39 @@ export const standardCreditLogement: WorkingPaper = {
   slug: "standard-credit-logement",
   kind: "working-paper",
   listKicker: "Note de recherche · mise en œuvre",
-  title: "Standardiser un crédit garanti par le logement déjà détenu",
+  title: "Standardiser un crédit adossé au logement en France",
   lang: "fr",
   summary:
-    "Une hypothèque distincte peut être inscrite sans loi nouvelle ni refinancement du premier prêt. La lecture publiée du HCSF fait entrer le capital final dans le taux d’effort. L’échelle simple et bon marché reste ouverte.",
-  currentVersionId: "2026-10-12",
+    "Le droit permet déjà une hypothèque distincte derrière un prêt en place. La standardisation opérationnelle est plausible et non établie. Le traitement du capital final et le coût du second rang restent ouverts.",
+  currentVersionId: "2026-10-12-2",
   versions: [
     {
       id: "2026-10-12",
       published: "2026-10-12",
-      status: "working-paper",
+      status: "superseded",
       verdict:
         "Standardisable au regard du droit des sûretés. Distribution simple, interopérable et bon marché à l’échelle non établie.",
       file: "content/papers/standard-credit-logement/v2026-10-12.md",
       sha256: "bf56a661ea495e78f313ffcc690486278f12c8a7c2c3bee6077248d1798b9aa7",
       note: "Première publication. Droit des sûretés distingué de la lecture HCSF sur le capital final. Ne ferme ni EC-01 ni EC-05. 700 Md€ inchangés.",
     },
+    {
+      id: "2026-10-12-2",
+      published: "2026-10-12",
+      status: "working-paper",
+      verdict:
+        "Hypothèque distincte établie. Standardisation opérationnelle plausible, non établie. Traitement du capital final, coût du second rang, consentement et adoption ouverts.",
+      file: "content/papers/standard-credit-logement/v2026-10-12-2.md",
+      sha256: "a04e049b2066d17e7f14fd6ef6107891ef9c6c3d16bfd1897b5448721fa62456",
+      note: "Même recherche. La lecture distingue l’établi, le plausible non établi et l’ouvert. Le titre public est resserré. La version 2026-10-12 reste inchangée. 700 Md€ inchangés.",
+    },
   ],
   progress: [
-    { id: "surete", label: "Hypothèque distincte", state: "Établie sous le droit actuel" },
+    { id: "surete", label: "Hypothèque distincte", state: "Établie, sans refinancement nécessaire pour la créer" },
+    { id: "operations", label: "Machinerie banques, notaires, garants", state: "Plausible, non établie" },
     { id: "hcsf", label: "Capital final et taux d’effort", state: "Lecture publiée ; FAQ non normative" },
     { id: "caution", label: "Prêt déjà cautionné", state: "Consentement non établi" },
-    { id: "prix", label: "Prix et refinancement", state: "Non établis" },
+    { id: "prix", label: "Prix du second rang", state: "Non établi" },
     { id: "chemin", label: "700 Md€", state: "Inchangés" },
   ],
   sources: [

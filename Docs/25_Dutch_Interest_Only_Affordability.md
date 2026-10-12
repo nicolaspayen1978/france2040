@@ -2,7 +2,9 @@
 
 12 October 2026. Second-pass research. Not a product approval. Not a recommendation that France copy the Netherlands.
 
-Working file. English stays here. It does not change `Docs/24_Home_Equity_Credit_Standard.md` in substance, and it does not change the public snapshot `/documents/standard-credit-logement`, version `2026-10-12`. No primary source read here corrects French security law or the HCSF reading of an in fine loan. EC-01, EC-05, and the 700 Md€ path stay open.
+Working file. English stays here. Public French snapshot: `/documents/pays-bas-interets-seuls`, version `2026-10-12`. It does not change `Docs/24_Home_Equity_Credit_Standard.md` in substance, and it does not change the public snapshot `/documents/standard-credit-logement` version `2026-10-12`. The later public reading of that note is `2026-10-12-2`. No primary source read here corrects French security law or the HCSF reading of an in fine loan. EC-01, EC-05, and the 700 Md€ path stay open.
+
+Frozen on 12 October 2026. Do not reopen this comparison unless a primary source contradicts a finding already filed. The next measurement is the household-level French origination-capacity test specified below. It is not part of this note.
 
 ## The proposition, tested
 
@@ -256,11 +258,57 @@ Not established: that France should adopt the Dutch calculation; that the HCSF w
 
 Next test: quantify household-level origination capacity under those alternative affordability treatments before using aggregate housing equity as evidence for the scale of the programme.
 
+## Tax and the use of retained liquidity
+
+This section tests one proposition. Withdrawing mortgage-interest deductibility from new non-amortising debt increases the after-tax cost of leaving principal outstanding, and therefore raises the opportunity cost of keeping that principal rather than repaying it.
+
+The proposition is right as a price effect. It is not evidence that Dutch households invest or save the payment difference rather than consume it. France 2040 should not say that the Dutch tax system pushes interest-only proceeds toward investment.
+
+### The price effect
+
+On the worked example, contractual interest is €4,000 a year, €333 a month. While that interest is deductible, the household’s net cost is €4,000 times one minus the deduction rate. In 2026 the Belastingdienst caps that rate at 37.56% for income in the top bracket (the cap equals the second-bracket rate; Wet IB 2001, articles 2.10 and 2.10a). At that cap the tax saving is about €1,500 a year and the net interest bill is about €2,500, or €208 a month. A household taxed in a lower bracket deducts at a lower rate, so the saving is smaller.
+
+Withdrawing the deduction puts the gross €4,000 back on the household. The cost of keeping €100,000 outstanding rises by about 1.5 percentage points at the 2026 cap, before any box 3 effect. Withdrawing the deduction raises the opportunity cost of keeping principal outstanding. For an investment, this raises the return required to justify financing it rather than repaying debt. For consumption or transfers, it raises the price of choosing present use over deleveraging.
+
+Two offsets belong in the price, and neither turns it into an investment mandate.
+
+Box 3. New interest-only owner-occupied debt that fails the amortisation test is not eigenwoningschuld. The interest is not deductible in box 1. The principal is a box 3 liability, so it can reduce taxable net wealth for households above the box 3 threshold. That relief offsets part of the lost deduction. It is a reason the hurdle does not rise by the full box 1 amount, and it is larger for households that already hold taxable financial wealth. This note does not put a 2026 box 3 rate on the €1,500. The direction is enough: the offset is a wealth-tax interaction, not a test of what the household buys.
+
+Purpose of the borrowed sum. The Belastingdienst grants the deduction only if the loan is used to buy the home, or to improve or maintain it, or to buy out a ground lease, and, for new debt, only if the contract amortises within 30 years. A loan part used for a car or furniture is refused the deduction even when the rest of the mortgage amortises. Lenders already book that part as a consumptive, non-deductible slice. The purpose rule conditions the subsidy on the use of the principal. It does not govern the monthly gap between an annuity and an interest-only payment.
+
+### What households actually did
+
+The demonstrated response to the 2013 rule is a change of contract, not a change in how interest-only borrowers invest the gap.
+
+CPB, Besparingen van Nederlandse huishoudens, 9 July 2024. After the deduction was limited to annuity and linear loans that repay within 30 years, interest-only new borrowing became much less attractive. The share of households that repay a mortgage rose from 25% in 2007 to more than 50% in 2019. The household saving rate rose from −3% in 2005 to about 2%. The extra saving is mortgage repayment. Liquid buffers, the balances a household can spend in a shock, were rebuilt less than that repayment. CPB notes the same saving-rate rise in Denmark and Sweden, where policy also pushed contractual repayment. Younger cohorts repay more than earlier ones. The low post-2008 mortgage rate and higher house prices are named alongside the tax rule. The paper does not measure a shift from consumption into business investment among households who kept an interest-only loan.
+
+The pre-2013 stock mixed three things. Pure interest-only loans had no repayment schedule. Savings, life and investment mortgages paired a non-amortising loan with a pledged account (kapitaalverzekering eigen woning, spaarrekening eigen woning, beleggingsrecht eigen woning). Those accounts were blocked for repayment of the home loan and, if the conditions were met, kept out of box 3. That did channel money toward a repayment asset. It did so by contract and by a tax exemption for a blocked balance. It is not evidence about an unconstrained household choosing investment over consumption. DNB’s 2015 loan-level study found that about 60% of outstanding debt was interest-only, often combined with an amortising part or a pledged account, and that voluntary repayments were about 2–3% of mortgage debt in 2013–2014. Voluntary repayment is repayment, not a portfolio of productive assets. Mastrogiacomo’s simulations find that voluntary repayment and pledged accounts matter, and that many households still will not have saved enough outside the house to repay in full at maturity. Home equity, not a financial investment account, is what keeps the credit risk down in those simulations.
+
+The direct survey of saving by interest-only owners points the other way. Lennartz, Vrieselaar and Blanken, ESB, 24 September 2018, using a Nibud survey of January 2018 commissioned by Rabobank (2,084 respondents, of whom 248 had a fully interest-only mortgage and 263 a partial one). Owners with an interest-only mortgage less often intended to set money aside: 42%, against 64% for owners with a repaying mortgage. Once age, income and other characteristics are held constant, having an interest-only mortgage has no statistically significant effect on saving intentions or on reported saving behaviour. They save less inside the house, because they do not repay. Outside the house they do not save more. The authors’ reading is selection and capacity: before the deduction was tightened, households that preferred not to save could take interest-only cheaply; many of those owners are older and on lower incomes; others treat housing equity as the buffer and plan to refinance or sell. EenVandaag (2017) and Vereniging Eigen Huis (2018), as cited there, found that a majority of interest-only owners did not plan to repay in full from savings.
+
+No source read for this note shows that the monthly gap was invested in firms, equipment, or financial assets rather than consumed. The absence is the finding. The behavioural effect that is demonstrated is that new borrowers switched toward contracts that force repayment, and that aggregate saving rose in that form.
+
+### What this does and does not say for France 2040
+
+Tax neutrality — the same treatment whether the household amortises or not, and whether the proceeds are consumed or invested — would stop subsidising the choice to leave principal outstanding. For an investment, the gross borrowing rate, net of any general wealth-tax treatment of the debt, is the return required to justify financing it rather than repaying. For consumption or a transfer, it is the price of choosing present use over deleveraging. Tax neutrality does not select investment and does not restrict the use of the money.
+
+The Dutch post-2013 reform is not a model for that design. It kept the subsidy on condition that the household amortise: income, then principal repayment, then housing equity. The mechanism under study runs the other way: income, then interest, then retained cash flow, then a household choice among consumption, renovation, investment and transfer. A fiscal advantage for amortising that debt would push cash back into the house and work against the mechanism. A fiscal advantage limited to qualifying productive uses would be a different instrument, with definitions, eligibility, verification and a fiscal cost.
+
+The lesson to keep is narrower. Do not subsidise the optionality. An interest-only contract gives the household control of cash that amortisation would have put into the house automatically. The benefit is that liquidity. The household then decides whether spending, investing, renovating or transferring €10,000 is worth the financing cost. No ministry has to rank those uses.
+
+A deduction, credit, or exemption reserved for qualifying productive uses is a different instrument. It is closer to the Dutch purpose condition than to the 2013 amortisation condition. The household can still spend the money. The subsidy is paid only when the use qualifies. That is a restriction of the tax benefit, defined in law, even though it is not a ban on the expenditure. The Dutch record does not show that this kind of condition, applied to the monthly interest-only gap, moves spending into investment. The condition that did move behaviour withdrew the subsidy unless the contract itself amortised, which removes the cash-flow benefit for anyone who wants the subsidy.
+
+The blocked savings mortgage is the Dutch device that actually tied the gap to an asset. It required the asset to be pledged to repayment of the home loan and gave that asset a tax exemption. Copying it would legally restrict the use of that cash. It is not a model of free use plus a gentle incentive.
+
+Phrase the Dutch tax fact this narrowly: withdrawing deductibility from new non-amortising debt raises the opportunity cost of retaining principal. For an investment, that raises the required return. For consumption or a transfer, it raises the price of present use over deleveraging. It does not establish that households invest the liquidity. Changing the relative price changed the financing structure. It did not, on the evidence, change the productive allocation of the liberated cash.
+
+Five choices stay separate after this note: creating the liquidity, the income test that decides how much can be borrowed, the collateral limits that keep the balance sheet resilient, the tax treatment, and what the household does with the funds. National housing equity is only the first. This note does not belong in the €700bn path, and it does not change the HCSF question above. The test that can reduce or support that path is the household origination-capacity measurement already specified. It has not been run.
+
 ## What France should not copy
 
 - A legacy interest-only stock on the Dutch scale, still close to 40% of mortgage debt in 2026, whose primary repayment source is the house and whose balances are commonly extended.
 - Treating sale or refinancing as the planned way out. The French note already lists that as a reason to stop.
-- The pre-2013 tax preference that made non-amortising owner-occupied debt cheap, followed by a rule that withdrew the preference for new debt and left the old book in place.
+- The pre-2013 tax preference that made non-amortising owner-occupied debt cheap, followed by a rule that withdrew the preference for new debt and left the old book in place. Do not describe that rule as evidence that interest-only proceeds were invested. The demonstrated response is contractual repayment. The survey evidence does not show extra saving outside the house.
 - A 100% consolidated loan-to-value.
 - The assumption that same-lender loan parts are a substitute for a separately registered second mortgage. France’s security finding is the broader one. The Dutch market does not show a routine different-lender second mortgage as the mass product.
 - Any Dutch parameter inside the 700 Md€ path.
@@ -272,6 +320,8 @@ Law and regulation. Tijdelijke regeling hypothecair krediet, BWBR0032503, text i
 Industry code and guarantee. Gedragscode Hypothecaire Financieringen, NVB, including the 50% rule and the statement that interest-only debt is still due at term and on sale. NHG Voorwaarden en normen 2026-1, C.6.7.1 and C.7, https://www.nhg.nl/media/gtaickpv/vn-nhg-2026.pdf. NHG FAQ on interest-only with NHG.
 
 Method and supervision. Nibud, Advies hypotheeknormen 2026, offered 31 October 2025. AFM public pages on aflossingsvrije hypotheken, including the 2026 update: 2011 sector cap, 2013 tax change, 2018 customer approach. DNB Open Boek Toezicht, “Aflossingsvrije hypotheken”. DNB, 3 March 2026, as already cited in the France 2040 corpus for the share of mortgage debt.
+
+Tax price and household response. Belastingdienst, limitation of the owner-occupied deduction in the top bracket to 37.56% in 2026, https://www.belastingdienst.nl/wps/wcm/connect/nl/koopwoning/content/tariefsaanpassing-eigen-woning. Belastingdienst, deduction only for a loan used to buy, improve or maintain the home, or to buy out a ground lease, and, for new debt, only if it amortises within 30 years. CPB, Besparingen van Nederlandse huishoudens, 9 July 2024. DNB Occasional Study, Dutch mortgages in the DNB loan level data, 2015. Lennartz, Vrieselaar and Blanken, “Sparen door woningeigenaren met een aflossingsvrije hypotheek”, ESB, 24 September 2018, Nibud survey for Rabobank, January 2018. Mastrogiacomo, “Will we repay our debts before retirement?”, Netspar.
 
 French side, unchanged. HCSF decision D-HCSF-2021-7 and the secretariat FAQ of 29 January 2024, questions 20–23. Code civil, article 2418. Code de la consommation, articles L313-1 and L313-16.
 
