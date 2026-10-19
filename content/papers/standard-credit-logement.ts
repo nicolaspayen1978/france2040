@@ -7,8 +7,8 @@ export const standardCreditLogement: WorkingPaper = {
   title: "Standardiser un crédit adossé au logement en France",
   lang: "fr",
   summary:
-    "Le droit permet déjà une hypothèque distincte. Une norme privée est plausible et non établie. Une décision prudentielle paraît nécessaire pour distribuer largement le crédit long in fine, et elle n’est pas obtenue. Le prix reste empirique. Aucune création publique de produit n’est identifiée.",
-  currentVersionId: "2026-10-13-2",
+    "Le droit permet déjà une hypothèque distincte. Une norme privée est plausible et non établie. Le 19 octobre 2026, le secrétariat du HCSF tranche : pas de distribution de masse sous l’échéancier d’un prêt in fine. Une charge notionnelle exigerait une modification de la décision. Le prix reste empirique.",
+  currentVersionId: "2026-10-19",
   versions: [
     {
       id: "2026-10-12",
@@ -43,19 +43,29 @@ export const standardCreditLogement: WorkingPaper = {
     {
       id: "2026-10-13-2",
       published: "2026-10-13",
-      status: "frozen",
+      status: "superseded",
       verdict:
         "Hypothèque distincte établie. Norme privée plausible, non établie. Distribution large du crédit long in fine : décision prudentielle apparemment nécessaire, non obtenue. Prix encore empirique.",
       file: "content/papers/standard-credit-logement/v2026-10-13-2.md",
       sha256: "89c2a5852c674f2baa52dd4b0453c62fd1c8b317115e3d22f2d287668294665b",
-      note: "Gelé. Décision prudentielle qui paraît nécessaire pour le crédit long in fine. Coût potentiel, non acquis. Concurrence entre plusieurs banques. L’échec d’un cas n’arrête pas le programme. 700 Md€ inchangés.",
+      note: "Gelé ce jour-là. Décision prudentielle qui paraît nécessaire pour le crédit long in fine. Coût potentiel, non acquis. Concurrence entre plusieurs banques. L’échec d’un cas n’arrête pas le programme. 700 Md€ inchangés. Octets inchangés.",
+    },
+    {
+      id: "2026-10-19",
+      published: "2026-10-19",
+      status: "working-paper",
+      verdict:
+        "Hypothèque distincte établie. Branche HCSF tranchée : pas de distribution de masse sous l’échéancier d’un prêt in fine. Charge notionnelle : modification de la décision, non obtenue. Prix encore empirique.",
+      file: "content/papers/standard-credit-logement/v2026-10-19.md",
+      sha256: "fca4bb16edf5326fd00dea404f029ffd7947961d8e2ccecccfcff53a9c9034fa",
+      note: "Réponse du secrétariat du HCSF, 19 octobre 2026. Champ, prêt in fine et charge notionnelle tranchés. EC-01 reste ouverte sur la capacité et l’adoption. EC-05 et 700 Md€ inchangés. Les versions antérieures restent.",
     },
   ],
   progress: [
     { id: "surete", label: "Hypothèque distincte", state: "Établie, sans refinancement nécessaire pour la créer" },
     { id: "operations", label: "Machinerie banques, notaires, garants", state: "Plausible, non établie" },
     { id: "voies", label: "Chemins vers un marché", state: "Gelés ; un cas qui échoue n’arrête pas le programme" },
-    { id: "hcsf", label: "Capital final et taux d’effort", state: "Lecture publiée ; FAQ non normative" },
+    { id: "hcsf", label: "Capital final et taux d’effort", state: "Tranché le 19 octobre 2026" },
     { id: "caution", label: "Prêt déjà cautionné", state: "Consentement non établi" },
     { id: "prix", label: "Prix du second rang", state: "Non établi" },
     { id: "chemin", label: "700 Md€", state: "Inchangés" },
@@ -72,6 +82,11 @@ export const standardCreditLogement: WorkingPaper = {
       citation:
         "Secrétariat du HCSF, FAQ du 29 janvier 2024. Elle dit n’avoir pas de portée normative. Questions 6, 8, 11, 22, 23 et 27 : champ, crédit relais, dettes existantes, prêt in fine, maturité, flexibilité.",
       href: "https://www.economie.gouv.fr/files/files/directions_services/hcsf/HCSF_FAQ_decisions_octroi_credits_immobiliers.pdf",
+    },
+    {
+      id: "hcsf-secretariat-2026-10-19",
+      citation:
+        "Secrétariat du Haut Conseil de stabilité financière, réponse du 19 octobre 2026. Crédit garanti par un logement d’habitation dans le champ, même sans acquisition. Prêt in fine : le capital à l’échéance entre dans le taux d’effort. Pas d’autre calcul dans le cadre actuel. Charge notionnelle amortissable : modification de la décision nécessaire. Marge de flexibilité : 20 % de la production trimestrielle.",
     },
     {
       id: "acpr-174",
@@ -112,7 +127,7 @@ export const standardCreditLogement: WorkingPaper = {
     {
       id: "ec-01",
       citation:
-        "France 2040, épreuve contradictoire EC-01. Compatibilité réglementaire non tranchée. Cette note ne la ferme pas.",
+        "France 2040, épreuve contradictoire EC-01, version 2026-10-19. Branche réglementaire tranchée. Capacité de l’emprunteur et adoption non tranchées. Cette note ne ferme pas l’épreuve.",
       href: "/documents/red-team-01",
     },
     {

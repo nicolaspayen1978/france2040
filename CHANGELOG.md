@@ -15,6 +15,8 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
+- `[publication]` Réponse du secrétariat du HCSF, 19 octobre 2026. Branche prudentielle tranchée : standardisation `2026-10-19`, EC-01 `2026-10-19`, questions ouvertes `2026-10-19`. Pas de distribution de masse sous l’échéancier d’un prêt in fine. Charge notionnelle : modification de la décision. 700 Md€ inchangés. EC-05 et la note Pays-Bas inchangées.
+
 - `[publication]` Le Pacte est le texte de référence (`2026-10-03-3`). Le brouillon 2026-09-28 reste historique. Accueil : « Lire le Pacte ». Résumé `2026-10-03-8`.
 - `[publication]` Lecture « Explique-moi le Pacte » (`/documents/explique-moi-le-pacte`), placée sur l’accueil avant le résumé exécutif.
 - `[website]` Commentaires : plafond du texte porté à 16 000 caractères (formulaire et serveur), pour un avis collé depuis un modèle.

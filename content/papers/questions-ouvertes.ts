@@ -6,7 +6,7 @@ export const questionsOuvertes: WorkingPaper = {
   lang: "fr",
   summary:
     "Ce qui reste à établir. Les faits sourcés sont séparés des affirmations qui ne doivent pas être présentées comme telles.",
-  currentVersionId: "2026-10-03-3",
+  currentVersionId: "2026-10-19",
   versions: [
     {
       id: "2026-09-28",
@@ -47,17 +47,26 @@ export const questionsOuvertes: WorkingPaper = {
     {
       id: "2026-10-03-3",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Liste ouverte. Ce n’est pas encore un dossier de preuves.",
       file: "content/papers/questions-ouvertes/v2026-10-03-3.md",
       sha256: "00dad7eaee9e9aa6cac8e8651003d2bd3dbac4f7824c4ce996db2be47e1c798b",
-      note: "Premiers constats sourcés : ménage hors cadre général BCE ; archétypes Insee ; 40 % de la dette NL, LTV moyen ~50 %, illustration ~15 % IO/valeur CBS 2024. Rien n’est clos.",
+      note: "Premiers constats sourcés : ménage hors cadre général BCE ; archétypes Insee ; 40 % de la dette NL, LTV moyen ~50 %, illustration ~15 % IO/valeur CBS 2024. Rien n’est clos. Octets inchangés.",
+    },
+    {
+      id: "2026-10-19",
+      published: "2026-10-19",
+      status: "working-paper",
+      verdict: "Liste ouverte. La branche HCSF du cadre actuel est tranchée. Le reste ne l’est pas.",
+      file: "content/papers/questions-ouvertes/v2026-10-19.md",
+      sha256: "59ca289bb0aa5ec42b5be664bfac74b03f46f5be7dd6846759f6d3a975b9ee67",
+      note: "Enregistre la réponse du secrétariat du HCSF du 19 octobre 2026. Ne ferme pas la capacité, l’adoption, ni les autres questions.",
     },
   ],
   progress: [
     { id: "stock", label: "Stock national de logements", state: "Ne tue pas l’hypothèse" },
     { id: "borrower", label: "Distribution des emprunteurs", state: "Non établie" },
-    { id: "rules", label: "Compatibilité réglementaire", state: "Non établie" },
+    { id: "rules", label: "Compatibilité réglementaire", state: "Tranchée pour le cadre actuel" },
     { id: "spend", label: "Crédit vers dépense, puis PIB", state: "Non établi" },
     { id: "cliff", label: "Falaise de 2040", state: "Non tranchée" },
     { id: "funding", label: "Financement de l’actif", state: "Ouvert" },

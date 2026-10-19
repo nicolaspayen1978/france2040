@@ -1,4 +1,13 @@
-2026-10-13
+2026-10-19
+
+2026-10-19. HCSF secretariat reply filed as `Docs/sources/HCSF_secretariat_2026-10-19.md`.
+Standardisation note published as `/documents/standard-credit-logement` version `2026-10-19`.
+Version `2026-10-13-2` is unchanged and superseded. EC-01 published as `2026-10-19`;
+version `2026-10-03-2` is unchanged and superseded. Questions ouvertes published as
+`2026-10-19`; version `2026-10-03-3` is unchanged and superseded. The prudential branch
+is closed: no mass distribution under the current in-fine contractual schedule; a
+notional burden would require an HCSF amendment. EC-01 stays open on borrower capacity
+and take-up. EC-05, the Dutch snapshot, and 700 Md€ are unchanged.
 
 2026-10-13. Standardisation note frozen as `/documents/standard-credit-logement` version
 `2026-10-13-2`. Version `2026-10-13` is unchanged and superseded. Dutch note frozen as

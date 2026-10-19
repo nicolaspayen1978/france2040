@@ -1,5 +1,23 @@
 # Decision log
 
+## 2026-10-19 — HCSF secretariat reply closes the prudential branch
+
+The secretariat of the Haut Conseil de stabilité financière replied on 19 October 2026.
+It does not opine on a particular structure. It states the framing. The decision applies
+to housing credit for resident households, including credit secured on a dwelling that
+does not finance the purchase. An in-fine loan is in scope: principal at maturity enters
+the effort rate. The current framework has no alternative calculation. A notional
+amortising burden, distinct from the contractual schedule, would require the HCSF to
+amend its decision. The 20% flexibility margin is not a mass channel. The secretariat
+does not say the principle is impossible. The remaining question is that amendment.
+
+Primary source: `Docs/sources/HCSF_secretariat_2026-10-19.md`.
+
+New public versions, prior bytes unchanged: `/documents/standard-credit-logement`
+`2026-10-19`; EC-01 `2026-10-19`; questions ouvertes `2026-10-19`. EC-01 stays open on
+borrower capacity and take-up. EC-05, the Dutch snapshot, and the 700 Md€ path are
+unchanged. The Dutch comparison is not reopened.
+
 ## 2026-10-13 — Routes tightened, then both notes frozen
 
 Owner accepted the four-route ladder and asked for three tightenings before a freeze.

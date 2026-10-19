@@ -5,8 +5,8 @@ export const redTeam01: WorkingPaper = {
   title: "Épreuve contradictoire EC-01 — Le stock d’équité immobilière mobilisable est-il suffisant ?",
   lang: "fr",
   summary:
-    "500 à 700 Md€ de part à intérêts seuls peuvent-ils être tirés de l’équité immobilière française à 40–50 % de ratio prêt sur valeur ? L’objection du collatéral agrégé a résisté. La capacité de l’emprunteur et la réglementation, non.",
-  currentVersionId: "2026-10-03-2",
+    "500 à 700 Md€ de part à intérêts seuls peuvent-ils être tirés de l’équité immobilière française à 40–50 % de ratio prêt sur valeur ? L’objection du collatéral agrégé a résisté. La norme HCSF actuelle empêche la distribution de masse. La capacité de l’emprunteur, non.",
+  currentVersionId: "2026-10-19",
   versions: [
     {
       id: "2026-09-28",
@@ -39,23 +39,39 @@ export const redTeam01: WorkingPaper = {
     {
       id: "2026-10-03-2",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Objection du collatéral agrégé : elle a résisté. Capacité de l’emprunteur et compatibilité réglementaire : non tranchées.",
       file: "content/papers/red-team-01/v2026-10-03-2.md",
       sha256: "ef6a9bba2b8e19121ca6103a18f1e9fd7f6e92346f09e136e4ad959f73e19bde",
-      note: "Ajoute le benchmark d’échelle 8 % vs ≈ 16 %. 700 Md€ inchangés. 1 400 Md€ n’est pas le 1 400 d’illustration de charge.",
+      note: "Ajoute le benchmark d’échelle 8 % vs ≈ 16 %. 700 Md€ inchangés. 1 400 Md€ n’est pas le 1 400 d’illustration de charge. Octets inchangés.",
+    },
+    {
+      id: "2026-10-19",
+      published: "2026-10-19",
+      status: "working-paper",
+      verdict:
+        "Objection du collatéral agrégé : elle a résisté. Compatibilité réglementaire sous le cadre actuel : tranchée, elle empêche la distribution de masse. Capacité de l’emprunteur : non tranchée.",
+      file: "content/papers/red-team-01/v2026-10-19.md",
+      sha256: "b4b823d3afb8b4a7c316e50230bca053155c4c635632e0ec55ca1c8ee29998fd",
+      note: "Branche HCSF tranchée par la réponse du secrétariat du 19 octobre 2026. 700 Md€ inchangés. Capacité et adoption ouvertes.",
     },
   ],
   progress: [
     { id: "collateral", label: "Collatéral agrégé", state: "A résisté" },
     { id: "borrower", label: "Capacité de l’emprunteur", state: "Non tranchée" },
-    { id: "rules", label: "Compatibilité réglementaire", state: "Non tranchée, potentiellement contraignante" },
+    { id: "rules", label: "Compatibilité réglementaire", state: "Tranchée : pas de masse sous le cadre actuel" },
     { id: "path", label: "700 Md€", state: "Part à intérêts seuls, saisie de scénario" },
   ],
   sources: [
     {
       id: "insee-2081",
       citation: "Insee et Banque de France, Insee Première n° 2081, 6 novembre 2025. Bilan national fin 2024.",
+    },
+    {
+      id: "hcsf-secretariat-2026-10-19",
+      citation:
+        "Secrétariat du Haut Conseil de stabilité financière, réponse du 19 octobre 2026. Reproduite dans la note de standardisation, version 2026-10-19. Champ, prêt in fine, absence de calcul alternatif, charge notionnelle hors cadre actuel.",
+      href: "/documents/standard-credit-logement",
     },
   ],
 };

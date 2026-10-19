@@ -8,10 +8,10 @@ Status of this test:
 
 - **Aggregate collateral objection: survived.** €700bn is no longer rejectable merely by pointing at the national housing stock.
 - **Borrower-level capacity: unresolved.**
-- **Regulatory compatibility: unresolved, and potentially binding.**
+- **Regulatory compatibility: closed, 19 October 2026.** Under the current HCSF framework the proposed product cannot be distributed at scale if the effort rate follows the contractual schedule of an in-fine loan. The HCSF secretariat’s reply of that date is the primary source: `Docs/sources/HCSF_secretariat_2026-10-19.md`. Borrower-level capacity and take-up stay open. The épreuve stays open.
 - **€700bn: an explicit scenario input, not an estimate.** The path is not revised.
 
-Anyone who still wants to reject the number has to attack the borrower-level distribution, regulatory feasibility, or take-up. Those are kept as separate ceilings, not folded into one eligible stock.
+Anyone who still wants to reject the number has to attack the borrower-level distribution or take-up. Mass distribution under the current HCSF framework is already closed: it does not hold. Those ceilings stay separate. They are not folded into one eligible stock.
 
 ## What is supported
 
@@ -66,7 +66,7 @@ The residual ignores four cuts that all reduce it:
 1. Date and perimeter. The collateral is end-2024 and includes sole proprietors and non-profits. The loan stock is July 2026 and is individuals’ housing credit only. Household credits in the accounts were €1 768bn at end-2024. Using €1 289bn understates encumbrance if other credit is secured on the same houses. Using €1 768bn overstates it if that other credit is unsecured.
 2. Distribution. Headroom in an old outright owner’s house cannot be used by a tenant or by a mid-life household already near 40% loan-to-value. The free equity and the income to service a new loan are not in the same households: outright ownership is highest after 65, when the Insee housing-loan share has already collapsed.
 3. The interest test. At 3.30%, before fees and insurance and with no other charges, a 35% debt-service cap supports interest-only principal of about 10.6 times annual income (0.35 / 0.033). Borrower insurance, taxed as part of the HCSF ratio, lowers that multiple. A 40% loan-to-value on an expensive house can fail this test even when the aggregate residual looks large. No published table crosses house value, existing mortgage and income, so the number of households for whom both constraints clear is unknown.
-4. The maturity rule. V2 contemplates a very long interest-only loan without systematic repayment of principal. The binding HCSF standard requires amortisation within 25 years, except a short deferral tied to delayed possession, or a place inside the 20% flexibility margin. Whether a bullet interest-only loan fits that standard is unresolved. If it does not, the product as written is not originable at scale, whatever the equity stock.
+4. The origination rule. Closed on 19 October 2026 by the HCSF secretariat. The decision applies to housing credit for resident households, including credit secured on a dwelling that does not finance its purchase. For an in-fine loan, principal repaid at maturity enters the effort rate. The current framework has no alternative calculation. A notional amortising burden, distinct from the contractual schedule, would require the HCSF to amend its decision. The 20% flexibility margin allows exceptions. It is not a basis for a mass scheme. The product as written is not originable at scale under that framework, whatever the equity stock. The 25-year maturity cap is not the blocker for a 20-year bullet.
 
 ## Reading
 
@@ -74,7 +74,7 @@ The collateral test is the part that came out stronger than expected. The demogr
 
 The problem moves down one level. The unknown that now matters is the joint distribution of property value, existing mortgage, household income, age, and willingness or eligibility to borrow. National accounts cannot produce it. A mortgage-free house worth €1m, owned by a pensioner on €30,000 of income, adds a great deal to the €2,251bn residual and may add little once a 35% debt-service test is applied. A mortgage-free house worth €500,000, owned by a household earning €100,000, can support substantial borrowing. Those two households are invisible in the aggregate.
 
-The first genuinely dangerous issue is the HCSF framework, not the quantity of French property. Debt service is capped at 35% of income and maturity is generally capped at 25 years. At the July 2026 new-loan rate of 3.30%, a very long, primarily interest-only loan is not something the current rules can be assumed to allow. That is a legal and regulatory examination, still open.
+The first genuinely dangerous issue was the HCSF framework, not the quantity of French property. That branch is closed. Under the current rules, a long in-fine share whose effort rate follows the contractual schedule cannot be distributed at scale: the final principal enters the last year’s charges. Asking the HCSF to amend the decision is a separate, open policy question. Borrower-level capacity and take-up stay open.
 
 Sentence this result supports, and that the public text should be able to carry:
 
@@ -84,7 +84,7 @@ Next measurement, from households upward. Do not collapse the filters into one e
 
 1. **Collateral ceiling.** Housing value minus the mortgage already secured, up to each loan-to-value cap.
 2. **Debt-service ceiling.** What income can carry, under more than one servicing rule, including the 35% HCSF cap at the observed rate plus insurance.
-3. **Regulatory and product ceiling.** What remains if the loan must also fit the 25-year maturity rule, or sit inside the 20% flexibility margin. A very long interest-only loan is not assumed to pass.
+3. **Regulatory and product ceiling.** Under the rule closed on 19 October 2026, the interest-only share does not scale if the final principal enters the last year’s effort rate. The 20% margin is not that ceiling. A notional burden counts only if the HCSF amends its decision.
 4. **Take-up.** What households would actually draw. This is not a stock. It stays separate from the three ceilings.
 
 The difference in policy is the point. The figures that follow are illustrations of two different findings, not results. A collateral ceiling of €1.4tn that current servicing rules cut to €450bn is not the same result as a household distribution that only supports €450bn before any rule is applied. If €700bn still clears 30% loan-to-value after the income constraint, the scenario is materially harder to dismiss. If it appears only at 50% and only under generous servicing, it is fragile. Until those four numbers exist, €700bn stays an input.
@@ -94,8 +94,9 @@ The difference in policy is the point. The figures that follow are illustrations
 1. **Supported.** The housing-plus-land stock is €8 850bn. Individual housing credit is €1 289bn. Outright owners of the main home are 37.4% of households, and they are disproportionately old. The HCSF 35% and 25-year rules are binding.
 2. **Survived, at aggregate level only.** €700bn uses about 31% of the theoretical residual to a 40% consolidated loan-to-value. The national stock is not the binding constraint.
 3. **Weak assumption.** Treating €8.85tn, or the €2,251bn residual, as credit that would be taken up. Treating gross-wealth means and medians as housing equity.
-4. **Open, and kept separate.** Borrower-level capacity is unresolved. Regulatory compatibility is unresolved and potentially binding. Take-up is unresolved. Any one of them can kill the scenario without touching the national wealth total. None has been measured, and they must not be reported as a single eligible stock.
-5. **Data required.** Microdata, or granular Insee bands, crossing housing value, outstanding secured debt, income, age and occupancy. Then the four filters above, each at 30%, 40% and 50% loan-to-value. The output is four numbers, not one. Until that table exists, €700bn stays an input.
+4. **Closed, for the current rule.** Mass distribution under the contractual schedule of an in-fine loan does not fit the HCSF framework. The 20% margin does not replace that finding. A notional amortising burden would require the HCSF to amend its decision.
+5. **Open, and kept separate.** Borrower-level capacity is unresolved. Take-up is unresolved. Either can still shrink the scenario without touching the national wealth total. They must not be reported as a single eligible stock.
+6. **Data required.** Microdata, or granular Insee bands, crossing housing value, outstanding secured debt, income, age and occupancy. Then the four filters above, each at 30%, 40% and 50% loan-to-value. The output is four numbers, not one. Until that table exists, €700bn stays an input.
 
 ## What this does not do
 
