@@ -1,5 +1,11 @@
 2026-10-19
 
+2026-10-19. Parcours ménages `2026-10-19` names two arithmetics. EC-01 `2026-10-19-2`
+states about 10.6 times income on contractual interest and about 5.1 times on a
+20-year notional annuity. Household counts stay empty. Prior snapshot bytes unchanged.
+En images `emprunt-moyen-capacite` and `emprunt-moyen-mensualite` are `2026-10-19`,
+same amounts.
+
 2026-10-19. HCSF secretariat reply filed as `Docs/sources/HCSF_secretariat_2026-10-19.md`.
 Standardisation note published as `/documents/standard-credit-logement` version `2026-10-19`.
 Version `2026-10-13-2` is unchanged and superseded. EC-01 published as `2026-10-19`;

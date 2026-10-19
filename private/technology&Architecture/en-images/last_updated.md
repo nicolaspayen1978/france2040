@@ -1,3 +1,19 @@
+2026-10-19
+
+`emprunt-moyen-capacite` version `2026-10-19`. Same 261 000 € and 200 000 €.
+The figure says the contractual payment is what is held fixed. A notional annuity
+on the larger principal does not fit inside 1 139 €. Version `2026-10-01-4` is
+unchanged and superseded.
+
+`emprunt-moyen-mensualite` version `2026-10-19`. Same 862 € against 1 139 €.
+The gap is cash, at the same principal. Version `2026-10-03` is unchanged and
+superseded.
+
+`meme-capital-trois-mesures` and `quatre-voies-vers-un-marche` stay at `2026-10-13`.
+The first already separates contractual interest, a notional annuity and the final
+principal. The second still calls the notional annuity a candidate: that is the
+unobtained amendment, not the current rule.
+
 2026-10-13
 
 Schéma `quatre-voies-vers-un-marche` version `2026-10-13`. Four escalating routes

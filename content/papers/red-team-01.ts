@@ -6,7 +6,7 @@ export const redTeam01: WorkingPaper = {
   lang: "fr",
   summary:
     "500 à 700 Md€ de part à intérêts seuls peuvent-ils être tirés de l’équité immobilière française à 40–50 % de ratio prêt sur valeur ? L’objection du collatéral agrégé a résisté. La norme HCSF actuelle empêche la distribution de masse. La capacité de l’emprunteur, non.",
-  currentVersionId: "2026-10-19",
+  currentVersionId: "2026-10-19-2",
   versions: [
     {
       id: "2026-09-28",
@@ -48,17 +48,27 @@ export const redTeam01: WorkingPaper = {
     {
       id: "2026-10-19",
       published: "2026-10-19",
-      status: "working-paper",
+      status: "superseded",
       verdict:
         "Objection du collatéral agrégé : elle a résisté. Compatibilité réglementaire sous le cadre actuel : tranchée, elle empêche la distribution de masse. Capacité de l’emprunteur : non tranchée.",
       file: "content/papers/red-team-01/v2026-10-19.md",
       sha256: "b4b823d3afb8b4a7c316e50230bca053155c4c635632e0ec55ca1c8ee29998fd",
-      note: "Branche HCSF tranchée par la réponse du secrétariat du 19 octobre 2026. 700 Md€ inchangés. Capacité et adoption ouvertes.",
+      note: "Branche HCSF tranchée par la réponse du secrétariat du 19 octobre 2026. 700 Md€ inchangés. Capacité et adoption ouvertes. Octets inchangés.",
+    },
+    {
+      id: "2026-10-19-2",
+      published: "2026-10-19",
+      status: "working-paper",
+      verdict:
+        "Collatéral agrégé : a résisté. Cadre actuel : tranché. Deux multiples de revenu, 10,6 fois et 5,1 fois. Effectifs de ménages vides.",
+      file: "content/papers/red-team-01/v2026-10-19-2.md",
+      sha256: "73716a5153679d5bf4b5e5964e592584e22014225f6c0ad16916de5052cc1263",
+      note: "Pose le multiple d’intérêts à côté du multiple d’annuité notionnelle sur 20 ans. 700 Md€ inchangés. Le groupe sous le plafond n’a pas d’effectif.",
     },
   ],
   progress: [
     { id: "collateral", label: "Collatéral agrégé", state: "A résisté" },
-    { id: "borrower", label: "Capacité de l’emprunteur", state: "Non tranchée" },
+    { id: "borrower", label: "Capacité de l’emprunteur", state: "10,6 fois et 5,1 fois ; effectifs vides" },
     { id: "rules", label: "Compatibilité réglementaire", state: "Tranchée : pas de masse sous le cadre actuel" },
     { id: "path", label: "700 Md€", state: "Part à intérêts seuls, saisie de scénario" },
   ],

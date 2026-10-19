@@ -10,7 +10,7 @@ export const parcoursMenages: WorkingPaper = {
   lang: "fr",
   summary:
     "Part à intérêts seuls du Pacte et montages d’achat illustratifs. Le prêt existant ne disparaît pas : conserver un taux bas peut valoir plus que refinancer. Les 700 Md€ comptent cette seule part.",
-  currentVersionId: "2026-10-08",
+  currentVersionId: "2026-10-19",
   versions: [
     {
       id: "2026-10-01",
@@ -74,12 +74,22 @@ export const parcoursMenages: WorkingPaper = {
     {
       id: "2026-10-08",
       published: "2026-10-08",
-      status: "working-paper",
+      status: "superseded",
       verdict:
         "Le prêt existant compte. Conserver un taux bas peut valoir plus que refinancer. Pas une hypothèse de V2. Test 06 non ouvert",
       file: "content/papers/parcours-menages/v2026-10-08.md",
       sha256: "4f11d77d51a15f0b788d5064c309eb3990d16b388466a2fd46264a255732aa63",
-      note: "La part à intérêts seuls définit le mécanisme nouveau. Les deux crédits des cas d’achat sont un montage illustratif ; calculs inchangés.",
+      note: "La part à intérêts seuls définit le mécanisme nouveau. Les deux crédits des cas d’achat sont un montage illustratif ; calculs inchangés. Octets inchangés.",
+    },
+    {
+      id: "2026-10-19",
+      published: "2026-10-19",
+      status: "working-paper",
+      verdict:
+        "Deux arithmétiques. Même capital : trésorerie. Mensualité du contrat fixée : pas le plafond d’une annuité notionnelle. 700 Md€ inchangés.",
+      file: "content/papers/parcours-menages/v2026-10-19.md",
+      sha256: "e05fb6abb053339e881d27285c4bac435766b7b8fdae303ab20862f5a410a83e",
+      note: "Nomme les deux calculs. Les montants des cas restent. L’effectif du groupe sous le plafond est vide. EC-01 2026-10-19-2.",
     },
   ],
   progress: [

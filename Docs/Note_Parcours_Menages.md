@@ -1,6 +1,6 @@
 # Note — Parcours des ménages et trésorerie
 
-8 octobre 2026. Cette version précise que la nouvelle part à intérêts seuls est le mécanisme du Pacte ; un prêt amortissable peut coexister avec elle sans être une composante obligatoire du produit. Les calculs des cas d’achat illustratifs restent inchangés. Les versions antérieures restent consultables. La note ne redessine pas la trajectoire chiffrée et ne remplit pas les cellules vides.
+19 octobre 2026. Working file, aligned with the public snapshot `/documents/parcours-menages` version `2026-10-19`. Two arithmetics are named there. The case numbers are unchanged. The public text is the snapshot, not this file.
 
 Elle vient après le mécanisme de crédit au ménage, et avant les effets agrégés de dépense. Le pont est celui-ci : architecture du prêt, trésorerie mensuelle, pouvoir d’achat de trésorerie, usage possible des fonds, demande. Le pouvoir d’achat n’est pas le premier maillon.
 

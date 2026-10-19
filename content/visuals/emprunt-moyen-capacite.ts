@@ -5,25 +5,25 @@ export const empruntMoyenCapacite: Visual = {
   title: "Crédit moyen · capacité en deux parts",
   lang: "fr",
   summary:
-    "À 1 139 € par mois, intérêts seuls = 40 % de la valeur : ≈ 261 000 € empruntables contre 200 000 € en annuité.",
+    "À mensualité contractuelle de 1 139 € : ≈ 261 000 € contre 200 000 €. Ce n’est pas le plafond d’une annuité notionnelle.",
   shows:
-    "Lecture inverse du Cas 1 en deux parts. À mensualité égale à l’annuité de référence (1 139 €), apport 35 000 € et part à intérêts seuls à 40 % de la valeur, la capacité d’emprunt est d’environ 261 000 € (bien ≈ 296 000 €), contre 200 000 € en 100 % annuité.",
+    "Deuxième arithmétique du Cas 1. La mensualité du contrat est fixée à 1 139 €. Le capital passe d’environ 200 000 € à environ 261 000 €. Sous une annuité notionnelle sur tout le capital, 261 000 € ne tiennent pas dans 1 139 €.",
   doesNotEstablish:
-    "Ce n’est pas un pouvoir d’achat immobilier démontré. Le canal primo reste hostile. Le PTZ n’est pas inclus.",
+    "Ce n’est pas un relèvement du plafond réglementaire. Le groupe qui s’arrête sous un plafond inchangé n’a pas d’effectif. Le canal primo reste hostile. Le PTZ n’est pas inclus.",
   nature: "donnee",
   natureNote:
-    "Arithmétique inverse du Cas 1 en deux parts. Sensibilité 50 % indiquée dans le bandeau.",
-  units: "€ de capital empruntable",
-  asOf: "Taux juillet 2026 · note 1 octobre 2026",
+    "Mensualité du contrat fixée. Parcours ménages, version 2026-10-19. Sensibilité 50 % dans le bandeau.",
+  units: "€ de capital à mensualité contractuelle égale",
+  asOf: "Taux juillet 2026 · lecture 19 octobre 2026",
   provenance:
-    "Parcours ménages, version 2026-10-01-4. Mêmes paramètres que le graphique de mensualité en deux parts.",
+    "Parcours ménages, version 2026-10-19. Mêmes montants que la version 2026-10-01-4.",
   citations: [
     {
-      href: "/documents/parcours-menages/v/2026-10-01-4",
-      label: "Parcours ménages — Cas 1, deux parts (2026-10-01-4)",
+      href: "/documents/parcours-menages/v/2026-10-19",
+      label: "Parcours ménages — deux arithmétiques (2026-10-19)",
     },
   ],
-  currentVersionId: "2026-10-01-4",
+  currentVersionId: "2026-10-19",
   versions: [
     {
       id: "2026-10-01",
@@ -52,10 +52,18 @@ export const empruntMoyenCapacite: Visual = {
     {
       id: "2026-10-01-4",
       published: "2026-10-01",
-      status: "working",
+      status: "superseded",
       figure: "content/visuals/emprunt-moyen-capacite/v2026-10-01-4.svg",
       sha256: "bd0daedafbb9f5e26199f180efdd640ed37acbda33b6e537c1584cb7f2e129ce",
-      note: "Retire la référence au calcul erroné ~414 000 € (100 % intérêts seuls).",
+      note: "Retire la référence au calcul erroné ~414 000 € (100 % intérêts seuls). Octets inchangés.",
+    },
+    {
+      id: "2026-10-19",
+      published: "2026-10-19",
+      status: "working",
+      figure: "content/visuals/emprunt-moyen-capacite/v2026-10-19.svg",
+      sha256: "2a1ba717adf477d342a58ece613931dc8ff4e1b196bca372c61ee9b63e923966",
+      note: "Mêmes montants. Nomme la mensualité contractuelle. L’annuité notionnelle ne contient pas 261 000 €.",
     },
   ],
 };

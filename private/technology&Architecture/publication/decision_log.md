@@ -1,5 +1,14 @@
 # Decision log
 
+## 2026-10-19 — Two arithmetics named
+
+Owner asked for the smallest alignment. Parcours ménages `2026-10-19` names
+same-capital cash against a fixed contractual payment. The 261 000 € figure
+stays, and is the second arithmetic. EC-01 `2026-10-19-2` places about 10.6
+times income on contractual interest next to about 5.1 times on a 20-year
+notional annuity. Household counts stay empty. Prior bytes of `2026-10-08`
+and `2026-10-19` are unchanged. 700 Md€ unchanged.
+
 ## 2026-10-19 — HCSF secretariat reply closes the prudential branch
 
 The secretariat of the Haut Conseil de stabilité financière replied on 19 October 2026.
