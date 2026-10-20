@@ -1,5 +1,13 @@
 # Decision log
 
+## 2026-10-20 — Child asks why not only cuts or taxes
+
+Owner wording, added to Explique-moi le Pacte after the family explanation and before the national scale. The child asks why France could not simply spend less or raise taxes. France 2040 answers that those choices remain, and that they can make economic life harder for a time; the third way tries to keep the economy moving while public finances are brought back into order. It does not replace reforms. New snapshot `2026-10-20`. Version `2026-10-03` bytes unchanged, superseded as current. Scenario figures unchanged.
+
+## 2026-10-20 — Third lever, before the mechanism
+
+Owner wording, placed at the start of the résumé, after the opening sentence and before the interest-only mechanism. Two budget levers (spend less, tax more) and a third: mobilise part of household private balance sheets without funding the initial impulse by more public spending or debt. The third way does not replace reforms or spending control. New snapshot `2026-10-20`. Version `2026-10-08` bytes unchanged, superseded as current. Scenario figures unchanged.
+
 ## 2026-10-19 — Two arithmetics named
 
 Owner asked for the smallest alignment. Parcours ménages `2026-10-19` names

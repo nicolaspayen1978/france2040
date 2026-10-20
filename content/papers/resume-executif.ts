@@ -6,7 +6,7 @@ export const resumeExecutif: WorkingPaper = {
   lang: "fr",
   summary:
     "Le crédit ouvre une fenêtre ; l’usage décide du volume français. Même 700 Md€ : 125 Md€ d’activité en France dans le cas central, 42 Md€ si la transmission est faible. Scénario, pas une prévision.",
-  currentVersionId: "2026-10-08",
+  currentVersionId: "2026-10-20",
   versions: [
     {
       id: "2026-10-01",
@@ -173,11 +173,20 @@ export const resumeExecutif: WorkingPaper = {
     {
       id: "2026-10-08",
       published: "2026-10-08",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse, non un programme arrêté. Scénarios Phase 2, pas une prévision.",
       file: "content/papers/resume-executif/v2026-10-08.md",
       sha256: "e8db2ba3c8d5a8e4a60e83b8588285233d59b21d9ccef608185740174f088da7",
       note: "La part à intérêts seuls est le mécanisme nouveau ; la coexistence éventuelle avec un crédit amortissable n’en fait pas un produit obligatoirement en deux parts.",
+    },
+    {
+      id: "2026-10-20",
+      published: "2026-10-20",
+      status: "working-paper",
+      verdict: "Hypothèse, non un programme arrêté. Scénarios Phase 2, pas une prévision.",
+      file: "content/papers/resume-executif/v2026-10-20.md",
+      sha256: "a3acb52d3e257eec979b3a6cb7ab04604d737f7c8940e8cdf5cd14e2cb44c45a",
+      note: "Trois leviers, avant le mécanisme. La troisième voie complète les réformes et la maîtrise des dépenses ; elle ne les remplace pas. Chiffres inchangés.",
     },
   ],
   progress: [

@@ -3,7 +3,7 @@ export type PaperBlock =
   | { kind: "paragraph"; id: string; text: string }
   | { kind: "list"; id: string; ordered: boolean; items: { id: string; text: string }[] }
   | { kind: "table"; id: string; headers: string[]; rows: string[][] }
-  | { kind: "vis"; variant: "chain" | "pair" | "cards"; id: string; items: { value: string; label: string }[] };
+  | { kind: "vis"; variant: "chain" | "pair" | "cards" | "columns"; id: string; items: { value: string; label: string }[] };
 
 const alignmentCell = /^:?-{3,}:?$/;
 
@@ -90,7 +90,7 @@ export function parsePaper(markdown: string): PaperBlock[] {
 
     if (line.startsWith("::vis ")) {
       const variantRaw = line.slice(6).trim();
-      if (variantRaw !== "chain" && variantRaw !== "pair" && variantRaw !== "cards") {
+      if (variantRaw !== "chain" && variantRaw !== "pair" && variantRaw !== "cards" && variantRaw !== "columns") {
         throw new Error(`Unknown vis variant “${variantRaw}” at “${section}”`);
       }
       const variant = variantRaw;

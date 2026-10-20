@@ -9,16 +9,25 @@ export const expliqueMoiLePacte: WorkingPaper = {
   presentation: "dialogue",
   summary:
     "J’ai 6 ans aujourd’hui. J’aurai 20 ans en 2040. Une lecture du Pacte : patrimoine enfermé dans les murs, liquidité contre une dette différée, enveloppe de 700 Md€, rythme conditionnel, test de 2040.",
-  currentVersionId: "2026-10-03",
+  currentVersionId: "2026-10-20",
   versions: [
     {
       id: "2026-10-03",
       published: "2026-10-03",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Lecture. Ce n’est pas une prévision. Le pari reste à tester.",
       file: "content/papers/explique-moi-le-pacte/v2026-10-03.md",
       sha256: "0c52800a9eabafd0964d4c0ad8a4e9a51fc588e75af83bfe749400612ffc5259",
       note: "Texte d’entrée, avant le résumé exécutif. 700 Md€ = enveloppe, pas un objectif.",
+    },
+    {
+      id: "2026-10-20",
+      published: "2026-10-20",
+      status: "working-paper",
+      verdict: "Lecture. Ce n’est pas une prévision. Le pari reste à tester.",
+      file: "content/papers/explique-moi-le-pacte/v2026-10-20.md",
+      sha256: "7ed90b1e3b8a052023f685b919150bbff24e9cc94dd98103669648b9cb4b71fd",
+      note: "L’enfant demande pourquoi pas seulement moins de dépenses ou plus d’impôts. Réponse : troisième voie complémentaire, après l’explication familiale. Chiffres inchangés.",
     },
   ],
   progress: [

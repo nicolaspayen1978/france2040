@@ -60,7 +60,7 @@ The Red Team 05 issuer table is `repere-des-emetteurs-gele-t-1`. That is the kin
 
 `WorkingPaper.presentation` can opt into a display treatment without changing the source
 snapshot, its bytes, hash, anchors, metadata, or the linear reading order. `dialogue` is used
-only by **Explique-moi le Pacte**: the two opening lines and the level-two question are set as
+only by **Explique-moi le Pacte**: the two opening lines and each level-two question are set as
 prompts; the unchanged explanatory paragraphs form a slightly indented, continuous reply.
 The layout uses typography and spacing rather than individual message cards. The normal paper
 renderer remains the default. Permalinks and critique links remain attached to each original
@@ -75,7 +75,8 @@ prose and italic prompts, with a wider opening line on desktop that wraps on nar
 A narrow blue, white and red rule marks the left edge of the landing reading; the white segment
 has a faint outline so it stays visible on the page background. It is decoration only. The
 landing reading uses compact book typography in two columns on wide screens and one column on
-narrow screens. Its opening is left-aligned. Small ENFANT and FRANCE 2040 speaker cues mark
+narrow screens. Each child question keeps a short gap before that reply, so the right column
+does not sit against the question. Its opening is left-aligned. Small ENFANT and FRANCE 2040 speaker cues mark
 turns without changing the document snapshot or repeating labels on every paragraph.
 
 The landing page is a gateway, not a second document index: the full home-only dialogue

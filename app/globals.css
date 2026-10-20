@@ -248,6 +248,10 @@ h1 {
   border-top: 1px solid var(--line);
 }
 
+.home-dialogue .dialogue-chapter + .dialogue-columns {
+  margin-top: 0.9rem;
+}
+
 @media (min-width: 68rem) {
   .home-dialogue {
     width: min(62rem, 100%);
@@ -1290,6 +1294,12 @@ body:has(.wide-page) .shell {
   gap: 0.75rem;
 }
 
+.sim-columns ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem 1.5rem;
+}
+
 .sim-pair li,
 .sim-cards li {
   margin: 0;
@@ -1298,12 +1308,36 @@ body:has(.wide-page) .shell {
   background: var(--paper);
 }
 
+.sim-columns li {
+  margin: 0;
+  padding: 0.7rem 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.sim-vis.sim-columns li + li {
+  margin-top: 0;
+}
+
 .sim-pair .sim-value {
   font-size: 1.2rem;
 }
 
-.sim-cards .sim-value {
+.sim-cards .sim-value,
+.sim-columns .sim-value {
   font-size: 1.05rem;
+}
+
+.sim-columns .sim-label {
+  margin-top: 0.35rem;
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+
+@media (max-width: 48rem) {
+  .sim-columns ol {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 .sim-callout {

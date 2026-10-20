@@ -1,4 +1,8 @@
-2026-10-19
+2026-10-20
+
+2026-10-20. Explique-moi le Pacte `2026-10-20` adds the child’s question on spending cuts and taxes, after the family explanation. Version `2026-10-03` is unchanged and superseded. Scenario figures unchanged.
+
+2026-10-20. Résumé exécutif `2026-10-20` opens, before the mechanism, with three budget levers and the disclaimer that the third way does not replace reforms or spending control. Version `2026-10-08` is unchanged and superseded. Scenario figures unchanged.
 
 2026-10-19. Parcours ménages `2026-10-19` names two arithmetics. EC-01 `2026-10-19-2`
 states about 10.6 times income on contractual interest and about 5.1 times on a

@@ -15,6 +15,12 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
+- `[website]` Accueil : un peu d’air entre la question de l’enfant et la colonne de droite du dialogue.
+
+- `[publication]` Explique-moi le Pacte `2026-10-20` : l’enfant demande pourquoi pas seulement moins de dépenses ou plus d’impôts. Réponse : troisième voie complémentaire. Chiffres inchangés.
+
+- `[publication]` Résumé exécutif `2026-10-20` : trois leviers du débat budgétaire, avant le mécanisme. La troisième voie ne remplace ni les réformes ni la maîtrise des dépenses. Chiffres inchangés.
+
 - `[publication]` Deux arithmétiques. Parcours `2026-10-19`. EC-01 `2026-10-19-2` : 10,6 fois le revenu sur les intérêts, 5,1 fois sur une annuité notionnelle de 20 ans. Effectifs vides. En images : capacité et mensualité `2026-10-19`, montants inchangés.
 
 - `[publication]` Réponse du secrétariat du HCSF, 19 octobre 2026. Branche prudentielle tranchée : standardisation `2026-10-19`, EC-01 `2026-10-19`, questions ouvertes `2026-10-19`. Pas de distribution de masse sous l’échéancier d’un prêt in fine. Charge notionnelle : modification de la décision. 700 Md€ inchangés. EC-05 et la note Pays-Bas inchangées.
