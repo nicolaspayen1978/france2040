@@ -60,3 +60,15 @@ Owner: rows are allocation shifts, not modelled incentives. Measure the conseque
 ## 2026-10-03 — Qualities of a valuable use (not a sector pick)
 
 Owner: define qualities first — local employment, local content, available capacity, capital creation, associated savings — then test candidate uses. Immediate volume is only one of four effects (capital, recurring, fiscal; plus constraints). Objective becomes domestic economic value per euro of private expansion, not only current transmission. Renovation remains a candidate, not a preferred use. Do not lengthen the results page with more numbers.
+
+## 2026-10-23 — Banking economics stays outside the workbook
+
+Owner: lender incentive is its own feasibility note, `Docs/28_Banking_Economics_Home_Equity.md`. It does not enter Phase 2 or Phase 2.1, does not add a fifth trajectory, and does not fill an empty model cell. €700bn remains the frozen interest-only stock. Incremental bank assets, net interest income, contribution and return are unestimated. No gross-margin headline. Red Team 05 financeability is not reopened.
+
+Same day: the note’s question includes financial stability. Risk is part of the test, not an appendix. The frozen 2047/2048 bullet wave is cited and not extended. Red Team 08 and EC-09 are not rerun. No loss rate, no product change, no gross-margin illustration. “Not under the current design” is an allowed conclusion.
+
+Same day, after reading: two bridges. System credit is €700bn → substituted debt → additional household credit. Bank economics are the whole Pacte book minus displaced assets minus incremental funding, hedging, operating, loss and capital costs. Annual origination is the frozen path, peak €90bn, with the substitution split empty. Maturity is that path shifted 20 years, called a wave until the repayment channels are quantified. Correlation is a risk row. Question 4 compares return, capital, expected loss, duration and liquidity with ordinary housing credit. Cells stay empty.
+
+## 2026-10-23 — Banking note structure frozen
+
+Owner: freeze `Docs/28_Banking_Economics_Home_Equity.md`. Do not lengthen the framework. Add only prepayment/optionality as a risk row, with no behavioural rate imported; contractual life is not economic duration. Contribution is stated at the end-2040 scenario stock, not “at maturity”. The result box is four empty numbers: incremental credit €Ybn, annual contribution €Zbn, capital consumed €Cbn, risk-adjusted return X% equal to contribution per euro of incremental CET1, compared with ordinary mortgage lending. Next evidence: capital treatment, funding economics, substitution, loss behaviour. Not a model cell. Not a public snapshot.

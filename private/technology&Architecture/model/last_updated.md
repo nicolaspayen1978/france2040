@@ -9,3 +9,5 @@
 2026-10-03. Phase 2 recast: A₀ added; narrative C vs R → W vs C → A vs A₀. Canvas “What does the Pacte change?”
 
 2026-10-03. Qualities-of-use frame: employment, content, capacity, capital, savings. Result numbers still frozen.
+
+2026-10-23. Banking economics of home-equity mobilisation opened as `Docs/28_Banking_Economics_Home_Equity.md`. Outside the workbook. No new model figure. Same day the question includes financial stability. No loss rate and no product change. Same day: system-credit bridge and bank-economics bridge separated; annual path cited; maturity treated as a wave. Empty cells left empty. Structure frozen the same day. Prepayment optionality added as an open row. Result box is four empty numbers. Framework not to be lengthened.
