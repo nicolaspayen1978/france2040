@@ -7,7 +7,7 @@ export const pacteV2: WorkingPaper = {
   lang: "fr",
   summary:
     "Élaboration de travail, plus longue. Le texte de référence de la proposition est Le Pacte du bilan français.",
-  currentVersionId: "2026-10-08",
+  currentVersionId: "2026-10-24",
   attachments: [
     {
       href: "/sources/pacte-du-bilan-francais-v2.docx",
@@ -63,11 +63,20 @@ export const pacteV2: WorkingPaper = {
     {
       id: "2026-10-08",
       published: "2026-10-08",
-      status: "working-paper",
+      status: "superseded",
       verdict: "Hypothèse à tester, non un programme arrêté.",
       file: "content/papers/pacte-v2/v2026-10-08.md",
       sha256: "12eee425b75c40a0c6b451c667508cf388163ce769de95230891661ef1ba0b18",
       note: "Clarifie que la part à intérêts seuls est le mécanisme nouveau ; un prêt amortissable peut coexister sans être imposé.",
+    },
+    {
+      id: "2026-10-24",
+      published: "2026-10-24",
+      status: "working-paper",
+      verdict: "Hypothèse à tester, non un programme arrêté.",
+      file: "content/papers/pacte-v2/v2026-10-24.md",
+      sha256: "10600938c208a913dd80091d72adc648afc6338d31f385c628bfad02371f34c0",
+      note: "Même élaboration. Run de travail, scénario gelé, sondes et silver bullet sont dits en clair. Aucun chiffre changé.",
     },
   ],
   progress: [

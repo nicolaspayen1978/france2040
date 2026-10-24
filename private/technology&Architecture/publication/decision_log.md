@@ -1,5 +1,17 @@
 # Decision log
 
+## 2026-10-24 — First-reader wording of the Pacte, no new figures
+
+The reference text, the long V2 and the résumé used labels a first reader cannot decode: “run de travail”, “scénario gelé”, “sondes macro”, “silver bullet”, “déflateur”, “hypothèses à l’épreuve”, “épreuves contradictoires” and “cellules”. New snapshots `pacte`, `pacte-v2` and `resume-executif`, all `2026-10-24`. Prior versions unchanged. Explique-moi le Pacte was already plain and is unchanged. No figure changed. 700 Md€ unchanged.
+
+## 2026-10-24 — First-reader wording, no new figures
+
+Labels that only the note itself understood — “the 1.8 times”, “neighbourhood of flows”, “the €Cbn cell”, “shadow”, “matchability”, an undefined bullet — are written out in ordinary sentences. Snapshot `2026-10-24-4`. Version `2026-10-24-3` unchanged. No figure changed. 700 Md€ unchanged.
+
+## 2026-10-24 — Header says what the 1.8 multiple is
+
+The opening sentence that called the figure “the 1.8 times” was unclear. Snapshot `2026-10-24-3` says one originated euro produces about 1.8 times as much contractual interest if the principal stays outstanding as it does on the annuity, and that this multiple is not a margin. Version `2026-10-24-2` is unchanged. No figure changed.
+
 ## 2026-10-24 — Same origination, larger stock; supply price unsolved
 
 Owner: interest-only does not make the mortgage more profitable. It keeps a larger stock for the same origination. Filed in `/documents/economie-bancaire` version `2026-10-24-2`. Prior versions unchanged.

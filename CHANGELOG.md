@@ -15,6 +15,12 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
+- `[publication]` Pacte, V2 et résumé `2026-10-24` : les formules internes (run de travail, scénario gelé, silver bullet, déflateur, épreuves) sont dites en clair. Explique-moi le Pacte inchangé. Aucun chiffre changé.
+
+- `[publication]` Économie bancaire `2026-10-24-4` : les formules internes sont dites en clair pour un premier lecteur. Aucun chiffre changé. Version `2026-10-24-3` inchangée.
+
+- `[publication]` Économie bancaire `2026-10-24-3` : la phrase d’ouverture dit ce qu’est le multiple 1,8. Le fond est celui de `2026-10-24-2`, inchangé.
+
 - `[publication]` Économie bancaire `2026-10-24-2` : à origination égale, environ 1,8 fois l’intérêt contractuel, et environ 443 Md€ d’encours amorti contre 700 Md€ à fin 2040. Le prix d’offre n’est pas résolu. Versions antérieures inchangées.
 
 - `[publication]` Économie bancaire `2026-10-24` : repère ACPR du crédit habitat ordinaire (marge du stock, coût du risque, pondération interne). Hors des quatre cellules de résultat. Version `2026-10-23` inchangée. 700 Md€ inchangés.

@@ -8,7 +8,7 @@ export const economieBancaire: WorkingPaper = {
   lang: "fr",
   summary:
     "Les 700 Md€ sont l’encours brut de la part à intérêts seuls en 2040, pas un crédit additionnel et pas un revenu. À origination égale, le stock sans amortissement est plus grand : environ 1,8 fois l’intérêt contractuel, et environ 700 Md€ contre 443 Md€ à fin 2040. La rentabilité dépend du prix, qui n’est pas résolu.",
-  currentVersionId: "2026-10-24-2",
+  currentVersionId: "2026-10-24-4",
   versions: [
     {
       id: "2026-10-23",
@@ -33,12 +33,32 @@ export const economieBancaire: WorkingPaper = {
     {
       id: "2026-10-24-2",
       published: "2026-10-24",
-      status: "working-paper",
+      status: "superseded",
       verdict:
         "Non tranché. À origination égale, le stock sans amortissement est plus grand. La rentabilité dépend d’un prix non résolu. Les quatre cellules restent vides.",
       file: "content/papers/economie-bancaire/v2026-10-24-2.md",
       sha256: "e177db2baa9d0bb8148d85bec4622f608309ccbcf22389a9035d6b0f5493f1f4",
       note: "1,8 fois l’intérêt contractuel par euro originé, à 3,30 %, sans remboursement anticipé. Même chemin amorti : environ 443 Md€ au 31 décembre 2040, ouverture en janvier. Le prix d’offre n’est pas résolu. 700 Md€ inchangés.",
+    },
+    {
+      id: "2026-10-24-3",
+      published: "2026-10-24",
+      status: "superseded",
+      verdict:
+        "Non tranché. À origination égale, le stock sans amortissement est plus grand. La rentabilité dépend d’un prix non résolu. Les quatre cellules restent vides.",
+      file: "content/papers/economie-bancaire/v2026-10-24-3.md",
+      sha256: "8d2db381403fe7dd26997ee7190d60bdb6a39f76bc0d9fa781ea9754d9c4a924",
+      note: "Même texte que 2026-10-24-2, avec la phrase d’ouverture sur le multiple 1,8 réécrite. 700 Md€ inchangés.",
+    },
+    {
+      id: "2026-10-24-4",
+      published: "2026-10-24",
+      status: "working-paper",
+      verdict:
+        "Non tranché. À origination égale, le stock sans amortissement est plus grand. La rentabilité dépend d’un prix non résolu. Les quatre cellules restent vides.",
+      file: "content/papers/economie-bancaire/v2026-10-24-4.md",
+      sha256: "e0ab167fc08417f78aa2b121ab4ece42454a03084a971d538f160adbe5e8c101",
+      note: "Même fond que 2026-10-24-3. Les formules internes (ombre, voisinage de flux, cellule C, échéance non définie) sont dites en clair. Aucun chiffre changé.",
     },
   ],
   progress: [

@@ -52,7 +52,7 @@ Publication and consultation, 1 October 2026. Frozen in `Docs/14_Architecture_Pu
 
 ## Banking economics — separate note
 
-24 October 2026. Same origination, larger stock. At 3.30% and no prepayment, about 1.8 times the contractual interest per euro originated (€66,000 against about €36,800 on €100,000). The same path amortised leaves about €443bn at 31 December 2040 on January booking, about €459bn on mid-year booking, against €700bn. Not a profit and not the no-Pacte increment. Supply price unsolved; no candidate rate. French snapshot `2026-10-24-2`.
+24 October 2026. Same origination, larger stock. At 3.30% and no prepayment, about 1.8 times the contractual interest per euro originated (€66,000 against about €36,800 on €100,000). The same path amortised leaves about €443bn at 31 December 2040 on January booking, about €459bn on mid-year booking, against €700bn. Not a profit and not the no-Pacte increment. Supply price unsolved; no candidate rate. French snapshot `2026-10-24-4`.
 
 24 October 2026. Ordinary French mortgage benchmark added. The printed RENTIMMO bars, not an unlabeled earlier semester: S2 2023 net margin −0.31%, S2 2024 −0.30%; with ancillary income, −0.05% and −0.03%. Annual cost of risk 1 bp, then 0.02%, then 0.03%. Internal-model weight 9.8% (June 2023), 9.4% (December 2024), 9.2% (2025), before guarantor capital. Mechanical shadow on €700bn kept outside the four result cells. French snapshot `2026-10-24`; `2026-10-23` unchanged. Next capital question, not started: CRR and internal-model treatment of a 20-year interest-only loan at a consolidated 35–40%, including a junior lien and the guarantor, net of the asset displaced.
 

@@ -1,5 +1,11 @@
 2026-10-24
 
+2026-10-24. Le Pacte, V2 and the résumé are `2026-10-24`. Internal labels are written in ordinary sentences. Explique-moi le Pacte stays `2026-10-20`. No figure changed.
+
+2026-10-24. Banking economics `/documents/economie-bancaire` version `2026-10-24-4` rewrites internal labels into ordinary sentences. No figure changed. Version `2026-10-24-3` is unchanged.
+
+2026-10-24. Banking economics `/documents/economie-bancaire` version `2026-10-24-3` rewrites the opening sentence on the 1.8 multiple. Version `2026-10-24-2` is unchanged.
+
 2026-10-24. Banking economics `/documents/economie-bancaire` version `2026-10-24-2` files the 1.8 contractual-interest ratio and the amortised stock of the same path. The supply price is unsolved. Version `2026-10-24` is unchanged and superseded.
 
 2026-10-24. Banking economics `/documents/economie-bancaire` version `2026-10-24` files the ACPR ordinary-mortgage benchmark. Version `2026-10-23` is unchanged and superseded. The four result cells stay empty. 700 Md€ unchanged.
