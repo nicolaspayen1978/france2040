@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  En images — vague-maturite-2047-2060 v2026-10-23
+  Colours from app/tokens.css: --paper #fff, --line #e6e6e6, --ink #1a1a1a,
+  --muted #6a6a6a, --mark-blue #002395, --blue-2 #334a9a
+  Same frozen path, shifted 20 years on a 1 January booking. Channels empty.
+  Not coloured as a danger. Blue-2 is the second series, not a stress.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">La vague de maturité recopie l’origination</title>
+  <desc id="desc">À 20 ans, ouverture au 1er janvier, le principal contractuel de 2047 à 2060 reproduit le chemin d’origination 2027–2040 : 25, 45, 65, 80, 90, 90, puis la décrue jusqu’à 0. Les canaux de vente, de remboursement, de refinancement, de succession et d’autre ne sont pas chiffrés. La vague n’est ni jugée dangereuse ni jugée sûre.</desc>
+  <rect width="720" height="560" fill="#ffffff"/>
+  <text x="24" y="32" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">La vague recopie la courbe, vingt ans plus tard</text>
+  <text x="24" y="52" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Simulation France2040 · cas 20 ans · ouverture au 1er janvier · pas un jugement</text>
+
+  <text x="24" y="78" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#002395">Origination 2027–2040, Md€</text>
+  <line x1="48" y1="230" x2="696" y2="230" stroke="#e6e6e6"/>
+  <rect x="56" y="191.1" width="28" height="38.9" fill="#002395"/>
+  <rect x="100" y="160" width="28" height="70" fill="#002395"/>
+  <rect x="144" y="128.9" width="28" height="101.1" fill="#002395"/>
+  <rect x="188" y="105.6" width="28" height="124.4" fill="#002395"/>
+  <rect x="232" y="90" width="28" height="140" fill="#002395"/>
+  <rect x="276" y="90" width="28" height="140" fill="#002395"/>
+  <rect x="320" y="105.6" width="28" height="124.4" fill="#002395"/>
+  <rect x="364" y="121.1" width="28" height="108.9" fill="#002395"/>
+  <rect x="408" y="144.4" width="28" height="85.6" fill="#002395"/>
+  <rect x="452" y="167.8" width="28" height="62.2" fill="#002395"/>
+  <rect x="496" y="183.3" width="28" height="46.7" fill="#002395"/>
+  <rect x="540" y="198.9" width="28" height="31.1" fill="#002395"/>
+  <rect x="584" y="214.4" width="28" height="15.6" fill="#002395"/>
+  <line x1="628" y1="230" x2="668" y2="230" stroke="#002395" stroke-width="2"/>
+  <text x="70" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">27</text>
+  <text x="114" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">28</text>
+  <text x="158" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">29</text>
+  <text x="202" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">30</text>
+  <text x="246" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#1a1a1a">31</text>
+  <text x="290" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#1a1a1a">32</text>
+  <text x="334" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">33</text>
+  <text x="378" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">34</text>
+  <text x="422" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">35</text>
+  <text x="466" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">36</text>
+  <text x="510" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">37</text>
+  <text x="554" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">38</text>
+  <text x="598" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">39</text>
+  <text x="648" y="246" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">40</text>
+
+  <text x="24" y="286" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#334a9a">Échéance contractuelle 2047–2060, mêmes Md€</text>
+  <line x1="48" y1="438" x2="696" y2="438" stroke="#e6e6e6"/>
+  <rect x="56" y="399.1" width="28" height="38.9" fill="#334a9a"/>
+  <rect x="100" y="368" width="28" height="70" fill="#334a9a"/>
+  <rect x="144" y="336.9" width="28" height="101.1" fill="#334a9a"/>
+  <rect x="188" y="313.6" width="28" height="124.4" fill="#334a9a"/>
+  <rect x="232" y="298" width="28" height="140" fill="#334a9a"/>
+  <rect x="276" y="298" width="28" height="140" fill="#334a9a"/>
+  <rect x="320" y="313.6" width="28" height="124.4" fill="#334a9a"/>
+  <rect x="364" y="329.1" width="28" height="108.9" fill="#334a9a"/>
+  <rect x="408" y="352.4" width="28" height="85.6" fill="#334a9a"/>
+  <rect x="452" y="375.8" width="28" height="62.2" fill="#334a9a"/>
+  <rect x="496" y="391.3" width="28" height="46.7" fill="#334a9a"/>
+  <rect x="540" y="406.9" width="28" height="31.1" fill="#334a9a"/>
+  <rect x="584" y="422.4" width="28" height="15.6" fill="#334a9a"/>
+  <line x1="628" y1="438" x2="668" y2="438" stroke="#334a9a" stroke-width="2"/>
+  <text x="70" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">47</text>
+  <text x="114" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">48</text>
+  <text x="158" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">49</text>
+  <text x="202" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">50</text>
+  <text x="246" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#1a1a1a">51</text>
+  <text x="290" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#1a1a1a">52</text>
+  <text x="334" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">53</text>
+  <text x="378" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">54</text>
+  <text x="422" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">55</text>
+  <text x="466" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">56</text>
+  <text x="510" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">57</text>
+  <text x="554" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">58</text>
+  <text x="598" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">59</text>
+  <text x="648" y="454" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="10" fill="#6a6a6a">60</text>
+
+  <text x="24" y="490" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Vente, remboursement comptant, refinancement, succession, autre : non chiffrés.</text>
+  <text x="24" y="512" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">L’ouverture au 31 décembre décale la vague d’un an. Ce n’est pas un remboursement unique de 700 Md€.</text>
+  <text x="24" y="538" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Ni dangereuse ni sûre. La vie contractuelle n’est pas la duration économique.</text>
+</svg>

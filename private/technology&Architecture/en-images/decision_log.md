@@ -1,5 +1,23 @@
 # Decision log
 
+## 2026-10-23 — Banking economics, four figures
+
+Owner asked to publish the banking note and extract the figures the frozen structure
+can already show. Four visuals, version `2026-10-23`, citing `/documents/economie-bancaire`
+version `2026-10-23`.
+
+- `deux-ponts-bancaires` — system credit and bank economics. X, Y and contribution empty.
+- `quatre-nombres-du-resultat` — Y, Z, C and X = Z/C, all empty. Contribution is at the
+  end-2040 stock, not at loan maturity.
+- `pic-origination-contre-production` — 90 against 146.7. About 61% of one observed year.
+  Not incremental credit. Not the capacity coefficient EC-05 refused.
+- `vague-maturite-2047-2060` — the frozen path shifted 20 years. Repayment channels empty.
+  Not coloured or captioned as danger.
+
+No loss rate, no prepayment rate, no return.
+
+
+
 ## 2026-10-13 — Four routes to a market
 
 Owner asked for one schéma of the four implementation routes, which are the frozen

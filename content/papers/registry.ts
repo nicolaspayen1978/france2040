@@ -1,6 +1,7 @@
 import { expliqueMoiLePacte } from "@/content/papers/explique-moi-le-pacte";
 import { intensiteBilanResidentiel } from "@/content/papers/intensite-bilan-residentiel";
 import { helocInteretsSeuls } from "@/content/papers/heloc-interets-seuls";
+import { economieBancaire } from "@/content/papers/economie-bancaire";
 import { standardCreditLogement } from "@/content/papers/standard-credit-logement";
 import { paysBasInteretsSeuls } from "@/content/papers/pays-bas-interets-seuls";
 import { modele } from "@/content/papers/modele";
@@ -33,6 +34,7 @@ export const workingPapers: WorkingPaper[] = [
   intensiteBilanResidentiel,
   helocInteretsSeuls,
   standardCreditLogement,
+  economieBancaire,
   paysBasInteretsSeuls,
   questionsOuvertes,
   contexteDemographique,

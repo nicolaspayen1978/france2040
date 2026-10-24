@@ -1,5 +1,17 @@
 # Decision log
 
+## 2026-10-23 — Banking economics published in French
+
+Owner asked to publish the frozen banking note and to extract the relevant En images.
+Snapshot `/documents/economie-bancaire` version `2026-10-23`. English working file unchanged
+in substance. Verdict stays open. Empty cells stay empty. 90 / 146.7 is shown as a flow
+neighbourhood, not as a capacity coefficient and not as incremental credit. The maturity
+schedule is a wave, not a judged wall. Four figures: two bridges, four empty result numbers,
+origination peak against 2025 production, maturity wave 2047–2060. Not a model cell.
+700 Md€ unchanged.
+
+
+
 ## 2026-10-20 — Child asks why not only cuts or taxes
 
 Owner wording, added to Explique-moi le Pacte after the family explanation and before the national scale. The child asks why France could not simply spend less or raise taxes. France 2040 answers that those choices remain, and that they can make economic life harder for a time; the third way tries to keep the economy moving while public finances are brought back into order. It does not replace reforms. New snapshot `2026-10-20`. Version `2026-10-03` bytes unchanged, superseded as current. Scenario figures unchanged.

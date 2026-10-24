@@ -15,6 +15,8 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
+- `[publication]` Économie bancaire et stabilité financière (`/documents/economie-bancaire` `2026-10-23`). Deux ponts vides. Pic de 90 Md€ à côté de 146,7 Md€ : voisinage de flux, pas un crédit additionnel. Vague 2047–2060 non jugée. Quatre nombres de résultat vides. 700 Md€ inchangés. En images : `deux-ponts-bancaires`, `quatre-nombres-du-resultat`, `pic-origination-contre-production`, `vague-maturite-2047-2060`.
+
 - `[website]` Accueil : un peu d’air entre la question de l’enfant et la colonne de droite du dialogue.
 
 - `[publication]` Explique-moi le Pacte `2026-10-20` : l’enfant demande pourquoi pas seulement moins de dépenses ou plus d’impôts. Réponse : troisième voie complémentaire. Chiffres inchangés.

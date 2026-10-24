@@ -1,3 +1,10 @@
+2026-10-23
+
+Four figures for the banking note, version `2026-10-23`: `deux-ponts-bancaires`,
+`quatre-nombres-du-resultat`, `pic-origination-contre-production`,
+`vague-maturite-2047-2060`. They cite `/documents/economie-bancaire` `2026-10-23`.
+Empty cells stay empty. The maturity figure is not a danger verdict.
+
 2026-10-19
 
 `emprunt-moyen-capacite` version `2026-10-19`. Same 261 000 € and 200 000 €.

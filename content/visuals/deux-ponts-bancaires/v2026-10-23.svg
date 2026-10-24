@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  En images — deux-ponts-bancaires v2026-10-23
+  Colours from app/tokens.css: --paper #fff, --paper-2 #e8e8e4, --line #e6e6e6,
+  --ink #1a1a1a, --ink-2 #3f3f3f, --ink-3 #5c5c5c, --muted #6a6a6a, --mark-blue #002395
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Deux ponts, pas un</title>
+  <desc id="desc">Le pont du crédit sépare 700 Md€ d’encours brut, la dette substituée et le crédit ménage additionnel. Le pont bancaire part du livre entier, soustrait les actifs déplacés et les coûts, et laisse la contribution vide. Un refinancement euro pour euro peut ajouter zéro de crédit et changer quand même l’économie de la banque.</desc>
+  <rect width="720" height="520" fill="#ffffff"/>
+  <text x="24" y="34" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">Deux ponts, pas un</text>
+  <text x="24" y="56" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Schéma France2040 · cellules vides · pas une marge</text>
+
+  <rect x="24" y="76" width="328" height="300" fill="#ffffff" stroke="#e8e8e4"/>
+  <text x="40" y="104" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#002395">Pont du crédit</text>
+  <text x="40" y="126" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Crédit garanti des ménages</text>
+  <text x="40" y="168" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#1a1a1a">700 Md€</text>
+  <text x="40" y="188" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">encours brut de la part, fin 2040</text>
+  <text x="40" y="220" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6a6a6a">X Md€</text>
+  <text x="40" y="240" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">dette existante substituée — vide</text>
+  <text x="40" y="272" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6a6a6a">Y Md€</text>
+  <text x="40" y="292" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">crédit ménage vraiment additionnel — vide</text>
+  <text x="40" y="340" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">X + Y = 700, une fois le résidu mesuré.</text>
+
+  <rect x="368" y="76" width="328" height="300" fill="#ffffff" stroke="#e8e8e4"/>
+  <text x="384" y="104" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#002395">Pont bancaire</text>
+  <text x="384" y="126" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Économie du prêteur</text>
+  <text x="384" y="168" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1a1a1a">Livre Pacte entier</text>
+  <text x="384" y="188" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">tranche substituée et tranche ajoutée</text>
+  <text x="384" y="220" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1a1a1a">− actifs déplacés</text>
+  <text x="384" y="240" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">marge, durée, fonds propres, amortissement</text>
+  <text x="384" y="272" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1a1a1a">− coûts additionnels</text>
+  <text x="384" y="292" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">financement, couverture, exploitation, perte, capital</text>
+  <text x="384" y="340" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#6a6a6a">= contribution — vide</text>
+
+  <text x="24" y="412" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">Un refinancement euro pour euro peut ajouter 0 de crédit au système</text>
+  <text x="24" y="434" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#3f3f3f">et changer quand même le rendement, la duration, le financement et les fonds propres.</text>
+  <text x="24" y="464" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Le gain de la banque et le gain du ménage n’ont pas nécessairement le même signe.</text>
+  <text x="24" y="492" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Ne remplit aucune cellule. 23,1 Md€ d’intérêts contractuels ne sont pas une marge. 700 Md€ ne sont pas un revenu.</text>
+</svg>

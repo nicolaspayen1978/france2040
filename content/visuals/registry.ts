@@ -11,7 +11,11 @@ import { mecanismeDuEuro } from "@/content/visuals/mecanisme-du-euro";
 import { memeCreditTransmissionFaible } from "@/content/visuals/meme-credit-transmission-faible";
 import { parcoursMenageInteretsSeuls } from "@/content/visuals/parcours-menage-interets-seuls";
 import { partIoNEstPasLeLtvConsolide } from "@/content/visuals/part-io-n-est-pas-le-ltv-consolide";
+import { deuxPontsBancaires } from "@/content/visuals/deux-ponts-bancaires";
 import { patrimoineVsEnveloppe } from "@/content/visuals/patrimoine-vs-enveloppe";
+import { picOriginationContreProduction } from "@/content/visuals/pic-origination-contre-production";
+import { quatreNombresDuResultat } from "@/content/visuals/quatre-nombres-du-resultat";
+import { vagueMaturite20472060 } from "@/content/visuals/vague-maturite-2047-2060";
 import { retraitesVsActifs } from "@/content/visuals/retraites-vs-actifs";
 import { sureteDistinctePasEchelle } from "@/content/visuals/surete-distincte-pas-echelle";
 import { quatreVoiesVersUnMarche } from "@/content/visuals/quatre-voies-vers-un-marche";
@@ -41,6 +45,8 @@ export const visualGroups: VisualGroup[] = [
       parcoursMenageInteretsSeuls,
       patrimoineVsEnveloppe,
       trajectoireCredit20272040,
+      deuxPontsBancaires,
+      quatreNombresDuResultat,
       mecanismeDuEuro,
       partIoNEstPasLeLtvConsolide,
       sureteDistinctePasEchelle,
@@ -53,6 +59,8 @@ export const visualGroups: VisualGroup[] = [
     id: "reperes-risques-contexte",
     title: "Repères, risques et contexte",
     items: [
+      picOriginationContreProduction,
+      vagueMaturite20472060,
       demographie20272040,
       retraitesVsActifs,
       financementRetraites,

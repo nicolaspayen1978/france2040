@@ -2,7 +2,7 @@
 
 ## Can a €700bn interest-only home-equity market be an attractive banking asset without becoming a new systemic risk?
 
-23 October 2026. Working file. Not a public snapshot. Not an épreuve contradictoire. Not a cell in the macro model. Not a claim that lenders would want the asset, and not a claim that the design is safe.
+23 October 2026. Working file. Public French snapshot: `/documents/economie-bancaire` version `2026-10-23`. Not an épreuve contradictoire. Not a cell in the macro model. Not a claim that lenders would want the asset, and not a claim that the design is safe.
 
 Structure frozen the same day. Do not lengthen this framework. The next work fills evidence: capital treatment, funding economics, substitution, and loss behaviour. It does not add a further bridge.
 

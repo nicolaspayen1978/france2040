@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  En images — pic-origination-contre-production v2026-10-23
+  Colours from app/tokens.css: --paper #fff, --line #e6e6e6, --ink #1a1a1a,
+  --ink-2 #3f3f3f, --ink-3 #5c5c5c, --muted #6a6a6a, --mark-blue #002395, --blue-3 #99a5cd
+  90 is the frozen scenario peak. 146.7 is Banque de France, 2025 production excluding renegotiations.
+  90/146.7 is about 61%. Not incremental credit. Not a capacity coefficient.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="title desc">
+  <title id="title">Pic d’origination contre production habitat 2025</title>
+  <desc id="desc">Le pic gelé de la part à intérêts seuls est de 90 Md€ en 2031 et en 2032. La production de crédits à l’habitat en 2025, hors renégociations, est de 146,7 Md€. Le rapport 90 sur 146,7 est d’environ 61 pour cent du flux brut de cette année observée. Ce n’est pas du crédit additionnel et ce n’est pas un coefficient de capacité.</desc>
+  <rect width="720" height="340" fill="#ffffff"/>
+  <text x="24" y="34" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">Pic d’origination contre une année de production</text>
+  <text x="24" y="56" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Simulation France2040 pour le pic · Banque de France pour 2025 · pas une prévision</text>
+
+  <text x="24" y="108" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#1a1a1a">Part à intérêts seuls, pic 2031–2032</text>
+  <rect x="24" y="120" width="307" height="28" fill="#002395"/>
+  <text x="340" y="140" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1a1a1a">90 Md€</text>
+
+  <text x="24" y="188" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#1a1a1a">Crédits à l’habitat, 2025, hors renégociations</text>
+  <rect x="24" y="200" width="500" height="28" fill="#99a5cd"/>
+  <text x="536" y="220" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#1a1a1a">146,7 Md€</text>
+
+  <text x="24" y="268" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">90 / 146,7 ≈ 61 % du flux brut de cette année observée.</text>
+  <text x="24" y="292" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Voisinage de flux. La part de substitution à l’intérieur des 90 Md€ est vide.</text>
+  <text x="24" y="316" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Ni crédit additionnel, ni coefficient de capacité, ni part de marché prévue.</text>
+</svg>

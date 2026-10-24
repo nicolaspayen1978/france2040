@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  En images — quatre-nombres-du-resultat v2026-10-23
+  Colours from app/tokens.css: --paper #fff, --paper-2 #e8e8e4, --ink #1a1a1a,
+  --ink-2 #3f3f3f, --muted #6a6a6a, --mark-blue #002395
+  Four empty result cells. No rate, no capital weight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
+  <title id="title">Quatre nombres, lus ensemble</title>
+  <desc id="desc">Le résultat prévu montre quatre cellules vides : le crédit additionnel Y, la contribution annuelle Z au stock de fin 2040, les fonds propres consommés C, et le rendement X égal à la contribution par euro de CET1 additionnel. X se compare au crédit habitat ordinaire. Aucun nombre n’est rempli.</desc>
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="24" y="34" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a">Quatre nombres, lus ensemble</text>
+  <text x="24" y="56" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Schéma France2040 · cellules vides · le rendement n’est pas Z</text>
+
+  <rect x="24" y="80" width="160" height="110" fill="#ffffff" stroke="#e8e8e4"/>
+  <text x="104" y="118" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#6a6a6a">Y</text>
+  <text x="104" y="146" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Crédit additionnel</text>
+  <text x="104" y="166" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">vide</text>
+
+  <rect x="196" y="80" width="160" height="110" fill="#ffffff" stroke="#e8e8e4"/>
+  <text x="276" y="118" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#6a6a6a">Z</text>
+  <text x="276" y="146" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Contribution annuelle</text>
+  <text x="276" y="166" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">au stock de fin 2040</text>
+
+  <rect x="368" y="80" width="160" height="110" fill="#ffffff" stroke="#e8e8e4"/>
+  <text x="448" y="118" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#6a6a6a">C</text>
+  <text x="448" y="146" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#3f3f3f">Fonds propres CET1</text>
+  <text x="448" y="166" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">consommés — vide</text>
+
+  <rect x="540" y="80" width="156" height="110" fill="#ffffff" stroke="#002395"/>
+  <text x="618" y="118" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#002395">X</text>
+  <text x="618" y="146" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#1a1a1a">Z / C</text>
+  <text x="618" y="166" text-anchor="middle" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">vide</text>
+
+  <text x="24" y="230" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#1a1a1a">X se compare au même ratio sur le crédit habitat ordinaire.</text>
+  <text x="24" y="254" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#5c5c5c">Un traitement favorable ou plus dur de la sûreté peut déplacer X. Aucun des deux n’est supposé.</text>
+  <text x="24" y="278" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#6a6a6a">Ne constitue pas un rendement. « À l’échéance » n’est pas la date de Z : l’échéance rembourse l’actif.</text>
+</svg>

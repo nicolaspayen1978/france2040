@@ -1,4 +1,6 @@
-2026-10-20
+2026-10-23
+
+2026-10-23. Banking economics published in French as `/documents/economie-bancaire` version `2026-10-23`. English working file remains `Docs/28_Banking_Economics_Home_Equity.md`. Structure frozen; result cells empty. Not folded into the macro model. 700 Md€ unchanged. Four En images figures the same day.
 
 2026-10-20. Explique-moi le Pacte `2026-10-20` adds the child’s question on spending cuts and taxes, after the family explanation. Version `2026-10-03` is unchanged and superseded. Scenario figures unchanged.
 
