@@ -1,4 +1,8 @@
-2026-10-23
+2026-10-24
+
+2026-10-24. Banking economics `/documents/economie-bancaire` version `2026-10-24-2` files the 1.8 contractual-interest ratio and the amortised stock of the same path. The supply price is unsolved. Version `2026-10-24` is unchanged and superseded.
+
+2026-10-24. Banking economics `/documents/economie-bancaire` version `2026-10-24` files the ACPR ordinary-mortgage benchmark. Version `2026-10-23` is unchanged and superseded. The four result cells stay empty. 700 Md€ unchanged.
 
 2026-10-23. Banking economics published in French as `/documents/economie-bancaire` version `2026-10-23`. English working file remains `Docs/28_Banking_Economics_Home_Equity.md`. Structure frozen; result cells empty. Not folded into the macro model. 700 Md€ unchanged. Four En images figures the same day.
 

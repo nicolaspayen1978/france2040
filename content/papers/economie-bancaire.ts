@@ -7,18 +7,38 @@ export const economieBancaire: WorkingPaper = {
   title: "Économie bancaire et stabilité financière",
   lang: "fr",
   summary:
-    "Les 700 Md€ sont l’encours brut de la part à intérêts seuls en 2040, pas un crédit additionnel et pas un revenu. Deux ponts restent vides : le crédit du système, et l’économie des banques une fois les actifs déplacés soustraits. Le pic de 90 Md€ est une charge d’origination, pas 61 % de crédit nouveau. La structure est gelée. Le rendement ne l’est pas.",
-  currentVersionId: "2026-10-23",
+    "Les 700 Md€ sont l’encours brut de la part à intérêts seuls en 2040, pas un crédit additionnel et pas un revenu. À origination égale, le stock sans amortissement est plus grand : environ 1,8 fois l’intérêt contractuel, et environ 700 Md€ contre 443 Md€ à fin 2040. La rentabilité dépend du prix, qui n’est pas résolu.",
+  currentVersionId: "2026-10-24-2",
   versions: [
     {
       id: "2026-10-23",
       published: "2026-10-23",
-      status: "working-paper",
+      status: "superseded",
       verdict:
         "Non tranché. Le stock de 700 Md€ n’est ni un crédit additionnel ni un revenu. Les deux ponts, les fonds propres et le rendement sont vides. La vague de maturité n’est ni dangereuse ni sûre.",
       file: "content/papers/economie-bancaire/v2026-10-23.md",
       sha256: "bdf000a65cbe2ac587e24a3968df88fa17e680263ce07a70edf5bb2a3243ce24",
       note: "Première publication du texte français. Le fichier de travail anglais reste Docs/28. La structure est gelée ; les cellules restent vides. Ni EC-05, ni EC-08, ni le classeur de phase 2 ne sont rouverts. 700 Md€ inchangés.",
+    },
+    {
+      id: "2026-10-24",
+      published: "2026-10-24",
+      status: "superseded",
+      verdict:
+        "Non tranché. Le repère du crédit habitat ordinaire est déposé et n’entre pas dans les quatre cellules. Les deux ponts et le rendement du Pacte restent vides. La vague de maturité n’est ni dangereuse ni sûre.",
+      file: "content/papers/economie-bancaire/v2026-10-24.md",
+      sha256: "3e9647c7bf1368d77d830942fd992207da38c3412271c575df5563769cd623ca",
+      note: "Repère ACPR du livre habitat ordinaire : marges RENTIMMO imprimées, coût du risque, pondération interne. Ombre mécanique sur 700 Md€, hors des cellules de résultat. 700 Md€ inchangés. Version 2026-10-23 non modifiée.",
+    },
+    {
+      id: "2026-10-24-2",
+      published: "2026-10-24",
+      status: "working-paper",
+      verdict:
+        "Non tranché. À origination égale, le stock sans amortissement est plus grand. La rentabilité dépend d’un prix non résolu. Les quatre cellules restent vides.",
+      file: "content/papers/economie-bancaire/v2026-10-24-2.md",
+      sha256: "e177db2baa9d0bb8148d85bec4622f608309ccbcf22389a9035d6b0f5493f1f4",
+      note: "1,8 fois l’intérêt contractuel par euro originé, à 3,30 %, sans remboursement anticipé. Même chemin amorti : environ 443 Md€ au 31 décembre 2040, ouverture en janvier. Le prix d’offre n’est pas résolu. 700 Md€ inchangés.",
     },
   ],
   progress: [
@@ -29,6 +49,8 @@ export const economieBancaire: WorkingPaper = {
     { id: "vague", label: "Vague 2047–2060", state: "Arithmétique citée. Canaux vides" },
     { id: "hcsf", label: "Distribution de masse", state: "Non permise sous la décision actuelle" },
     { id: "rendement", label: "Contribution / CET1", state: "Non estimée" },
+    { id: "repere", label: "Repère habitat ordinaire", state: "Déposé. Hors des quatre cellules" },
+    { id: "stock", label: "Même origination", state: "Stock plus grand. Prix non résolu" },
   ],
   sources: [
     {
@@ -36,6 +58,18 @@ export const economieBancaire: WorkingPaper = {
       citation:
         "Banque de France, Crédits aux particuliers, juillet 2026. Encours des crédits à l’habitat des particuliers : 1 289 Md€. Production du mois hors renégociations : 11,0 Md€ à 3,30 %, dont 99,4 % à taux fixe.",
       href: "https://www.banque-france.fr/fr/statistiques/credit/credits-aux-particuliers-2026-07",
+    },
+    {
+      id: "bdf-aout-2026",
+      citation:
+        "Banque de France, Crédits aux particuliers, août 2026. Taux des crédits à l’habitat hors renégociations : 3,32 % provisoire, après 3,30 % en juillet. Ce n’est pas le prix d’un prêt Pacte.",
+      href: "https://www.banque-france.fr/fr/statistiques/credit/credits-aux-particuliers-2026-08",
+    },
+    {
+      id: "acpr-160",
+      citation:
+        "ACPR, Analyses et synthèses n° 160, Le financement de l’habitat en 2023, 21 octobre 2024. État RENTIMMO, graphique 62, barre du S2 2023 : marge nette −0,31 % du stock. Coût du risque 2023 : 1 point de base de l’encours moyen. Pondération interne moyenne : 9,8 % en juin 2023, avant les garants.",
+      href: "https://acpr.banque-france.fr/fr/publications-et-statistiques/publications/ndeg-160-le-financement-de-lhabitat-en-2023",
     },
     {
       id: "bdf-panorama-2026",
@@ -46,8 +80,14 @@ export const economieBancaire: WorkingPaper = {
     {
       id: "acpr-174",
       citation:
-        "ACPR, Analyses et synthèses n° 174, Le financement de l’habitat en 2024. Encours largement à taux fixe ; sûreté sur 97 % de l’encours, dont une caution majoritaire.",
+        "ACPR, Analyses et synthèses n° 174, Le financement de l’habitat en 2024, 30 juillet 2025. Sûreté sur 97 % de l’encours. État RENTIMMO, graphique 54, barre du S2 2024 : marge nette −0,30 % de l’encours moyen. Passages en défaut : 0,53 % des encours sains moyens. Pondération interne : 9,4 % en décembre 2024.",
       href: "https://acpr.banque-france.fr/fr/publications-et-statistiques/publications/ndeg-174-le-financement-de-lhabitat-en-2024",
+    },
+    {
+      id: "acpr-183",
+      citation:
+        "ACPR, Analyses et synthèses n° 183, Le financement de l’habitat en 2025, 30 juillet 2026. Coût du risque : 0,03 % des encours, après 0,02 % en 2024. Passages en défaut : 0,62 % des encours sains. Pondération interne : 9,2 % en 2025 sur 93 % de l’encours, avant les garants. Pertes article 430a : 0,03 % dans la limite de 55 % de la valeur, 0,05 % dans la limite de 100 %.",
+      href: "https://acpr.banque-france.fr/fr/publications-et-statistiques/publications/ndeg-183-le-financement-de-lhabitat-en-2025",
     },
     {
       id: "hcsf",

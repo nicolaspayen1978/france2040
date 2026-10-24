@@ -15,6 +15,10 @@ This file is a ship/history narrative. It does not replace:
 
 ### Added
 
+- `[publication]` Économie bancaire `2026-10-24-2` : à origination égale, environ 1,8 fois l’intérêt contractuel, et environ 443 Md€ d’encours amorti contre 700 Md€ à fin 2040. Le prix d’offre n’est pas résolu. Versions antérieures inchangées.
+
+- `[publication]` Économie bancaire `2026-10-24` : repère ACPR du crédit habitat ordinaire (marge du stock, coût du risque, pondération interne). Hors des quatre cellules de résultat. Version `2026-10-23` inchangée. 700 Md€ inchangés.
+
 - `[publication]` Économie bancaire et stabilité financière (`/documents/economie-bancaire` `2026-10-23`). Deux ponts vides. Pic de 90 Md€ à côté de 146,7 Md€ : voisinage de flux, pas un crédit additionnel. Vague 2047–2060 non jugée. Quatre nombres de résultat vides. 700 Md€ inchangés. En images : `deux-ponts-bancaires`, `quatre-nombres-du-resultat`, `pic-origination-contre-production`, `vague-maturite-2047-2060`.
 
 - `[website]` Accueil : un peu d’air entre la question de l’enfant et la colonne de droite du dialogue.

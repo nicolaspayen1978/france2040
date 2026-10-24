@@ -69,6 +69,14 @@ Same day: the note’s question includes financial stability. Risk is part of th
 
 Same day, after reading: two bridges. System credit is €700bn → substituted debt → additional household credit. Bank economics are the whole Pacte book minus displaced assets minus incremental funding, hedging, operating, loss and capital costs. Annual origination is the frozen path, peak €90bn, with the substitution split empty. Maturity is that path shifted 20 years, called a wave until the repayment channels are quantified. Correlation is a risk row. Question 4 compares return, capital, expected loss, duration and liquidity with ordinary housing credit. Cells stay empty.
 
+## 2026-10-24 — 1.8 times interest is not a model input
+
+The contractual-interest ratio and the amortised end-2040 stock of the same path are filed in `Docs/28` and in snapshot `2026-10-24-2`. They are not a margin, not a fifth trajectory, and not a filled return. The supply price is unsolved.
+
+## 2026-10-24 — Ordinary-mortgage benchmark stays outside the workbook
+
+The ACPR housing-loan margin, loss and internal-model weight are filed in `Docs/28` and in the French snapshot `2026-10-24` as a comparator. They are not a fifth trajectory, not a loss rate for the Pacte book, and not a filled model cell. The four result numbers stay empty.
+
 ## 2026-10-23 — Banking note structure frozen
 
 Owner: freeze `Docs/28_Banking_Economics_Home_Equity.md`. Do not lengthen the framework. Add only prepayment/optionality as a risk row, with no behavioural rate imported; contractual life is not economic duration. Contribution is stated at the end-2040 scenario stock, not “at maturity”. The result box is four empty numbers: incremental credit €Ybn, annual contribution €Zbn, capital consumed €Cbn, risk-adjusted return X% equal to contribution per euro of incremental CET1, compared with ordinary mortgage lending. Next evidence: capital treatment, funding economics, substitution, loss behaviour. Not a model cell. Not a public snapshot.

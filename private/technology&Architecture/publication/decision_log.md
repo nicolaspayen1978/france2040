@@ -1,5 +1,21 @@
 # Decision log
 
+## 2026-10-24 — Same origination, larger stock; supply price unsolved
+
+Owner: interest-only does not make the mortgage more profitable. It keeps a larger stock for the same origination. Filed in `/documents/economie-bancaire` version `2026-10-24-2`. Prior versions unchanged.
+
+At 3.30%, no prepayment: about €66,000 of contractual interest over 20 years per €100,000 originated, against about €36,800 on the annuity, about 1.8 times. Not a margin. Same frozen path amortised monthly: about €443bn outstanding at 31 December 2040 on January booking, about €459bn on mid-year booking, against €700bn interest-only. That gap is not the increase versus a world without the Pacte, and it is not permanent.
+
+Sector reading: balance sheet larger than the amortising alternative; profitability indeterminate until the price at which a bank would hold the asset is solved. No candidate rate inserted. A higher price still has to clear households, the effort-rate multiple, and the open usury category. It does not lift the HCSF block. 700 Md€ unchanged. Not a model cell.
+
+## 2026-10-24 — Ordinary-mortgage benchmark filed, result cells still empty
+
+Owner asked for more numbers from the Banque de France and ACPR material, as a comparator for ordinary French mortgages, not as a fill of the four result cells. New snapshot `/documents/economie-bancaire` version `2026-10-24`. Version `2026-10-23` bytes unchanged.
+
+The labeled RENTIMMO bars are the ones printed, not an earlier unlabeled semester. S2 2023 net margin −0.31% (n° 160, graphique 62). S2 2024 net margin −0.30% (n° 174, graphique 54). Ancillary income leaves both slightly negative. Annual cost of risk: 1 bp in 2023, 0.02% in 2024, 0.03% in 2025. Internal-model risk weight: 9.8% in June 2023, 9.4% in December 2024, 9.2% in 2025, before guarantor capital. None of these is assigned to the Pacte.
+
+A mechanical shadow of those printed margins on the gross €700bn stock, and of 9.8% on the same stock, is shown and kept outside €Y, €Z, €C and the return. 3.30% in July 2026 and 3.32% provisional in August 2026 remain a new-loan benchmark, not a Pacte price. Next capital question, not answered: the CRR and internal-model treatment of a 20-year interest-only loan at a consolidated 35–40%, including a junior lien and the guarantor, net of the asset displaced. Not a model cell. 700 Md€ unchanged.
+
 ## 2026-10-23 — Banking economics published in French
 
 Owner asked to publish the frozen banking note and to extract the relevant En images.

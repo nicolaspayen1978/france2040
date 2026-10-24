@@ -2,9 +2,9 @@
 
 ## Can a €700bn interest-only home-equity market be an attractive banking asset without becoming a new systemic risk?
 
-23 October 2026. Working file. Public French snapshot: `/documents/economie-bancaire` version `2026-10-23`. Not an épreuve contradictoire. Not a cell in the macro model. Not a claim that lenders would want the asset, and not a claim that the design is safe.
+24 October 2026. Working file. Public French snapshot: `/documents/economie-bancaire` version `2026-10-24-2`. Versions `2026-10-23` and `2026-10-24` are unchanged. Not an épreuve contradictoire. Not a cell in the macro model. Not a claim that lenders would want the asset, and not a claim that the design is safe.
 
-Structure frozen the same day. Do not lengthen this framework. The next work fills evidence: capital treatment, funding economics, substitution, and loss behaviour. It does not add a further bridge.
+Structure frozen on 23 October 2026. Do not lengthen this framework. The ordinary French mortgage benchmark is a comparator. It does not enter the four result cells. The 1.8 times below is contractual interest per euro originated, not a margin. Still empty: the price at which a bank would hold the asset, the Pacte’s own capital treatment, the substitution split, and its loss behaviour.
 
 Feasibility study. The economics question is whether the supply side has a risk-adjusted reason to originate the product. The stability question is what new risks a large interest-only market would place on lenders and on whoever ends up holding the asset, set against the risk of the amortising credit it replaces. Either answer may be no. A conclusion that the current design fails is a result. The product is not changed in this note to avoid that result.
 
@@ -112,7 +112,7 @@ Each term is empty. The lines inside the subtraction:
 1. Funding cost, at a funds-transfer price. The internal prices named in the four 2025 prudential readings are unpublished. Do not invent one, and do not use €23.1bn as the starting income.
 2. Credit losses. Low loan-to-value makes the collateral case easier to state. It does not supply a French expected-loss rate. The Dutch observation that losses at four large banks rose by about 0.2% of book in a different interest-only market is not an input. The French loss channel stays unwired. The loss is compared with the loss on the amortising book displaced, not only stated on its own.
 3. Operating cost of origination and of servicing a loan that does not amortise, net of the operating cost of the asset displaced.
-4. Capital required. No risk weight is imported. Standardised and internal-model treatments are both unread for this product. A junior lien, if that is the security, may not take the same weight or the same funding price as a standard residential mortgage. That difference is already an open item in the legal note. Capital is the requirement of the Pacte book minus the requirement of the displaced book, not a weight applied only to €Ybn.
+4. Capital required. No risk weight is imported for this product. The ordinary book’s internal-model weights are filed in the benchmark below. They are not the weight of the Pacte. Standardised and internal-model treatments are both unread for this product. A junior lien, if that is the security, may not take the same weight or the same funding price as a standard residential mortgage. That difference is already an open item in the legal note. Capital is the requirement of the Pacte book minus the requirement of the displaced book, not a weight applied only to €Ybn.
 
 Contribution is that residual. It is not a spread times €700bn, and it is not a spread times €Ybn.
 
@@ -135,7 +135,57 @@ Interest-only lengthens duration and leaves a bullet. A lower consolidated ratio
 
 The figure a lender uses is incremental contribution divided by incremental CET1 consumed, set against the same ratio on ordinary mortgage lending. €Zbn of contribution is not that ratio. Favourable residential treatment, or worse treatment of the actual security, can move it enough to change the conclusion. Neither treatment is assumed. The test clears only if that return, after funding, losses, operating costs, hedging and liquidity, is preferred to both alternatives on the five terms. A gross margin above a funding rate does not clear it. A positive contribution at system level does not mean each of BNP Paribas, Société Générale, Crédit Agricole and BPCE would originate. Who can write a same-bank additional advance, and who would have to refinance another lender’s cautioned loan, can decide the distribution before the system average does.
 
-No return is estimated in this version.
+No Pacte return is estimated. The benchmark below is not that return.
+
+### Ordinary French mortgage benchmark
+
+Comparator only. Not a term of the bank-economics bridge, and not one of the four result cells. The source is the ACPR reporting built to measure the standalone economics of housing loans (état RENTIMMO), in *Analyses et synthèses* n° 160 of 21 October 2024, n° 174 of 30 July 2025, and n° 183 of 30 July 2026.
+
+On the stock decomposition, the ACPR prints one number per component: the latest half-year. Earlier half-years are drawn and not printed. This note does not read them off the chart. On those charts the earlier bars show a positive gross margin that later compresses. The printed point, after the rate shock, is a stock of old fixed-rate loans whose internal refinancing cost sits slightly above the interest earned.
+
+| Component, % of the housing-loan stock | S2 2023, printed bar, n° 160, graphique 62 | S2 2024, printed bar, annualised, % of average outstanding, n° 174, graphique 54 |
+| --- | ---: | ---: |
+| Gross interest income | 1.58 | 1.83 |
+| Refinancing cost | −1.62 | −1.87 |
+| Gross margin | −0.04 | −0.04 |
+| Operating costs | −0.25 | −0.24 |
+| Cost of risk | −0.02 | −0.02 |
+| Net margin | −0.31 | −0.30 |
+| Ancillary income | 0.26 | 0.27 |
+| Net margin plus ancillary income | −0.05 | −0.03 |
+
+Ancillary income, as the ACPR defines it, can include application fees, insurance and guarantee distribution commissions, and early-repayment indemnities. It is not interest. A 100 basis-point contribution margin is not this benchmark. French mortgage lending, on the bars the ACPR prints, is a thin-margin business, and on these two dates the stock margin after funding is slightly negative.
+
+Origination margins are a separate series. N° 160 says they were negative and returned to equilibrium in the first quarter of 2024, for the first time in two years. N° 174 says they remained negative but close to equilibrium through 2024 and early 2025. N° 183 says gross origination margins remained limited in 2025. The July 2026 rate on new housing loans excluding renegotiations, 3.30%, and the August 2026 rate, 3.32% provisional, remain a market benchmark for ordinary new housing loans. Neither is the price of a 20-year Pacte loan.
+
+**Losses on the ordinary book.** Not a Pacte loss rate.
+
+| | 2023 | 2024 | 2025 |
+| --- | --- | --- | --- |
+| Cost of risk / average outstanding | 1 bp. N° 160 | 0.02%. N° 183. N° 174 reports €157m in 2023 and €209m in 2024, equal to 1.3% then 1.6% of the average doubtful stock | 0.03%. N° 183. Part of the rise is a reclassification by one institution |
+| New defaults / average performing outstanding | 0.44% of outstanding in the fourth quarter, twelve-month transitions. N° 160 | 0.53%. N° 174 | 0.62%. N° 183 |
+| Doubtful stock, or stage 3 | 0.97% doubtful at end-2023. N° 160 | 1.1% doubtful. N° 174 | Stage 3, 1.2%. N° 183 |
+
+The RENTIMMO bar prints a cost of risk of 2 bp in S2 2023 and in S2 2024. The annual series is 1 bp, then 2 bp, then 3 bp. Same order of magnitude. Different statements.
+
+The collection under Article 430a of the Capital Requirements Regulation, on the current French residential book and not as a forecast: in 2023, a loss rate of 0.03% both within 55% of the property value and within 100% (n° 160). In 2025, 0.03% within 55% and 0.05% within 100% (n° 183, COREP 15). The slice within 55% of value is not a consolidated 35–40% interest-only loan. The empirical test is whether a 20-year bullet, at the consolidated ratio actually underwritten, can stay near this loss benchmark despite the bullet and the borrower profile. The test is not run.
+
+**Capital on the ordinary book.** Not the Pacte weight.
+
+Average internal-model risk weight on French housing loans: 9.8% in June 2023 (n° 160, down 0.4 point over twelve months); 9.4% in December 2024 (n° 174); 9.2% on average in 2025, on 93% of the outstanding, and 9.7% in the first quarter of 2026 (n° 183). The all-methods average was 12.0% in 2025. N° 183 says the movement is not only credit risk; sales of loans also move it. The ACPR says a comparison with other European markets has to add the regulatory requirement of the guarantors on the same loans. A partial addition can be made for Crédit Logement. Guarantors that are insurers, under Solvency II, are not in that addition. This note does not assign 9.8%, 9.2% or 12.0% to the Pacte.
+
+Illustration, not the €Cbn cell. €700bn × 9.8% = €68.6bn of risk-weighted assets. An 8% CET1 ratio applied mechanically is €5.5bn. A 12% ratio is €8.2bn. The same gross stock at the 2025 internal-model weight of 9.2% is €64.4bn of risk-weighted assets. That arithmetic ignores the assets displaced, the output floor, bank-specific requirements, and the security actually used.
+
+**Shadow on the gross stock.** Not the €Zbn cell. The printed ordinary stock margin, applied mechanically to €700bn:
+
+| | S2 2023 | S2 2024 |
+| --- | ---: | ---: |
+| Net margin × €700bn | −€2.17bn a year | −€2.10bn a year |
+| Net margin plus ancillary income × €700bn | −€0.35bn a year | −€0.21bn a year |
+
+Contractual interest at 3.30% on the same stock is €23.1bn a year. The ordinary-book residual, after funding, operating costs and losses, is two orders of magnitude smaller, and on these two printed dates it is negative. Ancillary income closes most of that gap and does not turn it positive. The Pacte can differ. A lower consolidated ratio may reduce losses and capital. An interest-only principal keeps the interest-earning asset. Duration, the prepayment option, funding and the bullet may cost more. None of those differences is in the shadow.
+
+The next capital question, not answered here: what risk weight a residential loan at a consolidated 35–40%, interest-only for 20 years, would actually receive under the current CRR and internal-model framework, including a junior lien and the guarantor, set against the weight of the amortising loan it displaces.
 
 ## Risks
 
@@ -150,7 +200,7 @@ The 40–50% cap on the interest-only share is not a guarantee that the claim st
 | Maturity wave | Contractual principal falling due on the origination curve, shifted by the life of the contract | Red Team 05, frozen. At 20 years the first bullet is 2047 or 2048. The schedule then reproduces the frozen path. Ten and thirty years are sensitivities only | Cited. Not judged dangerous or safe |
 | Interest-rate and funding | The cost of carrying a long fixed non-amortising asset | Red Team 05. Financeability and matchability are unanswered. Published liquidity surpluses are not spare capacity | Not reopened |
 | Prepayment / optionality | Whether borrowers refinance or repay disproportionately when the fixed Pacte rate becomes expensive relative to market rates, while remaining when it becomes cheap; effect on realised asset life, hedge effectiveness and funding economics | Contractual life is filed. Observed constant prepayment rates are not an input | Open. No behavioural prepayment assumption imported |
-| Capital | Whether the regulatory weight makes the return fail question 4 | No risk weight has been read for this security | Empty |
+| Capital | Whether the regulatory weight makes the return fail question 4 | Ordinary-book internal-model weights filed: 9.8% in June 2023, 9.4% in December 2024, 9.2% in 2025. Not assigned to the Pacte. Guarantor capital is still missing on the ordinary book itself | Comparator filed. Pacte weight unread |
 | Scale | Whether a book this large is still a niche | July 2026 housing credit to individuals is €1,289bn. €700bn is about 54% of that stock. It is a 2040 interest-only scenario, not an addition on top of an unchanged 2026 book | Scale fact only |
 | Correlation | Whether loans that are conservative one by one become systemically material because collateral, borrower income and refinancing conditions deteriorate together | Separate price ratios and a separate income question exist. A joint shock does not | Open. Empty |
 | Conduct | Households treating interest-only as spent wealth, or being sold a loan they do not understand | Borrower information is named in the legal note. No suitability test is specified | Open |
@@ -197,6 +247,22 @@ The structural questions, each open, and none of them a finding:
 
 These five questions are why the note is addressed to the lending groups, the Banque de France, the HCSF and economists. A sentence of the form “the proposal generates a stated annual sum for French banks” answers none of them, and it collapses gross margin into profit.
 
+## Same origination, larger stock
+
+Interest-only does not create a more profitable mortgage. It keeps the principal outstanding. The interest rate on an ordinary French mortgage stays fixed. What falls is the interest amount, because the principal falls, and the bank receives that principal back. Absent prepayment, the interest-only principal does not fall, so the interest amount does not fall either.
+
+The frozen comparison at 3.30% is a 20-year contractual life against 11.13 years for the annuity. On €100,000 originated, contractual interest over 20 years is €66,000 if the principal stays, against about €36,800 on the annuity at the payment of about €570 a month already filed. The ratio is about 1.8. That is contractual interest at one rate. It is not a margin, and it is not a profit. The funding cost stays on the whole principal as well. A positive spread scales up in euros. A negative spread scales up in euros too. After 19 years about 7% of the annuity remains. The interest-only principal is still there. Prepayment can cut the 20 years. The 1.8 is not an economic duration.
+
+The same frozen originations, amortised monthly at 3.30% with no prepayment, do not leave €700bn outstanding at the end of 2040. On January booking the outstanding at 31 December 2040 is about €443bn. Mid-year booking leaves about €459bn. The interest-only stock is €700bn because no bullet has fallen. The gap is the missing amortisation. It is the stock created by this path relative to amortising the same path. It is not the increase against a world without the Pacte, which remains €Ybn, and it is not permanent. The bullets start in 2047 or 2048.
+
+## What the sector can say
+
+The Pacte could put a large stock of long-lived, interest-earning mortgage assets on French bank balance sheets, relative to amortising the same originations. Whether that stock is attractive is whether banks can originate and fund it at a positive risk-adjusted spread, after capital, credit loss, the prepayment option and operating costs.
+
+Today’s 3.30%, and 3.32% in August 2026, are the ordinary new-loan benchmark. They are not the price of this product. The price at which a bank would manufacture the asset is not solved. No candidate rate is inserted. A higher price is a design choice only if households still want the liquidity at that rate. It lowers the principal a 35% effort rate can carry: the interest-only multiple already filed is about 10.6 times income at 3.30%. It still has to clear the usury category, which is open in the legal note. It does not remove the HCSF block on the contractual bullet.
+
+For a given origination, absent prepayment, the balance sheet is larger than the amortising alternative. Profitability is indeterminate until that price is solved. Slow runoff is a potential reason to hold the asset. It becomes a reason to support the Pacte only if the price that clears the bank is a price households will pay, and the product is originable.
+
 ## Reading rule for the result, written before the result
 
 When the cells are filled, the conclusion takes this shape, and only this shape.
@@ -219,10 +285,10 @@ A yes makes the scenario more credible and does not execute it. A no is another 
 
 ## Classification
 
-1. **Established.** The end-2040 interest-only stock in the 20-year reference is about €700bn, and the annual path from €25bn in 2027 to €0 in 2040 sums to that stock, with a peak of €90bn in 2031 and 2032. At 3.30% the contractual interest on the stock is €23.1bn a year. That interest is not a margin. January booking at 20 years reproduces the path as contractual principal from 2047 to 2060. Gross peak origination is about 61% of 2025 housing-loan production excluding renegotiations. That percentage is a flow neighbourhood, not incremental credit. Outright owners and borrowers still repaying are different populations, on the shares already filed. Mass origination is not available under the current HCSF decision. The four groups’ published liquidity positions are not spare capacity.
+1. **Established.** The end-2040 interest-only stock in the 20-year reference is about €700bn, and the annual path from €25bn in 2027 to €0 in 2040 sums to that stock, with a peak of €90bn in 2031 and 2032. At 3.30% the contractual interest on the stock is €23.1bn a year. That interest is not a margin. Per €100,000 originated, the same rate produces about €66,000 of contractual interest over 20 years if the principal stays, against about €36,800 on the annuity, about 1.8 times. That ratio is not a profit. The same path, amortised, leaves about €443bn outstanding at 31 December 2040 on January booking, against €700bn if it does not amortise. On the bars the ACPR prints, the ordinary housing-loan stock had a net margin of −0.31% in S2 2023 and −0.30% in S2 2024, and −0.05% and −0.03% once ancillary income is added. Annual cost of risk on that book was 1 bp in 2023, 0.02% in 2024 and 0.03% in 2025. The internal-model risk weight was 9.8% in June 2023, 9.4% in December 2024 and 9.2% in 2025, before guarantor capital. None of those ordinary-book figures is a Pacte result. January booking at 20 years reproduces the path as contractual principal from 2047 to 2060. Gross peak origination is about 61% of 2025 housing-loan production excluding renegotiations. That percentage is a flow neighbourhood, not incremental credit. Outright owners and borrowers still repaying are different populations, on the shares already filed. Mass origination is not available under the current HCSF decision. The four groups’ published liquidity positions are not spare capacity.
 2. **Plausible, not shown.** A material part of any real book would be new credit from outright owners, and another part would replace outstanding balances. Substitution can change bank economics while adding no system credit. A low loan-to-value, long fixed pool could matter for funding instruments, institutional buyers, competition and the cash-flow channel. None of those shares or effects is measured.
-3. **Weak hypothesis.** Any particular return. Any claim that the economics are attractive. Any claim that the maturity wave is dangerous, or that it is manageable. Any claim that the collateral-loss profile is better than ordinary housing credit. Any claim that the stock would restructure French mortgage banking.
+3. **Weak hypothesis.** Any particular Pacte return. Any particular offer rate. Reading the ordinary-book shadow on €700bn as the Pacte contribution. Reading 1.8 times the contractual interest as 1.8 times the profit. Any claim that the economics are attractive. Any claim that the maturity wave is dangerous, or that it is manageable. Any claim that the collateral-loss profile is better than ordinary housing credit. Any claim that the stock would restructure French mortgage banking.
 4. **Potentially fatal, not shown.** Lender economics too poor, once displaced assets are subtracted, for banks to originate at the scenario scale. Capital treatment of the actual security that collapses the return despite the interest income. Prepayment that shortens the asset when the fixed rate is expensive and lengthens it when the rate is cheap, enough to spoil the hedge. A maturity wave whose sale, repayment, refinancing and estate channels cannot carry the recopied path. Correlated stress that makes individually conservative loans systemic together. A loss, funding or conduct profile that is unacceptable even if the return clears. A book banks want, which still fails household take-up or the HCSF test. Risk moved to investors without being reduced. Any one of these stops the stock. None is demonstrated.
-5. **Data required.** A household split of existing secured balances between outright owners and borrowers, then, for each vintage, the share refinanced versus added as a tranche. The same microdata foundation as EC-10, cut for substitution rather than for originatable collateral. The economics of the displaced assets, not only of the new ones. A funds-transfer price, an operating cost, a French expected-loss rate at the relevant loan-to-value, and a capital and liquidity treatment for the security actually used, each compared with ordinary housing credit. No risk weight is chosen in advance. The four result cells: €Ybn, €Zbn, €Cbn, and contribution per euro of CET1 against ordinary mortgage lending. For prepayment: behaviour when the fixed rate is expensive and when it is cheap, and the effect on realised life, hedge effectiveness and funding. Not an imported constant prepayment rate. For the wave: the shares repaid by sale, cash, refinancing, estate and other, in the years the frozen bullets fall due, and who holds the claim if the originator does not. For correlation: one joint case of prices, incomes, refinancing capacity, transaction liquidity and bank funding. Not five separate narratives added up.
+5. **Data required.** A household split of existing secured balances between outright owners and borrowers, then, for each vintage, the share refinanced versus added as a tranche. The same microdata foundation as EC-10, cut for substitution rather than for originatable collateral. The economics of the displaced assets, not only of the new ones. The contractual rate that meets a stated return after funding, capital, credit loss, the prepayment option and operating cost, and whether households still borrow at that rate. A funds-transfer price for the Pacte, an operating cost of the non-amortising loan, and a French expected-loss rate at the consolidated ratio actually underwritten. The ordinary-book benchmark is filed. What remains on capital is the treatment of the security the Pacte would actually use, including a junior lien and the guarantor, under the current CRR and internal-model framework, net of the treatment of the asset displaced. No Pacte risk weight is chosen in advance. The four result cells: €Ybn, €Zbn, €Cbn, and contribution per euro of CET1 against ordinary mortgage lending. For prepayment: behaviour when the fixed rate is expensive and when it is cheap, and the effect on realised life, hedge effectiveness and funding. Not an imported constant prepayment rate. For the wave: the shares repaid by sale, cash, refinancing, estate and other, in the years the frozen bullets fall due, and who holds the claim if the originator does not. For correlation: one joint case of prices, incomes, refinancing capacity, transaction liquidity and bank funding. Not five separate narratives added up.
 
 EC-10 remains the originatable-stock test. It is not opened here. Red Teams 05 and 08 are not reopened. EC-09 is not started. This note does not enter the Phase 2 workbook.

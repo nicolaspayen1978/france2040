@@ -1,6 +1,6 @@
 # Status
 
-Last updated: 2026-10-03.
+Last updated: 2026-10-24.
 
 | Phase | State |
 | --- | --- |
@@ -12,4 +12,4 @@ Last updated: 2026-10-03.
 
 Working files: `Docs/19_Model_Interrogates_Red_Teams.md`, `Docs/20_Model_Phase2.xlsx`, `Docs/20_Model_Phase2_Dominance.md`, `Docs/21_Model_Phase2.1_Levers.md`, `scripts/modelPhase2.py`.
 
-Banking economics is not a model phase. `Docs/28_Banking_Economics_Home_Equity.md` is a separate feasibility note. Its incremental-credit and return cells are empty.
+Banking economics is not a model phase. `Docs/28_Banking_Economics_Home_Equity.md` is a separate feasibility note. The ordinary-mortgage benchmark filed on 24 October 2026 is a comparator. The incremental-credit and return cells are empty.
